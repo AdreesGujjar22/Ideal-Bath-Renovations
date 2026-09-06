@@ -2,9 +2,9 @@ import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import MenuDetail from "./MenuDetail";
 import {
-  MenuFacialsData,
+  MenuRemodelingData,
   MenuResurfacingData,
-  MenuBodyData,
+  MenuPlumbingWellnessData,
 } from "../../data/MenuData";
 import { ShieldCheck } from "lucide-react";
 
@@ -59,7 +59,7 @@ const Menu: React.FC = () => {
         <MenuDetail
           content="Full Renovations, Conversions & Space Planning"
           categoryBadge="Core Renovation Services"
-          menuData={MenuFacialsData}
+          menuData={MenuRemodelingData}
         />
 
         <MenuDetail
@@ -71,7 +71,7 @@ const Menu: React.FC = () => {
         <MenuDetail
           content="Steam Suites, Smart Fixtures & Aging-in-Place"
           categoryBadge="Specialty Plumbing & Wellness"
-          menuData={MenuBodyData}
+          menuData={MenuPlumbingWellnessData}
         />
       </Container>
     </Box>

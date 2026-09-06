@@ -2,9 +2,13 @@ import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, ShieldCheck, CheckCircle2, Award, ExternalLink } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ShieldCheck, CheckCircle2, Award, ExternalLink, Bath } from "lucide-react";
+import { servicesDetailList } from "../data/ServicesDetailData";
 
 const Footer: React.FC = () => {
+  const firstColServices = servicesDetailList.slice(0, 6);
+  const secondColServices = servicesDetailList.slice(6, 12);
+
   return (
     <Box
       component="footer"
@@ -36,11 +40,7 @@ const Footer: React.FC = () => {
                     border: "1px solid rgba(194, 155, 56, 0.3)",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1 0L2 7" />
-                    <path d="M4 12V7" />
-                    <path d="M22 13v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2a9 9 0 0 0 8.05 8.94V22a1 1 0 0 0 2 0v-0.06A9 9 0 0 0 22 13Z" />
-                  </svg>
+                  <Bath size={24} color="#dfba5a" />
                 </Box>
                 <Box>
                   <Typography
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
 
                 <Box
                   component="a"
-                  href="tel:6045398822"
+                  href="tel:6722730434"
                   sx={{
                     display: "flex",
                     alignItems: "center",
@@ -108,13 +108,13 @@ const Footer: React.FC = () => {
                 >
                   <Phone size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
                   <Typography sx={{ fontSize: "13.5px", fontWeight: 600 }}>
-                    (604) 539-8822
+                    (672) 273-0434 (24/7 Phone Support)
                   </Typography>
                 </Box>
 
                 <Box
                   component="a"
-                  href="mailto:estimates@idealbathrenovations.ca"
+                  href="mailto:info@idealbathrenovations.ca"
                   sx={{
                     display: "flex",
                     alignItems: "center",
@@ -126,21 +126,21 @@ const Footer: React.FC = () => {
                 >
                   <Mail size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
                   <Typography sx={{ fontSize: "13.5px" }}>
-                    estimates@idealbathrenovations.ca
+                    info@idealbathrenovations.ca
                   </Typography>
                 </Box>
 
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, color: "#94a3b8" }}>
                   <Clock size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
                   <Typography sx={{ fontSize: "13px" }}>
-                    Mon - Sat: 7:30 AM - 6:00 PM
+                    Open 24 Hours / 7 Days a Week
                   </Typography>
                 </Box>
               </Box>
             </Box>
           </Grid>
 
-          {/* Core Services (19 categories grouped) */}
+          {/* 12 Core Renovation Services - Column 1 */}
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography
               variant="h6"
@@ -153,24 +153,13 @@ const Footer: React.FC = () => {
                 mb: 2.5,
               }}
             >
-              Bathroom Services
+              Remodeling Services
             </Typography>
             <Stack spacing={1.2}>
-              {[
-                { name: "Full-Service Bathroom Remodeling", to: "/treatments" },
-                { name: "Bathroom Design & Space Planning", to: "/treatments" },
-                { name: "Tub-to-Shower Conversions", to: "/rfMicroNeedling" },
-                { name: "Walk-In & Curbless Showers", to: "/resurfacingTreatment" },
-                { name: "Bathtub Replacement & Refinishing", to: "/treatments" },
-                { name: "Steam Shower & Sauna Installation", to: "/resurfacingTreatment" },
-                { name: "Wall & Floor Tiling", to: "/treatments" },
-                { name: "Countertop Installation", to: "/treatments" },
-                { name: "Custom Cabinetry & Vanity", to: "/treatments" },
-                { name: "Radiant In-Floor Heating", to: "/treatments" },
-              ].map((item, idx) => (
+              {firstColServices.map((item) => (
                 <Link
-                  key={idx}
-                  to={item.to}
+                  key={item.id}
+                  to={`/services/${item.slug}`}
                   style={{
                     color: "#cbd5e1",
                     textDecoration: "none",
@@ -184,13 +173,13 @@ const Footer: React.FC = () => {
                   onMouseLeave={(e) => (e.currentTarget.style.color = "#cbd5e1")}
                 >
                   <span style={{ color: "#c29b38", fontSize: "10px" }}>▸</span>
-                  {item.name}
+                  {item.title}
                 </Link>
               ))}
             </Stack>
           </Grid>
 
-          {/* More Categories & Specialty */}
+          {/* 12 Core Renovation Services - Column 2 */}
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography
               variant="h6"
@@ -203,24 +192,13 @@ const Footer: React.FC = () => {
                 mb: 2.5,
               }}
             >
-              Specialty Solutions
+              Specialty Installations
             </Typography>
             <Stack spacing={1.2}>
-              {[
-                { name: "Smart Toilet & Bidet Installation", to: "/treatments" },
-                { name: "Plumbing Fixture Upgrades", to: "/treatments" },
-                { name: "Electrical & Accent Lighting", to: "/treatments" },
-                { name: "Ventilation & Exhaust Upgrades", to: "/treatments" },
-                { name: "Waterproofing & Vapor Barriers", to: "/treatments" },
-                { name: "ADA & Aging-In-Place Modifications", to: "/nanoneedling" },
-                { name: "Powder Room Renovations", to: "/treatments" },
-                { name: "One-Day Refinishing & Liners", to: "/treatments" },
-                { name: "Demolition & Clean Tear-Out", to: "/treatments" },
-                { name: "Before & After Transformations", to: "/before&After" },
-              ].map((item, idx) => (
+              {secondColServices.map((item) => (
                 <Link
-                  key={idx}
-                  to={item.to}
+                  key={item.id}
+                  to={`/services/${item.slug}`}
                   style={{
                     color: "#cbd5e1",
                     textDecoration: "none",
@@ -234,9 +212,24 @@ const Footer: React.FC = () => {
                   onMouseLeave={(e) => (e.currentTarget.style.color = "#cbd5e1")}
                 >
                   <span style={{ color: "#c29b38", fontSize: "10px" }}>▸</span>
-                  {item.name}
+                  {item.title}
                 </Link>
               ))}
+              <Link
+                to="/services"
+                style={{
+                  color: "#dfba5a",
+                  textDecoration: "none",
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  marginTop: "6px",
+                }}
+              >
+                <span>★ View All 12 Services Hub</span>
+              </Link>
             </Stack>
           </Grid>
 
@@ -255,12 +248,47 @@ const Footer: React.FC = () => {
             >
               Service Areas
             </Typography>
-            <Stack spacing={0.8} sx={{ mb: 3 }}>
-              {["Langley Township", "Willoughby Heights", "Walnut Grove", "Fort Langley", "Murrayville", "Brookswood", "Surrey / South Surrey", "White Rock", "Abbotsford"].map((area, idx) => (
-                <Typography key={idx} sx={{ fontSize: "12.5px", color: "#cbd5e1" }}>
-                  • {area}
-                </Typography>
+            <Stack spacing={1.1} sx={{ mb: 2.5 }}>
+              {[
+                { name: "Langley Twp HQ", path: "/service-areas/langley-twp" },
+                { name: "Surrey, BC", path: "/service-areas/surrey" },
+                { name: "Abbotsford, BC", path: "/service-areas/abbotsford" },
+                { name: "Fraser Valley", path: "/service-areas/fraser-valley" },
+              ].map((area, idx) => (
+                <Link
+                  key={idx}
+                  to={area.path}
+                  style={{
+                    color: "#cbd5e1",
+                    textDecoration: "none",
+                    fontSize: "13px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#dfba5a")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#cbd5e1")}
+                >
+                  <span style={{ color: "#c29b38", fontSize: "10px" }}>▸</span>
+                  {area.name}
+                </Link>
               ))}
+              <Link
+                to="/service-areas"
+                style={{
+                  color: "#dfba5a",
+                  textDecoration: "none",
+                  fontSize: "12.5px",
+                  fontWeight: 700,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "4px",
+                  marginTop: "4px",
+                }}
+              >
+                <span>View All Service Areas &rarr;</span>
+              </Link>
             </Stack>
 
             <Box sx={{ pt: 2, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
@@ -339,10 +367,10 @@ const Footer: React.FC = () => {
           <Typography sx={{ fontSize: "12px", color: "#64748b" }}>
             © {new Date().getFullYear()} Ideal Bath Renovations. All rights reserved. 20819 78B Avenue, Langley Twp, BC V2Y.
           </Typography>
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
             <Link to="/about" style={{ color: "#64748b", textDecoration: "none" }}>About</Link>
-            <Link to="/treatments" style={{ color: "#64748b", textDecoration: "none" }}>Services</Link>
-            <Link to="/before&After" style={{ color: "#64748b", textDecoration: "none" }}>Gallery</Link>
+            <Link to="/services" style={{ color: "#64748b", textDecoration: "none" }}>Services Hub</Link>
+            <Link to="/before-after" style={{ color: "#64748b", textDecoration: "none" }}>Transformations</Link>
             <Link to="/contact" style={{ color: "#64748b", textDecoration: "none" }}>Free Quote</Link>
           </Box>
         </Box>

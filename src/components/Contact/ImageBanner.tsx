@@ -8,7 +8,7 @@ const ImageBanner: React.FC = () => (
       img="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=2000&q=80"
       badge="Langley Township, BC"
       primaryContent="Visit Our Showroom & Material Selection Studio"
-      secondaryContent="20819 78B Avenue, Langley Twp, BC V2Y, Canada • (604) 539-8822"
+      secondaryContent="20819 78B Avenue, Langley Twp, BC V2Y, Canada • (672) 273-0434"
       bannerHeight={300}
       fontsize={34}
       fontweight={700}

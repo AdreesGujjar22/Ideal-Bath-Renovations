@@ -44,7 +44,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
       sx={{
         position: "relative",
         width: "100%",
-        minHeight: { xs: `${bannerHeight - 60}px`, md: `${bannerHeight}px` },
+        minHeight: { xs: "auto", sm: "500px", md: `${bannerHeight}px` },
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -62,9 +62,8 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
           height: "100%",
           objectFit: "cover",
           objectPosition: "center",
-          filter: "brightness(0.72) contrast(1.05)",
+          filter: "brightness(0.68) contrast(1.05)",
           transform: "scale(1.02)",
-          transition: "transform 10s ease",
         }}
       />
       
@@ -76,7 +75,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
           left: 0,
           width: "100%",
           height: "100%",
-          background: "linear-gradient(180deg, rgba(15,23,42,0.65) 0%, rgba(15,23,42,0.45) 50%, rgba(15,23,42,0.85) 100%)",
+          background: "linear-gradient(180deg, rgba(15,23,42,0.72) 0%, rgba(15,23,42,0.52) 50%, rgba(15,23,42,0.88) 100%)",
         }}
       />
 
@@ -85,19 +84,20 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
         sx={{
           position: "relative",
           zIndex: 2,
-          py: { xs: 6, md: 8 },
+          py: { xs: 5, sm: 7, md: 9 },
+          px: { xs: 2.5, sm: 3 },
           display: "flex",
           justifyContent: alignItems === "start" ? "flex-start" : alignItems === "end" ? "flex-end" : "center",
         }}
       >
         <Box
           sx={{
-            maxWidth: width || "820px",
+            maxWidth: width || "840px",
             textAlign: alignItems === "start" ? "left" : alignItems === "end" ? "right" : "center",
             display: "flex",
             flexDirection: "column",
             alignItems: alignItems === "start" ? "flex-start" : alignItems === "end" ? "flex-end" : "center",
-            gap: gap,
+            gap: { xs: 1.5, sm: gap },
           }}
         >
           {badge && (
@@ -105,18 +105,18 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
               sx={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 1,
-                backgroundColor: "rgba(194, 155, 56, 0.92)",
-                color: "#ffffff",
-                px: 2,
-                py: 0.6,
+                gap: 0.8,
+                backgroundColor: "rgba(194, 155, 56, 0.95)",
+                color: "#0f172a",
+                px: { xs: 1.5, sm: 2 },
+                py: { xs: 0.4, sm: 0.6 },
                 borderRadius: "30px",
-                fontSize: { xs: "12px", md: "13px" },
-                fontWeight: 700,
-                letterSpacing: "0.05em",
+                fontSize: { xs: "11px", sm: "12px", md: "13px" },
+                fontWeight: 800,
+                letterSpacing: "0.06em",
                 textTransform: "uppercase",
-                backdropFilter: "blur(4px)",
-                boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+                boxShadow: "0 2px 10px rgba(0,0,0,0.25)",
+                mb: { xs: 0.5, sm: 0 },
               }}
             >
               {badge}
@@ -127,12 +127,12 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
             variant="h1"
             sx={{
               textTransform: textTransform,
-              fontSize: { xs: "28px", sm: "38px", md: `${fontsize}px` },
+              fontSize: { xs: "24px", sm: "32px", md: "40px", lg: `${fontsize}px` },
               fontWeight: fontweight,
               color: "#ffffff",
-              lineHeight: 1.15,
-              letterSpacing: "-0.02em",
-              textShadow: "0 2px 12px rgba(0,0,0,0.4)",
+              lineHeight: { xs: 1.22, sm: 1.2, md: 1.16 },
+              letterSpacing: { xs: "-0.01em", md: "-0.02em" },
+              textShadow: "0 2px 14px rgba(0,0,0,0.5)",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
             }}
           >
@@ -146,11 +146,12 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
                 textTransform: "none",
                 fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontWeight: fontweightSecondary,
-                fontSize: { xs: "15px", sm: "18px", md: `${fontsizeSecondary}px` },
+                fontSize: { xs: "14px", sm: "16px", md: `${fontsizeSecondary}px` },
                 color: "rgba(255, 255, 255, 0.92)",
-                lineHeight: 1.5,
-                maxWidth: "700px",
-                textShadow: "0 1px 8px rgba(0,0,0,0.3)",
+                lineHeight: { xs: 1.55, sm: 1.6 },
+                maxWidth: { xs: "100%", sm: "640px", md: "760px" },
+                textShadow: "0 1px 8px rgba(0,0,0,0.4)",
+                mt: { xs: 0.5, sm: 0 },
               }}
             >
               {secondaryContent}
@@ -160,28 +161,70 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
           {btn && (
             <Stack
               direction={{ xs: "column", sm: "row" }}
-              spacing={2}
-              sx={{ mt: 2, width: { xs: "100%", sm: "auto" } }}
+              spacing={{ xs: 1.5, sm: 2 }}
+              sx={{
+                mt: { xs: 2, sm: 2.5 },
+                width: { xs: "100%", sm: "auto" },
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
-              <PrimaryButton
-                content={btncontent}
-                variant="gold"
-                btnpadding="14px 28px"
-                fontsize={15}
-                to="/contact"
-              />
-              {secondaryBtnContent && (
+              <Box sx={{ width: { xs: "100%", sm: "auto" } }}>
                 <PrimaryButton
-                  content={secondaryBtnContent}
-                  variant="outlined"
-                  btnpadding="14px 28px"
+                  content={btncontent}
+                  variant="gold"
+                  btnpadding="13px 26px"
                   fontsize={15}
-                  to="/before&After"
-                  onClick={() => {}}
+                  btnwidth="100%"
+                  to="/contact"
                 />
+              </Box>
+              {secondaryBtnContent && (
+                <Box sx={{ width: { xs: "100%", sm: "auto" } }}>
+                  <PrimaryButton
+                    content={secondaryBtnContent}
+                    variant="outlined-white"
+                    btnpadding="13px 26px"
+                    fontsize={15}
+                    btnwidth="100%"
+                    to="/before-after"
+                    onClick={() => {}}
+                  />
+                </Box>
               )}
             </Stack>
           )}
+
+          {/* Quick Trust Credentials for Home and Landing Hero */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: alignItems === "start" ? "flex-start" : "center",
+              alignItems: "center",
+              gap: { xs: 1.5, sm: 2.5 },
+              mt: { xs: 2.5, sm: 3 },
+              pt: { xs: 2, sm: 2.5 },
+              borderTop: "1px solid rgba(255, 255, 255, 0.14)",
+              color: "rgba(255, 255, 255, 0.85)",
+              fontSize: { xs: "12px", sm: "13px" },
+              fontWeight: 500,
+              width: "100%",
+            }}
+          >
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
+              <span style={{ color: "#dfba5a" }}>★ 5.0</span>
+              <span><strong>Google Rating</strong></span>
+            </Box>
+            <span style={{ opacity: 0.4 }}>•</span>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
+              <span>🛡️ <strong>Licensed &amp; Insured</strong></span>
+            </Box>
+            <span style={{ opacity: 0.4 }}>•</span>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
+              <span>📍 <strong>Langley Twp &amp; Fraser Valley</strong></span>
+            </Box>
+          </Box>
         </Box>
       </Container>
     </Box>

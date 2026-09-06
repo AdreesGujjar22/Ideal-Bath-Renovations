@@ -26,14 +26,14 @@ const CareCard: React.FC<CareCardProps> = ({ img, title, duration }) => {
                 />
             </Box>
             <Stack alignItems="center" >
-                <Typography variant="h1" sx={{
+                <Typography component="h3" sx={{
                     fontSize: "16px",
                     fontWeight: 700,
                     fontFamily: "sans-serif"
                 }}>
                     {title}
                 </Typography>
-                <Typography variant="h1" sx={{
+                <Typography component="p" sx={{
                     fontSize: "16px",
                     py: "30px",
                     fontWeight: 300,

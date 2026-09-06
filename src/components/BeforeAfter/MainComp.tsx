@@ -3,7 +3,7 @@ import { Box, Typography, Container, Tabs, Tab } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { beforeAfterData } from "../../data/ImagesData";
 import PrimaryButton from "../UI/PrimaryButton";
-import { Sparkles, CheckCircle2 } from "lucide-react";
+import { Sparkles, CheckCircle2, MapPin, Clock } from "lucide-react";
 
 const categories = ["All Projects", "Tub-to-Shower", "Master Ensuite", "Walk-In Shower", "Custom Vanity", "Powder Room"];
 
@@ -139,9 +139,13 @@ const MainComp: React.FC = () => {
                         borderRadius: "20px",
                         fontSize: "11.5px",
                         fontWeight: 600,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 0.6,
                       }}
                     >
-                      ⏱ {itm.duration}
+                      <Clock size={12} color="#dfba5a" />
+                      <span>{itm.duration}</span>
                     </Box>
                   )}
                   {itm.category && (
@@ -180,9 +184,12 @@ const MainComp: React.FC = () => {
                     </Typography>
 
                     {itm.location && (
-                      <Typography sx={{ fontSize: "12.5px", color: "#64748b", mb: 1.5 }}>
-                        📍 {itm.location}
-                      </Typography>
+                      <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, mb: 1.5 }}>
+                        <MapPin size={13} color="#c29b38" />
+                        <Typography sx={{ fontSize: "12.5px", color: "#64748b" }}>
+                          {itm.location}
+                        </Typography>
+                      </Box>
                     )}
 
                     {itm.details && (
@@ -204,7 +211,7 @@ const MainComp: React.FC = () => {
                       variant="gold"
                       btnpadding="6px 14px"
                       fontsize={12}
-                      to="/contact"
+                      to={`/contact?service=${encodeURIComponent(itm.category || itm.content)}`}
                     />
                   </Box>
                 </Box>

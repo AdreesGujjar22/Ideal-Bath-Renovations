@@ -1,0 +1,58 @@
+# Ideal Bath Renovations - Comprehensive Knowledgebase
+
+> Complete technical, service, and architectural documentation for Ideal Bath Renovations, Langley Township, BC.
+
+## 1. Business Overview
+- **Company Name:** Ideal Bath Renovations Ltd.
+- **Brand Name:** Ideal Bath Renovations
+- **Physical Headquarters:** 20819 78B Avenue, Langley Twp, BC V2Y 0A1, Canada
+- **Direct Phone:** +1-672-273-0434
+- **Email:** info@idealbathrenovations.ca
+- **Website:** https://idealbathrenovations.ca
+- **Google Maps Profile:** https://maps.app.goo.gl/AyGKysqniA1hfoGJA
+- **Operating Hours:** Monday through Sunday, 24/7 Phone Lines & Scheduling
+- **Geographical Coordinates:** 49.1453° N, 122.6586° W
+- **Service Territory:** Langley Township, Langley City, Surrey, South Surrey, White Rock, Abbotsford, Maple Ridge, Mission, Chilliwack, and the greater Fraser Valley, British Columbia, Canada.
+
+## 2. Technical Specializations & Workmanship Standards
+- **Schluter® Certified Waterproofing:** Every shower and tub surround is installed with continuous Schluter-KERDI / KERDI-BOARD waterproofing membranes, integrated curb transitions, and pre-sloped pans with 24-hour standing water flood testing.
+- **Plumbing & Electrical Compliance:** Red Seal licensed plumbing for drain relocations, thermostatic valves, pressure-balanced shower controls, and certified electrical for GFCI circuits, LED accent lighting, and radiant floor warming.
+- **Curbless Linear Drains:** Barrier-free shower entries using Schluter-KERDI-LINE stainless steel linear drains and porcelain tile envelopes, designed for seamless transitions and ADA/aging-in-place compliance.
+- **In-Floor Electric Heating:** Schluter® DITRA-HEAT uncoupling membrane with integrated electric heating cables and programmable Wi-Fi thermostats for moisture-resilient subfloor isolation and thermal efficiency.
+- **Custom Glass & Enclosures:** 10mm to 12mm heavy tempered frameless glass panels, sliding barn-door sliders, and custom matte black, brushed nickel, brushed gold, and chrome hardware.
+
+## 3. Detailed Service Directory
+1. **Full-Service Master Bathroom Remodeling (`/services/bathroom-remodeling`):**
+   - End-to-end bathroom redesign, demolition, framing modifications, plumbing rough-in, electrical, drywall, tile, custom vanity, mirror, lighting, and fixture installation.
+2. **Tub-to-Shower Conversions (`/services/shower-remodeling`):**
+   - Replacement of standard 60x30 or 60x32 alcove acrylic bathtubs with custom walk-in tiled showers, frameless sliding glass, rainfall showerheads, and recessed storage niches.
+3. **Walk-In Showers & Barrier-Free Suites (`/services/shower-remodeling`):**
+   - Zero-threshold curb design with integrated bench seating, grab bar reinforcement, handheld wand fixtures, and anti-slip mosaic tile floors.
+4. **Bathroom Tile & Stone Installation (`/services/bathroom-tile-installation`):**
+   - Installation of large-format porcelain (12x24, 24x48), natural marble, chevron/herringbone patterns, stacked vertical subway tile, and epoxy or stain-resistant polymer grout.
+5. **Custom Bathroom Vanities & Cabinetry (`/services/bathroom-vanity-installation`):**
+   - Single and double sink vanities, engineered quartz tops with undermount ceramic basins, soft-close Blum hinges, pull-out organizers, and custom plumbing cutouts.
+6. **Bathtub Replacement & Freestanding Tubs (`/services/bathtub-replacement`):**
+   - High-gloss acrylic freestanding soaker tubs, alcove drop-in tubs, floor-mounted faucets, and integrated overflow systems.
+7. **Bathroom Repairs, Restorations & Upgrades (`/services/bathroom-repair`):**
+   - Water damage restoration, subfloor reconstruction, shower pan leak resolution, fixture modernization, and ventilation exhaust fan upgrades.
+
+## 4. Service Areas & Neighborhood Breakdowns
+- **Langley Township (`/service-areas/langley-twp`):**
+  - Neighborhoods: Willoughby Heights, Walnut Grove, Fort Langley, Murrayville, Brookswood, Aldergrove, Salmon River, Glen Valley.
+- **Surrey, BC (`/service-areas/surrey`):**
+  - Neighborhoods: South Surrey, Morgan Creek, Grandview Heights, Fleetwood, Clayton Heights, Cloverdale, Guildford, Newton.
+- **Abbotsford, BC (`/service-areas/abbotsford`):**
+  - Neighborhoods: East Abbotsford, Auguston, Matsqui, Clearbrook, Sumas Mountain, Whatcom, Townline Hill.
+- **Fraser Valley (`/service-areas/fraser-valley`):**
+  - Municipalities: White Rock, Maple Ridge, Mission, Chilliwack, Pitt Meadows.
+
+## 5. Frequently Asked Questions (FAQ)
+- **Q: How long does a full bathroom renovation take?**
+  - A: A standard full bathroom remodel or tub-to-shower conversion typically takes between 7 to 14 business days, depending on tile customization and vanity fabrication.
+- **Q: Are estimates free?**
+  - A: Yes, Ideal Bath Renovations provides 100% free, detailed in-home written estimates with itemized material and labor specifications.
+- **Q: What warranty is provided?**
+  - A: We provide a comprehensive multi-year craftsmanship warranty alongside manufacturer warranties on Schluter waterproofing systems (up to 10-25 years), vanity cabinetry, and plumbing fixtures.
+- **Q: How can I schedule an estimate?**
+  - A: Call (672) 273-0434 or visit https://idealbathrenovations.ca/contact.

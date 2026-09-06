@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { Star, Quote, CheckCircle } from "lucide-react";
+import { Star, Quote, CheckCircle, MapPin } from "lucide-react";
 
 const reviews = [
   {
@@ -13,7 +13,7 @@ const reviews = [
     stars: 5,
     date: "Verified Google Review",
     comment:
-      "Ideal Bath Renovations transformed our outdated 1990s ensuite into a five-star spa sanctuary! The 3D CAD design helped us visualize the curbless shower and heated tile floors before work started. The crew arrived promptly at 7:30 AM every morning, kept the dust completely contained with HEPA filters, and finished on the exact day promised. Zero leaks, exquisite craftsmanship, and honest pricing!",
+      "Ideal Bath Renovations transformed our outdated 1990s ensuite into a five-star spa sanctuary! The 3D CAD design helped us visualize the curbless shower and heated tile floors before work started. The crew arrived promptly on schedule every morning, kept the dust completely contained with HEPA filters, and finished on the exact day promised. Zero leaks, exquisite craftsmanship, and honest pricing!",
   },
   {
     name: "Robert S.",
@@ -113,9 +113,12 @@ const Feedback: React.FC = () => {
                   <Typography sx={{ fontWeight: 700, fontSize: "15px", color: "#0f172a" }}>
                     {rev.name}
                   </Typography>
-                  <Typography sx={{ fontSize: "12.5px", color: "#64748b" }}>
-                    📍 {rev.location}
-                  </Typography>
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, mt: 0.2 }}>
+                    <MapPin size={13} color="#64748b" />
+                    <Typography sx={{ fontSize: "12.5px", color: "#64748b" }}>
+                      {rev.location}
+                    </Typography>
+                  </Box>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mt: 0.5 }}>
                     <CheckCircle size={13} color="#c29b38" />
                     <Typography sx={{ fontSize: "11.5px", color: "#c29b38", fontWeight: 600 }}>

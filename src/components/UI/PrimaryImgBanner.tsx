@@ -25,7 +25,7 @@ const PrimaryImgBanner: React.FC<PrimaryImgBannerProps> = ({ img, content, width
                     }}
                     loading="lazy">
                 </Card>
-                <Typography variant="h1" sx={{
+                <Typography component="p" sx={{
                     fontSize: "14px",
                     fontWeight: 300,
                     py: "10px"

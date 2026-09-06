@@ -1,0 +1,8 @@
+# Robots.txt for Ideal Bath Renovations
+# https://idealbathrenovations.ca/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://idealbathrenovations.ca/sitemap.xml

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import PrimaryButton from "../UI/PrimaryButton";
 import { Box, Chip } from "@mui/material";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Clock } from "lucide-react";
 
 interface CardProps {
   id?: string;
@@ -25,6 +25,36 @@ interface CardProps {
   bottomLeftRadiusbrd?: number;
 }
 
+const getSlugForTitle = (t: string): string => {
+  const norm = t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  const serviceSlugs = [
+    "bathroom-remodeling",
+    "bathroom-renovation",
+    "bathroom-repair",
+    "bathroom-replacement",
+    "bathroom-installation",
+    "bathroom-design",
+    "bathroom-upgrades",
+    "bathroom-restoration",
+    "shower-remodeling",
+    "bathtub-replacement",
+    "bathroom-tile-installation",
+    "bathroom-vanity-installation",
+  ];
+  if (serviceSlugs.includes(norm)) return norm;
+  if (norm.includes("shower") || norm.includes("tub-to-shower")) return "shower-remodeling";
+  if (norm.includes("bathtub") || norm.includes("tub")) return "bathtub-replacement";
+  if (norm.includes("tile") || norm.includes("floor")) return "bathroom-tile-installation";
+  if (norm.includes("vanity") || norm.includes("cabinet")) return "bathroom-vanity-installation";
+  if (norm.includes("design") || norm.includes("plan")) return "bathroom-design";
+  if (norm.includes("repair") || norm.includes("leak")) return "bathroom-repair";
+  if (norm.includes("install")) return "bathroom-installation";
+  if (norm.includes("upgrade")) return "bathroom-upgrades";
+  if (norm.includes("restore") || norm.includes("refinish")) return "bathroom-restoration";
+  if (norm.includes("replace")) return "bathroom-replacement";
+  return "bathroom-remodeling";
+};
+
 const ServiceCard: React.FC<CardProps> = ({
   category,
   img,
@@ -33,9 +63,11 @@ const ServiceCard: React.FC<CardProps> = ({
   duration,
   about,
   features,
-  btncontent,
+  btncontent = "View Details",
   popular,
 }) => {
+  const serviceSlug = getSlugForTitle(title);
+
   return (
     <Card
       sx={{
@@ -144,19 +176,28 @@ const ServiceCard: React.FC<CardProps> = ({
               </Typography>
             )}
             {duration && (
-              <Typography
+              <Box
                 sx={{
-                  fontSize: "12px",
-                  color: "#64748b",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.6,
                   backgroundColor: "#f1f5f9",
                   px: 1,
-                  py: 0.2,
+                  py: 0.3,
                   borderRadius: "4px",
-                  fontWeight: 500,
                 }}
               >
-                ⏱ {duration}
-              </Typography>
+                <Clock size={12} color="#64748b" />
+                <Typography
+                  sx={{
+                    fontSize: "12px",
+                    color: "#64748b",
+                    fontWeight: 500,
+                  }}
+                >
+                  {duration}
+                </Typography>
+              </Box>
             )}
           </Box>
 
@@ -187,8 +228,23 @@ const ServiceCard: React.FC<CardProps> = ({
         </CardContent>
       </Box>
 
-      <CardActions sx={{ p: 3, pt: 0, justifyContent: "stretch" }}>
-        <PrimaryButton content={btncontent} btnwidth="100%" to="/contact" />
+      <CardActions sx={{ p: 3, pt: 0, display: "flex", gap: 1.5 }}>
+        <PrimaryButton
+          content={btncontent || "View Details"}
+          variant="gold"
+          btnwidth="50%"
+          btnpadding="10px 0"
+          fontsize={13}
+          to={`/services/${serviceSlug}`}
+        />
+        <PrimaryButton
+          content="Get Quote"
+          variant="outlined"
+          btnwidth="50%"
+          btnpadding="10px 0"
+          fontsize={13}
+          to={`/contact?service=${encodeURIComponent(title)}`}
+        />
       </CardActions>
     </Card>
   );

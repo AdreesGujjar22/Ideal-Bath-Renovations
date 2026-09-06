@@ -94,11 +94,11 @@ const PrimaryBookCard: React.FC = () => {
                 to="/contact"
               />
               <PrimaryButton
-                content="Explore All 19 Services"
+                content="Explore All 12 Services"
                 variant="outlined"
                 btnpadding="14px 28px"
                 fontsize={15}
-                to="/treatments"
+                to="/services"
               />
             </Stack>
 

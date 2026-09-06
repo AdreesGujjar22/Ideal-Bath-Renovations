@@ -8,7 +8,7 @@ interface ButtonProps {
   btnpadding?: string;
   btnwidth?: string;
   onClick?: () => void;
-  variant?: "contained" | "outlined" | "gold";
+  variant?: "contained" | "outlined" | "gold" | "outlined-white";
   to?: string;
 }
 
@@ -35,6 +35,37 @@ const PrimaryButton: React.FC<ButtonProps> = ({
 
   const isGold = variant === "gold";
   const isOutlined = variant === "outlined";
+  const isOutlinedWhite = variant === "outlined-white";
+
+  let bgColor = "#1e293b";
+  let textColor = "#ffffff";
+  let borderColor = "none";
+  let hoverBg = "#0f172a";
+  let hoverText = "#ffffff";
+  let hoverBorder = "none";
+
+  if (isGold) {
+    bgColor = "#c29b38";
+    textColor = "#ffffff";
+    borderColor = "1.5px solid #c29b38";
+    hoverBg = "#a8832a";
+    hoverText = "#ffffff";
+    hoverBorder = "1.5px solid #a8832a";
+  } else if (isOutlinedWhite) {
+    bgColor = "rgba(255, 255, 255, 0.08)";
+    textColor = "#ffffff";
+    borderColor = "1.5px solid #ffffff";
+    hoverBg = "#ffffff";
+    hoverText = "#0f172a";
+    hoverBorder = "1.5px solid #ffffff";
+  } else if (isOutlined) {
+    bgColor = "transparent";
+    textColor = "#1e293b";
+    borderColor = "1.5px solid #cbd5e1";
+    hoverBg = "#f8fafc";
+    hoverText = "#0f172a";
+    hoverBorder = "1.5px solid #94a3b8";
+  }
 
   return (
     <Button
@@ -46,17 +77,20 @@ const PrimaryButton: React.FC<ButtonProps> = ({
         letterSpacing: "0.02em",
         fontSize: fontsize,
         textTransform: "none",
-        backgroundColor: isGold ? "#c29b38" : isOutlined ? "transparent" : "#1e293b",
-        color: isOutlined ? "#1e293b" : "#ffffff",
-        border: isOutlined ? "1.5px solid #1e293b" : isGold ? "1.5px solid #c29b38" : "none",
+        backgroundColor: bgColor,
+        color: textColor,
+        border: borderColor,
         lineHeight: 1.4,
         borderRadius: "8px",
-        boxShadow: isOutlined ? "none" : "0 2px 8px rgba(0,0,0,0.08)",
+        backdropFilter: isOutlinedWhite ? "blur(6px)" : "none",
+        boxShadow: isOutlined || isOutlinedWhite ? "none" : "0 2px 8px rgba(0,0,0,0.08)",
         transition: "all 0.2s ease-in-out",
         ":hover": {
-          backgroundColor: isGold ? "#a8832a" : isOutlined ? "#f1f5f9" : "#0f172a",
+          backgroundColor: hoverBg,
+          color: hoverText,
+          border: hoverBorder,
           transform: "translateY(-1px)",
-          boxShadow: isOutlined ? "none" : "0 4px 14px rgba(0,0,0,0.15)",
+          boxShadow: isOutlinedWhite ? "0 4px 16px rgba(0,0,0,0.25)" : isOutlined ? "none" : "0 4px 14px rgba(0,0,0,0.15)",
         },
         width: btnwidth,
         fontFamily: "'Plus Jakarta Sans', sans-serif",

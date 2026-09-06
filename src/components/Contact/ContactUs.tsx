@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Box, Typography, Stack, Container, Select, MenuItem, Alert } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import PrimaryInputField from "../UI/PrimaryInputField";
 import emailService from "../../utils/emailService";
-import { MapPin, Phone, Mail, Clock, ExternalLink, CheckCircle2, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ExternalLink, CheckCircle2, Send, Sparkles } from "lucide-react";
 
 interface FormData {
   firstName: string;
@@ -16,26 +17,28 @@ interface FormData {
 }
 
 const serviceList = [
-  "Full-Service Bathroom Remodeling",
-  "Bathroom Design & Space Planning",
-  "Tub-to-Shower Conversions",
-  "Walk-In & Curbless Shower Installation",
-  "Bathtub Replacement & Refinishing",
-  "Steam Shower & Sauna Installation",
-  "Wall & Floor Tiling",
-  "Custom Cabinetry & Vanity Installation",
-  "Plumbing Fixture & Pipe Upgrades",
-  "Smart Toilet & Bidet Installation",
-  "Radiant In-Floor Heating",
-  "Electrical & Accent Lighting Installation",
-  "Ventilation & Exhaust Fan Upgrades",
-  "Waterproofing & Vapor Barrier Systems",
-  "ADA Accessibility & Aging-In-Place Modifications",
-  "Powder Room Renovations",
-  "One-Day Refinishing & Liner Systems",
+  "Bathroom Remodeling",
+  "Bathroom Renovation",
+  "Bathroom Repair",
+  "Bathroom Replacement",
+  "Bathroom Installation",
+  "Bathroom Design",
+  "Bathroom Upgrades",
+  "Bathroom Restoration",
+  "Shower Remodeling",
+  "Bathtub Replacement",
+  "Bathroom Tile Installation",
+  "Bathroom Vanity Installation",
+  "Tub-to-Shower Conversion",
+  "Walk-In & Curbless Shower",
+  "ADA Accessibility & Safety",
+  "General Inquiry / Custom Project",
 ];
 
 const ContactUs: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const requestedService = searchParams.get("service") || "";
+
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -45,6 +48,20 @@ const ContactUs: React.FC = () => {
     service: serviceList[0],
     description: "",
   });
+
+  useEffect(() => {
+    if (requestedService) {
+      // Find closest match or exact match
+      const matched = serviceList.find(
+        (s) => s.toLowerCase() === requestedService.toLowerCase() || requestedService.toLowerCase().includes(s.toLowerCase())
+      );
+      if (matched) {
+        setFormData((prev) => ({ ...prev, service: matched }));
+      } else {
+        setFormData((prev) => ({ ...prev, service: requestedService }));
+      }
+    }
+  }, [requestedService]);
 
   const [submitted, setSubmitted] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
@@ -107,9 +124,29 @@ const ContactUs: React.FC = () => {
               >
                 Let's Discuss Your Bathroom Vision
               </Typography>
-              <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 4 }}>
+              <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
                 Fill out the project form below. Our lead estimator in Langley will get in touch within 24 hours to schedule your free 3D design consultation.
               </Typography>
+
+              {requestedService && (
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1,
+                    backgroundColor: "rgba(194,155,56,0.12)",
+                    border: "1px solid rgba(194,155,56,0.3)",
+                    p: 1.5,
+                    borderRadius: "8px",
+                    mb: 3,
+                  }}
+                >
+                  <Sparkles size={16} color="#c29b38" />
+                  <Typography sx={{ fontSize: "13px", color: "#0f172a", fontWeight: 600 }}>
+                    Inquiring About: <b>{requestedService}</b>
+                  </Typography>
+                </Box>
+              )}
 
               {submitted ? (
                 <Alert
@@ -284,10 +321,10 @@ const ContactUs: React.FC = () => {
                       </Typography>
                       <Typography
                         component="a"
-                        href="tel:6045398822"
+                        href="tel:6722730434"
                         sx={{ fontSize: "14px", color: "#dfba5a", textDecoration: "none", fontWeight: 700 }}
                       >
-                        (604) 539-8822
+                        (672) 273-0434
                       </Typography>
                     </Box>
                   </Box>
@@ -298,8 +335,12 @@ const ContactUs: React.FC = () => {
                       <Typography sx={{ fontWeight: 700, fontSize: "14px" }}>
                         Estimates & Plans
                       </Typography>
-                      <Typography sx={{ fontSize: "13.5px", color: "#cbd5e1" }}>
-                        estimates@idealbathrenovations.ca
+                      <Typography
+                        component="a"
+                        href="mailto:info@idealbathrenovations.ca"
+                        sx={{ fontSize: "13.5px", color: "#cbd5e1", textDecoration: "none", "&:hover": { color: "#dfba5a" } }}
+                      >
+                        info@idealbathrenovations.ca
                       </Typography>
                     </Box>
                   </Box>
@@ -311,8 +352,8 @@ const ContactUs: React.FC = () => {
                         Operating Hours
                       </Typography>
                       <Typography sx={{ fontSize: "13px", color: "#cbd5e1" }}>
-                        Mon - Sat: 7:30 AM - 6:00 PM <br />
-                        Sunday: By Appointment
+                        Open 24 Hours / 7 Days a Week <br />
+                        24/7 Phone Consultations & Support
                       </Typography>
                     </Box>
                   </Box>
@@ -321,9 +362,12 @@ const ContactUs: React.FC = () => {
 
               {/* Service Areas Badge */}
               <Box sx={{ p: 3.5, backgroundColor: "#f8fafc", borderRadius: "14px", border: "1px solid #e2e8f0" }}>
-                <Typography sx={{ fontWeight: 700, fontSize: "14px", color: "#0f172a", mb: 1.5 }}>
-                  📍 Service Coverage Areas
-                </Typography>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+                  <MapPin size={16} color="#c29b38" />
+                  <Typography sx={{ fontWeight: 700, fontSize: "14px", color: "#0f172a" }}>
+                    Service Coverage Areas
+                  </Typography>
+                </Box>
                 <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.7 }}>
                   Langley Township (Willoughby, Walnut Grove, Fort Langley, Murrayville, Brookswood, Aldergrove), Surrey, South Surrey, White Rock, Abbotsford, and Maple Ridge.
                 </Typography>

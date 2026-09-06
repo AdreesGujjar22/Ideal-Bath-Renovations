@@ -17,7 +17,7 @@ const Banner: React.FC = () => {
         alignItems="center"
         btn={true}
         btncontent="Request Free 3D Estimate"
-        secondaryBtnContent="Call (604) 539-8822"
+        secondaryBtnContent="Call (672) 273-0434"
       />
     </Box>
   );

@@ -16,7 +16,7 @@ const ImgBanner: React.FC = () => (
       alignItems="center"
       btn={true}
       btncontent="Request Free In-Home Estimate"
-      secondaryBtnContent="Call (604) 539-8822"
+      secondaryBtnContent="Call (672) 273-0434"
     />
   </Box>
 );

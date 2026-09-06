@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Hub & Core Information Pages -->
+  <url>
+    <loc>https://idealbathrenovations.ca/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/about</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/before-after</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/contact</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 12 Core Renovation Services -->
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-remodeling</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-renovation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/shower-remodeling</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathtub-replacement</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-tile-installation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-vanity-installation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-repair</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-replacement</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-installation</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-design</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-upgrades</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/services/bathroom-restoration</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Service Areas Hub & Regional Pages -->
+  <url>
+    <loc>https://idealbathrenovations.ca/service-areas</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/service-areas/langley-twp</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/service-areas/surrey</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/service-areas/abbotsford</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://idealbathrenovations.ca/service-areas/fraser-valley</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+</urlset>

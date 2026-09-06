@@ -13,7 +13,7 @@ const Header: React.FC = () => (
       "✔ Custom linear drains, quartz threshold sills, and floating benches",
     ]}
     content4={[
-      "Starting from $6,500 CAD (Complete Materials & Labor)",
+      "Complimentary In-Home Consultation & 3D Laser Measurement",
       "Includes 5-Year Workmanship Warranty & Permits",
     ]}
   />

@@ -74,13 +74,13 @@ const AboutBanner: React.FC = () => {
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                   <Phone size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "14px", color: "#1e293b", fontWeight: 600 }}>
-                    (604) 539-8822
+                    (672) 273-0434
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                   <Clock size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "13.5px", color: "#64748b" }}>
-                    Monday to Saturday: 7:30 AM - 6:00 PM | Sunday by Appointment
+                    Open 24 Hours / 7 Days a Week (24/7 Consultation & Support)
                   </Typography>
                 </Box>
               </Box>

@@ -1,33 +1,134 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
 import { ThemeProvider } from "@mui/material";
-import theme from "../src/styles/theme";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Treatments from "./pages/Treatments";
-import RfMicroNeedling from "./pages/RfMicroNeedling";
-import ResurfacingTreatment from "./pages/ResurfacingTreatment";
-import NanoNeedling from "./pages/NanoNeedling";
-import BeforeAfter from "./pages/BeforeAfter";
-import Contact from "./pages/Contact";
+import theme from "./styles/theme";
+import PageLoader from "./components/PageLoader";
+import PageWrapper from "./components/PageWrapper";
+import ScrollToTop from "./components/ScrollToTop";
+
+// Lazy load all page routes
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const ServicesHub = lazy(() => import("./pages/ServicesHub"));
+const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
+const ServiceAreasHub = lazy(() => import("./pages/ServiceAreasHub"));
+const ServiceAreaDetail = lazy(() => import("./pages/ServiceAreaDetail"));
+const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
+const Contact = lazy(() => import("./pages/Contact"));
+const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <ScrollToTop />
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/treatments" element={<Treatments />}></Route>
-          <Route path="/rfMicroNeedling" element={<RfMicroNeedling />}></Route>
-          <Route path="/resurfacingTreatment" element={<ResurfacingTreatment />}></Route>
-          <Route path="/nanoneedling" element={<NanoNeedling />}></Route>
-          <Route path="/before&After" element={<BeforeAfter />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
+        <Suspense fallback={<PageLoader message="Loading page..." />}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <PageWrapper title="Home Showcase">
+                  <Home />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <PageWrapper title="About Our Craftsmen">
+                  <About />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/services"
+              element={
+                <PageWrapper title="Bathroom Services">
+                  <ServicesHub />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/services/:slug"
+              element={
+                <PageWrapper title="Service Specifications">
+                  <ServiceDetail />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/service-areas"
+              element={
+                <PageWrapper title="Service Coverage">
+                  <ServiceAreasHub />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/service-areas/:slug"
+              element={
+                <PageWrapper title="Regional Coverage">
+                  <ServiceAreaDetail />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/before-after"
+              element={
+                <PageWrapper title="Transformation Gallery">
+                  <BeforeAfter />
+                </PageWrapper>
+              }
+            />
+            <Route path="/before&After" element={<Navigate to="/before-after" replace />} />
+            <Route
+              path="/contact"
+              element={
+                <PageWrapper title="Free Consultation">
+                  <Contact />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/sitemap"
+              element={
+                <PageWrapper title="Directory & Sitemap">
+                  <SitemapPage />
+                </PageWrapper>
+              }
+            />
+            <Route
+              path="/sitemap.html"
+              element={
+                <PageWrapper title="Directory & Sitemap">
+                  <SitemapPage />
+                </PageWrapper>
+              }
+            />
+
+            {/* SEO Landing Page Slug Aliases */}
+            <Route path="/bathroom-renovations-langley" element={<Navigate to="/service-areas/langley-twp" replace />} />
+            <Route path="/service-areas/langley-township" element={<Navigate to="/service-areas/langley-twp" replace />} />
+            <Route path="/service-areas/langley" element={<Navigate to="/service-areas/langley-twp" replace />} />
+            <Route path="/service-areas/surrey-bc" element={<Navigate to="/service-areas/surrey" replace />} />
+            <Route path="/service-areas/abbotsford-bc" element={<Navigate to="/service-areas/abbotsford" replace />} />
+            <Route path="/tub-to-shower-conversion" element={<Navigate to="/services/shower-remodeling" replace />} />
+            <Route path="/walk-in-showers" element={<Navigate to="/services/shower-remodeling" replace />} />
+            <Route path="/custom-vanities" element={<Navigate to="/services/bathroom-vanity-installation" replace />} />
+
+            {/* Legacy skin-care routes redirected to modern renovation equivalents */}
+            <Route path="/treatments" element={<Navigate to="/services" replace />} />
+            <Route path="/rfMicroNeedling" element={<Navigate to="/services/shower-remodeling" replace />} />
+            <Route path="/resurfacingTreatment" element={<Navigate to="/services/bathtub-replacement" replace />} />
+            <Route path="/nanoneedling" element={<Navigate to="/services/bathroom-upgrades" replace />} />
+
+            {/* Catch-all fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
         <Footer />
       </Router>
     </ThemeProvider>
@@ -35,3 +136,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+

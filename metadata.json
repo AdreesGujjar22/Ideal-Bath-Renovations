@@ -1,8 +1,9 @@
 {
   "name": "Ideal Bath Renovations",
-  "description": "Premier bathroom remodeling in Langley Twp, BC. Specializing in full-service renovations, tub-to-shower conversions, curbless walk-in showers, custom vanities, steam showers, and luxury tile work.",
+  "description": "Looking for a Bathroom Remodeler in Langley, BC? Ideal Bath Renovations provides quality bath renovations, shower upgrades, and complete bathroom remodeling.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
   ]
 }
+

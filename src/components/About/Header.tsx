@@ -69,7 +69,7 @@ const Header: React.FC = () => {
 
               <Box sx={{ pt: 1, display: "flex", gap: 2 }}>
                 <PrimaryButton content="Request In-Home Consultation" variant="gold" to="/contact" />
-                <PrimaryButton content="View Before & Afters" variant="outlined" to="/before&After" />
+                <PrimaryButton content="View Before & Afters" variant="outlined" to="/before-after" />
               </Box>
             </Box>
           </Grid>

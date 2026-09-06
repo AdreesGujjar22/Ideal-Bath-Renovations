@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography, Box } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { CheckCircle2, XCircle } from "lucide-react";
+import { CheckCircle2, XCircle, Sparkles, AlertTriangle } from "lucide-react";
 
 const idealAdvantages = [
   "Custom hand-laid porcelain or natural stone tile tailored to your aesthetic",
@@ -54,9 +54,12 @@ const Features: React.FC = () => {
                 boxShadow: "0 8px 24px rgba(194,155,56,0.08)",
               }}
             >
-              <Typography sx={{ fontWeight: 800, fontSize: "18px", color: "#0f172a", mb: 2.5 }}>
-                ✨ Ideal Bath Custom Tile Conversions
-              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2.5 }}>
+                <Sparkles size={20} color="#c29b38" />
+                <Typography sx={{ fontWeight: 800, fontSize: "18px", color: "#0f172a" }}>
+                  Ideal Bath Custom Tile Conversions
+                </Typography>
+              </Box>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {idealAdvantages.map((adv, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
@@ -81,9 +84,12 @@ const Features: React.FC = () => {
                 border: "1px solid #e2e8f0",
               }}
             >
-              <Typography sx={{ fontWeight: 800, fontSize: "18px", color: "#64748b", mb: 2.5 }}>
-                ⚠️ Generic Acrylic / One-Day Liners
-              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2.5 }}>
+                <AlertTriangle size={20} color="#dc2626" />
+                <Typography sx={{ fontWeight: 800, fontSize: "18px", color: "#64748b" }}>
+                  Generic Acrylic / One-Day Liners
+                </Typography>
+              </Box>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {acrylicIssues.map((issue, idx) => (
                   <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>

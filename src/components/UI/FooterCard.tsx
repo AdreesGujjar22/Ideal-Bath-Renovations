@@ -34,21 +34,21 @@ const FooterCard: React.FC = () => {
       <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
         <Phone size={18} color="#94a3b8" style={{ flexShrink: 0 }} />
         <Typography sx={{ fontSize: "14px", color: "#cbd5e1" }}>
-          (604) 539-8822
+          (672) 273-0434
         </Typography>
       </Box>
 
       <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
         <Mail size={18} color="#94a3b8" style={{ flexShrink: 0 }} />
         <Typography sx={{ fontSize: "14px", color: "#cbd5e1" }}>
-          estimates@idealbathrenovations.ca
+          info@idealbathrenovations.ca
         </Typography>
       </Box>
 
       <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
         <Clock size={18} color="#94a3b8" style={{ flexShrink: 0, marginTop: "2px" }} />
         <Typography sx={{ fontSize: "13px", color: "#94a3b8" }}>
-          Mon – Sat: 7:30 AM – 6:00 PM | Sun: By Appt
+          Open 24 Hours / 7 Days a Week
         </Typography>
       </Box>
     </Box>

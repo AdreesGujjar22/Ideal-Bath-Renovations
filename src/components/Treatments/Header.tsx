@@ -13,7 +13,7 @@ const Header: React.FC = () => {
       fontsizeSecondary={17}
       btn={true}
       btncontent="Get Free 3D Estimate"
-      secondaryBtnContent="Call (604) 539-8822"
+      secondaryBtnContent="Call (672) 273-0434"
     />
   );
 };

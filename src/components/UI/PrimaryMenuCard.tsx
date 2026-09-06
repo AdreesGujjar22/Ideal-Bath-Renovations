@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Stack, Box, Chip } from "@mui/material";
 import PrimaryButton from "../UI/PrimaryButton";
+import { Clock } from "lucide-react";
 
 interface PrimaryMenuCardProps {
   name: string;
@@ -11,7 +12,38 @@ interface PrimaryMenuCardProps {
   learnMoreLink: string;
   tag?: string;
   features?: string[];
+  to?: string;
 }
+
+const getSlugForTitle = (t: string): string => {
+  const norm = t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  const serviceSlugs = [
+    "bathroom-remodeling",
+    "bathroom-renovation",
+    "bathroom-repair",
+    "bathroom-replacement",
+    "bathroom-installation",
+    "bathroom-design",
+    "bathroom-upgrades",
+    "bathroom-restoration",
+    "shower-remodeling",
+    "bathtub-replacement",
+    "bathroom-tile-installation",
+    "bathroom-vanity-installation",
+  ];
+  if (serviceSlugs.includes(norm)) return norm;
+  if (norm.includes("shower") || norm.includes("tub-to-shower")) return "shower-remodeling";
+  if (norm.includes("bathtub") || norm.includes("tub")) return "bathtub-replacement";
+  if (norm.includes("tile") || norm.includes("floor")) return "bathroom-tile-installation";
+  if (norm.includes("vanity") || norm.includes("cabinet")) return "bathroom-vanity-installation";
+  if (norm.includes("design") || norm.includes("plan")) return "bathroom-design";
+  if (norm.includes("repair") || norm.includes("leak")) return "bathroom-repair";
+  if (norm.includes("install")) return "bathroom-installation";
+  if (norm.includes("upgrade")) return "bathroom-upgrades";
+  if (norm.includes("restore") || norm.includes("refinish")) return "bathroom-restoration";
+  if (norm.includes("replace")) return "bathroom-replacement";
+  return "bathroom-remodeling";
+};
 
 const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
   name,
@@ -21,7 +53,11 @@ const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
   duration,
   learnMoreLink,
   tag,
+  to,
 }) => {
+  const serviceSlug = getSlugForTitle(name);
+  const targetLink = to || `/services/${serviceSlug}`;
+
   return (
     <Box
       sx={{
@@ -105,8 +141,11 @@ const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
         </Typography>
 
         <Box sx={{ display: "inline-block", mt: 1 }}>
-          <Typography
+          <Box
             sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 0.8,
               fontSize: "12px",
               fontWeight: 600,
               color: "#0f172a",
@@ -118,16 +157,19 @@ const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
               width: "fit-content",
             }}
           >
-            ⏱ Expected Timeline: {duration}
-          </Typography>
+            <Clock size={12} color="#c29b38" />
+            <span>Expected Timeline: {duration}</span>
+          </Box>
         </Box>
       </Stack>
 
-      <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid #f1f5f9", display: "flex", justifyContent: "flex-end" }}>
-        <PrimaryButton content={learnMoreLink} btnwidth="fit-content" to="/contact" variant="outlined" />
+      <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid #f1f5f9", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 1 }}>
+        <PrimaryButton content={learnMoreLink} btnwidth="fit-content" to={targetLink} variant="outlined" />
+        <PrimaryButton content="Book Consult" btnwidth="fit-content" to={`/contact?service=${encodeURIComponent(name)}`} variant="gold" />
       </Box>
     </Box>
   );
 };
 
 export default PrimaryMenuCard;
+

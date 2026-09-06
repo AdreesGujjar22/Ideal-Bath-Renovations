@@ -13,8 +13,8 @@ const Header: React.FC = () => (
       "✔ Full vapor-sealed ceiling & dual linear drainage",
     ]}
     content4={[
-      "From $8,500 CAD (Custom Walk-In Showers)",
-      "From $14,000 CAD (Full Steam Shower & Sauna System)",
+      "Complimentary In-Home Consultation & Fixed-Price Estimate",
+      "Schluter® Certified Waterproofing & 5-Year Warranty",
     ]}
   />
 );

@@ -8,7 +8,7 @@ export interface TreatmentData {
   tag?: string;
 }
 
-const MenuFacialsData: Array<TreatmentData> = [
+const MenuRemodelingData: Array<TreatmentData> = [
   {
     name: "Full-Service Master Bathroom Remodel",
     price: "$18,500 - $35,000+",
@@ -156,4 +156,10 @@ const MenuBodyData: Array<TreatmentData> = [
   },
 ];
 
-export { MenuFacialsData, MenuResurfacingData, MenuBodyData };
+export { 
+  MenuRemodelingData, 
+  MenuResurfacingData, 
+  MenuBodyData as MenuPlumbingWellnessData,
+  MenuRemodelingData as MenuFacialsData,
+  MenuBodyData 
+};
