@@ -111,4 +111,12 @@ const beforeAfterData: DataInterface[] = [
   },
 ];
 
-export { beforeAfterData };
+const resurfacingData = beforeAfterData.filter(
+  ({ category }) => category === "Walk-In Shower" || category === "Bathtub & Tile",
+);
+
+const microneedlingData = beforeAfterData.filter(
+  ({ category }) => category === "Tub-to-Shower",
+);
+
+export { beforeAfterData, microneedlingData, resurfacingData };
