@@ -1,3 +1,5 @@
+import { customVanityImg, tileSchluterImg, bathtubReplaceImg } from "../assets/images";
+
 export interface LocalProject {
   title: string;
   neighborhood: string;
@@ -77,7 +79,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     description:
       "Ideal Bath Renovations is proudly headquartered in Langley Township. From contemporary townhomes in Willoughby to sprawling heritage properties in Fort Langley and established family homes in Walnut Grove, our licensed and insured craftsmen deliver luxury renovations built to stand the test of time.",
     overviewText:
-      "Living in Langley Township means enjoying vibrant communities, modern amenities, and beautiful Pacific Northwest surroundings. Whether you want to replace an old builder-grade acrylic bathtub with a zero-threshold curbless shower, install radiant heated tile floors for chilly mornings, or build a custom double vanity with quartz countertops, our local team handles everything from municipal permits and plumbing to Schluter waterproofing and finishing touches.",
+      "Living in Langley Township means enjoying vibrant communities, modern amenities, and beautiful Pacific Northwest surroundings. Whether you want to replace an old builder-grade acrylic bathtub with a zero-threshold curbless shower, install an elegant freestanding soaking bathtub, or build a custom double vanity with quartz countertops, our local team handles everything from municipal permits and plumbing to Schluter waterproofing and finishing touches.",
     neighborhoods: [
       "Willoughby Heights",
       "Walnut Grove",
@@ -133,8 +135,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
         description:
           "Installed an elegant oval acrylic freestanding soaking tub with floor-mounted brass faucet and 24x48 large-format Italian porcelain wall tiles.",
         scope: "Freestanding Tub, Floor Warming, Large Format Tile, Custom Lighting",
-        image:
-          "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80",
+        image: bathtubReplaceImg,
       },
     ],
     localFaqs: [
@@ -247,8 +248,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
         description:
           "Installed a 72-inch floating walnut vanity with dual undermount sinks, LED backlit mirrors, and Schluter DITRA-HEAT heated floor system.",
         scope: "Custom Millwork, Wi-Fi Thermostat Floor Warming, Electrical Upgrades",
-        image:
-          "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
+        image: customVanityImg,
       },
     ],
     localFaqs: [
@@ -338,8 +338,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
         description:
           "Replaced an old acrylic drop-in tub with a deep porcelain alcove bathtub, subway tile surround with herringbone accent niche, and new quartz vanity.",
         scope: "Bathtub Replacement, Custom Tile Surround, Vanity & Fixture Package",
-        image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+        image: tileSchluterImg,
       },
       {
         title: "Sumas Mountain Luxury Ensuite with Steam Shower",

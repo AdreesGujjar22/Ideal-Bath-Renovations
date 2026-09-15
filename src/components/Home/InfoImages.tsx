@@ -86,6 +86,7 @@ const StandardImageList: React.FC = () => {
                   src={item.img}
                   alt={item.alt}
                   title={item.alt}
+                  referrerPolicy="no-referrer"
                   sx={{
                     width: "100%",
                     height: "100%",

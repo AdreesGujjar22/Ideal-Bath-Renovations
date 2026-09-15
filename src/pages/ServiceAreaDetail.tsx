@@ -513,10 +513,10 @@ const ServiceAreaDetail: React.FC = () => {
                 icon: Award,
               },
               {
-                title: "Radiant In-Floor Heating Installation",
-                desc: "Schluter® DITRA-HEAT electric floor warming with programmable Wi-Fi thermostats for cozy mornings.",
-                link: "/services/bathroom-tile-installation",
-                icon: Sparkles,
+                title: "Bathtub Replacement & Freestanding Tubs",
+                desc: "Replace damaged alcove tubs with deep soaking tubs, elegant freestanding centerpieces, and designer tub faucets.",
+                link: "/services/bathtub-replacement",
+                icon: Bath,
               },
             ].map((srv, idx) => (
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={idx}>

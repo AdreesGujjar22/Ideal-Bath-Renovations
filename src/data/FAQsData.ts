@@ -21,7 +21,7 @@ const faqs = [
   },
 ];
 
-const faqsResurfacing = [
+const faqsTubToShower = [
   {
     question: "How does a curbless / walk-in shower prevent water from leaking onto the floor?",
     answer:
@@ -44,7 +44,7 @@ const faqsResurfacing = [
   },
 ];
 
-const faqNeedling = [
+const faqsAccessibility = [
   {
     question: "Are bathroom accessibility modifications eligible for Canadian / BC tax credits?",
     answer:
@@ -67,4 +67,10 @@ const faqNeedling = [
   },
 ];
 
-export { faqs, faqsResurfacing, faqNeedling };
+export {
+  faqs,
+  faqsTubToShower,
+  faqsAccessibility,
+  faqsTubToShower as faqsResurfacing,
+  faqsAccessibility as faqNeedling,
+};

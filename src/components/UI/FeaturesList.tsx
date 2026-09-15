@@ -21,7 +21,7 @@ const FeaturesList: React.FC<FeaturesProps> = ({ title, features, bold }) => {
                 fontFamily: "'Abel'",
                 my: "32px"
             }}>
-                {title} <span style={{ fontWeight: 300 }} >(no acne pen)</span>
+                {title}
             </Typography>
             {features.map((feature, index) => (
                 <ListItem key={index} sx={{

@@ -8,11 +8,15 @@ import {
   Accessibility,
   LayoutGrid,
   ShieldCheck,
-  Flame,
   ArrowRight,
   Sparkles,
 } from "lucide-react";
 import PrimaryButton from "../UI/PrimaryButton";
+import {
+  customVanityImg,
+  tileSchluterImg,
+  bathtubReplaceImg,
+} from "../../assets/images";
 
 interface CoreServiceItem {
   id: string;
@@ -69,8 +73,8 @@ const coreRenovationServices: CoreServiceItem[] = [
     slug: "bathroom-vanity-installation",
     icon: LayoutGrid,
     tag: "Bespoke Cabinetry",
-    img: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
-    imgAlt: "Custom bathroom vanity installation by Ideal Bath Renovations",
+    img: customVanityImg,
+    imgAlt: "Custom bathroom double vanity with quartz countertop and oak cabinetry",
     description:
       "Custom-built vanities maximize storage and match your bathroom's style, from compact powder rooms to spacious ensuite layouts.",
     highlights: ["Quartz & Granite Countertops", "Soft-Close Solid Wood Joinery", "Built-In Linen Towers"],
@@ -81,23 +85,23 @@ const coreRenovationServices: CoreServiceItem[] = [
     slug: "bathroom-tile-installation",
     icon: ShieldCheck,
     tag: "100% Waterproofed",
-    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-    imgAlt: "Schluter waterproofed tile installation Langley BC",
+    img: tileSchluterImg,
+    imgAlt: "Custom bathroom shower tile installation with Schluter waterproofing and brass trim",
     description:
       "We install premium tile work backed by Schluter waterproofing systems, protecting your investment against leaks and moisture damage for decades to come.",
     highlights: ["Schluter®-KERDI Vapor Membrane", "Large Format Porcelain & Marble", "24-Hour Hydrostatic Flood Test"],
   },
   {
-    id: "radiant-floor",
-    title: "Radiant Floor Heating Installation",
-    slug: "bathroom-upgrades",
-    icon: Flame,
-    tag: "Winter Comfort",
-    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
-    imgAlt: "Radiant heated floor tile installation in Langley Twp BC",
+    id: "bathtub-replacement",
+    title: "Bathtub Replacement & Freestanding Tubs",
+    slug: "bathtub-replacement",
+    icon: Bath,
+    tag: "Luxury Soaking",
+    img: bathtubReplaceImg,
+    imgAlt: "Modern white soaking bathtub replacement with textured tile surround in Langley BC",
     description:
-      "Add heated flooring to your renovation for year-round comfort — a popular upgrade for Fraser Valley homeowners tackling cold winter mornings.",
-    highlights: ["Smart Wi-Fi Thermostat Control", "Schluter®-DITRA-HEAT System", "Energy-Efficient Heating"],
+      "Upgrade worn or builder-grade tubs to deep ergonomic acrylic alcove tubs, freestanding soaker centerpieces, or walk-in safety tubs with designer tub fillers.",
+    highlights: ["Freestanding & Deep Alcove Tubs", "Floor-Mounted Roman Tub Fillers", "Lifetime Tub Shell Warranty"],
   },
 ];
 
@@ -188,6 +192,7 @@ const Services: React.FC = () => {
                       className="service-img"
                       src={service.img}
                       alt={service.imgAlt}
+                      referrerPolicy="no-referrer"
                       sx={{
                         width: "100%",
                         height: "100%",

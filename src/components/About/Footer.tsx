@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { freestandingTubImg, customVanityImg } from "../../assets/images";
 
 const bathroomGallery = [
   {
@@ -8,15 +9,15 @@ const bathroomGallery = [
     title: "Master Ensuite Walk-In",
   },
   {
-    img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
-    title: "Custom Floating Walnut Vanity",
+    img: customVanityImg,
+    title: "Custom Floating Quartz Vanity",
   },
   {
     img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
     title: "Curbless Hexagon Tile Shower",
   },
   {
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    img: freestandingTubImg,
     title: "Freestanding Soaker Tub & Chandelier",
   },
 ];
@@ -56,6 +57,7 @@ const ImageBanner: React.FC = () => {
                   component="img"
                   src={item.img}
                   alt={item.title}
+                  referrerPolicy="no-referrer"
                   sx={{
                     width: "100%",
                     height: "100%",

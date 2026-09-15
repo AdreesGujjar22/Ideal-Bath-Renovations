@@ -87,7 +87,7 @@ const megaMenuCategories: ServiceMegaCategory[] = [
     items: [
       { title: "Bathroom Tile Installation", route: "/services/bathroom-tile-installation" },
       { title: "Bathroom Vanity Installation", route: "/services/bathroom-vanity-installation" },
-      { title: "Heated In-Floor Warming", route: "/services/bathroom-tile-installation" },
+      { title: "Porcelain & Marble Mosaics", route: "/services/bathroom-tile-installation" },
       { title: "Custom Quartz Countertops", route: "/services/bathroom-vanity-installation" },
     ],
   },

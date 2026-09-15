@@ -174,8 +174,8 @@ const sitemapData: SitemapEntry[] = [
   {
     url: "https://idealbathrenovations.ca/services/flooring-solutions",
     path: "/services/flooring-solutions",
-    title: "Heated Flooring & Waterproof Tile",
-    description: "Nuheat electric in-floor radiant heating systems, slip-resistant porcelain tiles, and luxury vinyl plank.",
+    title: "Bathroom Flooring & Waterproof Tile",
+    description: "Slip-resistant porcelain floor tiles, marble mosaics, and Schluter waterproofing.",
     category: "Bathroom Services",
     priority: "0.75",
     changefreq: "monthly",

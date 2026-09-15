@@ -1,3 +1,12 @@
+import {
+  customVanityImg,
+  tileSchluterImg,
+  freestandingTubImg,
+  modernPowderRoomImg,
+  bathtubReplaceImg,
+  bathroomReferralImg,
+} from "../assets/images";
+
 const imgsData = [
   {
     img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
@@ -6,7 +15,7 @@ const imgsData = [
     category: "Walk-In Shower",
   },
   {
-    img: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
+    img: customVanityImg,
     title: "Custom Quartz Vanity",
     alt: "Custom bathroom vanity installation by Ideal Bath Renovations",
     category: "Custom Vanity",
@@ -18,31 +27,31 @@ const imgsData = [
     category: "Conversion",
   },
   {
-    img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
+    img: bathroomReferralImg,
     title: "Full Ensuite Renovation",
-    alt: "Full-service bathroom renovation in Fraser Valley BC",
+    alt: "Full-service luxury master bathroom renovation in Fraser Valley BC",
     category: "Full Remodel",
   },
   {
-    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    img: tileSchluterImg,
     title: "Schluter Waterproofed Tile",
     alt: "Schluter waterproofed tile installation Langley BC",
     category: "Tile Craftsmanship",
   },
   {
-    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80",
-    title: "Radiant Heated Floors",
-    alt: "Radiant heated floor tile installation in Langley Twp BC",
-    category: "Heated Flooring",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=800&q=80",
-    title: "Freestanding Soaker Tub",
-    alt: "Freestanding soaker tub bathroom installation Langley BC",
+    img: freestandingTubImg,
+    title: "Freestanding Soaking Tub",
+    alt: "Luxury freestanding soaking bathtub installation in Langley Twp BC",
     category: "Luxury Tub",
   },
   {
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    img: bathtubReplaceImg,
+    title: "Bathtub Replacement",
+    alt: "Brand new soaking bathtub replacement installation Langley BC",
+    category: "Bathtub Replacement",
+  },
+  {
+    img: modernPowderRoomImg,
     title: "Modern Powder Room",
     alt: "Modern powder room bathroom remodel Langley Twp",
     category: "Powder Room",

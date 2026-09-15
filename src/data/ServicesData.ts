@@ -1,3 +1,12 @@
+import {
+  customVanityImg,
+  tileSchluterImg,
+  modernPowderRoomImg,
+  freestandingTubImg,
+  bathtubReplaceImg,
+  bathroomReferralImg,
+} from "../assets/images";
+
 export interface ServiceItem {
   id: string;
   category: string;
@@ -69,7 +78,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathtub-replacement",
     category: "Showers & Tubs",
-    img: "https://images.unsplash.com/photo-1564540574859-0dfb63985953?auto=format&fit=crop&w=1200&q=80",
+    img: bathtubReplaceImg,
     title: "Bathtub Replacement",
     price: "Custom Estimate",
     duration: "1 - 3 Days",
@@ -86,14 +95,14 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-tile-installation",
     category: "Tile & Flooring",
-    img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+    img: tileSchluterImg,
     title: "Bathroom Tile Installation",
     price: "Custom Estimate",
     duration: "3 - 5 Days",
-    about: "Master tile setting with laser-leveled precision. Large-format porcelain slabs, Italian marble, herringbone subway tiles, and radiant heated floor systems.",
+    about: "Master tile setting with laser-leveled precision. Large-format porcelain slabs, Italian marble, herringbone subway tiles, and custom waterproofed shower pans.",
     features: [
       "Large-Format Slabs & Mosaic Accents",
-      "Schluter® DITRA-HEAT In-Floor Warming",
+      "Schluter®-KERDI Waterproof Shower Enclosures",
       "Stain-Proof Epoxy Grouting",
       "Mitered Edge Niche Profiles",
       "Complete Subfloor Leveling"
@@ -104,7 +113,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-vanity-installation",
     category: "Vanities & Cabinetry",
-    img: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+    img: customVanityImg,
     title: "Bathroom Vanity Installation",
     price: "Custom Estimate",
     duration: "1 - 3 Days",
@@ -121,7 +130,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-design",
     category: "Design & Planning",
-    img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+    img: bathroomReferralImg,
     title: "Bathroom Design & Planning",
     price: "Free 3D Consultation",
     duration: "3 - 5 Days",
@@ -138,7 +147,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-upgrades",
     category: "Repairs & Upgrades",
-    img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+    img: modernPowderRoomImg,
     title: "Bathroom Upgrades",
     price: "Custom Estimate",
     duration: "1 - 3 Days",
@@ -172,7 +181,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-replacement",
     category: "Repairs & Upgrades",
-    img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    img: modernPowderRoomImg,
     title: "Bathroom Replacement",
     price: "Custom Estimate",
     duration: "2 - 5 Days",
@@ -189,7 +198,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-installation",
     category: "Full Remodel",
-    img: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=80",
+    img: freestandingTubImg,
     title: "Bathroom Installation",
     price: "Custom Estimate",
     duration: "2 - 4 Weeks",
@@ -206,7 +215,7 @@ const ServicesData: Array<ServiceItem> = [
   {
     id: "bathroom-restoration",
     category: "Full Remodel",
-    img: "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1200&q=80",
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
     title: "Bathroom Restoration",
     price: "Custom Estimate",
     duration: "1 - 2 Weeks",

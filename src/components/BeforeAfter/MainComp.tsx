@@ -9,6 +9,11 @@ const categories = ["All Projects", "Tub-to-Shower", "Master Ensuite", "Walk-In 
 
 const MainComp: React.FC = () => {
   const [selectedTag, setSelectedTag] = useState<string>("All Projects");
+  const [activeViews, setActiveViews] = useState<{ [key: number]: "before" | "after" }>({});
+
+  const toggleView = (idx: number, mode: "before" | "after") => {
+    setActiveViews((prev) => ({ ...prev, [idx]: mode }));
+  };
 
   const filtered = beforeAfterData.filter((itm) => {
     if (selectedTag === "All Projects") return true;
@@ -116,15 +121,85 @@ const MainComp: React.FC = () => {
                 <Box sx={{ position: "relative", height: "260px", overflow: "hidden" }}>
                   <Box
                     component="img"
-                    src={itm.img}
-                    alt={itm.content}
+                    src={
+                      activeViews[idx] === "before"
+                        ? itm.beforeImg || itm.img
+                        : itm.afterImg || itm.img
+                    }
+                    alt={`${itm.content} - ${activeViews[idx] === "before" ? "Before" : "After"}`}
                     sx={{
                       width: "100%",
                       height: "100%",
                       objectFit: "cover",
+                      transition: "opacity 0.3s ease",
                     }}
                     loading="lazy"
                   />
+
+                  {/* Before / After Selector */}
+                  {itm.beforeImg && itm.afterImg && (
+                    <Box
+                      sx={{
+                        position: "absolute",
+                        top: 12,
+                        left: 12,
+                        backgroundColor: "rgba(15,23,42,0.85)",
+                        backdropFilter: "blur(6px)",
+                        borderRadius: "20px",
+                        p: "2px",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 0.5,
+                        zIndex: 2,
+                      }}
+                    >
+                      <Box
+                        component="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleView(idx, "before");
+                        }}
+                        sx={{
+                          border: "none",
+                          cursor: "pointer",
+                          px: 1.2,
+                          py: 0.3,
+                          borderRadius: "14px",
+                          fontSize: "11px",
+                          fontWeight: 700,
+                          transition: "all 0.2s ease",
+                          backgroundColor:
+                            activeViews[idx] === "before" ? "#c29b38" : "transparent",
+                          color: activeViews[idx] === "before" ? "#ffffff" : "#cbd5e1",
+                        }}
+                      >
+                        Before
+                      </Box>
+                      <Box
+                        component="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleView(idx, "after");
+                        }}
+                        sx={{
+                          border: "none",
+                          cursor: "pointer",
+                          px: 1.2,
+                          py: 0.3,
+                          borderRadius: "14px",
+                          fontSize: "11px",
+                          fontWeight: 700,
+                          transition: "all 0.2s ease",
+                          backgroundColor:
+                            activeViews[idx] !== "before" ? "#c29b38" : "transparent",
+                          color: activeViews[idx] !== "before" ? "#ffffff" : "#cbd5e1",
+                        }}
+                      >
+                        After
+                      </Box>
+                    </Box>
+                  )}
+
                   {itm.duration && (
                     <Box
                       sx={{
@@ -148,14 +223,16 @@ const MainComp: React.FC = () => {
                       <span>{itm.duration}</span>
                     </Box>
                   )}
+
                   {itm.category && (
                     <Box
                       sx={{
                         position: "absolute",
                         bottom: 12,
                         left: 12,
-                        backgroundColor: "#c29b38",
-                        color: "#ffffff",
+                        backgroundColor: "rgba(15,23,42,0.85)",
+                        color: "#dfba5a",
+                        border: "1px solid rgba(223,186,90,0.3)",
                         px: 1.5,
                         py: 0.4,
                         borderRadius: "6px",

@@ -22,7 +22,15 @@ import {
   Clock,
 } from "lucide-react";
 
-const categories = ["All Services", "Full Remodel", "Modernization", "Showers & Tubs", "Tile & Flooring", "Vanities & Cabinetry", "Repairs & Fixes"];
+const categories = [
+  "All Services",
+  "Full Remodel",
+  "Showers & Tubs",
+  "Tile & Flooring",
+  "Vanities & Cabinetry",
+  "Repairs & Upgrades",
+  "Design & Planning",
+];
 
 const ServicesHub: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All Services");

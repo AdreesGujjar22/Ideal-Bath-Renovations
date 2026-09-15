@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               </Box>
 
               <Typography sx={{ fontSize: "14px", lineHeight: 1.7, color: "#cbd5e1" }}>
-                Langley’s trusted bathroom remodeling contractor. Specializing in luxury master ensuite transformations, tub-to-shower conversions, curbless walk-in showers, custom tile craftsmanship, and radiant heated floors.
+                Langley’s trusted bathroom remodeling contractor. Specializing in luxury master ensuite transformations, tub-to-shower conversions, curbless walk-in showers, custom tile craftsmanship, and freestanding soaking tubs.
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, pt: 1 }}>

@@ -54,7 +54,7 @@ const serviceOptions = [
   "Steam Shower & Sauna Installation",
   "Plumbing Fixture & Pipe Upgrades",
   "Smart Toilet & Bidet Installation",
-  "Radiant In-Floor Heating",
+  "Freestanding Soaker Tub Installation",
   "ADA Accessibility & Aging-In-Place Modifications",
 ];
 
@@ -359,7 +359,7 @@ const EstimateForm: React.FC = () => {
                   value={formData.description}
                   setValue={setFormData}
                   field="description"
-                  placeholder="e.g., We want to replace our fiberglass tub with a zero-threshold curbless shower, install a custom double floating walnut vanity, and add radiant floor heating."
+                  placeholder="e.g., We want to replace our fiberglass tub with a zero-threshold curbless shower, install a custom double floating walnut vanity, and add a freestanding soaking tub."
                   textArea
                 />
 
