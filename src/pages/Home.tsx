@@ -1,12 +1,9 @@
 import React from "react";
 import Header from "../components/Home/Header";
-import Review from "../components/Home/Review";
 import Services from "../components/Home/Services";
-import WhyChooseUs from "../components/Home/WhyChooseUs";
 import ProcessSection from "../components/Home/ProcessSection";
-import InfoImages from "../components/Home/InfoImages";
-import Feedback from "../components/Home/Feedback";
-import ReferralCard from "../components/Home/ReferralCard";
+import WhyChooseUs from "../components/Home/WhyChooseUs";
+import FeaturedTestimonial from "../components/Home/FeaturedTestimonial";
 import ServiceAreas from "../components/Home/ServiceAreas";
 import FAQSection from "../components/Home/FAQSection";
 import CTAQuoteSection from "../components/Home/CTAQuoteSection";
@@ -16,19 +13,16 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Bathroom Remodeler in Langley, BC - Ideal Bath Renovations"
-        description="Looking for a Bathroom Remodeler in Langley, BC? Ideal Bath Renovations provides quality bath renovations, shower upgrades, and complete bathroom remodeling."
+        title="Bathroom Renovation Langley Twp | Ideal Bath Renovations"
+        description="Reliable bathroom renovation services in Langley Twp. From walk-in showers to complete remodels, we build it right. Contact us for a free in-home quote."
         canonical="https://idealbathrenovations.ca/"
-        keywords="bathroom remodeling Langley, bathroom renovation Langley Twp, tub-to-shower conversion, curbless walk-in shower, bathroom contractor Fraser Valley, bathroom tile installation, custom bathroom vanities"
+        keywords="bathroom renovation Langley Twp, bathroom remodeler Langley BC, tub to shower conversion Langley, walk in shower Langley, bathroom contractor Fraser Valley"
       />
       <Header />
-      <Review />
       <Services />
-      <WhyChooseUs />
       <ProcessSection />
-      <InfoImages />
-      <Feedback />
-      <ReferralCard />
+      <WhyChooseUs />
+      <FeaturedTestimonial />
       <ServiceAreas />
       <FAQSection />
       <CTAQuoteSection />

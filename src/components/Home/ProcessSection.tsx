@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { Home, Palette, Hammer, ShieldCheck, Sparkles } from "lucide-react";
-import PrimaryButton from "../UI/PrimaryButton";
+import { Home, Palette, Hammer, ShieldCheck } from "lucide-react";
 
 interface ProcessStep {
   stepNumber: string;
@@ -15,59 +14,38 @@ const steps: ProcessStep[] = [
   {
     stepNumber: "01",
     icon: Home,
-    title: "Free In-Home Consultation",
+    title: "In-Home Consultation & Estimate",
     description:
-      "We visit your home to assess the space, discuss your goals, and provide an initial project outline at no cost.",
+      "We visit your home, measure your space, and provide a clear written estimate.",
   },
   {
     stepNumber: "02",
     icon: Palette,
-    title: "Custom Design & Material Selection",
+    title: "Material Selection & Planning",
     description:
-      "Choose fixtures, tile, and finishes with guidance from our design team to create a bathroom that fits your taste and budget.",
+      "Select your tile, fixtures, and vanity before demolition starts to keep work on schedule.",
   },
   {
     stepNumber: "03",
     icon: Hammer,
-    title: "Renovation & Installation",
+    title: "Demolition & Waterproof Construction",
     description:
-      "Our crews complete the renovation efficiently, keeping your home clean and minimizing disruption throughout the build.",
+      "We protect your floors, complete clean demolition, update plumbing, and install waterproof backing.",
   },
   {
     stepNumber: "04",
     icon: ShieldCheck,
-    title: "Final Walkthrough & Warranty",
+    title: "Finishing & Final Walkthrough",
     description:
-      "We review the finished space together and back the completed work with our workmanship warranty.",
+      "We install tile and fixtures, clean up thoroughly, and conduct a final walkthrough together.",
   },
 ];
 
 const ProcessSection: React.FC = () => {
   return (
-    <Box component="section" sx={{ py: { xs: 7, md: 11 }, backgroundColor: "#f8fafc" }}>
+    <Box component="section" sx={{ py: { xs: 7, md: 10 }, backgroundColor: "#f8fafc" }}>
       <Container maxWidth="xl">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 7 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <Sparkles size={14} color="#c29b38" />
-            <span>Structured For Peace of Mind</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 6 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -76,10 +54,10 @@ const ProcessSection: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Our Bathroom Remodeling Process
+            Our Renovation Process
           </Typography>
 
           <Typography
@@ -91,11 +69,11 @@ const ProcessSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            A clear, four-step process keeps your renovation on schedule and on budget from start to finish.
+            A simple four-step approach so you always know what is happening next.
           </Typography>
         </Box>
 
-        <Grid container spacing={3.5}>
+        <Grid container spacing={3}>
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
@@ -184,16 +162,6 @@ const ProcessSection: React.FC = () => {
             );
           })}
         </Grid>
-
-        <Box sx={{ mt: 6, textAlign: "center" }}>
-          <PrimaryButton
-            content="Schedule Your Step 1 Consultation"
-            variant="gold"
-            btnpadding="14px 32px"
-            fontsize={15}
-            to="/contact"
-          />
-        </Box>
       </Container>
     </Box>
   );

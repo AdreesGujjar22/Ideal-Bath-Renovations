@@ -26,6 +26,8 @@ const PrimaryButton: React.FC<ButtonProps> = ({
   const handleClick = () => {
     if (onClick) {
       onClick();
+    } else if (to?.startsWith("tel:") || to?.startsWith("http")) {
+      window.location.href = to;
     } else if (to) {
       navigate(to);
     } else {

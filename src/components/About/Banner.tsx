@@ -60,8 +60,8 @@ const AboutBanner: React.FC = () => {
                 Visit Our Langley Headquarters
               </Typography>
 
-              <Typography sx={{ fontSize: "14.5px", color: "#475569", lineHeight: 1.7 }}>
-                Located at <b>20819 78B Avenue, Langley Twp, BC V2Y</b>, our facility serves as the command center for all project management, material curation, and 3D architectural design sessions. Homeowners are welcome to touch and feel large-format tile samples, quartz slabs, custom vanity finishes, and smart plumbing fixtures.
+              <Typography sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.7 }}>
+                Located at <b>20819 78B Avenue, Langley Twp, BC</b>, our facility coordinates project management, material selections, and 3D architectural design sessions. Homeowners are welcome to review tile samples, quartz countertops, and custom vanity options in person.
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, py: 1 }}>

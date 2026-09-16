@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Container, Stack } from "@mui/material";
+import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
 import {
@@ -8,10 +8,7 @@ import {
   Accessibility,
   LayoutGrid,
   ShieldCheck,
-  ArrowRight,
-  Sparkles,
 } from "lucide-react";
-import PrimaryButton from "../UI/PrimaryButton";
 import {
   customVanityImg,
   tileSchluterImg,
@@ -33,104 +30,83 @@ interface CoreServiceItem {
 const coreRenovationServices: CoreServiceItem[] = [
   {
     id: "full-service",
-    title: "Full-Service Bathroom Renovations",
+    title: "Full Bathroom Remodeling",
     slug: "bathroom-remodeling",
     icon: Bath,
-    tag: "Turnkey Remodeling",
+    tag: "Complete Rebuild",
     img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
-    imgAlt: "Full-service bathroom renovation in Fraser Valley BC",
+    imgAlt: "Full bathroom remodeling in Langley BC",
     description:
-      "A complete bathroom renovation, handled start to finish. We manage design, demolition, plumbing, electrical, tiling, and finishing work so you don't have to coordinate multiple contractors.",
-    highlights: ["Complete Project Management", "Plumbing & Electrical Upgrades", "Turnkey Handover"],
+      "Complete teardowns and rebuilds for master ensuites, guest baths, and powder rooms. We update the layout, plumbing, lighting, and finishes from start to finish.",
+    highlights: ["Complete Layout Updates", "Plumbing & Lighting Upgrades", "Turnkey Installation"],
   },
   {
     id: "tub-to-shower",
     title: "Tub-to-Shower Conversions",
     slug: "shower-remodeling",
     icon: ShowerHead,
-    tag: "Quick Conversion",
+    tag: "Shower Conversion",
     img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
-    imgAlt: "Tub-to-shower conversion before and after Langley BC",
+    imgAlt: "Tub-to-shower conversion in Langley BC",
     description:
-      "Replace an underused bathtub with a walk-in shower built for daily comfort and long-term accessibility. Our conversions are completed quickly with minimal disruption to your home.",
-    highlights: ["Low-Threshold Step-In", "Custom Quartz Thresholds", "Minimal Disruption Build"],
+      "Replace an old or hard-to-clean bathtub with a walk-in shower stall featuring waterproof backing, modern tile, and glass doors.",
+    highlights: ["Low Step-In Entry", "Custom Waterproof Pans", "Minimal Disruption"],
   },
   {
     id: "curbless-showers",
-    title: "Curbless Walk-In Showers",
+    title: "Walk-In & Curbless Showers",
     slug: "shower-remodeling",
     icon: Accessibility,
-    tag: "Zero-Threshold & Modern",
+    tag: "Zero-Threshold",
     img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
     imgAlt: "Curbless walk-in shower renovation in Langley Twp BC",
     description:
-      "Barrier-free, curbless shower designs combine a modern look with safer, easier access — ideal for aging in place or simply upgrading to a cleaner, more open bathroom layout.",
-    highlights: ["Linear Trench Drainage", "10mm Frameless Glass", "Aging-in-Place Ready"],
+      "Barrier-free showers with level entries, linear drainage, and slip-resistant flooring for easy everyday access and peace of mind.",
+    highlights: ["Level Floor Drainage", "Custom Glass Panels", "Accessible Design"],
   },
   {
     id: "custom-vanities",
-    title: "Custom Vanities & Storage Solutions",
+    title: "Custom Vanities & Countertops",
     slug: "bathroom-vanity-installation",
     icon: LayoutGrid,
-    tag: "Bespoke Cabinetry",
+    tag: "Cabinetry & Quartz",
     img: customVanityImg,
-    imgAlt: "Custom bathroom double vanity with quartz countertop and oak cabinetry",
+    imgAlt: "Custom bathroom vanity with quartz countertop in Langley",
     description:
-      "Custom-built vanities maximize storage and match your bathroom's style, from compact powder rooms to spacious ensuite layouts.",
-    highlights: ["Quartz & Granite Countertops", "Soft-Close Solid Wood Joinery", "Built-In Linen Towers"],
+      "Quality vanity installations with durable quartz surfaces, undermount sinks, and well-planned storage to keep your bathroom organized.",
+    highlights: ["Quartz Countertops", "Soft-Close Drawers", "Undermount Sinks"],
   },
   {
     id: "tile-schluter",
-    title: "Custom Tile & Schluter Waterproofing Systems",
+    title: "Bathroom Tile & Waterproofing",
     slug: "bathroom-tile-installation",
     icon: ShieldCheck,
-    tag: "100% Waterproofed",
+    tag: "Waterproof Tile",
     img: tileSchluterImg,
-    imgAlt: "Custom bathroom shower tile installation with Schluter waterproofing and brass trim",
+    imgAlt: "Bathroom tile and waterproofing installation in Langley BC",
     description:
-      "We install premium tile work backed by Schluter waterproofing systems, protecting your investment against leaks and moisture damage for decades to come.",
-    highlights: ["Schluter®-KERDI Vapor Membrane", "Large Format Porcelain & Marble", "24-Hour Hydrostatic Flood Test"],
+      "Proper waterproof membrane installations behind shower walls and floor tile to ensure leak-free durability for years to come.",
+    highlights: ["Sealed Waterproof Backing", "Porcelain & Ceramic Tile", "Flood Tested Pans"],
   },
   {
     id: "bathtub-replacement",
-    title: "Bathtub Replacement & Freestanding Tubs",
+    title: "Bathtub Replacements",
     slug: "bathtub-replacement",
     icon: Bath,
-    tag: "Luxury Soaking",
+    tag: "Soaking Tubs",
     img: bathtubReplaceImg,
-    imgAlt: "Modern white soaking bathtub replacement with textured tile surround in Langley BC",
+    imgAlt: "Modern bathtub replacement with tile surround in Langley BC",
     description:
-      "Upgrade worn or builder-grade tubs to deep ergonomic acrylic alcove tubs, freestanding soaker centerpieces, or walk-in safety tubs with designer tub fillers.",
-    highlights: ["Freestanding & Deep Alcove Tubs", "Floor-Mounted Roman Tub Fillers", "Lifetime Tub Shell Warranty"],
+      "New drop-in tubs, deep alcove soakers, and freestanding bathtubs fitted securely with updated plumbing fixtures and solid backing.",
+    highlights: ["Freestanding & Alcove Tubs", "Updated Plumbing Valves", "Solid Base Support"],
   },
 ];
 
 const Services: React.FC = () => {
   return (
-    <Box component="section" sx={{ py: { xs: 7, md: 11 }, backgroundColor: "#f8fafc" }}>
+    <Box component="section" sx={{ py: { xs: 7, md: 10 }, backgroundColor: "#f8fafc" }}>
       <Container maxWidth="xl">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 7 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <Sparkles size={14} color="#c29b38" />
-            <span>Expertise Across Every Trade</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 6 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -139,10 +115,10 @@ const Services: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Bathroom Remodeling &amp; Renovation Services in Langley Twp
+            Our Bathroom Renovation Services
           </Typography>
 
           <Typography
@@ -154,17 +130,19 @@ const Services: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            From full-service bathroom remodeling and tub-to-shower conversions to curbless walk-in showers and custom vanities, our Langley bathroom contractors deliver expert craftsmanship and Schluter® waterproofing across the Fraser Valley.
+            We handle every part of your bathroom project, whether updating specific fixtures or rebuilding the entire room.
           </Typography>
         </Box>
 
         {/* 6 Core Services Grid */}
-        <Grid container spacing={3.5}>
+        <Grid container spacing={3}>
           {coreRenovationServices.map((service) => {
             const Icon = service.icon;
             return (
               <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={service.id}>
                 <Box
+                  component={Link}
+                  to={`/services/${service.slug}`}
                   sx={{
                     height: "100%",
                     display: "flex",
@@ -174,6 +152,7 @@ const Services: React.FC = () => {
                     overflow: "hidden",
                     border: "1px solid #e2e8f0",
                     boxShadow: "0 4px 16px rgba(0,0,0,0.04)",
+                    textDecoration: "none",
                     transition: "all 0.25s ease",
                     "&:hover": {
                       transform: "translateY(-4px)",
@@ -182,11 +161,14 @@ const Services: React.FC = () => {
                       "& .service-img": {
                         transform: "scale(1.05)",
                       },
+                      "& .service-title": {
+                        color: "#b45309",
+                      },
                     },
                   }}
                 >
                   {/* Image Container */}
-                  <Box sx={{ position: "relative", height: "210px", overflow: "hidden" }}>
+                  <Box sx={{ position: "relative", height: "220px", overflow: "hidden" }}>
                     <Box
                       component="img"
                       className="service-img"
@@ -226,134 +208,28 @@ const Services: React.FC = () => {
                     </Box>
                   </Box>
 
-                  {/* Body Content */}
-                  <Box sx={{ p: 3, flex: 1, display: "flex", flexDirection: "column" }}>
+                  {/* Body Content: Title only */}
+                  <Box sx={{ p: 3, flex: 1, display: "flex", alignItems: "center" }}>
                     <Typography
                       variant="h3"
+                      className="service-title"
                       sx={{
                         fontFamily: "'Plus Jakarta Sans', sans-serif",
-                        fontSize: "19px",
+                        fontSize: "18px",
                         fontWeight: 700,
                         color: "#0f172a",
                         lineHeight: 1.35,
-                        mb: 1.5,
+                        transition: "color 0.2s ease",
                       }}
                     >
                       {service.title}
                     </Typography>
-
-                    <Typography
-                      sx={{
-                        fontSize: "14px",
-                        color: "#64748b",
-                        lineHeight: 1.65,
-                        mb: 2.5,
-                        flex: 1,
-                      }}
-                    >
-                      {service.description}
-                    </Typography>
-
-                    {/* Highlights bullet tags */}
-                    <Stack spacing={0.8} sx={{ mb: 3 }}>
-                      {service.highlights.map((item, idx) => (
-                        <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                          <Box
-                            sx={{
-                              width: 6,
-                              height: 6,
-                              borderRadius: "50%",
-                              backgroundColor: "#c29b38",
-                              flexShrink: 0,
-                            }}
-                          />
-                          <Typography sx={{ fontSize: "12.5px", fontWeight: 600, color: "#334155" }}>
-                            {item}
-                          </Typography>
-                        </Box>
-                      ))}
-                    </Stack>
-
-                    {/* View Details Link */}
-                    <Box
-                      component={Link}
-                      to={`/services/${service.slug}`}
-                      sx={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        justifyContent: "space-between",
-                        pt: 2,
-                        borderTop: "1px solid #f1f5f9",
-                        color: "#0f172a",
-                        fontWeight: 700,
-                        fontSize: "13.5px",
-                        textDecoration: "none",
-                        "&:hover": {
-                          color: "#c29b38",
-                          "& svg": { transform: "translateX(4px)" },
-                        },
-                        transition: "color 0.2s ease",
-                      }}
-                    >
-                      <span>Explore Service Details</span>
-                      <ArrowRight size={16} color="#c29b38" style={{ transition: "transform 0.2s" }} />
-                    </Box>
                   </Box>
                 </Box>
               </Grid>
             );
           })}
         </Grid>
-
-        {/* Bottom catalogue CTA banner */}
-        <Box
-          sx={{
-            mt: 7,
-            backgroundColor: "#0f172a",
-            color: "#ffffff",
-            borderRadius: "14px",
-            p: { xs: 3.5, md: 5 },
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: 3,
-            border: "1px solid rgba(194, 155, 56, 0.25)",
-          }}
-        >
-          <Box>
-            <Typography
-              sx={{
-                fontSize: { xs: "18px", sm: "22px" },
-                fontWeight: 800,
-                color: "#ffffff",
-                mb: 0.8,
-              }}
-            >
-              Need a Custom Bathroom Design or Multi-Room Solution?
-            </Typography>
-            <Typography sx={{ fontSize: "14px", color: "#94a3b8", maxWidth: "680px" }}>
-              Explore our complete directory of 12+ specialized renovation services or request a complimentary in-home consultation to receive an exact itemized plan.
-            </Typography>
-          </Box>
-
-          <Stack direction={{ xs: "column", sm: "row" }} spacing={2} sx={{ width: { xs: "100%", sm: "auto" }, flexShrink: 0 }}>
-            <PrimaryButton
-              content="View All 12+ Services"
-              variant="outlined-white"
-              btnpadding="12px 24px"
-              fontsize={14}
-              to="/services"
-            />
-            <PrimaryButton
-              content="Request Free Quote"
-              variant="gold"
-              btnpadding="12px 24px"
-              fontsize={14}
-              to="/contact"
-            />
-          </Stack>
-        </Box>
       </Container>
     </Box>
   );

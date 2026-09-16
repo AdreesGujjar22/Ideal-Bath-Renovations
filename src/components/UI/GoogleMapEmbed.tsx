@@ -14,8 +14,8 @@ import {
 interface GoogleMapEmbedProps {
   businessName?: string;
   address?: string;
-  rating?: number;
-  reviewsCount?: number | string;
+  rating?: number | null;
+  reviewsCount?: number | string | null;
   mapQuery?: string;
   googleMapsLink?: string;
   directionsQuery?: string;
@@ -27,8 +27,8 @@ interface GoogleMapEmbedProps {
 const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
   businessName = "IDEAL BATH RENOVATIONS",
   address = "20819 78B Ave, Langley Twp, BC V2Y 0A1",
-  rating = 5.0,
-  reviewsCount = "28+",
+  rating = null,
+  reviewsCount = null,
   mapQuery = "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
   googleMapsLink = "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
   directionsQuery = "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
@@ -123,26 +123,51 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
 
             {/* Rating Row */}
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-              <Typography sx={{ fontSize: "12.5px", fontWeight: 700, color: "#1e293b" }}>
-                {rating.toFixed(1)}
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", color: "#eab308" }}>
-                <Star size={13} fill="#eab308" />
-              </Box>
-              <Typography
-                component="a"
-                href={googleMapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  fontSize: "12px",
-                  color: "#2563eb",
-                  textDecoration: "underline",
-                  fontWeight: 500,
-                }}
-              >
-                ({reviewsCount})
-              </Typography>
+              {typeof rating === "number" ? (
+                <>
+                  <Typography sx={{ fontSize: "12.5px", fontWeight: 700, color: "#1e293b" }}>
+                    {rating.toFixed(1)}
+                  </Typography>
+                  <Box sx={{ display: "flex", alignItems: "center", color: "#eab308" }}>
+                    <Star size={13} fill="#eab308" />
+                  </Box>
+                  {reviewsCount && (
+                    <Typography
+                      component="a"
+                      href={googleMapsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{
+                        fontSize: "12px",
+                        color: "#2563eb",
+                        textDecoration: "underline",
+                        fontWeight: 500,
+                      }}
+                    >
+                      ({reviewsCount})
+                    </Typography>
+                  )}
+                </>
+              ) : (
+                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                  <Star size={13} fill="#eab308" color="#eab308" />
+                  <Typography
+                    component="a"
+                    href={googleMapsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      fontSize: "12px",
+                      color: "#1e293b",
+                      textDecoration: "none",
+                      fontWeight: 600,
+                      "&:hover": { textDecoration: "underline", color: "#2563eb" },
+                    }}
+                  >
+                    Highly rated by local homeowners
+                  </Typography>
+                </Box>
+              )}
               <Tooltip title="Verified Google Business Profile" arrow>
                 <Box component="span" sx={{ display: "inline-flex", color: "#94a3b8", cursor: "pointer" }}>
                   <Info size={13} />

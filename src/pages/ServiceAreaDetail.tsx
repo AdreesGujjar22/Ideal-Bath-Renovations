@@ -743,7 +743,7 @@ const ServiceAreaDetail: React.FC = () => {
             {area.localFaqs.map((faq, idx) => (
               <Accordion
                 key={idx}
-                defaultExpanded={idx === 0}
+                defaultExpanded={false}
                 elevation={0}
                 sx={{
                   mb: 2,

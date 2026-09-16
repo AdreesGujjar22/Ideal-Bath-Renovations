@@ -7,8 +7,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
-import { ChevronDown, HelpCircle } from "lucide-react";
-import PrimaryButton from "../UI/PrimaryButton";
+import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
   question: string;
@@ -19,32 +18,27 @@ const faqList: FAQItem[] = [
   {
     question: "How long does a typical bathroom renovation take?",
     answer:
-      "Most full renovations are completed within 2–4 weeks, depending on scope and material availability. Simpler tub-to-shower conversions or tile refreshes can often be completed in 3–5 working days.",
+      "A standard bathroom renovation usually takes between one to two weeks, depending on the project scope and tile setting times. We provide an estimated timeline before work begins.",
   },
   {
-    question: "Do you offer free quotes?",
+    question: "Can I keep my existing bathroom layout to save on costs?",
     answer:
-      "Yes — every project starts with a free, no-obligation in-home consultation and written quote. We evaluate your existing plumbing, electrical, and structural layout to give you an accurate, transparent proposal with zero surprises.",
+      "Yes. Keeping your plumbing fixtures in their current locations reduces pipe relocation work and helps keep overall project costs down.",
   },
   {
-    question: "Are you licensed and insured?",
+    question: "Do you handle both the plumbing and tile installation?",
     answer:
-      "Yes, Ideal Bath Renovations is fully licensed and insured for all work performed in BC. We maintain comprehensive general liability coverage and WorkSafeBC registration for complete homeowner peace of mind.",
+      "Yes. We coordinate the full project, including demolition, rough-in plumbing, waterproof backing, tile setting, and final fixture trim.",
   },
   {
-    question: "What waterproofing system do you use for walk-in showers?",
+    question: "How do I get an estimate for my project?",
     answer:
-      "We exclusively install certified Schluter®-KERDI waterproofing systems and Schluter®-DITRA-HEAT uncoupling membranes. Every shower pan is backed by a 24-hour hydrostatic flood test before any tile is laid.",
-  },
-  {
-    question: "Can you help design our bathroom layout and pick materials?",
-    answer:
-      "Absolutely. Our experienced design specialists guide you through 3D layout renderings, vanity dimensions, tile combinations, plumbing fixtures, and lighting plans to make your renovation seamless and stress-free.",
+      "Contact us by phone or submit our online quote form. We will schedule a convenient in-home visit to review your bathroom and provide a clear, written estimate.",
   },
 ];
 
 const FAQSection: React.FC = () => {
-  const [expanded, setExpanded] = useState<string | false>("panel0");
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange = (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false);
@@ -72,28 +66,7 @@ const FAQSection: React.FC = () => {
       />
 
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 6 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <HelpCircle size={14} color="#c29b38" />
-            <span>Helpful Answers</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 4, md: 5 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -102,10 +75,10 @@ const FAQSection: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Frequently Asked Questions About Bathroom Renovations
+            Frequently Asked Questions
           </Typography>
 
           <Typography
@@ -117,7 +90,7 @@ const FAQSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Have questions about planning your bathroom remodel? Here are clear answers to the most common questions from Langley and Fraser Valley homeowners.
+            Straightforward answers to common questions about bathroom remodeling.
           </Typography>
         </Box>
 
@@ -178,19 +151,6 @@ const FAQSection: React.FC = () => {
               </Accordion>
             );
           })}
-        </Box>
-
-        <Box sx={{ mt: 5, textAlign: "center" }}>
-          <Typography sx={{ fontSize: "14.5px", color: "#64748b", mb: 2 }}>
-            Have a question specific to your bathroom's layout or plumbing?
-          </Typography>
-          <PrimaryButton
-            content="Ask Our Renovation Specialists"
-            variant="gold"
-            btnpadding="12px 28px"
-            fontsize={14}
-            to="/contact"
-          />
         </Box>
       </Container>
     </Box>

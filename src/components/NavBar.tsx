@@ -249,7 +249,7 @@ const NavBar: React.FC = () => {
                   whiteSpace: "nowrap",
                 }}
               >
-                5.0 Google Rating
+                Highly Rated by Local Homeowners
               </Typography>
             </Box>
             <Box
@@ -688,7 +688,7 @@ const NavBar: React.FC = () => {
                         color: "#475569",
                       }}
                     >
-                      5-Year Workmanship Warranty & Schluter® Certified
+                      Workmanship Warranty & Waterproof Membrane Systems
                     </Typography>
                   </Box>
 

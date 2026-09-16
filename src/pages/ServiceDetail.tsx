@@ -322,7 +322,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   {service.overview}
                 </Typography>
 
-                {service.detailedParagraphs.map((para, idx) => (
+                {service.detailedParagraphs.slice(0, 1).map((para, idx) => (
                   <Typography key={idx} sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.8, mb: 2 }}>
                     {para}
                   </Typography>
@@ -407,7 +407,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
-                    {service.inclusions.map((inc, idx) => (
+                    {service.inclusions.slice(0, 4).map((inc, idx) => (
                       <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                         <CheckCircle2 size={18} color="#15803d" style={{ flexShrink: 0, marginTop: "2px" }} />
                         <Typography sx={{ fontSize: "14px", color: "#334155", lineHeight: 1.5, fontWeight: 500 }}>
@@ -479,7 +479,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                           )}
                         </Box>
                         <Typography sx={{ fontSize: "13.5px", color: "#64748b", lineHeight: 1.6 }}>
-                          {step.description}
+                          {step.description.includes(".") ? step.description.split(".")[0].trim() + "." : step.description}
                         </Typography>
                       </Box>
                     </Paper>
@@ -680,7 +680,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     <Accordion
                       key={idx}
                       elevation={0}
-                      defaultExpanded={idx === 0}
+                      defaultExpanded={false}
                       sx={{
                         border: "1px solid #e2e8f0",
                         borderRadius: "10px !important",

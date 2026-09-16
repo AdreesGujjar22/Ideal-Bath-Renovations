@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { ShieldCheck, MapPin, FileCheck2, Award, Sparkles } from "lucide-react";
+import { ShieldCheck, MapPin, FileCheck2, Award } from "lucide-react";
 
 interface BenefitItem {
   icon: React.ElementType;
@@ -12,27 +12,27 @@ interface BenefitItem {
 const benefits: BenefitItem[] = [
   {
     icon: ShieldCheck,
-    title: "Licensed & Insured Bathroom Contractors",
+    title: "Single-Contractor Coordination",
     description:
-      "Our team is fully licensed and insured, giving you peace of mind from the first consultation to the final walkthrough.",
-  },
-  {
-    icon: MapPin,
-    title: "Locally Owned in Langley Twp",
-    description:
-      "As a locally owned business, we understand the homes, building codes, and style preferences unique to Langley Twp and the surrounding Fraser Valley communities.",
-  },
-  {
-    icon: FileCheck2,
-    title: "Transparent Pricing & Written Quotes",
-    description:
-      "Every project starts with a clear, written quote — no hidden fees, no surprise costs once work begins.",
+      "We manage every trade from plumbing to tile setting so you work with one direct team.",
   },
   {
     icon: Award,
-    title: "Quality Craftsmanship Guarantee",
+    title: "Proper Waterproofing Standards",
     description:
-      "We stand behind our work with a craftsmanship guarantee, ensuring your renovation looks great and performs well for years after completion.",
+      "Every shower receives sealed waterproof membranes to prevent hidden moisture leaks behind your tile.",
+  },
+  {
+    icon: FileCheck2,
+    title: "Clear Upfront Pricing",
+    description:
+      "You receive a complete written quote before demolition begins with no surprise charges.",
+  },
+  {
+    icon: MapPin,
+    title: "Clean & Respectful Worksites",
+    description:
+      "We protect your living areas daily and maintain an organized, clean work environment throughout your remodel.",
   },
 ];
 
@@ -40,28 +40,7 @@ const WhyChooseUs: React.FC = () => {
   return (
     <Box component="section" sx={{ py: { xs: 7, md: 10 }, backgroundColor: "#ffffff" }}>
       <Container maxWidth="xl">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 7 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <Sparkles size={14} color="#c29b38" />
-            <span>The Ideal Bath Standard</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 6 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -70,10 +49,10 @@ const WhyChooseUs: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Why Homeowners in Langley Choose Ideal Bath Renovations
+            Why Work With Us
           </Typography>
 
           <Typography
@@ -85,11 +64,11 @@ const WhyChooseUs: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            We combine local expertise with dependable service, so every renovation is handled honestly, safely, and to a high standard of craftsmanship.
+            We focus on clear communication, clean worksites, and reliable building practices.
           </Typography>
         </Box>
 
-        <Grid container spacing={3.5}>
+        <Grid container spacing={3}>
           {benefits.map((benefit, idx) => {
             const Icon = benefit.icon;
             return (
@@ -113,8 +92,8 @@ const WhyChooseUs: React.FC = () => {
                 >
                   <Box
                     sx={{
-                      width: 52,
-                      height: 52,
+                      width: 48,
+                      height: 48,
                       borderRadius: "12px",
                       backgroundColor: "rgba(194, 155, 56, 0.15)",
                       color: "#c29b38",
@@ -124,7 +103,7 @@ const WhyChooseUs: React.FC = () => {
                       mb: 2.5,
                     }}
                   >
-                    <Icon size={26} strokeWidth={2.2} />
+                    <Icon size={24} strokeWidth={2.2} />
                   </Box>
 
                   <Typography
@@ -135,7 +114,7 @@ const WhyChooseUs: React.FC = () => {
                       fontWeight: 700,
                       color: "#0f172a",
                       lineHeight: 1.35,
-                      mb: 1.5,
+                      mb: 1.2,
                     }}
                   >
                     {benefit.title}
@@ -145,7 +124,7 @@ const WhyChooseUs: React.FC = () => {
                     sx={{
                       fontSize: "14px",
                       color: "#64748b",
-                      lineHeight: 1.65,
+                      lineHeight: 1.6,
                     }}
                   >
                     {benefit.description}

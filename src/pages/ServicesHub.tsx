@@ -18,7 +18,6 @@ import {
   ShieldCheck,
   Search,
   Sparkles,
-  CheckCircle2,
   Clock,
 } from "lucide-react";
 
@@ -270,7 +269,7 @@ const ServicesHub: React.FC = () => {
                       </Typography>
 
                       {/* Pricing & Timeline Pills */}
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 2.5 }}>
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 1 }}>
                         <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, backgroundColor: "#f8fafc", border: "1px solid #e2e8f0", px: 1.2, py: 0.4, borderRadius: "6px" }}>
                           <Sparkles size={13} color="#c29b38" />
                           <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#0f172a" }}>
@@ -283,18 +282,6 @@ const ServicesHub: React.FC = () => {
                             {service.typicalTimeline}
                           </Typography>
                         </Box>
-                      </Box>
-
-                      {/* Top Features Checkmarks */}
-                      <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8, pt: 2, borderTop: "1px dashed #e2e8f0" }}>
-                        {service.keyBenefits.slice(0, 2).map((kb, idx) => (
-                          <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
-                            <CheckCircle2 size={14} color="#15803d" style={{ flexShrink: 0, marginTop: "2px" }} />
-                            <Typography sx={{ fontSize: "12.5px", color: "#334155", fontWeight: 600 }}>
-                              {kb.title}
-                            </Typography>
-                          </Box>
-                        ))}
                       </Box>
                     </Box>
                   </Box>

@@ -41,7 +41,7 @@ const CTAQuoteSection: React.FC = () => {
               mb: 2,
             }}
           >
-            Get Your Free Bathroom Renovation Quote
+            Request a Free In-Home Consultation
           </Typography>
 
           <Typography
@@ -53,7 +53,7 @@ const CTAQuoteSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Ready to transform your bathroom? Contact Ideal Bath Renovations today for a free, no-obligation quote and take the first step toward the bathroom you've been dreaming of.
+            Contact us today to schedule a free in-home consultation and receive a written quote.
           </Typography>
         </Box>
 

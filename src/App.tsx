@@ -16,6 +16,7 @@ const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const ServiceAreasHub = lazy(() => import("./pages/ServiceAreasHub"));
 const ServiceAreaDetail = lazy(() => import("./pages/ServiceAreaDetail"));
 const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
+const Reviews = lazy(() => import("./pages/Reviews"));
 const Contact = lazy(() => import("./pages/Contact"));
 const SitemapPage = lazy(() => import("./pages/SitemapPage"));
 
@@ -84,6 +85,15 @@ const App: React.FC = () => {
               }
             />
             <Route path="/before&After" element={<Navigate to="/before-after" replace />} />
+            <Route
+              path="/reviews"
+              element={
+                <PageWrapper title="Client Reviews">
+                  <Reviews />
+                </PageWrapper>
+              }
+            />
+            <Route path="/testimonials" element={<Navigate to="/reviews" replace />} />
             <Route
               path="/contact"
               element={
