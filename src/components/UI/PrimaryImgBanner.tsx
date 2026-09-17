@@ -15,15 +15,15 @@ const PrimaryImgBanner: React.FC<PrimaryImgBannerProps> = ({ img, content, width
             <>
                 <Card
                     component="img"
-                    srcSet={img}
                     src={img}
-                    alt={img}
+                    alt={content || "Bathroom renovation project"}
                     sx={{
                         height: { xs: "auto", lg: height },
                         mt: mt, boxShadow: "none", borderRadius: "0px",
                         width: { xs: "300px", sm: "420px", lg: width }
                     }}
-                    loading="lazy">
+                    loading="lazy"
+                    decoding="async">
                 </Card>
                 <Typography component="p" sx={{
                     fontSize: "14px",

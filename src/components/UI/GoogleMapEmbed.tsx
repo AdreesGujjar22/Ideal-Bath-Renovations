@@ -148,30 +148,15 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                     </Typography>
                   )}
                 </>
-              ) : (
-                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                  <Star size={13} fill="#eab308" color="#eab308" />
-                  <Typography
-                    component="a"
-                    href={googleMapsLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{
-                      fontSize: "12px",
-                      color: "#1e293b",
-                      textDecoration: "none",
-                      fontWeight: 600,
-                      "&:hover": { textDecoration: "underline", color: "#2563eb" },
-                    }}
-                  >
-                    Highly rated by local homeowners
-                  </Typography>
-                </Box>
-              )}
+              ) : null}
               <Tooltip title="Verified Google Business Profile" arrow>
-                <Box component="span" sx={{ display: "inline-flex", color: "#94a3b8", cursor: "pointer" }}>
-                  <Info size={13} />
-                </Box>
+                <IconButton
+                  aria-label="Verified Google Business Profile"
+                  size="small"
+                  sx={{ p: 0.25, color: "#64748b" }}
+                >
+                  <Info size={13} aria-hidden="true" />
+                </IconButton>
               </Tooltip>
             </Box>
           </Box>
@@ -180,6 +165,7 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
           <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, flexShrink: 0 }}>
             <Tooltip title="View larger map on Google" arrow>
               <IconButton
+                aria-label="View larger map on Google"
                 component="a"
                 href={googleMapsLink}
                 target="_blank"
@@ -194,12 +180,13 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                   "&:hover": { backgroundColor: "#eff6ff", borderColor: "#93c5fd" },
                 }}
               >
-                <ExternalLink size={16} />
+                <ExternalLink size={16} aria-hidden="true" />
               </IconButton>
             </Tooltip>
 
             <Tooltip title="Get Directions" arrow>
               <IconButton
+                aria-label="Get directions in Google Maps"
                 component="a"
                 href={directionsUrl}
                 target="_blank"
@@ -213,7 +200,7 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                   "&:hover": { backgroundColor: "#1d4ed8" },
                 }}
               >
-                <Navigation size={16} />
+                <Navigation size={16} aria-hidden="true" />
               </IconButton>
             </Tooltip>
           </Box>
@@ -338,11 +325,13 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
         <Box
           component="a"
           href={googleMapsLink}
+          aria-label="Open larger map in Google Maps"
+          title="Open larger map in Google Maps"
           target="_blank"
           rel="noopener noreferrer"
           sx={{ color: "#64748b", display: "inline-flex", "&:hover": { color: "#2563eb" } }}
         >
-          <Maximize2 size={12} />
+          <Maximize2 size={12} aria-hidden="true" />
         </Box>
       </Box>
     </Box>

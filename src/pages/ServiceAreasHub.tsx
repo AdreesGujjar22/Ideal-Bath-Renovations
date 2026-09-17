@@ -80,7 +80,7 @@ const ServiceAreasHub: React.FC = () => {
               mb: 4,
             }}
           >
-            Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations delivers master bathroom remodels, tub-to-shower conversions, and Schluter waterproofing across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
+            Based in Langley Township, we remodel bathrooms, convert tubs to showers, and install waterproofing across Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
           </Typography>
 
           <Box sx={{ display: "flex", justifyContent: "center", gap: 2, flexWrap: "wrap" }}>
@@ -202,7 +202,7 @@ const ServiceAreasHub: React.FC = () => {
 
                   <Box sx={{ mb: 3, pt: 2, borderTop: "1px solid #f1f5f9" }}>
                     <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", mb: 1, letterSpacing: "0.05em" }}>
-                      Key Neighborhoods Served:
+                      Neighborhoods Served
                     </Typography>
                     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
                       {area.neighborhoods.map((n, i) => (
@@ -239,7 +239,7 @@ const ServiceAreasHub: React.FC = () => {
                         "&:hover": { textDecoration: "underline" },
                       }}
                     >
-                      <span>Explore {area.shortName} Full Page</span>
+                      <span>View {area.shortName} Service Area</span>
                       <ArrowRight size={16} />
                     </Box>
 
@@ -288,7 +288,7 @@ const ServiceAreasHub: React.FC = () => {
               }}
             >
               <Sparkles size={14} color="#c29b38" />
-              <span>Interactive Google Map Overview</span>
+              <span>Service Area Map</span>
             </Box>
 
             <Typography

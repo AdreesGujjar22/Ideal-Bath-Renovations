@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Home/Header";
 import Services from "../components/Home/Services";
 import ProcessSection from "../components/Home/ProcessSection";
-import WhyChooseUs from "../components/Home/WhyChooseUs";
 import FeaturedTestimonial from "../components/Home/FeaturedTestimonial";
 import ServiceAreas from "../components/Home/ServiceAreas";
 import FAQSection from "../components/Home/FAQSection";
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
       <Header />
       <Services />
       <ProcessSection />
-      <WhyChooseUs />
       <FeaturedTestimonial />
       <ServiceAreas />
       <FAQSection />
@@ -31,4 +29,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-

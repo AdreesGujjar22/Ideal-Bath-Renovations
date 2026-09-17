@@ -69,7 +69,7 @@ const MainComp: React.FC = () => {
               mx: "auto",
             }}
           >
-            Explore actual renovation projects completed across Willoughby, Walnut Grove, Fort Langley, Surrey, and Abbotsford. See how we turn dark, dated bathrooms into luminous modern retreats.
+            Browse bathroom projects from Willoughby, Walnut Grove, Fort Langley, Surrey, and Abbotsford.
           </Typography>
 
           {/* Filter Tabs */}
@@ -320,13 +320,13 @@ const MainComp: React.FC = () => {
               fontWeight: 800,
             }}
           >
-            Ready to Begin Your Bathroom Transformation?
+            Ready to plan your bathroom project?
           </Typography>
           <Typography sx={{ fontSize: "15px", color: "#cbd5e1", maxWidth: "650px" }}>
-            Schedule an in-home laser measurement with Ideal Bath Renovations. We bring sample materials, render your 3D design, and provide a clear fixed-price quote.
+            Book an in-home consultation to review materials, discuss your layout, and receive a clear quote.
           </Typography>
           <PrimaryButton
-            content="Book Free In-Home 3D Consultation"
+            content="Book a Free In-Home Consultation"
             variant="gold"
             btnpadding="14px 32px"
             fontsize={16}

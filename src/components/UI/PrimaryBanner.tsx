@@ -20,6 +20,7 @@ interface PrimaryBannerProps {
   secondaryBtnContent?: string;
   secondaryBtnLink?: string;
   trustBadges?: string[];
+  hideTrustBadges?: boolean;
   gap?: number;
 }
 
@@ -41,6 +42,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
   secondaryBtnContent,
   secondaryBtnLink,
   trustBadges,
+  hideTrustBadges = false,
   gap = 2,
 }) => {
   return (
@@ -60,6 +62,8 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
         alt={primaryContent}
         width={1200}
         height={bannerHeight}
+        loading="eager"
+        fetchPriority="high"
         decoding="async"
         sx={{
           position: "absolute",
@@ -203,7 +207,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
           )}
 
           {/* Quick Trust Credentials for Home and Landing Hero */}
-          <Box
+          {!hideTrustBadges && trustBadges && trustBadges.length > 0 && <Box
             sx={{
               display: "flex",
               flexWrap: "wrap",
@@ -219,32 +223,15 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
               width: "100%",
             }}
           >
-            {trustBadges && trustBadges.length > 0 ? (
-              trustBadges.map((badgeText, idx) => (
+            {trustBadges.map((badgeText, idx) => (
                 <React.Fragment key={idx}>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
                     <span><strong>{badgeText}</strong></span>
                   </Box>
                   {idx < trustBadges.length - 1 && <span style={{ opacity: 0.4 }}>•</span>}
                 </React.Fragment>
-              ))
-            ) : (
-              <>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-                  <span style={{ color: "#dfba5a" }}>★</span>
-                  <span><strong>Highly Rated by Local Homeowners</strong></span>
-                </Box>
-                <span style={{ opacity: 0.4 }}>•</span>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-                  <span>🛡️ <strong>Licensed &amp; Insured</strong></span>
-                </Box>
-                <span style={{ opacity: 0.4 }}>•</span>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-                  <span>📍 <strong>Langley Twp &amp; Fraser Valley</strong></span>
-                </Box>
-              </>
-            )}
-          </Box>
+              ))}
+          </Box>}
         </Box>
       </Container>
     </Box>

@@ -7,17 +7,17 @@ const pillars = [
   {
     icon: <Eye size={24} color="#c29b38" />,
     title: "3D Architectural Planning",
-    desc: "Photorealistic 3D space models ensure every layout detail is verified before renovation begins.",
+    desc: "3D models help you review the layout before work begins.",
   },
   {
     icon: <Shield size={24} color="#c29b38" />,
     title: "Complete Waterproofing",
-    desc: "Schluter membranes and comprehensive flood testing protect behind every tiled shower wall.",
+    desc: "Schluter membranes and flood testing protect tiled shower walls.",
   },
   {
     icon: <Sparkles size={24} color="#c29b38" />,
     title: "Master Finishing",
-    desc: "Precision tile alignment, custom quartz fabrication, and licensed plumbing built to last.",
+    desc: "Careful tile installation, quartz fabrication, and licensed plumbing.",
   },
 ];
 
@@ -59,7 +59,7 @@ const SubHeader: React.FC = () => {
               lineHeight: 1.6,
             }}
           >
-            Every bathroom is engineered with structural precision, licensed trade work, and leak-proof waterproofing.
+            Every project combines licensed trade work with careful waterproofing and practical planning.
           </Typography>
         </Box>
 

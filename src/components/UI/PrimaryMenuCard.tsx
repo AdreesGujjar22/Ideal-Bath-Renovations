@@ -109,7 +109,7 @@ const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
             sx={{
               fontWeight: 700,
               fontSize: "17px",
-              color: "#c29b38",
+              color: "#8a650f",
             }}
           >
             {price}
@@ -172,4 +172,3 @@ const PrimaryMenuCard: React.FC<PrimaryMenuCardProps> = ({
 };
 
 export default PrimaryMenuCard;
-

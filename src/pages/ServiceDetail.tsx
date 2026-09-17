@@ -19,8 +19,6 @@ import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import {
-  ShieldCheck,
-  Clock,
   CheckCircle2,
   ChevronDown,
   Sparkles,
@@ -52,7 +50,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
             Service Not Found
           </Typography>
           <Typography sx={{ color: "#64748b", mb: 4 }}>
-            The requested bathroom renovation service could not be located. Please choose from our premier services below.
+            The requested service could not be located. Please choose from the services below.
           </Typography>
           <PrimaryButton content="View All 12 Renovation Services" to="/services" variant="gold" />
         </Container>
@@ -158,61 +156,10 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
               {service.tagline}
             </Typography>
 
-            {/* Quick Metrics Bar */}
-            <Box
-              sx={{
-                display: "grid",
-                gridTemplateColumns: { xs: "1fr", sm: "repeat(3, 1fr)" },
-                gap: 2,
-                p: 2.5,
-                backgroundColor: "rgba(30, 41, 59, 0.8)",
-                borderRadius: "14px",
-                border: "1px solid rgba(255,255,255,0.1)",
-                backdropFilter: "blur(8px)",
-                mb: 4,
-              }}
-            >
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <Sparkles size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    In-Home Estimate
-                  </Typography>
-                  <Typography sx={{ fontSize: "14px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.priceRange || "Complimentary In-Home"}
-                  </Typography>
-                </Box>
-              </Box>
-
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <Clock size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    Typical Timeline
-                  </Typography>
-                  <Typography sx={{ fontSize: "14px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.typicalTimeline}
-                  </Typography>
-                </Box>
-              </Box>
-
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <ShieldCheck size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    Warranty & Guarantee
-                  </Typography>
-                  <Typography sx={{ fontSize: "13px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.warranty}
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-
             {/* CTA Action Buttons */}
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
               <PrimaryButton
-                content="Book In-Home Consultation & Quote"
+                content="Request In-Home Quote"
                 variant="gold"
                 btnpadding="14px 30px"
                 fontsize={15}
@@ -403,7 +350,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     </Typography>
                   </Box>
                   <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
-                    Every {service.title} project includes itemized materials, labor, permits, and lifetime waterproofing support:
+                    Your {service.title} quote outlines the materials, labor, permits, and waterproofing work included:
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
@@ -486,66 +433,6 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   ))}
                 </Box>
               </Box>
-
-              {/* Material Options */}
-              {service.materialOptions && service.materialOptions.length > 0 && (
-                <Box sx={{ mb: 7 }}>
-                  <Typography
-                    variant="h3"
-                    sx={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      fontSize: { xs: "20px", sm: "24px" },
-                      fontWeight: 800,
-                      color: "#0f172a",
-                      mb: 3,
-                    }}
-                  >
-                    Premium Materials & Fixture Selections
-                  </Typography>
-
-                  <Grid container spacing={2}>
-                    {service.materialOptions.map((mat, idx) => (
-                      <Grid size={{ xs: 12, sm: 4 }} key={idx}>
-                        <Paper
-                          elevation={0}
-                          sx={{
-                            p: 2.5,
-                            borderRadius: "10px",
-                            border: "1px solid #e2e8f0",
-                            backgroundColor: "#ffffff",
-                            height: "100%",
-                          }}
-                        >
-                          {mat.badge && (
-                            <Typography
-                              sx={{
-                                fontSize: "11px",
-                                fontWeight: 700,
-                                color: "#b45309",
-                                backgroundColor: "rgba(194,155,56,0.12)",
-                                px: 1,
-                                py: 0.2,
-                                borderRadius: "4px",
-                                width: "fit-content",
-                                mb: 1,
-                                textTransform: "uppercase",
-                              }}
-                            >
-                              {mat.badge}
-                            </Typography>
-                          )}
-                          <Typography sx={{ fontWeight: 700, fontSize: "15px", color: "#0f172a", mb: 0.8 }}>
-                            {mat.title}
-                          </Typography>
-                          <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.5 }}>
-                            {mat.description}
-                          </Typography>
-                        </Paper>
-                      </Grid>
-                    ))}
-                  </Grid>
-                </Box>
-              )}
 
               {/* Service Specific FAQs */}
               <Box sx={{ mb: 6 }}>
@@ -637,7 +524,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   </Typography>
 
                   <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.6, mb: 3 }}>
-                    Schedule your free in-home consultation with our design team. Transparent itemized proposals with zero pressure.
+                    Schedule a free in-home consultation and receive an itemized proposal.
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
@@ -656,7 +543,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                       <CheckCircle2 size={15} color="#15803d" />
                       <Typography sx={{ fontSize: "12.5px", color: "#334155", fontWeight: 600 }}>
-                        Schluter® Lifetime Leak Protection
+                        Schluter® Waterproofing System
                       </Typography>
                     </Box>
                   </Box>
@@ -671,7 +558,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
 
                   <Box sx={{ textAlign: "center", mt: 2 }}>
                     <Typography sx={{ fontSize: "12px", color: "#94a3b8" }}>
-                      Or call our 24/7 hotline directly:
+                      Prefer to talk?
                     </Typography>
                     <Box
                       component="a"

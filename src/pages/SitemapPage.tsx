@@ -407,6 +407,7 @@ const SitemapPage: React.FC = () => {
                     <TextField
                       fullWidth
                       size="small"
+                      aria-label="Search pages or services"
                       placeholder="Search pages or services..."
                       value={searchTerm}
                       onChange={(e) => setSearchTerm(e.target.value)}

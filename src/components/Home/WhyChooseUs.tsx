@@ -14,25 +14,25 @@ const benefits: BenefitItem[] = [
     icon: ShieldCheck,
     title: "Licensed Red Seal Trades",
     description:
-      "Every plumbing, electrical, and structural alteration is completed by certified Red Seal journeymen and inspected to BC Building Code and Township of Langley standards.",
+      "Plumbing, electrical, and structural work is completed by certified Red Seal trades and inspected to applicable BC Building Code standards.",
   },
   {
     icon: Award,
     title: "Certified Schluter Waterproofing",
     description:
-      "We install vapor-tight Schluter-KERDI shower membranes and DITRA heated uncoupling floors, providing complete leak protection and manufacturer backed warranties.",
+      "We install Schluter-KERDI shower membranes and DITRA uncoupling floors with manufacturer-backed warranty coverage.",
   },
   {
     icon: FileCheck2,
     title: "Fixed-Price Remodeling Quotes",
     description:
-      "You receive an all-inclusive, itemized written proposal before any demolition starts. The price you are quoted is the price you pay, with zero surprise extras or hidden markups.",
+      "You receive an itemized written proposal before demolition starts, so you know the project cost in advance.",
   },
   {
     icon: MapPin,
     title: "Clean Worksites & Dust Control",
     description:
-      "We protect your hardwood, carpet, and living spaces with heavy-duty floor runners, negative air filtration, and daily debris cleanup throughout your Langley renovation.",
+      "Floor protection, air filtration, and daily cleanup help keep the rest of your home tidy during the renovation.",
   },
 ];
 
@@ -64,7 +64,7 @@ const WhyChooseUs: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            We bring dependable craftsmanship, clear communication, and certified waterproofing to every bathroom remodeling project in Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
+            Clear quotes, licensed trades, and certified waterproofing for bathroom projects across the Fraser Valley.
           </Typography>
         </Box>
 

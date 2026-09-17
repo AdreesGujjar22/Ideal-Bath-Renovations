@@ -372,7 +372,7 @@ const ServiceAreaDetail: React.FC = () => {
                 }}
               >
                 <Sparkles size={14} color="#c29b38" />
-                <span>Local Remodeling Excellence</span>
+                <span>Local Service</span>
               </Box>
 
               <Typography
@@ -845,7 +845,7 @@ const ServiceAreaDetail: React.FC = () => {
               Get Your Free In-Home Estimate in {area.shortName}
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
-              Fill out the form below or call (672) 273-0434 to schedule a no-obligation consultation with our renovation specialists.
+              Fill out the form below or call (672) 273-0434 to schedule a consultation.
             </Typography>
           </Box>
           <EstimateForm />

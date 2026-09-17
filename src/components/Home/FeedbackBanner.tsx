@@ -7,9 +7,9 @@ const FeedbackBanner: React.FC = () => {
     <Box sx={{ my: 0 }}>
       <PrimaryBanner
         img="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=2000&q=80"
-        badge="Proven Track Record"
-        primaryContent="Trusted by Over 250+ Homeowners Across Langley & The Fraser Valley"
-        secondaryContent="Read authentic homeowner reviews and see how we deliver beautiful, leak-free bathrooms on time and on budget."
+        badge="Homeowner Reviews"
+        primaryContent="What Homeowners Say About Their Renovations"
+        secondaryContent="Read homeowner reviews and see examples of completed bathroom projects."
         bannerHeight={480}
         fontsize={40}
         fontweight={700}

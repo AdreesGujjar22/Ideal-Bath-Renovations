@@ -98,7 +98,7 @@ const ServiceCard: React.FC<CardProps> = ({
             right: 14,
             zIndex: 10,
             backgroundColor: "#c29b38",
-            color: "#ffffff",
+            color: "#0f172a",
             fontWeight: 700,
             fontSize: "11px",
             letterSpacing: "0.05em",

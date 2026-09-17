@@ -77,9 +77,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "140,000+ residents across Langley Township & City",
     description:
-      "Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations delivers luxury renovations built to stand the test of time across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
+      "Based at 20819 78B Avenue in Langley Township, we handle bathroom remodels, shower conversions, tile, and vanities across Langley Twp, Surrey, Abbotsford, and the Fraser Valley.",
     overviewText:
-      "Living in Langley Township means enjoying vibrant communities and modern amenities. Whether you want to replace an old builder-grade acrylic bathtub with a zero-threshold curbless shower, install an elegant freestanding soaking bathtub, or build a custom double vanity with quartz countertops, our local team handles everything from municipal permits and plumbing to Schluter waterproofing and finishing touches.",
+      "Our Langley team can replace an old tub, plan a curbless shower, or install a double vanity. We coordinate the renovation from permits and plumbing through waterproofing and finishes.",
     neighborhoods: [
       "Willoughby Heights",
       "Walnut Grove",
@@ -95,19 +95,19 @@ export const serviceAreasData: ServiceAreaItem[] = [
     localHighlights: [
       {
         title: "Fast Local Response Times",
-        desc: "Because our crews and supply partners are based in Langley Township, BC, we provide quick on-site estimates, rapid material deliveries, and punctual project starts.",
+        desc: "Our Langley base makes in-home estimates and local project coordination straightforward.",
       },
       {
         title: "Schluter® Certified Waterproofing",
-        desc: "Every shower installation features complete Schluter-KERDI membranes and a mandatory 24-hour hydrostatic flood test before tile installation.",
+        desc: "Shower projects use Schluter-KERDI membranes and a 24-hour flood test before tile installation.",
       },
       {
         title: "Transparent, Fixed-Price Quotes",
-        desc: "No surprises or hidden fees. We provide clear, itemized written contracts outlining every fixture, tile allowance, and timeline milestone.",
+        desc: "Itemized written contracts outline fixtures, tile allowances, and project milestones.",
       },
       {
         title: "Comprehensive Workmanship Warranty",
-        desc: "We stand behind our plumbing, waterproofing, and tile craft with full warranty coverage for long-term peace of mind.",
+        desc: "Warranty coverage applies to the plumbing, waterproofing, and tile work described in your agreement.",
       },
     ],
     localProjects: [
@@ -190,9 +190,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Dispatched from our Langley Township HQ to Surrey Communities",
     populationServed: "Over 600,000 residents across South Surrey, Clayton & Fleetwood",
     description:
-      "Based in Langley Township, BC, Ideal Bath Renovations brings high-end bathroom craftsmanship to homeowners across Surrey, BC and the wider Fraser Valley. Whether you own a modern townhome in Clayton Heights, a family home in Fleetwood, or an executive residence in South Surrey, we deliver dependable renovations.",
+      "From our Langley Township base, we renovate bathrooms across Surrey, including South Surrey, Fleetwood, Clayton Heights, and Cloverdale.",
     overviewText:
-      "With Surrey's rapid growth and diverse architectural styles, homeowners frequently look to modernize builder bathrooms, improve accessibility for aging relatives, or create luxurious private spa retreats. Our team brings decades of combined tiling, plumbing, and carpentry experience to every Surrey project.",
+      "We update builder-grade bathrooms, improve accessibility, and plan layouts for Surrey homes, townhomes, and condos.",
     neighborhoods: [
       "South Surrey",
       "Clayton Heights",
@@ -208,19 +208,19 @@ export const serviceAreasData: ServiceAreaItem[] = [
     localHighlights: [
       {
         title: "Seamless Project Coordination",
-        desc: "From South Surrey oceanfront homes to Clayton townhouses, we handle all material logistics and stratus bylaws cleanly.",
+        desc: "We coordinate materials and work requirements for Surrey homes, townhomes, and strata properties.",
       },
       {
         title: "Strata-Compliant Renovation Protocols",
-        desc: "We provide full documentation, liability certificates, elevator protection, and strict work-hour compliance for Surrey condo/strata boards.",
+        desc: "We can provide the documentation and work-hour coordination required by strata properties.",
       },
       {
         title: "High-End Tile & Custom Cabinetry",
-        desc: "Specializing in large-format porcelain, marble mosaics, custom quartz countertops, and moisture-resistant solid wood vanities.",
+        desc: "Choose from large-format porcelain, mosaics, quartz countertops, and moisture-resistant vanities.",
       },
       {
         title: "Dedicated Project Manager",
-        desc: "You have a single point of contact who provides daily progress updates and keeps the project running smoothly.",
+        desc: "One point of contact keeps you updated as the project moves forward.",
       },
     ],
     localProjects: [
@@ -298,9 +298,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Mobile Renovation Units Dispatched from Langley Township HQ",
     populationServed: "160,000+ residents throughout Abbotsford & Sumas Prairie",
     description:
-      "Based in Langley Township, BC, Ideal Bath Renovations provides honest advice, exceptional tile craft, and durable waterproofing solutions for homeowners across Abbotsford, BC and the wider Fraser Valley.",
+      "From our Langley Township base, we provide bathroom renovations, tile work, and waterproofing for homes across Abbotsford and the Fraser Valley.",
     overviewText:
-      "Whether you are updating a 1980s rancher or customizing a newer construction home, our team provides comprehensive remodeling services. We take care of all rough-in plumbing, moisture remediation, modern layout planning, and final accessory mounting with unmatched attention to detail.",
+      "We update older and newer homes with layout planning, plumbing, moisture repairs, tile, and final fixture installation.",
     neighborhoods: [
       "East Abbotsford",
       "Auguston",
@@ -313,24 +313,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
       "Bradner",
       "Mount Lehman",
     ],
-    localHighlights: [
-      {
-        title: "Durable Moisture Defense",
-        desc: "Fraser Valley weather demands superior waterproofing. We protect framing with Schluter membranes and sealed grout lines.",
-      },
-      {
-        title: "Customized Layout Solutions",
-        desc: "We reconfigure cramped floorplans to add larger showers, freestanding tubs, and double vanities where standard builders couldn't.",
-      },
-      {
-        title: "Licensed Red-Seal Trades",
-        desc: "All electrical and plumbing work is completed by verified, certified professionals for lasting safety and code compliance.",
-      },
-      {
-        title: "Clear Communication & Fixed Schedule",
-        desc: "We keep you informed at every phase with milestone reviews and clean, respectful job sites.",
-      },
-    ],
+    localHighlights: [],
     localProjects: [
       {
         title: "East Abbotsford Family Bathroom Modernization",
@@ -397,9 +380,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "Over 350,000 homeowners across the Fraser Valley region",
     description:
-      "Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations provides high-caliber bathroom solutions across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
+      "Based at 20819 78B Avenue in Langley Township, we provide bathroom renovations across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
     overviewText:
-      "Our regional service model ensures that every homeowner in the Fraser Valley receives the exact same standard of master craftsmanship, certified waterproofing protection, and transparent pricing. We manage every step — design, tear-out, rough-in, tiling, and fixtures.",
+      "We coordinate design, demolition, rough-ins, waterproofing, tile, and fixtures as one renovation project.",
     neighborhoods: [
       "White Rock",
       "Maple Ridge",
@@ -415,19 +398,19 @@ export const serviceAreasData: ServiceAreaItem[] = [
     localHighlights: [
       {
         title: "Regional Expertise & Reliability",
-        desc: "We know the specific plumbing challenges, building codes, and architectural characteristics across Fraser Valley municipalities.",
+        desc: "We work across the local municipalities and coordinate the requirements for each project.",
       },
       {
         title: "Turnkey Project Management",
-        desc: "We coordinate all subtrades, inspections, waste removal, and material deliveries so you never have to juggle multiple contractors.",
+        desc: "We coordinate trades, inspections, waste removal, and material deliveries for the project.",
       },
       {
         title: "Premium Materials & Warranties",
-        desc: "We partner with top plumbing and tile manufacturers like Schluter, Kohler, Moen, Delta, and Riobel for long-term product dependability.",
+        desc: "We help you select plumbing and tile materials that suit the project and your budget.",
       },
       {
         title: "Free In-Home Estimates Across the Valley",
-        desc: "We travel to your home with 3D planning tools and material samples to formulate an accurate written quote at zero cost.",
+        desc: "We bring planning tools and material samples to the in-home estimate.",
       },
     ],
     localProjects: [

@@ -48,7 +48,7 @@ const ReferralCard: React.FC = () => {
                   top: 16,
                   left: 16,
                   backgroundColor: "#c29b38",
-                  color: "#ffffff",
+                  color: "#0f172a",
                   px: 2,
                   py: 0.6,
                   borderRadius: "20px",

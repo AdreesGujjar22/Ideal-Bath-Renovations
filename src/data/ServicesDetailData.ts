@@ -57,41 +57,41 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-remodeling",
     title: "Bathroom Remodeling",
     category: "Full Remodel",
-    tagline: "Turnkey bathroom remodeling designed around your lifestyle and built with quality craftsmanship.",
+    tagline: "Complete bathroom remodels with practical layouts and durable finishes.",
     heroImage: modernPowderRoomImg,
     priceRange: "Complimentary In-Home Estimate",
     typicalTimeline: "2 to 3 Weeks",
     warranty: "Lifetime Schluter® Waterproofing + 5-Yr Workmanship Guarantee",
     badge: "Most Comprehensive Solution",
     overview:
-      "Ideal Bath Renovations provides professional bathroom remodeling in Langley Twp, BC, serving homeowners throughout Langley, Surrey, Abbotsford, and the Fraser Valley. We handle every phase of your project in-house—from in-home design and dust-contained demolition to licensed plumbing, tile setting, custom vanities, and frameless glass installations.",
+      "We manage the full bathroom remodel, from in-home design and demolition to plumbing, tile, vanities, and glass installation.",
     detailedParagraphs: [
-      "Whether your existing space has an outdated layout, tired fiberglass fixtures, or poor ventilation, our team works closely with you to redesign a space that feels open, comfortable, and functional.",
-      "Every remodel is led by a dedicated project manager who ensures clear daily communication, punctual scheduling, and work that complies with the BC Building Code. We install Schluter® waterproof membranes behind all wet areas to protect your home against moisture leaks.",
+      "We can update an outdated layout, replace worn fixtures, and improve storage or ventilation.",
+      "A dedicated project manager coordinates the work, and Schluter® waterproof membranes are installed behind wet areas.",
     ],
     keyBenefits: [
       {
         title: "Strong Resale Value in Langley",
-        desc: "A well-done bathroom renovation is one of the strongest value-adding upgrades for resale in the Langley market.",
+        desc: "A well-planned bathroom can improve comfort and appeal to future buyers.",
       },
       {
         title: "Schluter® Certified Waterproofing",
-        desc: "Bonded vapor-tight waterproofing membrane and vapor-sealed shower systems protect your home from moisture.",
+        desc: "Schluter® membranes provide a continuous waterproof layer in wet areas.",
       },
       {
         title: "Dedicated Project Management",
-        desc: "A single point of contact coordinates licensed trades from initial in-home design through your final walkthrough and quality check.",
+        desc: "One project manager coordinates the trades and keeps you updated through the final walkthrough.",
       },
       {
         title: "Transparent Fixed-Price Quotes",
-        desc: "Itemized written proposals covering all trades, labor, and materials with no unexpected surprises.",
+        desc: "Itemized proposals show the expected labor, materials, and trade work before construction begins.",
       },
     ],
     inclusions: [
       "In-home design consultation, precise measurements, and detailed floor plan planning",
       "Full tear-out, drywall and subfloor inspection, and clean debris haul-away",
       "Licensed plumbing reconfiguration, drain upgrades, and shut-off valve replacements",
-      "Electrical Upgrades, LED Lighting & Properly Sized Exhaust Ventilation",
+      "Electrical upgrades, LED lighting, and properly sized exhaust ventilation",
     ],
     processSteps: [
       {
@@ -167,34 +167,34 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-renovation",
     title: "Bathroom Renovation",
     category: "Full Remodel",
-    tagline: "Quality bathroom renovations tailored to your family's needs, budget, and style.",
+    tagline: "Bathroom updates planned around your layout, budget, and daily needs.",
     heroImage: bathroomReferralImg,
     priceRange: "Complimentary In-Home Estimate",
     typicalTimeline: "2 to 3 Weeks",
     warranty: "5-Year Workmanship Warranty + Schluter® Waterproofing Guarantee",
     badge: "Complete Renovation",
     overview:
-      "Bathroom renovation in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Whether updating an aging family bathroom, an ensuite, or a basement bath, Ideal Bath Renovations modernizes your space with durable materials, practical storage, and dependable craftsmanship.",
+      "We update family bathrooms, ensuites, and basement baths with durable materials, practical storage, and a layout that fits your home.",
     detailedParagraphs: [
-      "Our team manages the entire renovation process smoothly so you don't have to juggle multiple sub-contractors. We assist with material selection, layout planning, and fixtures that fit your home's layout.",
-      "All plumbing and electrical updates are handled by licensed trades, and we install Schluter® waterproof membranes behind wet walls to protect against moisture damage.",
+      "We coordinate material selection, layout planning, and the trades needed for the renovation.",
+      "Licensed trades handle plumbing and electrical updates, with Schluter® waterproofing behind wet walls.",
     ],
     keyBenefits: [
       {
         title: "Licensed Local Trades",
-        desc: "Certified plumbers and electricians perform all mechanical updates to meet current BC Building Code.",
+        desc: "Certified plumbers and electricians complete mechanical updates to applicable BC Building Code standards.",
       },
       {
         title: "Schluter® Waterproof Protection",
-        desc: "Certified waterproofing barrier behind all wet wall areas prevents leaks and protects wood framing.",
+        desc: "A certified waterproofing barrier helps protect wet walls and framing from moisture.",
       },
       {
         title: "Direct Project Management",
-        desc: "One dedicated project manager keeps you updated from demolition through your final walkthrough.",
+        desc: "One project manager keeps you updated from demolition through the final walkthrough.",
       },
       {
         title: "Clear, Upfront Estimates",
-        desc: "Itemized written proposals ensure you understand all costs before construction begins.",
+        desc: "Itemized proposals show the expected costs before construction begins.",
       },
     ],
     inclusions: [
@@ -277,34 +277,34 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-repair",
     title: "Bathroom Repair",
     category: "Repairs & Upgrades",
-    tagline: "Targeted repairs for shower leaks, damaged drywall, broken tiles, and faulty plumbing.",
+    tagline: "Repairs for shower leaks, damaged drywall, broken tile, and faulty plumbing.",
     heroImage: bathroomBeforeImg,
     priceRange: "Free Assessment & Quote",
     typicalTimeline: "1 to 3 Days",
     warranty: "Comprehensive Workmanship Guarantee on All Repairs",
     badge: "Fast & Reliable",
     overview:
-      "Bathroom repair in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations identifies and resolves underlying moisture issues, plumbing leaks, and damaged surfaces before small problems turn into costly structural repairs.",
+      "We diagnose and repair moisture problems, plumbing leaks, and damaged bathroom surfaces before they grow.",
     detailedParagraphs: [
-      "Bathroom leaks often start unnoticed behind tile walls, under tub drains, or around cracked grout. Our experienced technicians locate the true source of the problem and complete lasting repairs rather than superficial cosmetic patches.",
-      "We replace damaged subflooring, install proper moisture barriers, and match replacement tile and fixtures as closely as possible to keep your bathroom dry and safe.",
+      "Leaks can start behind tile, under tub drains, or around cracked grout. We look for the source before repairing the visible damage.",
+      "Repairs may include subflooring, moisture barriers, replacement tile, and fixtures.",
     ],
     keyBenefits: [
       {
         title: "Accurate Problem Diagnosis",
-        desc: "We locate the root source of leaks and moisture rather than just covering up surface damage.",
+        desc: "We look for the source of leaks and moisture before recommending a repair.",
       },
       {
         title: "Licensed Plumbing Trades",
-        desc: "Experienced plumbers repair valves, drains, and supply lines safely and to code.",
+        desc: "Plumbers repair valves, drains, and supply lines to code.",
       },
       {
         title: "Respectful & Clean Work",
-        desc: "We protect your home with floor runners and leave work areas neat and tidy at the end of each day.",
+        desc: "Floor protection and daily cleanup help keep the work area tidy.",
       },
       {
         title: "Honest Repair Advice",
-        desc: "We give you straightforward options on whether a repair or replacement is the most cost-effective path.",
+        desc: "We explain whether repair or replacement makes more sense for the problem.",
       },
     ],
     inclusions: [
@@ -382,17 +382,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-replacement",
     title: "Bathroom Replacement",
     category: "Full Remodel",
-    tagline: "Replace worn-out tubs, showers, vanities, and toilets with durable modern fixtures.",
+    tagline: "Replace worn tubs, showers, vanities, and toilets with modern fixtures.",
     heroImage: bathtubReplaceImg,
     priceRange: "Complimentary In-Home Estimate",
     typicalTimeline: "1 to 2 Weeks",
     warranty: "Full Workmanship Warranty + Manufacturer Coverage",
     badge: "Modern Upgrade",
     overview:
-      "Bathroom replacement in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations strips away tired, damaged, or leaky fixtures and replaces them with modern, durable alternatives built for long-term comfort.",
+      "We replace worn, damaged, or leaking tubs, showers, vanities, and toilets with durable modern fixtures.",
     detailedParagraphs: [
-      "If your current bathroom features yellowed acrylic, a cracked shower pan, or a leaking vanity, a focused replacement project refreshes the space efficiently without the extended timeline of a major structural overhaul.",
-      "We replace old plumbing lines, reinforce subfloors where needed, and install modern water-efficient fixtures that look great and are easy to keep clean.",
+      "A focused replacement can refresh a bathroom without the timeline of a full structural remodel.",
+      "We check the subfloor, update plumbing where needed, and install water-efficient fixtures.",
     ],
     keyBenefits: [
       {
@@ -492,22 +492,22 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-installation",
     title: "Bathroom Installation",
     category: "Full Remodel",
-    tagline: "New bathroom additions and installations for basement suites, primary suites, and home additions.",
+    tagline: "New bathrooms for basement suites, primary suites, and home additions.",
     heroImage: tileSchluterImg,
     priceRange: "Complimentary In-Home Estimate",
     typicalTimeline: "3 to 4 Weeks",
     warranty: "5-Year Workmanship Warranty + Code Compliance Guarantee",
     badge: "New Construction",
     overview:
-      "Bathroom installation in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Whether adding a brand-new ensuite, converting unused space, or completing a basement suite bathroom, Ideal Bath Renovations manages every phase from framing to fixtures.",
+      "We build new bathrooms in ensuites, unused rooms, basement suites, and home additions—from framing through fixtures.",
     detailedParagraphs: [
-      "Adding a bathroom adds substantial day-to-day convenience and resale value to your home. We handle the technical aspects—including concrete breaking for basement drainage, venting runs, and electrical circuits—under one roof.",
-      "Our team works within local building bylaws and coordinates required inspections so you have complete peace of mind that your new bathroom is safe and built to code.",
+      "We coordinate basement drainage, venting, electrical circuits, framing, and finishes as one project.",
+      "We work within local bylaws and coordinate required inspections for the new bathroom.",
     ],
     keyBenefits: [
       {
         title: "Complete New Construction",
-        desc: "We handle framing, ventilation venting, plumbing rough-ins, and electrical circuits under one roof.",
+        desc: "We handle framing, ventilation, plumbing rough-ins, and electrical circuits.",
       },
       {
         title: "Code Compliance & Permitting",
@@ -602,17 +602,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-design",
     title: "Bathroom Design",
     category: "Design & Planning",
-    tagline: "Practical bathroom planning, layout optimization, and personalized material selections.",
+    tagline: "Bathroom layouts, storage planning, and material selections that fit your home.",
     heroImage: customVanityImg,
     priceRange: "Complimentary Initial In-Home Consultation",
     typicalTimeline: "1 to 2 Weeks for Design & Planning",
     warranty: "Guaranteed Alignment with Construction Budget & Code",
     badge: "Layout & Planning",
     overview:
-      "Bathroom design in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations creates thoughtful, practical bathroom layouts tailored to your family's routine, storage needs, and aesthetic taste.",
+      "We create practical bathroom layouts around your routine, storage needs, and preferred finishes.",
     detailedParagraphs: [
-      "Good bathroom design balances everyday ergonomics with visual appeal. We help you choose the right vanity size, plan functional shower niches, and configure lighting that makes small spaces feel bright and open.",
-      "Because we are hands-on renovation contractors, our design plans are grounded in construction reality, ensuring that what looks great on paper can be built cleanly within your budget.",
+      "We help plan vanity sizes, shower niches, storage, and lighting for the way you use the room.",
+      "Our plans account for plumbing, structure, budget, and the work required to build them.",
     ],
     keyBenefits: [
       {
@@ -707,17 +707,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-upgrades",
     title: "Bathroom Upgrades",
     category: "Repairs & Upgrades",
-    tagline: "Targeted updates that improve comfort, lighting, storage, and modern aesthetic.",
+    tagline: "Targeted updates for comfort, lighting, storage, and everyday use.",
     heroImage: modernPowderRoomImg,
     priceRange: "Free In-Home Assessment",
     typicalTimeline: "2 to 5 Days",
     warranty: "Full Workmanship & Installation Guarantee",
     badge: "Quick Turnaround",
     overview:
-      "Bathroom upgrades in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations delivers targeted improvements like new quartz vanities, frameless glass, modern lighting, and quiet ventilation without a full gut remodel.",
+      "Update a bathroom without a full gut remodel with options such as a new vanity, frameless glass, lighting, or ventilation.",
     detailedParagraphs: [
-      "You don't always need to gut a bathroom down to the studs to achieve a fresh, clean look. Upgrading key focal points like an old vanity, noisy exhaust fan, or cloudy shower curtain can make a remarkable difference in daily comfort.",
-      "Our team completes targeted upgrades with minimal household disruption, leaving you with modern fixtures and clean finishes in just a few days.",
+      "Replacing an old vanity, exhaust fan, or shower enclosure can improve the room without a full rebuild.",
+      "Targeted upgrades usually mean less disruption and a shorter on-site schedule.",
     ],
     keyBenefits: [
       {
@@ -812,17 +812,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-restoration",
     title: "Bathroom Restoration",
     category: "Repairs & Upgrades",
-    tagline: "Restoring bathrooms affected by hidden moisture, slow leaks, and aging materials.",
+    tagline: "Restore bathrooms affected by moisture, leaks, and aging materials.",
     heroImage: bathroomBeforeImg,
     priceRange: "Complimentary Moisture & Repair Estimate",
     typicalTimeline: "1 to 2 Weeks",
     warranty: "Full Structural Workmanship & Schluter® Waterproofing Guarantee",
     badge: "Structural Restoration",
     overview:
-      "Bathroom restoration in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations repairs water-damaged framing, removes compromised drywall, and rebuilds healthy, durable bathrooms with certified waterproofing.",
+      "We repair water-damaged framing, remove compromised materials, and rebuild bathrooms with certified waterproofing.",
     detailedParagraphs: [
-      "Hidden water leaks from compromised shower pans or old pipe fittings can quietly damage subfloors and wall framing over months or years. We carefully open affected areas, treat any moisture, and replace compromised structural members.",
-      "Once framing is sound and dry, we rebuild the bathroom with Schluter® KERDI waterproofing membranes and quality tile so moisture can never reach the wood framing again.",
+      "We open affected areas to find the leak, dry the space, and replace damaged structural materials.",
+      "Once the framing is sound and dry, we rebuild with Schluter® KERDI waterproofing and new finishes.",
     ],
     keyBenefits: [
       {
@@ -835,7 +835,7 @@ export const servicesDetailList: ServiceDetailItem[] = [
       },
       {
         title: "Certified Waterproofing Systems",
-        desc: "We install Schluter® KERDI waterproof membranes to guarantee moisture cannot penetrate framing again.",
+        desc: "Schluter® KERDI waterproof membranes help protect framing from future moisture.",
       },
       {
         title: "Clear Assessment & Honest Pricing",
@@ -917,22 +917,22 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "shower-remodeling",
     title: "Shower Remodeling",
     category: "Showers & Tubs",
-    tagline: "Custom walk-in showers, curbless transitions, and frameless glass installations.",
+    tagline: "Walk-in showers, curbless entries, and frameless glass enclosures.",
     heroImage: tileSchluterImg,
     priceRange: "Complimentary In-Home Consultation & Quote",
     typicalTimeline: "1 to 2 Weeks",
     warranty: "Lifetime Schluter® Waterproofing Warranty + 5-Yr Workmanship Guarantee",
     badge: "Most Requested Service",
     overview:
-      "Shower remodeling in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations transforms cramped or leaking shower stalls and outdated tubs into spacious, beautiful walk-in showers built with certified waterproof systems.",
+      "We replace outdated tubs and shower stalls with walk-in showers, curbless entries, and certified waterproofing systems.",
     detailedParagraphs: [
-      "Replacing an old tub-shower combo with a dedicated walk-in shower is one of the best upgrades you can make for daily comfort and accessibility. We custom-build each shower with integrated tile niches, comfortable benches, and heavy frameless glass.",
-      "Every shower we build is backed by the Schluter® waterproofing system, ensuring a bonded, leak-proof envelope behind every tile so your bathroom stays dry and mold-free for decades.",
+      "A walk-in shower can improve daily access and comfort. Options include tile niches, benches, and frameless glass.",
+      "Schluter® waterproofing is installed behind the tile to help keep the shower assembly dry.",
     ],
     keyBenefits: [
       {
         title: "Schluter® Certified Waterproofing",
-        desc: "We build shower pans and walls using integrated waterproof membranes that guarantee zero leaks.",
+        desc: "Integrated waterproof membranes are installed in the shower pan and walls.",
       },
       {
         title: "Curbless & Low-Threshold Options",
@@ -1027,17 +1027,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathtub-replacement",
     title: "Bathtub Replacement",
     category: "Showers & Tubs",
-    tagline: "Replace worn-out tubs with modern freestanding soakers or durable alcove bathtubs.",
+    tagline: "Replace worn tubs with freestanding soakers or durable alcove bathtubs.",
     heroImage: freestandingTubImg,
     priceRange: "Complimentary In-Home Estimate",
     typicalTimeline: "3 to 5 Days",
     warranty: "Full Workmanship Warranty + Manufacturer Tub Warranty",
     badge: "Popular Tub Upgrade",
     overview:
-      "Bathtub replacement in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations replaces chipped, stained, or hard-to-clean tubs with comfortable freestanding soakers or deep acrylic alcove bathtubs.",
+      "We replace chipped, stained, or hard-to-clean tubs with freestanding soakers or deep acrylic alcove bathtubs.",
     detailedParagraphs: [
-      "A deep soaker tub turns an ordinary bathroom into a restful retreat. Whether you are replacing a standard builder alcove tub or installing a sculptural freestanding tub, we handle all plumbing connections, leveling, and surrounding tile work cleanly.",
-      "We inspect the subflooring, ensure solid floor support, and install quality brass waste and overflow assemblies that prevent leaks for years to come.",
+      "We handle plumbing connections, leveling, and surrounding tile work for alcove and freestanding tubs.",
+      "We inspect the subfloor and install the waste and overflow assembly before testing the finished tub.",
     ],
     keyBenefits: [
       {
@@ -1132,17 +1132,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-tile-installation",
     title: "Bathroom Tile Installation",
     category: "Showers & Tubs",
-    tagline: "Precision floor, wall, and shower tile setting with durable waterproof substrates.",
+    tagline: "Floor, wall, and shower tile installation with durable waterproof substrates.",
     heroImage: tileSchluterImg,
     priceRange: "Complimentary Measure & Estimate",
     typicalTimeline: "3 to 7 Days",
     warranty: "Schluter® System Warranty + 5-Year Workmanship Guarantee",
     badge: "Master Craftsmanship",
     overview:
-      "Bathroom tile installation in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations installs large-format porcelain, ceramic, natural stone, and mosaic tile with laser alignment and certified waterproofing.",
+      "We install porcelain, ceramic, natural stone, and mosaic tile with careful layout and certified waterproofing in wet areas.",
     detailedParagraphs: [
-      "Tile is the defining visual and functional surface of any bathroom. Our setters take pride in clean layout lines, balanced corner cuts, and flat, even tile surfaces using modern leveling systems.",
-      "We prepare every surface with uncoupling membranes and certified waterproof substrates to prevent cracked tiles, loose grout, and water intrusion behind walls.",
+      "We plan layout lines, balance corner cuts, and use leveling systems for an even finish.",
+      "Uncoupling membranes and waterproof substrates help protect tile and wet walls.",
     ],
     keyBenefits: [
       {
@@ -1237,17 +1237,17 @@ export const servicesDetailList: ServiceDetailItem[] = [
     slug: "bathroom-vanity-installation",
     title: "Bathroom Vanity Installation",
     category: "Design & Planning",
-    tagline: "Installation of custom and pre-built vanities, quartz countertops, sinks, and plumbing.",
+    tagline: "Install custom or pre-built vanities, quartz countertops, sinks, and plumbing.",
     heroImage: customVanityImg,
     priceRange: "Complimentary In-Home Measure & Quote",
     typicalTimeline: "1 to 3 Days",
     warranty: "Full Workmanship & Plumbing Connection Guarantee",
     badge: "Storage & Style",
     overview:
-      "Bathroom vanity installation in Langley Twp, BC — serving Langley, Surrey, Abbotsford, and the Fraser Valley. Ideal Bath Renovations installs freestanding and floating vanities paired with quartz countertops, undermount sinks, and modern faucets.",
+      "We install freestanding and floating vanities with quartz countertops, undermount sinks, and modern faucets.",
     detailedParagraphs: [
-      "The vanity is the centerpiece of your bathroom's design and daily routine. We ensure your new cabinet is properly leveled, solidly anchored to wall framing, and that plumbing lines are adapted cleanly to work with modern drawer cutouts.",
-      "Whether you are upgrading to a spacious double vanity or installing a sleek wall-hung floating vanity, our team ensures a clean fit with zero leaks.",
+      "We level and anchor the cabinet, then adapt plumbing to fit the new drawer layout.",
+      "Choose a single, double, or floating vanity based on your space and storage needs.",
     ],
     keyBenefits: [
       {

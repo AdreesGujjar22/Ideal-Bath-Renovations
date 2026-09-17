@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
 <meta name="google-site-verification" content="qd5l9a8aM1hvCXteZq3L4FgOUHkQ9huZV3QDvjinGz8" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0HZG3JGL9"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B0HZG3JGL9');
+  window.addEventListener('load', function () {
+    var loadAnalytics = function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B0HZG3JGL9');
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-B0HZG3JGL9';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 2000 });
+    } else {
+      window.setTimeout(loadAnalytics, 2000);
+    }
+  });
 </script>
     <link
       rel="icon"
@@ -27,9 +38,17 @@
       fetchpriority="high"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <title>Bathroom Remodeler in Langley, BC - Ideal Bath Renovations</title>
     <meta name="description" content="Looking for a Bathroom Remodeler in Langley, BC? Ideal Bath Renovations provides quality bath renovations, shower upgrades, and complete bathroom remodeling." />
     <meta name="keywords" content="bathroom remodeling Langley, bathroom renovation Langley Twp, tub-to-shower conversion, curbless walk-in shower, bathroom contractor Fraser Valley, bathroom tile installation, custom bathroom vanities" />

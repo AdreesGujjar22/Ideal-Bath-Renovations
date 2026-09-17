@@ -53,7 +53,7 @@ const CTAQuoteSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Contact us today to schedule a free in-home consultation and receive a written quote.
+            Schedule a free in-home consultation and receive a written quote.
           </Typography>
         </Box>
 

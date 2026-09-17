@@ -25,8 +25,6 @@ const categories = [
   "All Services",
   "Full Remodel",
   "Showers & Tubs",
-  "Tile & Flooring",
-  "Vanities & Cabinetry",
   "Repairs & Upgrades",
   "Design & Planning",
 ];
@@ -102,7 +100,7 @@ const ServicesHub: React.FC = () => {
               mb: 2.5,
             }}
           >
-            <Sparkles size={14} /> Full-Scope Renovation Services in Langley, BC
+            <Sparkles size={14} /> Bathroom Services in Langley, BC
           </Box>
 
           <Typography
@@ -132,13 +130,14 @@ const ServicesHub: React.FC = () => {
               mb: 4,
             }}
           >
-            From turnkey master ensuite transformations to precision tile setting and tub-to-shower conversions, our certified Red Seal craftsmen and Schluter® installers deliver lasting excellence.
+            Choose from full remodels, shower conversions, repairs, tile, vanities, and bathroom planning.
           </Typography>
 
           {/* Search bar inside hero */}
           <Box sx={{ maxWidth: "550px", mx: "auto" }}>
             <TextField
               fullWidth
+              aria-label="Search services"
               placeholder="Search services (e.g. Shower Remodeling, Tile, Vanity)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -226,8 +225,11 @@ const ServicesHub: React.FC = () => {
                           height: "100%",
                           objectFit: "cover",
                           transition: "transform 0.4s ease",
+                          display: "block",
                           "&:hover": { transform: "scale(1.04)" },
                         }}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <Box
                         sx={{
@@ -357,13 +359,13 @@ const ServicesHub: React.FC = () => {
                 Not sure which service fits your bathroom?
               </Typography>
               <Typography sx={{ fontSize: "14.5px", color: "#cbd5e1", lineHeight: 1.6 }}>
-                Our Langley renovation experts will inspect your current space, listen to your goals, and prepare a tailored design plan with transparent fixed pricing.
+                We’ll review your space, discuss your goals, and prepare a clear proposal.
               </Typography>
             </Box>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, flexShrink: 0, width: { xs: "100%", sm: "auto" } }}>
               <PrimaryButton
-                content="Schedule Free Consultation"
+                content="Schedule a Consultation"
                 variant="gold"
                 btnpadding="14px 28px"
                 fontsize={15}

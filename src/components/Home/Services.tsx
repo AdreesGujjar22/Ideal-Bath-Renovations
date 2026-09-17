@@ -130,7 +130,7 @@ const Services: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            We handle every part of your bathroom project, whether updating specific fixtures or rebuilding the entire room.
+            From fixture updates to full remodels, we handle the work from start to finish.
           </Typography>
         </Box>
 
@@ -236,4 +236,3 @@ const Services: React.FC = () => {
 };
 
 export default Services;
-

@@ -60,7 +60,7 @@ const ReferralCard: React.FC<ReferralCardProps> = ({ img, title, content1, conte
                         image={
                             img
                         }
-                        alt="img"
+                        alt={title}
                         loading="lazy"
                         height="100%"
                         width="100%"

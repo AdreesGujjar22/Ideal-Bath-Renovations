@@ -11,7 +11,7 @@ const FooterCard: React.FC = () => {
           fontSize: "14px",
           fontWeight: 700,
           letterSpacing: "0.08em",
-          color: "#c29b38",
+          color: "#8a650f",
           textTransform: "uppercase",
         }}
       >

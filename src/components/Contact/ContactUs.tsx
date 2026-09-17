@@ -215,10 +215,11 @@ const ContactUs: React.FC = () => {
                     />
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8 }}>
-                      <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                      <Typography id="primary-service-needed-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                         Primary Service Needed
                       </Typography>
                       <Select
+                        aria-labelledby="primary-service-needed-label"
                         value={formData.service}
                         onChange={(e) => setFormData((prev) => ({ ...prev, service: e.target.value }))}
                         size="small"
@@ -248,7 +249,7 @@ const ContactUs: React.FC = () => {
                         disabled={loading}
                         style={{
                           backgroundColor: "#c29b38",
-                          color: "#ffffff",
+                          color: "#0f172a",
                           border: "none",
                           padding: "14px 32px",
                           borderRadius: "8px",
@@ -352,8 +353,7 @@ const ContactUs: React.FC = () => {
                         Operating Hours
                       </Typography>
                       <Typography sx={{ fontSize: "13px", color: "#cbd5e1" }}>
-                        Open 24 Hours / 7 Days a Week <br />
-                        24/7 Phone Consultations & Support
+                        Phone consultations available 24/7
                       </Typography>
                     </Box>
                   </Box>

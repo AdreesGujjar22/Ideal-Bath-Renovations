@@ -7,8 +7,8 @@ const ImgBanner: React.FC = () => (
     <PrimaryBanner
       img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=2000&q=80"
       badge="Craftsmanship"
-      primaryContent="Engineered Precision & Modern Craftsmanship"
-      secondaryContent="Dedicated to lasting quality in every bathroom remodel across the Fraser Valley."
+      primaryContent="Careful Work. Clear Results."
+      secondaryContent="Practical bathroom renovations across the Fraser Valley."
       bannerHeight={380}
       fontsize={36}
       fontweight={800}

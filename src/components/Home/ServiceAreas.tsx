@@ -34,7 +34,7 @@ const ServiceAreas: React.FC = () => {
               mb: 3.5,
             }}
           >
-            Headquartered at 20819 78B Avenue in Langley Township, BC, our mobile design consultants and certified renovation crews proudly serve homeowners across Langley, Surrey, Abbotsford, and surrounding Fraser Valley communities.
+            Based at 20819 78B Avenue in Langley Township, we serve homeowners across Langley, Surrey, Abbotsford, and the Fraser Valley.
           </Typography>
 
           {/* Short list of served area names as links */}
@@ -115,7 +115,7 @@ const ServiceAreas: React.FC = () => {
                 Our Langley Twp HQ & Service Area Map
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b" }}>
-                Based at 20819 78B Avenue, Langley Township, BC, serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
+                Based at 20819 78B Avenue in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
               </Typography>
             </Box>
 
@@ -166,4 +166,3 @@ const ServiceAreas: React.FC = () => {
 };
 
 export default ServiceAreas;
-

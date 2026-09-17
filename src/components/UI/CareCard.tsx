@@ -19,7 +19,7 @@ const CareCard: React.FC<CareCardProps> = ({ img, title, duration }) => {
                 <CardMedia
                     component="img"
                     image={img}
-                    alt="img"
+                    alt={title}
                     loading="lazy"
                     height="100%"
                     width="100%"

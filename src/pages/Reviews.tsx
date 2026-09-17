@@ -14,7 +14,7 @@ const Reviews: React.FC = () => {
       <PrimaryBanner
         img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80"
         primaryContent="Client Reviews"
-        secondaryContent="See what local homeowners across Langley Twp and the Fraser Valley have to say about our bathroom renovations."
+        secondaryContent="Read what homeowners in Langley Twp and the Fraser Valley say about their bathroom projects."
         bannerHeight={380}
         fontsize={42}
         fontsizeSecondary={16}

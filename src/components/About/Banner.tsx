@@ -61,7 +61,7 @@ const AboutBanner: React.FC = () => {
               </Typography>
 
               <Typography sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.7 }}>
-                Based at <b>20819 78B Avenue, Langley Township, BC</b>, our facility coordinates project management, material selections, and 3D architectural design sessions. Homeowners are welcome to review tile samples, quartz countertops, and custom vanity options in person.
+                At <b>20819 78B Avenue, Langley Township, BC</b>, you can review tile, quartz, and vanity options in person during a consultation.
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, py: 1 }}>
@@ -80,13 +80,13 @@ const AboutBanner: React.FC = () => {
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                   <Clock size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "13.5px", color: "#64748b" }}>
-                    Open 24 Hours / 7 Days a Week (24/7 Consultation & Support)
+                    Phone consultations available 24/7
                   </Typography>
                 </Box>
               </Box>
 
               <Box sx={{ pt: 1 }}>
-                <PrimaryButton content="Schedule Studio Consultation" variant="gold" to="/contact" />
+                <PrimaryButton content="Schedule a Consultation" variant="gold" to="/contact" />
               </Box>
             </Box>
           </Grid>

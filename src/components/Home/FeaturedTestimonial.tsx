@@ -78,7 +78,7 @@ const FeaturedTestimonial: React.FC = () => {
                 },
               }}
             >
-              <span>View All Verified Reviews</span>
+              <span>Read More Reviews</span>
               <ArrowRight size={16} />
             </Box>
           </Box>

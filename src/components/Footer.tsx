@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, ShieldCheck, CheckCircle2, Award, ExternalLink, Bath, Star } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ExternalLink, Bath, Star } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -60,13 +60,13 @@ const Footer: React.FC = () => {
                       textTransform: "uppercase",
                     }}
                   >
-                    Renovations • Langley Twp
+                    Renovations • Langley
                   </Typography>
                 </Box>
               </Box>
 
               <Typography sx={{ fontSize: "14px", lineHeight: 1.7, color: "#cbd5e1" }}>
-                Ideal Bath Renovations is a locally owned bathroom renovation and remodeling contractor based in Langley Township, BC. We specialize in full-service bathroom remodels, tub-to-shower conversions, and curbless walk-in showers across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
+                Ideal Bath Renovations is a bathroom renovation contractor based in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley. We handle full remodels, tub-to-shower conversions, and walk-in showers.
               </Typography>
 
               <Box
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
                 >
                   <Phone size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
                   <Typography sx={{ fontSize: "13.5px", fontWeight: 700 }}>
-                    +1 (672) 273-0434 <span style={{ color: "#dfba5a", fontWeight: 500, fontSize: "12px", marginLeft: "4px" }}>(Direct Call)</span>
+                    +1 (672) 273-0434
                   </Typography>
                 </Box>
 
@@ -295,39 +295,6 @@ const Footer: React.FC = () => {
 
         <Divider sx={{ my: 4, borderColor: "rgba(255,255,255,0.08)" }} />
 
-        {/* Badges and Guarantees */}
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: 2,
-            mb: 3,
-          }}
-        >
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <ShieldCheck size={18} color="#dfba5a" />
-              <Typography sx={{ fontSize: "12.5px", color: "#e2e8f0", fontWeight: 600 }}>
-                Workmanship Warranty
-              </Typography>
-            </Box>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <Award size={18} color="#dfba5a" />
-              <Typography sx={{ fontSize: "12.5px", color: "#e2e8f0", fontWeight: 600 }}>
-                Waterproof Membrane Systems
-              </Typography>
-            </Box>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <CheckCircle2 size={18} color="#dfba5a" />
-              <Typography sx={{ fontSize: "12.5px", color: "#e2e8f0", fontWeight: 600 }}>
-                Licensed Red Seal Trades & WorkSafeBC Insured
-              </Typography>
-            </Box>
-          </Box>
-        </Box>
-
         <Box
           sx={{
             display: "flex",
@@ -341,10 +308,7 @@ const Footer: React.FC = () => {
         >
           <Box sx={{ display: "flex", flexDirection: "column", gap: 0.4 }}>
             <Typography sx={{ fontSize: "12px", color: "#64748b" }}>
-              © 2026 Ideal Bath Renovations. All rights reserved. Registered in BC, Canada.
-            </Typography>
-            <Typography sx={{ fontSize: "11px", color: "#94a3b8" }}>
-              Last Updated &amp; Verified: September 2026 • Headquarters: 20819 78B Avenue, Langley Township, BC V2Y 0A1
+              © 2026 Ideal Bath Renovations. All rights reserved.
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
