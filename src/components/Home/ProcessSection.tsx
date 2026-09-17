@@ -57,7 +57,7 @@ const ProcessSection: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Our Renovation Process
+            Our Bathroom Renovation Process in Langley
           </Typography>
 
           <Typography

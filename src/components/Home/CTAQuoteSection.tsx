@@ -41,7 +41,7 @@ const CTAQuoteSection: React.FC = () => {
               mb: 2,
             }}
           >
-            Request a Free In-Home Consultation
+            Request a Bathroom Renovation Quote in Langley
           </Typography>
 
           <Typography

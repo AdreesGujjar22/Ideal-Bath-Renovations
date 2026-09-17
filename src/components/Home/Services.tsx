@@ -118,7 +118,7 @@ const Services: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Our Bathroom Renovation Services
+            Bathroom Remodeling Services in Langley & Fraser Valley
           </Typography>
 
           <Typography
@@ -130,7 +130,7 @@ const Services: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            From fixture updates to full remodels, we handle the work from start to finish.
+            Ideal Bath Renovations is a local bathroom remodeler serving Langley Township, Surrey, Abbotsford, and the wider Fraser Valley. We handle full bathroom renovations, walk-in showers, tub-to-shower conversions, bathtub replacements, custom vanities, and waterproof tile installation.
           </Typography>
         </Box>
 
@@ -208,8 +208,7 @@ const Services: React.FC = () => {
                     </Box>
                   </Box>
 
-                  {/* Body Content: Title only */}
-                  <Box sx={{ p: 3, flex: 1, display: "flex", alignItems: "center" }}>
+                  <Box sx={{ p: 3, flex: 1 }}>
                     <Typography
                       variant="h3"
                       className="service-title"
@@ -220,10 +219,21 @@ const Services: React.FC = () => {
                         color: "#0f172a",
                         lineHeight: 1.35,
                         transition: "color 0.2s ease",
+                        mb: 1,
                       }}
                     >
                       {service.title}
                     </Typography>
+                    <Typography sx={{ fontSize: "13.5px", color: "#64748b", lineHeight: 1.65 }}>
+                      {service.description}
+                    </Typography>
+                    <Box component="ul" sx={{ display: "flex", flexWrap: "wrap", gap: 0.8, listStyle: "none", p: 0, m: "14px 0 0" }}>
+                      {service.highlights.map((highlight) => (
+                        <Box component="li" key={highlight} sx={{ px: 1, py: 0.45, borderRadius: "5px", backgroundColor: "#f8fafc", color: "#475569", fontSize: "11px", fontWeight: 700 }}>
+                          {highlight}
+                        </Box>
+                      ))}
+                    </Box>
                   </Box>
                 </Box>
               </Grid>

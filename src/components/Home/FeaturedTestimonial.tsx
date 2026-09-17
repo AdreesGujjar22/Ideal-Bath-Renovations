@@ -19,7 +19,7 @@ const FeaturedTestimonial: React.FC = () => {
               mb: 3,
             }}
           >
-            Client Feedback
+            What Langley Bathroom Remodeling Clients Say
           </Typography>
 
           <Box

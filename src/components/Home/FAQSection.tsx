@@ -93,7 +93,7 @@ const FAQSection: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Frequently Asked Questions About Bathroom Remodeling in Langley
+            Bathroom Remodeling FAQs for Langley Homeowners
           </Typography>
 
           <Typography

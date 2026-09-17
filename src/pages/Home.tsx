@@ -12,10 +12,10 @@ const Home: React.FC = () => {
   return (
     <>
       <SEO
-        title="Bathroom Renovation Langley Twp | Ideal Bath Renovations"
-        description="Reliable bathroom renovation services in Langley Twp. From walk-in showers to complete remodels, we build it right. Contact us for a free in-home quote."
+        title="Bathroom Remodeler & Renovation Contractor in Langley, BC | Ideal Bath Renovations"
+        description="Ideal Bath Renovations is a Langley BC bathroom remodeler serving Langley Township, Surrey, Abbotsford and the Fraser Valley with full renovations, showers and tub conversions."
         canonical="https://idealbathrenovations.ca/"
-        keywords="bathroom renovation Langley Twp, bathroom remodeler Langley BC, tub to shower conversion Langley, walk in shower Langley, bathroom contractor Fraser Valley"
+        keywords="bathroom remodeler Langley BC, bathroom renovation Langley Township, bathroom contractor Fraser Valley, walk-in shower Langley, tub-to-shower conversion Langley"
       />
       <Header />
       <Services />
