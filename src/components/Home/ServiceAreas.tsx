@@ -18,10 +18,23 @@ const ServiceAreas: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 3,
+              mb: 1.5,
             }}
           >
-            Service Areas
+            Bathroom Remodeling Service Areas in Langley Twp &amp; Fraser Valley
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: { xs: "15px", md: "16.5px" },
+              color: "#64748b",
+              maxWidth: "800px",
+              mx: "auto",
+              lineHeight: 1.7,
+              mb: 3.5,
+            }}
+          >
+            Headquartered at 20819 78B Avenue in Langley Township, BC, our mobile design consultants and certified renovation crews proudly serve homeowners across Langley, Surrey, Abbotsford, and surrounding Fraser Valley communities.
           </Typography>
 
           {/* Short list of served area names as links */}
@@ -102,7 +115,7 @@ const ServiceAreas: React.FC = () => {
                 Our Langley Twp HQ & Service Area Map
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b" }}>
-                Our location at 20819 78B Ave, Langley Twp and our regional service coverage.
+                Based at 20819 78B Avenue, Langley Township, BC, serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
               </Typography>
             </Box>
 
@@ -139,11 +152,11 @@ const ServiceAreas: React.FC = () => {
           {/* Embedded Google Map Component */}
           <GoogleMapEmbed
             businessName="IDEAL BATH RENOVATIONS"
-            address="20819 78B Ave, Langley Twp, BC V2Y 0A1"
+            address="Based at 20819 78B Avenue, Langley Township, BC"
             mapQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1, Canada"
             googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
             directionsQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1"
-            bottomLabel="IDEAL BATH RENOVATIONS HQ • 20819 78B Ave, Langley Twp, BC, Canada"
+            bottomLabel="IDEAL BATH RENOVATIONS HQ • Based at 20819 78B Avenue, Langley Township, BC"
             height={480}
           />
         </Box>

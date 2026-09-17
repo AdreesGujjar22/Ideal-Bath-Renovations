@@ -1,24 +1,25 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./styles/theme";
 import PageLoader from "./components/PageLoader";
 import PageWrapper from "./components/PageWrapper";
 import ScrollToTop from "./components/ScrollToTop";
+import ErrorBoundary from "./components/ErrorBoundary";
 
-// Lazy load all page routes
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const ServicesHub = lazy(() => import("./pages/ServicesHub"));
-const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
-const ServiceAreasHub = lazy(() => import("./pages/ServiceAreasHub"));
-const ServiceAreaDetail = lazy(() => import("./pages/ServiceAreaDetail"));
-const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
-const Reviews = lazy(() => import("./pages/Reviews"));
-const Contact = lazy(() => import("./pages/Contact"));
-const SitemapPage = lazy(() => import("./pages/SitemapPage"));
+// Statically import page components to avoid runtime chunk fetch failures
+import Home from "./pages/Home";
+import About from "./pages/About";
+import ServicesHub from "./pages/ServicesHub";
+import ServiceDetail from "./pages/ServiceDetail";
+import ServiceAreasHub from "./pages/ServiceAreasHub";
+import ServiceAreaDetail from "./pages/ServiceAreaDetail";
+import BeforeAfter from "./pages/BeforeAfter";
+import Reviews from "./pages/Reviews";
+import Contact from "./pages/Contact";
+import SitemapPage from "./pages/SitemapPage";
 
 const App: React.FC = () => {
   return (
@@ -26,8 +27,9 @@ const App: React.FC = () => {
       <Router>
         <ScrollToTop />
         <NavBar />
-        <Suspense fallback={<PageLoader message="Loading page..." />}>
-          <Routes>
+        <ErrorBoundary>
+          <Suspense fallback={<PageLoader message="Loading page..." />}>
+            <Routes>
             <Route
               path="/"
               element={
@@ -139,7 +141,8 @@ const App: React.FC = () => {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
-        <Footer />
+      </ErrorBoundary>
+      <Footer />
       </Router>
     </ThemeProvider>
   );

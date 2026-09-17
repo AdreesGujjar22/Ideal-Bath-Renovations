@@ -119,7 +119,7 @@ const EstimateForm: React.FC = () => {
     } catch (error) {
       console.error("Submission log:", error);
       setSubmitted(true);
-      setStatusMsg("Thank you! Your inquiry has been submitted. Our team at 20819 78B Avenue, Langley Twp will review your requirements and reach out promptly.");
+      setStatusMsg("Thank you! Your inquiry has been submitted. Our team based at 20819 78B Avenue, Langley Township, BC will review your requirements and reach out promptly.");
     } finally {
       setLoading(false);
     }
@@ -173,7 +173,7 @@ const EstimateForm: React.FC = () => {
             </Typography>
 
             <Typography sx={{ fontSize: "14px", color: "#64748b", maxWidth: "600px", mx: "auto" }}>
-              Serving Langley Twp, Willoughby, Walnut Grove, Fort Langley, Surrey, and Abbotsford. Zero obligation, transparent itemized pricing.
+              Serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley. Zero obligation, transparent itemized pricing.
             </Typography>
           </Box>
 
@@ -247,7 +247,7 @@ const EstimateForm: React.FC = () => {
                   value={formData.address}
                   setValue={setFormData}
                   field="address"
-                  placeholder="e.g., 20819 78B Ave, Willoughby, Langley Twp"
+                  placeholder="e.g., 20819 78B Avenue, Langley Township, BC"
                   required
                 />
 

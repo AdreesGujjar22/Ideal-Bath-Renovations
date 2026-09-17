@@ -5,9 +5,9 @@ const faqs = [
       "A standard full-service bathroom remodel typically takes between 2 to 3 weeks from demolition to final walkthrough. A tub-to-shower conversion is usually completed in 3 to 5 days, while rapid liner or refinishing solutions can be completed in as little as 1 to 2 days.",
   },
   {
-    question: "Do you handle the city permits for Langley Twp and Fraser Valley?",
+    question: "Do you handle municipal permits across your service area?",
     answer:
-      "Yes! Ideal Bath Renovations manages all required municipal permits, BC Building Code compliance filings, and licensed plumbing/electrical inspections throughout Langley Township, Langley City, Surrey, Abbotsford, and surrounding Fraser Valley communities.",
+      "Yes! Ideal Bath Renovations manages all required municipal permits, BC Building Code compliance filings, and licensed plumbing/electrical inspections throughout Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
   },
   {
     question: "What waterproofing system do you install behind shower walls and floors?",
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "What is included in the free in-home design consultation and estimate?",
     answer:
-      "Our lead renovation consultant visits your home at 20819 78B Avenue or across Langley to take laser measurements, inspect existing plumbing and electrical, discuss your aesthetic goals, and provide photorealistic 3D space plans along with a transparent, itemized fixed-price quote.",
+      "Based in Langley Township, BC, our lead renovation consultant visits your home across Langley Twp, Surrey, Abbotsford, or the wider Fraser Valley to take laser measurements, inspect existing plumbing and electrical, discuss your aesthetic goals, and provide photorealistic 3D space plans along with a transparent, itemized fixed-price quote.",
   },
 ];
 

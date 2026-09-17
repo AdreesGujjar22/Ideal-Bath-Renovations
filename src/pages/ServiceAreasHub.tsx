@@ -18,7 +18,7 @@ const ServiceAreasHub: React.FC = () => {
     <>
       <SEO
         title="Service Areas | Bathroom Remodeler Langley, Surrey & Fraser Valley, BC"
-        description="Explore Ideal Bath Renovations service areas across Langley Twp, Surrey, Abbotsford, White Rock & Fraser Valley. Free in-home estimates and licensed contractors."
+        description="Explore Ideal Bath Renovations service areas across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley. Free in-home estimates and licensed contractors."
         canonical="https://idealbathrenovations.ca/service-areas"
         keywords="bathroom renovations service areas, bathroom remodeling Langley, bathroom remodeler Surrey BC, bathroom renovation Abbotsford, Fraser Valley bathroom contractors"
       />
@@ -54,7 +54,7 @@ const ServiceAreasHub: React.FC = () => {
             }}
           >
             <MapPin size={15} />
-            <span>Regional Coverage • Fraser Valley & Lower Mainland</span>
+            <span>Regional Coverage • Fraser Valley</span>
           </Box>
 
           <Typography
@@ -80,7 +80,7 @@ const ServiceAreasHub: React.FC = () => {
               mb: 4,
             }}
           >
-            From our headquarters in Langley Township, Ideal Bath Renovations delivers master bathroom remodels, tub-to-shower conversions, and Schluter waterproofing across the Fraser Valley.
+            Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations delivers master bathroom remodels, tub-to-shower conversions, and Schluter waterproofing across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
           </Typography>
 
           <Box sx={{ display: "flex", justifyContent: "center", gap: 2, flexWrap: "wrap" }}>
@@ -304,19 +304,19 @@ const ServiceAreasHub: React.FC = () => {
               Ideal Bath Renovations Headquarters & Service Dispatch
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "720px", mx: "auto" }}>
-              Located at 20819 78B Ave, Langley Twp, BC V2Y 0A1. We dispatch certified renovation teams across all Fraser Valley municipalities daily.
+              Based at 20819 78B Avenue, Langley Township, BC. We dispatch certified renovation teams across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
             </Typography>
           </Box>
 
           <GoogleMapEmbed
             businessName="IDEAL BATH RENOVATIONS"
-            address="20819 78B Ave, Langley Twp, BC V2Y 0A1"
+            address="Based at 20819 78B Avenue, Langley Township, BC"
             rating={5.0}
             reviewsCount="28+"
             mapQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1, Canada"
             googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
             directionsQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1"
-            bottomLabel="IDEAL BATH RENOVATIONS HQ • 20819 78B Ave, Langley Twp, BC, Canada"
+            bottomLabel="IDEAL BATH RENOVATIONS HQ • Based at 20819 78B Avenue, Langley Township, BC"
             height={500}
           />
         </Container>
@@ -339,7 +339,7 @@ const ServiceAreasHub: React.FC = () => {
               Request Your Free Bathroom Renovation Quote
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
-              Serving Langley Twp, Surrey, Abbotsford, and the entire Fraser Valley with upfront written pricing.
+              Serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley with upfront written pricing.
             </Typography>
           </Box>
           <EstimateForm />

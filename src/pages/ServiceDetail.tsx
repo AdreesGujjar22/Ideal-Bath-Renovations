@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -68,7 +68,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
     <>
       <SEO
         title={`${service.title} Langley & Fraser Valley | Ideal Bath Renovations`}
-        description={`${service.overview.substring(0, 155)}... Contact Ideal Bath Renovations at 20819 78B Ave, Langley for free 3D CAD design & fixed-price quote.`}
+        description={`${service.overview.substring(0, 140)}... Contact Ideal Bath Renovations, based at 20819 78B Avenue, Langley Township, BC, for a free quote.`}
         canonical={`https://idealbathrenovations.ca/services/${service.slug}`}
       />
 
@@ -283,7 +283,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <CheckCircle2 size={18} color="#15803d" />
               <Typography sx={{ fontSize: "13px", fontWeight: 600, color: "#334155" }}>
-                Serving Langley, Surrey & Abbotsford
+                Serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley
               </Typography>
             </Box>
           </Box>
@@ -301,7 +301,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
                   <Hammer size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#c29b38", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                    Service Overview & Engineering
+                    Service Overview
                   </Typography>
                 </Box>
 
@@ -322,7 +322,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   {service.overview}
                 </Typography>
 
-                {service.detailedParagraphs.slice(0, 1).map((para, idx) => (
+                {service.detailedParagraphs.map((para, idx) => (
                   <Typography key={idx} sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.8, mb: 2 }}>
                     {para}
                   </Typography>
@@ -399,7 +399,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                         color: "#0f172a",
                       }}
                     >
-                      Comprehensive Scope of Work & Inclusions
+                      Scope of Work & Inclusions
                     </Typography>
                   </Box>
                   <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
@@ -407,7 +407,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
-                    {service.inclusions.slice(0, 4).map((inc, idx) => (
+                    {service.inclusions.map((inc, idx) => (
                       <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                         <CheckCircle2 size={18} color="#15803d" style={{ flexShrink: 0, marginTop: "2px" }} />
                         <Typography sx={{ fontSize: "14px", color: "#334155", lineHeight: 1.5, fontWeight: 500 }}>
@@ -431,7 +431,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     mb: 3,
                   }}
                 >
-                  Our 5-Stage Seamless Execution Process
+                  Our Renovation Process
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -479,118 +479,12 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                           )}
                         </Box>
                         <Typography sx={{ fontSize: "13.5px", color: "#64748b", lineHeight: 1.6 }}>
-                          {step.description.includes(".") ? step.description.split(".")[0].trim() + "." : step.description}
+                          {step.description}
                         </Typography>
                       </Box>
                     </Paper>
                   ))}
                 </Box>
-              </Box>
-
-              {/* Before & After Transformation Spotlight */}
-              <Box sx={{ mb: 7 }}>
-                <Paper
-                  elevation={0}
-                  sx={{
-                    p: { xs: 3, sm: 4 },
-                    borderRadius: "16px",
-                    border: "1px solid #e2e8f0",
-                    backgroundColor: "#ffffff",
-                  }}
-                >
-                  <Typography
-                    variant="h3"
-                    sx={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      fontSize: { xs: "20px", sm: "24px" },
-                      fontWeight: 800,
-                      color: "#0f172a",
-                      mb: 1,
-                    }}
-                  >
-                    Featured Transformation: {service.beforeAfterTitle}
-                  </Typography>
-                  <Typography sx={{ fontSize: "13.5px", color: "#64748b", mb: 3 }}>
-                    {service.beforeAfterDesc}
-                  </Typography>
-
-                  <Grid container spacing={2} sx={{ mb: 2 }}>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <Box sx={{ position: "relative", borderRadius: "10px", overflow: "hidden", height: "240px" }}>
-                        <Box
-                          component="img"
-                          src={service.beforeImage}
-                          alt="Before Renovation"
-                          sx={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        <Box
-                          sx={{
-                            position: "absolute",
-                            top: 10,
-                            left: 10,
-                            backgroundColor: "rgba(15, 23, 42, 0.85)",
-                            color: "#ffffff",
-                            fontSize: "11px",
-                            fontWeight: 700,
-                            px: 1.5,
-                            py: 0.4,
-                            borderRadius: "4px",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                          }}
-                        >
-                          Before
-                        </Box>
-                      </Box>
-                    </Grid>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <Box sx={{ position: "relative", borderRadius: "10px", overflow: "hidden", height: "240px" }}>
-                        <Box
-                          component="img"
-                          src={service.afterImage}
-                          alt="After Renovation"
-                          sx={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        <Box
-                          sx={{
-                            position: "absolute",
-                            top: 10,
-                            left: 10,
-                            backgroundColor: "#c29b38",
-                            color: "#ffffff",
-                            fontSize: "11px",
-                            fontWeight: 700,
-                            px: 1.5,
-                            py: 0.4,
-                            borderRadius: "4px",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                          }}
-                        >
-                          After: Ideal Bath
-                        </Box>
-                      </Box>
-                    </Grid>
-                  </Grid>
-
-                  <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-                    <Link
-                      to="/before-after"
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "6px",
-                        color: "#c29b38",
-                        fontWeight: 700,
-                        fontSize: "13.5px",
-                        textDecoration: "none",
-                      }}
-                    >
-                      <span>Explore More Before & After Case Studies</span>
-                      <ArrowRight size={15} />
-                    </Link>
-                  </Box>
-                </Paper>
               </Box>
 
               {/* Material Options */}

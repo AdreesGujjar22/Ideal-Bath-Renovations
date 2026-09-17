@@ -63,7 +63,7 @@ const ServiceAreaDetail: React.FC = () => {
         address: {
           "@type": "PostalAddress",
           streetAddress: "20819 78B Avenue",
-          addressLocality: "Langley Twp",
+          addressLocality: "Langley Township",
           addressRegion: "BC",
           postalCode: "V2Y 0A1",
           addressCountry: "CA",

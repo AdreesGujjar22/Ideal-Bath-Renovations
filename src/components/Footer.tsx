@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, ShieldCheck, CheckCircle2, Award, ExternalLink, Bath } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ShieldCheck, CheckCircle2, Award, ExternalLink, Bath, Star } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 </Box>
                 <Box>
                   <Typography
-                    variant="h6"
+                    component="div"
                     sx={{
                       fontWeight: 800,
                       fontSize: "20px",
@@ -66,10 +66,21 @@ const Footer: React.FC = () => {
               </Box>
 
               <Typography sx={{ fontSize: "14px", lineHeight: 1.7, color: "#cbd5e1" }}>
-                Langley’s trusted bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, master ensuites, and complete renovations throughout the Fraser Valley.
+                Ideal Bath Renovations is a locally owned bathroom renovation and remodeling contractor based in Langley Township, BC. We specialize in full-service bathroom remodels, tub-to-shower conversions, and curbless walk-in showers across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
               </Typography>
 
-              <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, pt: 1 }}>
+              <Box
+                component="address"
+                itemScope
+                itemType="https://schema.org/PostalAddress"
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 1.3,
+                  pt: 1,
+                  fontStyle: "normal",
+                }}
+              >
                 <Box
                   component="a"
                   href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
@@ -85,14 +96,19 @@ const Footer: React.FC = () => {
                   }}
                 >
                   <MapPin size={18} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                  <Typography sx={{ fontSize: "13.5px" }}>
-                    20819 78B Avenue, Langley Twp, BC V2Y, Canada
+                  <Typography sx={{ fontSize: "13.5px", lineHeight: 1.5 }}>
+                    <span itemProp="streetAddress">20819 78B Avenue</span>,{" "}
+                    <span itemProp="addressLocality">Langley Township</span>,{" "}
+                    <span itemProp="addressRegion">BC</span>{" "}
+                    <span itemProp="postalCode">V2Y 0A1</span>,{" "}
+                    <span itemProp="addressCountry">Canada</span>
                   </Typography>
                 </Box>
 
                 <Box
                   component="a"
-                  href="tel:6722730434"
+                  href="tel:16722730434"
+                  itemProp="telephone"
                   sx={{
                     display: "flex",
                     alignItems: "center",
@@ -103,9 +119,35 @@ const Footer: React.FC = () => {
                   }}
                 >
                   <Phone size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
-                  <Typography sx={{ fontSize: "13.5px", fontWeight: 600 }}>
-                    (672) 273-0434
+                  <Typography sx={{ fontSize: "13.5px", fontWeight: 700 }}>
+                    +1 (672) 273-0434 <span style={{ color: "#dfba5a", fontWeight: 500, fontSize: "12px", marginLeft: "4px" }}>(Direct Call)</span>
                   </Typography>
+                </Box>
+
+                <Box
+                  component="a"
+                  href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 1,
+                    backgroundColor: "rgba(194, 155, 56, 0.12)",
+                    border: "1px solid rgba(194, 155, 56, 0.35)",
+                    borderRadius: "6px",
+                    px: 1.5,
+                    py: 0.8,
+                    color: "#dfba5a",
+                    textDecoration: "none",
+                    fontSize: "12.5px",
+                    fontWeight: 600,
+                    width: "fit-content",
+                    "&:hover": { backgroundColor: "rgba(194, 155, 56, 0.22)" },
+                  }}
+                >
+                  <Star size={15} color="#dfba5a" fill="#dfba5a" />
+                  <span>Google Business Profile &amp; Reviews</span>
                 </Box>
 
                 <Box
@@ -129,7 +171,7 @@ const Footer: React.FC = () => {
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, color: "#94a3b8" }}>
                   <Clock size={18} color="#dfba5a" style={{ flexShrink: 0 }} />
                   <Typography sx={{ fontSize: "13px" }}>
-                    Monday – Saturday: 8:00 AM – 6:00 PM
+                    Monday – Saturday: 8:00 AM – 6:00 PM (Emergency Dispatch 24/7)
                   </Typography>
                 </Box>
               </Box>
@@ -139,7 +181,7 @@ const Footer: React.FC = () => {
           {/* Quick Navigation Links */}
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography
-              variant="h6"
+              component="div"
               sx={{
                 fontSize: "14px",
                 fontWeight: 700,
@@ -184,7 +226,7 @@ const Footer: React.FC = () => {
           {/* Service Areas */}
           <Grid size={{ xs: 12, sm: 6, md: 4 }}>
             <Typography
-              variant="h6"
+              component="div"
               sx={{
                 fontSize: "14px",
                 fontWeight: 700,
@@ -297,9 +339,14 @@ const Footer: React.FC = () => {
             color: "#64748b",
           }}
         >
-          <Typography sx={{ fontSize: "12px", color: "#64748b" }}>
-            © {new Date().getFullYear()} Ideal Bath Renovations. All rights reserved. 20819 78B Avenue, Langley Twp, BC V2Y.
-          </Typography>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 0.4 }}>
+            <Typography sx={{ fontSize: "12px", color: "#64748b" }}>
+              © 2026 Ideal Bath Renovations. All rights reserved. Registered in BC, Canada.
+            </Typography>
+            <Typography sx={{ fontSize: "11px", color: "#94a3b8" }}>
+              Last Updated &amp; Verified: September 2026 • Headquarters: 20819 78B Avenue, Langley Township, BC V2Y 0A1
+            </Typography>
+          </Box>
           <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
             <Link to="/about" style={{ color: "#64748b", textDecoration: "none" }}>About</Link>
             <Link to="/services" style={{ color: "#64748b", textDecoration: "none" }}>Services</Link>

@@ -61,7 +61,7 @@ const Review: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            From our headquarters at 20819 78B Avenue, Ideal Bath Renovations delivers uncompromising craftsmanship, premium materials, and stress-free project management. Whether you're planning a master ensuite overhaul, a zero-barrier walk-in shower, or a fast tub-to-shower conversion, we turn your vision into enduring reality.
+            Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations delivers uncompromising craftsmanship, premium materials, and stress-free project management. Whether you're planning a master ensuite overhaul, a zero-barrier walk-in shower, or a fast tub-to-shower conversion, we turn your vision into enduring reality.
           </Typography>
         </Stack>
 

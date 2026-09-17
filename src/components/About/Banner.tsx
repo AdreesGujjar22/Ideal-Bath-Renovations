@@ -61,14 +61,14 @@ const AboutBanner: React.FC = () => {
               </Typography>
 
               <Typography sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.7 }}>
-                Located at <b>20819 78B Avenue, Langley Twp, BC</b>, our facility coordinates project management, material selections, and 3D architectural design sessions. Homeowners are welcome to review tile samples, quartz countertops, and custom vanity options in person.
+                Based at <b>20819 78B Avenue, Langley Township, BC</b>, our facility coordinates project management, material selections, and 3D architectural design sessions. Homeowners are welcome to review tile samples, quartz countertops, and custom vanity options in person.
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, py: 1 }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
                   <MapPin size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "14px", color: "#1e293b", fontWeight: 600 }}>
-                    20819 78B Avenue, Langley Twp, BC V2Y, Canada
+                    Based at 20819 78B Avenue, Langley Township, BC
                   </Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>

@@ -12,27 +12,27 @@ interface BenefitItem {
 const benefits: BenefitItem[] = [
   {
     icon: ShieldCheck,
-    title: "Single-Contractor Coordination",
+    title: "Licensed Red Seal Trades",
     description:
-      "We manage every trade from plumbing to tile setting so you work with one direct team.",
+      "Every plumbing, electrical, and structural alteration is completed by certified Red Seal journeymen and inspected to BC Building Code and Township of Langley standards.",
   },
   {
     icon: Award,
-    title: "Proper Waterproofing Standards",
+    title: "Certified Schluter Waterproofing",
     description:
-      "Every shower receives sealed waterproof membranes to prevent hidden moisture leaks behind your tile.",
+      "We install vapor-tight Schluter-KERDI shower membranes and DITRA heated uncoupling floors, providing complete leak protection and manufacturer backed warranties.",
   },
   {
     icon: FileCheck2,
-    title: "Clear Upfront Pricing",
+    title: "Fixed-Price Remodeling Quotes",
     description:
-      "You receive a complete written quote before demolition begins with no surprise charges.",
+      "You receive an all-inclusive, itemized written proposal before any demolition starts. The price you are quoted is the price you pay, with zero surprise extras or hidden markups.",
   },
   {
     icon: MapPin,
-    title: "Clean & Respectful Worksites",
+    title: "Clean Worksites & Dust Control",
     description:
-      "We protect your living areas daily and maintain an organized, clean work environment throughout your remodel.",
+      "We protect your hardwood, carpet, and living spaces with heavy-duty floor runners, negative air filtration, and daily debris cleanup throughout your Langley renovation.",
   },
 ];
 
@@ -52,19 +52,19 @@ const WhyChooseUs: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Why Work With Us
+            Why Langley Homeowners Choose Ideal Bath Renovations
           </Typography>
 
           <Typography
             sx={{
               fontSize: { xs: "15px", md: "16.5px" },
               color: "#64748b",
-              maxWidth: "760px",
+              maxWidth: "820px",
               mx: "auto",
               lineHeight: 1.7,
             }}
           >
-            We focus on clear communication, clean worksites, and reliable building practices.
+            We bring dependable craftsmanship, clear communication, and certified waterproofing to every bathroom remodeling project in Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
           </Typography>
         </Box>
 

@@ -304,7 +304,7 @@ const ServicesHub: React.FC = () => {
 
           {filteredServices.length === 0 && (
             <Box sx={{ textAlign: "center", py: 8 }}>
-              <Typography variant="h5" sx={{ fontWeight: 700, color: "#0f172a", mb: 1 }}>
+              <Typography variant="h5" component="p" sx={{ fontWeight: 700, color: "#0f172a", mb: 1 }}>
                 No services matched your search
               </Typography>
               <Typography sx={{ color: "#64748b", mb: 3 }}>

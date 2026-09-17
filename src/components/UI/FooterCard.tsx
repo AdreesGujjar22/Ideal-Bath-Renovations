@@ -6,7 +6,7 @@ const FooterCard: React.FC = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
       <Typography
-        variant="h6"
+        component="div"
         sx={{
           fontSize: "14px",
           fontWeight: 700,
@@ -15,10 +15,20 @@ const FooterCard: React.FC = () => {
           textTransform: "uppercase",
         }}
       >
-        Headquarters & Showroom
+        Headquarters & Operations
       </Typography>
       
-      <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
+      <Box
+        component="address"
+        itemScope
+        itemType="https://schema.org/PostalAddress"
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          gap: 1.5,
+          fontStyle: "normal",
+        }}
+      >
         <MapPin size={18} color="#94a3b8" style={{ flexShrink: 0, marginTop: "2px" }} />
         <Typography
           sx={{
@@ -27,14 +37,23 @@ const FooterCard: React.FC = () => {
             lineHeight: 1.5,
           }}
         >
-          20819 78B Avenue, Langley Twp, BC V2Y, Canada
+          <span itemProp="streetAddress">20819 78B Avenue</span>,{" "}
+          <span itemProp="addressLocality">Langley Township</span>,{" "}
+          <span itemProp="addressRegion">BC</span>{" "}
+          <span itemProp="postalCode">V2Y 0A1</span>,{" "}
+          <span itemProp="addressCountry">Canada</span>
         </Typography>
       </Box>
 
       <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
         <Phone size={18} color="#94a3b8" style={{ flexShrink: 0 }} />
-        <Typography sx={{ fontSize: "14px", color: "#cbd5e1" }}>
-          (672) 273-0434
+        <Typography
+          component="a"
+          href="tel:16722730434"
+          itemProp="telephone"
+          sx={{ fontSize: "14px", color: "#cbd5e1", textDecoration: "none", "&:hover": { color: "#dfba5a" } }}
+        >
+          +1 (672) 273-0434
         </Typography>
       </Box>
 

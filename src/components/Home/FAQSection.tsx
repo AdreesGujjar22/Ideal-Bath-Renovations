@@ -16,24 +16,39 @@ interface FAQItem {
 
 const faqList: FAQItem[] = [
   {
-    question: "How long does a typical bathroom renovation take?",
+    question: "How long does a bathroom remodel take in Langley, BC?",
     answer:
-      "A standard bathroom renovation usually takes between one to two weeks, depending on the project scope and tile setting times. We provide an estimated timeline before work begins.",
+      "A standard tub-to-shower conversion typically takes 3 to 5 working days, while a complete full-gut bathroom remodel or master ensuite transformation takes between 2 to 3 weeks. Before starting any demolition, our team ensures all custom vanities, tiles, and fixtures are ordered and staged on site to prevent mid-project delays.",
   },
   {
-    question: "Can I keep my existing bathroom layout to save on costs?",
+    question: "Do I need a municipal building or plumbing permit in Langley Township?",
     answer:
-      "Yes. Keeping your plumbing fixtures in their current locations reduces pipe relocation work and helps keep overall project costs down.",
+      "If you are replacing fixtures like-for-like without changing wall layouts or drainage stacks, a permit is generally not required. However, moving plumbing lines, adding new electrical circuits, or altering load-bearing walls requires permits from the Township of Langley or City of Langley. Our licensed team handles all permit filings and coordinates mandatory municipal inspections directly.",
   },
   {
-    question: "Do you handle both the plumbing and tile installation?",
+    question: "Can I keep my existing bathroom layout to save on renovation costs?",
     answer:
-      "Yes. We coordinate the full project, including demolition, rough-in plumbing, waterproof backing, tile setting, and final fixture trim.",
+      "Yes, absolutely. Keeping your vanity, toilet, and shower/tub rough-in locations avoids expensive subfloor alterations and pipe relocations, saving between $1,500 and $4,000. You can invest those savings into luxury porcelain tile, custom quartz countertops, or high-end thermostatic shower fixtures.",
   },
   {
-    question: "How do I get an estimate for my project?",
+    question: "What waterproofing system do you install behind shower tile?",
     answer:
-      "Contact us by phone or submit our online quote form. We will schedule a convenient in-home visit to review your bathroom and provide a clear, written estimate.",
+      "We exclusively install certified Schluter®-KERDI waterproofing systems and Schluter®-DITRA uncoupling floor membranes. Unlike outdated greenboard or liquid-painted membranes, Schluter provides a continuous, vapor-tight moisture barrier that completely prevents water intrusion, mold growth, and structural rot, backed by manufacturer lifetime warranties.",
+  },
+  {
+    question: "How much does a bathroom renovation typically cost in Langley?",
+    answer:
+      "A powder room refresh typically ranges from $6,500 to $12,000; a tub-to-shower conversion ranges from $9,500 to $18,000; and a full-scale master ensuite overhaul with custom glass, heated floors, and double vanities ranges from $22,000 to $45,000+. We provide complete, transparent, itemized fixed-price quotes so you never encounter surprise extras.",
+  },
+  {
+    question: "Do you handle both the plumbing, electrical, and tile installation?",
+    answer:
+      "Yes. Ideal Bath Renovations is a turnkey contractor. We manage the entire project from initial design consultation and clean demolition to Red Seal licensed plumbing, certified electrical wiring, waterproofing, precision tile setting, and final walkthrough.",
+  },
+  {
+    question: "How do I schedule a free in-home design consultation and estimate?",
+    answer:
+      "Simply call us directly at +1 (672) 273-0434 or submit our online request form. One of our Langley renovation specialists will visit your home, measure your bathroom space, discuss your layout and design ideas, and provide a clear, no-obligation written estimate.",
   },
 ];
 
@@ -78,7 +93,7 @@ const FAQSection: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Frequently Asked Questions
+            Frequently Asked Questions About Bathroom Remodeling in Langley
           </Typography>
 
           <Typography

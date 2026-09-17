@@ -125,7 +125,7 @@ const ContactUs: React.FC = () => {
                 Let's Discuss Your Bathroom Vision
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
-                Fill out the project form below. Our lead estimator in Langley will get in touch within 24 hours to schedule your free 3D design consultation.
+                Fill out the project form below. Our lead estimator based at our Langley Township headquarters will get in touch within 24 hours to schedule your free 3D design consultation.
               </Typography>
 
               {requestedService && (
@@ -289,7 +289,7 @@ const ContactUs: React.FC = () => {
                         Headquarters & Showroom
                       </Typography>
                       <Typography sx={{ fontSize: "13.5px", color: "#cbd5e1" }}>
-                        20819 78B Avenue, Langley Twp, BC V2Y, Canada
+                        Based at 20819 78B Avenue, Langley Township, BC
                       </Typography>
                       <Box
                         component="a"
@@ -369,7 +369,7 @@ const ContactUs: React.FC = () => {
                   </Typography>
                 </Box>
                 <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.7 }}>
-                  Langley Township (Willoughby, Walnut Grove, Fort Langley, Murrayville, Brookswood, Aldergrove), Surrey, South Surrey, White Rock, Abbotsford, and Maple Ridge.
+                  Based in Langley Township, BC, with service across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
                 </Typography>
               </Box>
             </Box>

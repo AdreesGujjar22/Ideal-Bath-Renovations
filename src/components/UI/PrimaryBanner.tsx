@@ -58,6 +58,9 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
         component="img"
         src={img}
         alt={primaryContent}
+        width={1200}
+        height={bannerHeight}
+        decoding="async"
         sx={{
           position: "absolute",
           top: 0,

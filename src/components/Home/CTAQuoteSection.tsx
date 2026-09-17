@@ -184,10 +184,10 @@ const CTAQuoteSection: React.FC = () => {
               </Box>
               <Box>
                 <Typography sx={{ fontSize: "12px", color: "#64748b", fontWeight: 600, textTransform: "uppercase" }}>
-                  Langley HQ
+                  Langley Township HQ
                 </Typography>
                 <Typography sx={{ fontSize: "13.5px", fontWeight: 700, color: "#0f172a" }}>
-                  20819 78B Ave, Langley Twp, BC
+                  Based at 20819 78B Avenue, Langley Township, BC
                 </Typography>
               </Box>
             </Box>

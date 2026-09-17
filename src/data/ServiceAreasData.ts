@@ -73,13 +73,13 @@ export const serviceAreasData: ServiceAreaItem[] = [
       lat: 49.1458,
       lng: -122.6586,
     },
-    addressDisplay: "20819 78B Ave, Langley Twp, BC V2Y 0A1",
-    hqNote: "Ideal Bath Renovations Headquarters & Workshop",
+    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC",
+    hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "140,000+ residents across Langley Township & City",
     description:
-      "Ideal Bath Renovations is proudly headquartered in Langley Township. From contemporary townhomes in Willoughby to sprawling heritage properties in Fort Langley and established family homes in Walnut Grove, our licensed and insured craftsmen deliver luxury renovations built to stand the test of time.",
+      "Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations delivers luxury renovations built to stand the test of time across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
     overviewText:
-      "Living in Langley Township means enjoying vibrant communities, modern amenities, and beautiful Pacific Northwest surroundings. Whether you want to replace an old builder-grade acrylic bathtub with a zero-threshold curbless shower, install an elegant freestanding soaking bathtub, or build a custom double vanity with quartz countertops, our local team handles everything from municipal permits and plumbing to Schluter waterproofing and finishing touches.",
+      "Living in Langley Township means enjoying vibrant communities and modern amenities. Whether you want to replace an old builder-grade acrylic bathtub with a zero-threshold curbless shower, install an elegant freestanding soaking bathtub, or build a custom double vanity with quartz countertops, our local team handles everything from municipal permits and plumbing to Schluter waterproofing and finishing touches.",
     neighborhoods: [
       "Willoughby Heights",
       "Walnut Grove",
@@ -95,7 +95,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     localHighlights: [
       {
         title: "Fast Local Response Times",
-        desc: "Because our crews and supply partners are based right here in Langley Twp, we provide quick on-site estimates, rapid material deliveries, and punctual project starts.",
+        desc: "Because our crews and supply partners are based in Langley Township, BC, we provide quick on-site estimates, rapid material deliveries, and punctual project starts.",
       },
       {
         title: "Schluter® Certified Waterproofing",
@@ -186,11 +186,11 @@ export const serviceAreasData: ServiceAreaItem[] = [
       lat: 49.1913,
       lng: -122.849,
     },
-    addressDisplay: "Serving Surrey & Greater Fraser Valley from Langley HQ",
-    hqNote: "Direct Dispatch & Material Delivery to Surrey Communities",
+    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC — Serving Surrey & Fraser Valley",
+    hqNote: "Dispatched from our Langley Township HQ to Surrey Communities",
     populationServed: "Over 600,000 residents across South Surrey, Clayton & Fleetwood",
     description:
-      "Ideal Bath Renovations brings high-end bathroom craftsmanship to homeowners across Surrey, BC. Whether you own a modern townhome in Clayton Heights, a family home in Fleetwood, or an executive residence in South Surrey / Morgan Creek, we deliver stunning renovations with dependable timelines.",
+      "Based in Langley Township, BC, Ideal Bath Renovations brings high-end bathroom craftsmanship to homeowners across Surrey, BC and the wider Fraser Valley. Whether you own a modern townhome in Clayton Heights, a family home in Fleetwood, or an executive residence in South Surrey, we deliver dependable renovations.",
     overviewText:
       "With Surrey's rapid growth and diverse architectural styles, homeowners frequently look to modernize builder bathrooms, improve accessibility for aging relatives, or create luxurious private spa retreats. Our team brings decades of combined tiling, plumbing, and carpentry experience to every Surrey project.",
     neighborhoods: [
@@ -294,11 +294,11 @@ export const serviceAreasData: ServiceAreaItem[] = [
       lat: 49.0504,
       lng: -122.3045,
     },
-    addressDisplay: "Serving Abbotsford & East Fraser Valley from Langley HQ",
-    hqNote: "Full Mobile Renovation Units Serving Abbotsford Daily",
+    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC — Serving Abbotsford & Fraser Valley",
+    hqNote: "Mobile Renovation Units Dispatched from Langley Township HQ",
     populationServed: "160,000+ residents throughout Abbotsford & Sumas Prairie",
     description:
-      "Homeowners in Abbotsford trust Ideal Bath Renovations for honest advice, exceptional tile craft, and durable waterproofing solutions. From rancher renovations on Sumas Mountain to family ensuite updates in Clearbrook and Auguston, we build bathrooms that enhance home value and everyday comfort.",
+      "Based in Langley Township, BC, Ideal Bath Renovations provides honest advice, exceptional tile craft, and durable waterproofing solutions for homeowners across Abbotsford, BC and the wider Fraser Valley.",
     overviewText:
       "Whether you are updating a 1980s rancher or customizing a newer construction home, our team provides comprehensive remodeling services. We take care of all rough-in plumbing, moisture remediation, modern layout planning, and final accessory mounting with unmatched attention to detail.",
     neighborhoods: [
@@ -379,7 +379,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     badge: "Regional Coverage",
     headline: "Full-Service Bathroom Renovations Across the Fraser Valley",
     subheadline:
-      "Serving White Rock, Maple Ridge, Mission, Chilliwack, Aldergrove & Surrounding Communities",
+      "Serving Langley Twp, Surrey, Abbotsford, and the Wider Fraser Valley",
     metaTitle: "Bathroom Remodeling Contractor Fraser Valley, BC | Ideal Bath",
     metaDescription:
       "Complete bathroom renovation services throughout the Fraser Valley. Serving White Rock, Maple Ridge, Mission, Chilliwack & Langley. Free in-home estimates!",
@@ -393,11 +393,11 @@ export const serviceAreasData: ServiceAreaItem[] = [
       lat: 49.1666,
       lng: -122.3,
     },
-    addressDisplay: "Serving the Entire Fraser Valley Regional District",
-    hqNote: "Centralized Langley Dispatch & Logistics Center",
+    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC — Serving Fraser Valley",
+    hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "Over 350,000 homeowners across the Fraser Valley region",
     description:
-      "From coastal seaside cottages in White Rock to heritage homes in Maple Ridge and modern subdivisions in Chilliwack, Ideal Bath Renovations provides high-caliber bathroom solutions engineered specifically for the Pacific Northwest lifestyle.",
+      "Based at 20819 78B Avenue, Langley Township, BC, Ideal Bath Renovations provides high-caliber bathroom solutions across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
     overviewText:
       "Our regional service model ensures that every homeowner in the Fraser Valley receives the exact same standard of master craftsmanship, certified waterproofing protection, and transparent pricing. We manage every step — design, tear-out, rough-in, tiling, and fixtures.",
     neighborhoods: [

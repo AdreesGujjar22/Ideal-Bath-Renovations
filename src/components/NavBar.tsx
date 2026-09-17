@@ -214,7 +214,7 @@ const NavBar: React.FC = () => {
             >
               <MapPin size={13} color="#dfba5a" style={{ flexShrink: 0 }} />
               <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                20819 78B Avenue, Langley Twp, BC
+                Based at 20819 78B Avenue, Langley Township, BC
               </span>
             </Box>
           </Box>
@@ -331,7 +331,7 @@ const NavBar: React.FC = () => {
 
               <Box sx={{ display: "flex", flexDirection: "column", overflow: "hidden", minWidth: 0 }}>
                 <Typography
-                  variant="h6"
+                  component="span"
                   sx={{
                     fontWeight: 800,
                     fontSize: { xs: "15px", sm: "18px", md: "20px" },
@@ -968,7 +968,7 @@ const NavBar: React.FC = () => {
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <MapPin size={14} color="#c29b38" style={{ marginTop: "2px", flexShrink: 0 }} />
-                  <span>20819 78B Avenue, Langley Twp, BC V2Y</span>
+                  <span>Based at 20819 78B Avenue, Langley Township, BC</span>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <Clock size={14} color="#c29b38" />
