@@ -119,7 +119,7 @@ const EstimateForm: React.FC = () => {
     } catch (error) {
       console.error("Submission log:", error);
       setSubmitted(true);
-      setStatusMsg("Thank you! Your inquiry has been submitted. Our team at 20819 78B Avenue, Langley Twp will review your requirements and reach out promptly.");
+      setStatusMsg("Thank you! Your inquiry has been submitted. Our team based at 20819 78B Avenue, Langley Township, BC will review your requirements and reach out promptly.");
     } finally {
       setLoading(false);
     }
@@ -156,7 +156,7 @@ const EstimateForm: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              <Calculator size={14} /> Fast 2-Minute Form
+              <Calculator size={14} /> Quick Estimate Form
             </Box>
 
             <Typography
@@ -169,11 +169,11 @@ const EstimateForm: React.FC = () => {
                 mb: 1,
               }}
             >
-              Request a Free In-Home 3D Design Consultation & Estimate
+              Request a Free In-Home Consultation
             </Typography>
 
             <Typography sx={{ fontSize: "14px", color: "#64748b", maxWidth: "600px", mx: "auto" }}>
-              Serving Langley Twp, Willoughby, Walnut Grove, Fort Langley, Surrey, and Abbotsford. Zero obligation, transparent itemized pricing.
+              Serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley. Itemized pricing with no obligation.
             </Typography>
           </Box>
 
@@ -247,17 +247,18 @@ const EstimateForm: React.FC = () => {
                   value={formData.address}
                   setValue={setFormData}
                   field="address"
-                  placeholder="e.g., 20819 78B Ave, Willoughby, Langley Twp"
+                  placeholder="e.g., 20819 78B Avenue, Langley Township, BC"
                   required
                 />
 
                 {/* Bathroom Type & Primary Service */}
                 <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, gap: 2 }}>
                   <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 0.8 }}>
-                    <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                    <Typography id="bathroom-space-type-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                       Bathroom Space Type
                     </Typography>
                     <Select
+                      aria-labelledby="bathroom-space-type-label"
                       value={formData.bathroomType}
                       onChange={(e) =>
                         setFormData((prev) => ({ ...prev, bathroomType: e.target.value }))
@@ -278,10 +279,11 @@ const EstimateForm: React.FC = () => {
                   </Box>
 
                   <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 0.8 }}>
-                    <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                    <Typography id="primary-remodeling-category-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                       Primary Remodeling Category
                     </Typography>
                     <Select
+                      aria-labelledby="primary-remodeling-category-label"
                       value={formData.primaryService}
                       onChange={(e) =>
                         setFormData((prev) => ({ ...prev, primaryService: e.target.value }))
@@ -305,10 +307,11 @@ const EstimateForm: React.FC = () => {
                 {/* Timeline & Budget */}
                 <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, gap: 2 }}>
                   <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 0.8 }}>
-                    <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                    <Typography id="desired-timeline-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                       Desired Timeline
                     </Typography>
                     <Select
+                      aria-labelledby="desired-timeline-label"
                       value={formData.timeline}
                       onChange={(e) =>
                         setFormData((prev) => ({ ...prev, timeline: e.target.value }))
@@ -329,10 +332,11 @@ const EstimateForm: React.FC = () => {
                   </Box>
 
                   <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 0.8 }}>
-                    <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                    <Typography id="estimated-budget-range-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                       Estimated Budget Range
                     </Typography>
                     <Select
+                      aria-labelledby="estimated-budget-range-label"
                       value={formData.budgetRange}
                       onChange={(e) =>
                         setFormData((prev) => ({ ...prev, budgetRange: e.target.value }))
@@ -378,7 +382,7 @@ const EstimateForm: React.FC = () => {
                     disabled={loading}
                     style={{
                       backgroundColor: "#c29b38",
-                      color: "#ffffff",
+                      color: "#0f172a",
                       border: "none",
                       padding: "14px 36px",
                       borderRadius: "8px",

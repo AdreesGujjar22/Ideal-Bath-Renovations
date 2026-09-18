@@ -41,7 +41,7 @@ const CTAQuoteSection: React.FC = () => {
               mb: 2,
             }}
           >
-            Get Your Free Bathroom Renovation Quote
+            Request a Bathroom Renovation Quote in Langley
           </Typography>
 
           <Typography
@@ -53,7 +53,7 @@ const CTAQuoteSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Ready to transform your bathroom? Contact Ideal Bath Renovations today for a free, no-obligation quote and take the first step toward the bathroom you've been dreaming of.
+            Schedule a free in-home consultation and receive a written quote.
           </Typography>
         </Box>
 
@@ -184,10 +184,10 @@ const CTAQuoteSection: React.FC = () => {
               </Box>
               <Box>
                 <Typography sx={{ fontSize: "12px", color: "#64748b", fontWeight: 600, textTransform: "uppercase" }}>
-                  Langley HQ
+                  Langley Township HQ
                 </Typography>
                 <Typography sx={{ fontSize: "13.5px", fontWeight: 700, color: "#0f172a" }}>
-                  20819 78B Ave, Langley Twp, BC
+                  Based at 20819 78B Avenue, Langley Township, BC
                 </Typography>
               </Box>
             </Box>

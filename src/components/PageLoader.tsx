@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { Bath, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 interface PageLoaderProps {
   message?: string;
@@ -99,7 +99,12 @@ export const PageLoader: React.FC<PageLoaderProps> = ({ message = "Loading exper
             zIndex: 2,
           }}
         >
-          <Bath size={38} color="#dfba5a" style={{ filter: "drop-shadow(0 2px 8px rgba(223,186,90,0.4))" }} />
+          <Box
+            component="img"
+            src="/logo.png"
+            alt="Ideal Bath Renovations"
+            sx={{ width: 64, height: 64, objectFit: "contain" }}
+          />
           <Box
             sx={{
               position: "absolute",

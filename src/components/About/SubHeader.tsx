@@ -6,26 +6,26 @@ import { Sparkles, Eye, Shield } from "lucide-react";
 const pillars = [
   {
     icon: <Eye size={24} color="#c29b38" />,
-    title: "1. 3D Architectural Planning",
-    desc: "We never guess. Photorealistic 3D space renders let you experience every fixture, tile pattern, and lighting scene before demo begins.",
+    title: "3D Architectural Planning",
+    desc: "3D models help you review the layout before work begins.",
   },
   {
     icon: <Shield size={24} color="#c29b38" />,
-    title: "2. Absolute Waterproofing",
-    desc: "Schluter-KERDI membranes, uncoupling layers, and 24-hour flood testing ensure complete moisture protection behind every wall.",
+    title: "Complete Waterproofing",
+    desc: "Schluter membranes and flood testing protect tiled shower walls.",
   },
   {
     icon: <Sparkles size={24} color="#c29b38" />,
-    title: "3. Master Finishing",
-    desc: "Mitered tile edges, laser-aligned grout lines, custom quartz fabrication, and silent whisper ventilation systems.",
+    title: "Master Finishing",
+    desc: "Careful tile installation, quartz fabrication, and licensed plumbing.",
   },
 ];
 
 const SubHeader: React.FC = () => {
   return (
-    <Box sx={{ py: { xs: 6, md: 9 }, backgroundColor: "#f8fafc", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
+    <Box sx={{ py: { xs: 6, md: 8 }, backgroundColor: "#f8fafc", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: "center", mb: 6 }}>
+        <Box sx={{ textAlign: "center", mb: 5 }}>
           <Typography
             sx={{
               color: "#c29b38",
@@ -36,7 +36,7 @@ const SubHeader: React.FC = () => {
               mb: 1,
             }}
           >
-            Our Core Philosophy
+            Our Standards
           </Typography>
           <Typography
             variant="h2"
@@ -52,14 +52,14 @@ const SubHeader: React.FC = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "15px",
+              fontSize: "15.5px",
               color: "#475569",
               maxWidth: "750px",
               mx: "auto",
-              lineHeight: 1.7,
+              lineHeight: 1.6,
             }}
           >
-            “A bathroom is the most technically complex room in any Canadian home. By honoring structural engineering, precision moisture management, and tailored ergonomic aesthetics, we deliver sanctuaries that enhance your daily routine and protect your home's equity.”
+            Every project combines licensed trade work with careful waterproofing and practical planning.
           </Typography>
         </Box>
 

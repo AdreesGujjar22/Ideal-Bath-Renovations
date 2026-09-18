@@ -11,12 +11,9 @@ import { Typography, Stack, Divider, Chip } from "@mui/material";
 import {
   Phone,
   MapPin,
-  Star,
-  Sparkles,
   Home,
   Info,
   Wrench,
-  Bath,
   Image as ImageIcon,
   Mail,
   ChevronRight,
@@ -27,7 +24,6 @@ import {
   X,
   ArrowRight,
 } from "lucide-react";
-import { servicesDetailList } from "../data/ServicesDetailData";
 import "../main.css";
 
 const navItems = [
@@ -106,6 +102,21 @@ const megaMenuCategories: ServiceMegaCategory[] = [
   },
 ];
 
+const directServiceLinks = [
+  { id: "bathroom-remodeling", title: "Bathroom Remodeling", slug: "bathroom-remodeling" },
+  { id: "bathroom-renovation", title: "Bathroom Renovation", slug: "bathroom-renovation" },
+  { id: "bathroom-repair", title: "Bathroom Repair", slug: "bathroom-repair" },
+  { id: "bathroom-replacement", title: "Bathroom Replacement", slug: "bathroom-replacement" },
+  { id: "bathroom-installation", title: "Bathroom Installation", slug: "bathroom-installation" },
+  { id: "bathroom-design", title: "Bathroom Design", slug: "bathroom-design" },
+  { id: "bathroom-upgrades", title: "Bathroom Upgrades", slug: "bathroom-upgrades" },
+  { id: "bathroom-restoration", title: "Bathroom Restoration", slug: "bathroom-restoration" },
+  { id: "shower-remodeling", title: "Shower Remodeling", slug: "shower-remodeling" },
+  { id: "bathtub-replacement", title: "Bathtub Replacement", slug: "bathtub-replacement" },
+  { id: "bathroom-tile-installation", title: "Bathroom Tile Installation", slug: "bathroom-tile-installation" },
+  { id: "bathroom-vanity-installation", title: "Bathroom Vanity Installation", slug: "bathroom-vanity-installation" },
+];
+
 const NavBar: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = React.useState<boolean>(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = React.useState<boolean>(false);
@@ -160,120 +171,31 @@ const NavBar: React.FC = () => {
           maxWidth="xl"
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", sm: "row" },
-            justifyContent: "space-between",
+            justifyContent: "center",
             alignItems: "center",
-            gap: { xs: 0.6, sm: 1 },
             px: { xs: 0.5, sm: 2 },
           }}
         >
           <Box
+            component="a"
+            href="tel:6722730434"
             sx={{
-              display: "flex",
+              display: "inline-flex",
               alignItems: "center",
-              gap: { xs: 1, sm: 1.5 },
-              flexWrap: { xs: "nowrap", sm: "wrap" },
-              justifyContent: { xs: "center", sm: "flex-start" },
-              width: { xs: "100%", sm: "auto" },
-              overflow: "hidden",
+              gap: 1,
+              color: "#f8fafc",
+              fontWeight: 800,
+              fontSize: { xs: "18px", sm: "22px" },
+              lineHeight: 1.2,
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+              py: { xs: 0.4, sm: 0.6 },
+              "&:hover": { color: "#dfba5a" },
+              transition: "color 0.2s",
             }}
           >
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 0.5,
-                color: "#dfba5a",
-                fontWeight: 700,
-                whiteSpace: "nowrap",
-                fontSize: { xs: "11.5px", sm: "12.5px" },
-                flexShrink: 0,
-              }}
-            >
-              <Sparkles size={13} />
-              <span>Langley's Premier Bathroom Remodeler</span>
-            </Box>
-            <Box sx={{ display: { xs: "none", md: "inline" }, color: "#64748b" }}>•</Box>
-            <Box
-              component="a"
-              href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                display: { xs: "none", md: "flex" },
-                alignItems: "center",
-                gap: 0.5,
-                color: "#94a3b8",
-                whiteSpace: "nowrap",
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-                maxWidth: { md: "260px", lg: "340px" },
-                "&:hover": { color: "#ffffff" },
-                transition: "color 0.2s",
-              }}
-            >
-              <MapPin size={13} color="#dfba5a" style={{ flexShrink: 0 }} />
-              <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-                20819 78B Avenue, Langley Twp, BC
-              </span>
-            </Box>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: { xs: 1.5, sm: 2 },
-              justifyContent: "center",
-              flexShrink: 0,
-            }}
-          >
-            <Box sx={{ display: { xs: "none", lg: "flex" }, alignItems: "center", gap: 0.5, color: "#cbd5e1" }}>
-              <Clock size={12} color="#dfba5a" />
-              <Typography sx={{ fontSize: "12px", fontWeight: 600 }}>
-                Open 24 Hours / 7 Days
-              </Typography>
-            </Box>
-            <Box sx={{ display: { xs: "none", md: "inline" }, color: "#64748b" }}>•</Box>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <Box sx={{ display: "flex", color: "#f59e0b" }}>
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={12} fill="#f59e0b" stroke="none" />
-                ))}
-              </Box>
-              <Typography
-                sx={{
-                  fontSize: { xs: "11px", sm: "12px" },
-                  fontWeight: 600,
-                  color: "#f8fafc",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                5.0 Google Rating
-              </Typography>
-            </Box>
-            <Box
-              component="a"
-              href="tel:6722730434"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 0.6,
-                color: "#f8fafc",
-                fontWeight: 700,
-                backgroundColor: "rgba(255,255,255,0.08)",
-                px: 1.2,
-                py: 0.3,
-                borderRadius: "20px",
-                fontSize: { xs: "11.5px", sm: "12px" },
-                whiteSpace: "nowrap",
-                "&:hover": { backgroundColor: "rgba(194, 155, 56, 0.25)", color: "#dfba5a" },
-                transition: "all 0.2s",
-              }}
-            >
-              <Phone size={12} color="#dfba5a" />
-              <span>(672) 273-0434</span>
-            </Box>
+            <Phone size={20} color="#dfba5a" aria-hidden="true" />
+            <span>(672) 273-0434</span>
           </Box>
         </Container>
       </Box>
@@ -302,66 +224,19 @@ const NavBar: React.FC = () => {
           >
             {/* Brand Logo & Name */}
             <Box
+              component="img"
+              src="/logo.png"
+              alt="Ideal Bath Renovations"
               onClick={() => navigate("/")}
               sx={{
                 cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: { xs: 1.2, sm: 1.5 },
+                width: { xs: 150, sm: 190 },
+                height: { xs: 42, sm: 48 },
+                objectFit: "contain",
+                objectPosition: "left center",
                 maxWidth: { xs: "calc(100% - 56px)", lg: "350px" },
-                overflow: "hidden",
               }}
-            >
-              <Box
-                sx={{
-                  width: { xs: 38, sm: 44 },
-                  height: { xs: 38, sm: 44 },
-                  borderRadius: "10px",
-                  background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#dfba5a",
-                  boxShadow: "0 4px 12px rgba(15,23,42,0.15)",
-                  flexShrink: 0,
-                }}
-              >
-                <Bath size={22} color="#dfba5a" />
-              </Box>
-
-              <Box sx={{ display: "flex", flexDirection: "column", overflow: "hidden", minWidth: 0 }}>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: { xs: "15px", sm: "18px", md: "20px" },
-                    color: "#0f172a",
-                    lineHeight: 1.15,
-                    letterSpacing: "-0.02em",
-                    fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  IDEAL BATH
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "9px", sm: "10px" },
-                    fontWeight: 700,
-                    letterSpacing: { xs: "0.12em", sm: "0.18em" },
-                    color: "#c29b38",
-                    textTransform: "uppercase",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  Renovations • Langley
-                </Typography>
-              </Box>
-            </Box>
+            />
 
             {/* Mobile Hamburger Button */}
             <Box sx={{ display: { xs: "flex", lg: "none" } }}>
@@ -671,27 +546,6 @@ const NavBar: React.FC = () => {
 
                 {/* Right Warranty Badge & Dark Action Button */}
                 <Box sx={{ display: "flex", alignItems: "center", gap: 3 }}>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                    <Box
-                      sx={{
-                        width: 8,
-                        height: 8,
-                        borderRadius: "50%",
-                        backgroundColor: "#16a34a",
-                        boxShadow: "0 0 0 3px rgba(22, 163, 74, 0.2)",
-                      }}
-                    />
-                    <Typography
-                      sx={{
-                        fontSize: "13px",
-                        fontWeight: 600,
-                        color: "#475569",
-                      }}
-                    >
-                      5-Year Workmanship Warranty & Schluter® Certified
-                    </Typography>
-                  </Box>
-
                   <Box
                     onClick={() => handleNavClick("/contact")}
                     sx={{
@@ -765,51 +619,17 @@ const NavBar: React.FC = () => {
               zIndex: 10,
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, overflow: "hidden" }}>
-              <Box
-                sx={{
-                  width: 36,
-                  height: 36,
-                  borderRadius: "8px",
-                  backgroundColor: "rgba(223, 186, 90, 0.15)",
-                  border: "1px solid rgba(223, 186, 90, 0.3)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#dfba5a",
-                  flexShrink: 0,
-                }}
-              >
-                <Bath size={18} color="#dfba5a" />
-              </Box>
-              <Box sx={{ overflow: "hidden" }}>
-                <Typography
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: "16px",
-                    color: "#ffffff",
-                    letterSpacing: "-0.01em",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  IDEAL BATH
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "9.5px",
-                    fontWeight: 700,
-                    letterSpacing: "0.15em",
-                    color: "#dfba5a",
-                    textTransform: "uppercase",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Renovations • Langley
-                </Typography>
-              </Box>
-            </Box>
+            <Box
+              component="img"
+              src="/logo.png"
+              alt="Ideal Bath Renovations"
+              sx={{
+                width: 175,
+                height: 38,
+                objectFit: "contain",
+                objectPosition: "left center",
+              }}
+            />
 
             {/* Cross Button to close drawer */}
             <IconButton
@@ -914,7 +734,7 @@ const NavBar: React.FC = () => {
               </Box>
 
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.8 }}>
-                {servicesDetailList.map((service) => (
+                {directServiceLinks.map((service) => (
                   <Chip
                     key={service.id}
                     icon={<CheckCircle2 size={12} color="#c29b38" />}
@@ -968,7 +788,7 @@ const NavBar: React.FC = () => {
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <MapPin size={14} color="#c29b38" style={{ marginTop: "2px", flexShrink: 0 }} />
-                  <span>20819 78B Avenue, Langley Twp, BC V2Y</span>
+                  <span>Based at 20819 78B Avenue, Langley Township, BC</span>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <Clock size={14} color="#c29b38" />

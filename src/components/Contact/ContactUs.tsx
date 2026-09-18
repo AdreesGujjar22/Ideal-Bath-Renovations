@@ -125,7 +125,7 @@ const ContactUs: React.FC = () => {
                 Let's Discuss Your Bathroom Vision
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
-                Fill out the project form below. Our lead estimator in Langley will get in touch within 24 hours to schedule your free 3D design consultation.
+                Fill out the project form below. Our lead estimator based at our Langley Township headquarters will get in touch within 24 hours to schedule your free 3D design consultation.
               </Typography>
 
               {requestedService && (
@@ -215,10 +215,11 @@ const ContactUs: React.FC = () => {
                     />
 
                     <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8 }}>
-                      <Typography sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
+                      <Typography id="primary-service-needed-label" sx={{ fontSize: "13.5px", fontWeight: 600, color: "#334155" }}>
                         Primary Service Needed
                       </Typography>
                       <Select
+                        aria-labelledby="primary-service-needed-label"
                         value={formData.service}
                         onChange={(e) => setFormData((prev) => ({ ...prev, service: e.target.value }))}
                         size="small"
@@ -248,7 +249,7 @@ const ContactUs: React.FC = () => {
                         disabled={loading}
                         style={{
                           backgroundColor: "#c29b38",
-                          color: "#ffffff",
+                          color: "#0f172a",
                           border: "none",
                           padding: "14px 32px",
                           borderRadius: "8px",
@@ -289,7 +290,7 @@ const ContactUs: React.FC = () => {
                         Headquarters & Showroom
                       </Typography>
                       <Typography sx={{ fontSize: "13.5px", color: "#cbd5e1" }}>
-                        20819 78B Avenue, Langley Twp, BC V2Y, Canada
+                        Based at 20819 78B Avenue, Langley Township, BC
                       </Typography>
                       <Box
                         component="a"
@@ -352,8 +353,7 @@ const ContactUs: React.FC = () => {
                         Operating Hours
                       </Typography>
                       <Typography sx={{ fontSize: "13px", color: "#cbd5e1" }}>
-                        Open 24 Hours / 7 Days a Week <br />
-                        24/7 Phone Consultations & Support
+                        Phone consultations available 24/7
                       </Typography>
                     </Box>
                   </Box>
@@ -369,7 +369,7 @@ const ContactUs: React.FC = () => {
                   </Typography>
                 </Box>
                 <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.7 }}>
-                  Langley Township (Willoughby, Walnut Grove, Fort Langley, Murrayville, Brookswood, Aldergrove), Surrey, South Surrey, White Rock, Abbotsford, and Maple Ridge.
+                  Based in Langley Township, BC, with service across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
                 </Typography>
               </Box>
             </Box>

@@ -50,7 +50,7 @@ const Feedback: React.FC = () => {
               mb: 1,
             }}
           >
-            Real Homeowner Experiences
+            Homeowner Reviews
           </Typography>
           <Typography
             variant="h2"

@@ -48,7 +48,7 @@ const ReferralCard: React.FC = () => {
                   top: 16,
                   left: 16,
                   backgroundColor: "#c29b38",
-                  color: "#ffffff",
+                  color: "#0f172a",
                   px: 2,
                   py: 0.6,
                   borderRadius: "20px",
@@ -98,7 +98,7 @@ const ReferralCard: React.FC = () => {
               </Typography>
 
               <Typography sx={{ fontSize: "14px", color: "#475569", lineHeight: 1.6 }}>
-                Word of mouth from satisfied homeowners across Langley, Surrey, and Abbotsford is the foundation of Ideal Bath Renovations. When you refer a neighbor, family member, or friend who contracts a bathroom remodel with us:
+                Word of mouth from satisfied homeowners across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley is the foundation of Ideal Bath Renovations. When you refer a neighbor, family member, or friend who contracts a bathroom remodel with us:
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>

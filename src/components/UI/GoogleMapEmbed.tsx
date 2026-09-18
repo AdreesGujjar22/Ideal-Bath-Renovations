@@ -14,8 +14,8 @@ import {
 interface GoogleMapEmbedProps {
   businessName?: string;
   address?: string;
-  rating?: number;
-  reviewsCount?: number | string;
+  rating?: number | null;
+  reviewsCount?: number | string | null;
   mapQuery?: string;
   googleMapsLink?: string;
   directionsQuery?: string;
@@ -26,13 +26,13 @@ interface GoogleMapEmbedProps {
 
 const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
   businessName = "IDEAL BATH RENOVATIONS",
-  address = "20819 78B Ave, Langley Twp, BC V2Y 0A1",
-  rating = 5.0,
-  reviewsCount = "28+",
+  address = "Based at 20819 78B Avenue, Langley Township, BC",
+  rating = null,
+  reviewsCount = null,
   mapQuery = "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
   googleMapsLink = "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
   directionsQuery = "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
-  bottomLabel = "IDEAL BATH RENOVATIONS HQ • 20819 78B Ave, Langley Twp, BC, Canada",
+  bottomLabel = "IDEAL BATH RENOVATIONS HQ • Based at 20819 78B Avenue, Langley Township, BC",
   height = 460,
   defaultSatellite = false,
 }) => {
@@ -123,30 +123,40 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
 
             {/* Rating Row */}
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-              <Typography sx={{ fontSize: "12.5px", fontWeight: 700, color: "#1e293b" }}>
-                {rating.toFixed(1)}
-              </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", color: "#eab308" }}>
-                <Star size={13} fill="#eab308" />
-              </Box>
-              <Typography
-                component="a"
-                href={googleMapsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  fontSize: "12px",
-                  color: "#2563eb",
-                  textDecoration: "underline",
-                  fontWeight: 500,
-                }}
-              >
-                ({reviewsCount})
-              </Typography>
+              {typeof rating === "number" ? (
+                <>
+                  <Typography sx={{ fontSize: "12.5px", fontWeight: 700, color: "#1e293b" }}>
+                    {rating.toFixed(1)}
+                  </Typography>
+                  <Box sx={{ display: "flex", alignItems: "center", color: "#eab308" }}>
+                    <Star size={13} fill="#eab308" />
+                  </Box>
+                  {reviewsCount && (
+                    <Typography
+                      component="a"
+                      href={googleMapsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{
+                        fontSize: "12px",
+                        color: "#2563eb",
+                        textDecoration: "underline",
+                        fontWeight: 500,
+                      }}
+                    >
+                      ({reviewsCount})
+                    </Typography>
+                  )}
+                </>
+              ) : null}
               <Tooltip title="Verified Google Business Profile" arrow>
-                <Box component="span" sx={{ display: "inline-flex", color: "#94a3b8", cursor: "pointer" }}>
-                  <Info size={13} />
-                </Box>
+                <IconButton
+                  aria-label="Verified Google Business Profile"
+                  size="small"
+                  sx={{ p: 0.25, color: "#64748b" }}
+                >
+                  <Info size={13} aria-hidden="true" />
+                </IconButton>
               </Tooltip>
             </Box>
           </Box>
@@ -155,6 +165,7 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
           <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, flexShrink: 0 }}>
             <Tooltip title="View larger map on Google" arrow>
               <IconButton
+                aria-label="View larger map on Google"
                 component="a"
                 href={googleMapsLink}
                 target="_blank"
@@ -169,12 +180,13 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                   "&:hover": { backgroundColor: "#eff6ff", borderColor: "#93c5fd" },
                 }}
               >
-                <ExternalLink size={16} />
+                <ExternalLink size={16} aria-hidden="true" />
               </IconButton>
             </Tooltip>
 
             <Tooltip title="Get Directions" arrow>
               <IconButton
+                aria-label="Get directions in Google Maps"
                 component="a"
                 href={directionsUrl}
                 target="_blank"
@@ -188,7 +200,7 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                   "&:hover": { backgroundColor: "#1d4ed8" },
                 }}
               >
-                <Navigation size={16} />
+                <Navigation size={16} aria-hidden="true" />
               </IconButton>
             </Tooltip>
           </Box>
@@ -313,11 +325,13 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
         <Box
           component="a"
           href={googleMapsLink}
+          aria-label="Open larger map in Google Maps"
+          title="Open larger map in Google Maps"
           target="_blank"
           rel="noopener noreferrer"
           sx={{ color: "#64748b", display: "inline-flex", "&:hover": { color: "#2563eb" } }}
         >
-          <Maximize2 size={12} />
+          <Maximize2 size={12} aria-hidden="true" />
         </Box>
       </Box>
     </Box>

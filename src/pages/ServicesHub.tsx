@@ -18,7 +18,6 @@ import {
   ShieldCheck,
   Search,
   Sparkles,
-  CheckCircle2,
   Clock,
 } from "lucide-react";
 
@@ -26,8 +25,6 @@ const categories = [
   "All Services",
   "Full Remodel",
   "Showers & Tubs",
-  "Tile & Flooring",
-  "Vanities & Cabinetry",
   "Repairs & Upgrades",
   "Design & Planning",
 ];
@@ -51,8 +48,8 @@ const ServicesHub: React.FC = () => {
   return (
     <>
       <SEO
-        title="12 Luxury Bathroom Remodeling & Renovation Services | Ideal Bath Langley"
-        description="Explore all 12 specialized bathroom remodeling and renovation services in Langley & Fraser Valley. From tub-to-shower conversions to custom quartz vanities and 3D CAD design."
+        title="Bathroom Services in Langley, BC - Ideal Bath Renovations"
+        description="Bathroom services in Langley, BC include remodeling, shower conversions, tile installation, and custom vanities. Free estimate. - Ideal Bath Renovations"
         canonical="https://idealbathrenovations.ca/services"
       />
 
@@ -103,7 +100,7 @@ const ServicesHub: React.FC = () => {
               mb: 2.5,
             }}
           >
-            <Sparkles size={14} /> Full-Scope Renovation Services in Langley, BC
+            <Sparkles size={14} /> Bathroom Services in Langley, BC
           </Box>
 
           <Typography
@@ -120,7 +117,7 @@ const ServicesHub: React.FC = () => {
               color: "#ffffff",
             }}
           >
-            Comprehensive Bathroom Remodeling & Renovation Services
+            Bathroom Renovation Services for Langley Homes
           </Typography>
 
           <Typography
@@ -133,13 +130,14 @@ const ServicesHub: React.FC = () => {
               mb: 4,
             }}
           >
-            From turnkey master ensuite transformations to precision tile setting and tub-to-shower conversions, our certified Red Seal craftsmen and Schluter® installers deliver lasting excellence.
+            Choose from full remodels, shower conversions, repairs, tile, vanities, and bathroom planning.
           </Typography>
 
           {/* Search bar inside hero */}
           <Box sx={{ maxWidth: "550px", mx: "auto" }}>
             <TextField
               fullWidth
+              aria-label="Search services"
               placeholder="Search services (e.g. Shower Remodeling, Tile, Vanity)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -227,8 +225,11 @@ const ServicesHub: React.FC = () => {
                           height: "100%",
                           objectFit: "cover",
                           transition: "transform 0.4s ease",
+                          display: "block",
                           "&:hover": { transform: "scale(1.04)" },
                         }}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <Box
                         sx={{
@@ -270,7 +271,7 @@ const ServicesHub: React.FC = () => {
                       </Typography>
 
                       {/* Pricing & Timeline Pills */}
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 2.5 }}>
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mt: 1 }}>
                         <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, backgroundColor: "#f8fafc", border: "1px solid #e2e8f0", px: 1.2, py: 0.4, borderRadius: "6px" }}>
                           <Sparkles size={13} color="#c29b38" />
                           <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#0f172a" }}>
@@ -283,18 +284,6 @@ const ServicesHub: React.FC = () => {
                             {service.typicalTimeline}
                           </Typography>
                         </Box>
-                      </Box>
-
-                      {/* Top Features Checkmarks */}
-                      <Box sx={{ display: "flex", flexDirection: "column", gap: 0.8, pt: 2, borderTop: "1px dashed #e2e8f0" }}>
-                        {service.keyBenefits.slice(0, 2).map((kb, idx) => (
-                          <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}>
-                            <CheckCircle2 size={14} color="#15803d" style={{ flexShrink: 0, marginTop: "2px" }} />
-                            <Typography sx={{ fontSize: "12.5px", color: "#334155", fontWeight: 600 }}>
-                              {kb.title}
-                            </Typography>
-                          </Box>
-                        ))}
                       </Box>
                     </Box>
                   </Box>
@@ -317,7 +306,7 @@ const ServicesHub: React.FC = () => {
 
           {filteredServices.length === 0 && (
             <Box sx={{ textAlign: "center", py: 8 }}>
-              <Typography variant="h5" sx={{ fontWeight: 700, color: "#0f172a", mb: 1 }}>
+              <Typography variant="h5" component="p" sx={{ fontWeight: 700, color: "#0f172a", mb: 1 }}>
                 No services matched your search
               </Typography>
               <Typography sx={{ color: "#64748b", mb: 3 }}>
@@ -370,13 +359,13 @@ const ServicesHub: React.FC = () => {
                 Not sure which service fits your bathroom?
               </Typography>
               <Typography sx={{ fontSize: "14.5px", color: "#cbd5e1", lineHeight: 1.6 }}>
-                Our Langley renovation experts will inspect your current space, listen to your goals, and prepare a tailored design plan with transparent fixed pricing.
+                We’ll review your space, discuss your goals, and prepare a clear proposal.
               </Typography>
             </Box>
 
             <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, flexShrink: 0, width: { xs: "100%", sm: "auto" } }}>
               <PrimaryButton
-                content="Schedule Free Consultation"
+                content="Schedule a Consultation"
                 variant="gold"
                 btnpadding="14px 28px"
                 fontsize={15}

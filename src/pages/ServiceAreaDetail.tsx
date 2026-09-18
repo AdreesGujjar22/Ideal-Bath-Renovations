@@ -31,6 +31,33 @@ import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import EstimateForm from "../components/Home/EstimateForm";
 
+const serviceAreaSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
+  "langley-twp": {
+    title: "Langley Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Langley bathroom remodeling from our local team includes shower conversions, custom vanities, and tile work. - Ideal Bath Renovations",
+    h1: "Bathroom Remodeling Experts Serving Langley Township",
+  },
+  surrey: {
+    title: "Surrey Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Surrey bathroom remodeling includes shower conversions, custom vanities, and tile work from a local team. - Ideal Bath Renovations",
+    h1: "Bathroom Renovations for Surrey Homes",
+  },
+  abbotsford: {
+    title: "Abbotsford Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Abbotsford bathroom remodeling includes layouts, shower upgrades, custom vanities, and durable tile installation. Request a quote. - Ideal Bath Renovations",
+    h1: "Bathroom Remodeling for Abbotsford Homes",
+  },
+  "fraser-valley": {
+    title: "Fraser Valley Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Fraser Valley bathroom remodeling covers renovations, shower conversions, tile, and custom vanities. Free estimate. - Ideal Bath Renovations",
+    h1: "Bathroom Renovations Across the Fraser Valley",
+  },
+};
+
 const ServiceAreaDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const area = slug ? getServiceAreaBySlug(slug) : undefined;
@@ -43,6 +70,7 @@ const ServiceAreaDetail: React.FC = () => {
     return <Navigate to="/service-areas" replace />;
   }
 
+  const metadata = serviceAreaSeoMetadata[area.slug];
   const otherAreas = serviceAreasData.filter((a) => a.id !== area.id);
 
   // Schema for LocalBusiness and BreadcrumbList
@@ -54,7 +82,7 @@ const ServiceAreaDetail: React.FC = () => {
         "@id": `https://idealbathrenovations.ca/service-areas/${area.slug}#business`,
         name: `Ideal Bath Renovations - ${area.name}`,
         url: `https://idealbathrenovations.ca/service-areas/${area.slug}`,
-        logo: "https://idealbathrenovations.ca/vite.svg",
+        logo: "https://idealbathrenovations.ca/logo.png",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
         description: area.metaDescription,
         telephone: "+1-672-273-0434",
@@ -63,7 +91,7 @@ const ServiceAreaDetail: React.FC = () => {
         address: {
           "@type": "PostalAddress",
           streetAddress: "20819 78B Avenue",
-          addressLocality: "Langley Twp",
+          addressLocality: "Langley Township",
           addressRegion: "BC",
           postalCode: "V2Y 0A1",
           addressCountry: "CA",
@@ -132,8 +160,8 @@ const ServiceAreaDetail: React.FC = () => {
   return (
     <>
       <SEO
-        title={area.metaTitle}
-        description={area.metaDescription}
+        title={metadata.title}
+        description={metadata.description}
         canonical={`https://idealbathrenovations.ca/service-areas/${area.slug}`}
         keywords={area.keywords}
       />
@@ -221,7 +249,7 @@ const ServiceAreaDetail: React.FC = () => {
                   letterSpacing: "-0.02em",
                 }}
               >
-                {area.headline}
+                {metadata.h1}
               </Typography>
 
               <Typography
@@ -372,7 +400,7 @@ const ServiceAreaDetail: React.FC = () => {
                 }}
               >
                 <Sparkles size={14} color="#c29b38" />
-                <span>Local Remodeling Excellence</span>
+                <span>Local Service</span>
               </Box>
 
               <Typography
@@ -743,7 +771,7 @@ const ServiceAreaDetail: React.FC = () => {
             {area.localFaqs.map((faq, idx) => (
               <Accordion
                 key={idx}
-                defaultExpanded={idx === 0}
+                defaultExpanded={false}
                 elevation={0}
                 sx={{
                   mb: 2,
@@ -845,7 +873,7 @@ const ServiceAreaDetail: React.FC = () => {
               Get Your Free In-Home Estimate in {area.shortName}
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
-              Fill out the form below or call (672) 273-0434 to schedule a no-obligation consultation with our renovation specialists.
+              Fill out the form below or call (672) 273-0434 to schedule a consultation.
             </Typography>
           </Box>
           <EstimateForm />

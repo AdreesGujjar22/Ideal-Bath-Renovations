@@ -7,8 +7,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
-import { ChevronDown, HelpCircle } from "lucide-react";
-import PrimaryButton from "../UI/PrimaryButton";
+import { ChevronDown } from "lucide-react";
 
 interface FAQItem {
   question: string;
@@ -17,34 +16,44 @@ interface FAQItem {
 
 const faqList: FAQItem[] = [
   {
-    question: "How long does a typical bathroom renovation take?",
+    question: "How long does a bathroom remodel take in Langley, BC?",
     answer:
-      "Most full renovations are completed within 2–4 weeks, depending on scope and material availability. Simpler tub-to-shower conversions or tile refreshes can often be completed in 3–5 working days.",
+      "A standard tub-to-shower conversion typically takes 3 to 5 working days, while a complete full-gut bathroom remodel or master ensuite transformation takes between 2 to 3 weeks. Before starting any demolition, our team ensures all custom vanities, tiles, and fixtures are ordered and staged on site to prevent mid-project delays.",
   },
   {
-    question: "Do you offer free quotes?",
+    question: "Do I need a municipal building or plumbing permit in Langley Township?",
     answer:
-      "Yes — every project starts with a free, no-obligation in-home consultation and written quote. We evaluate your existing plumbing, electrical, and structural layout to give you an accurate, transparent proposal with zero surprises.",
+      "If you are replacing fixtures like-for-like without changing wall layouts or drainage stacks, a permit is generally not required. However, moving plumbing lines, adding new electrical circuits, or altering load-bearing walls requires permits from the Township of Langley or City of Langley. Our licensed team handles all permit filings and coordinates mandatory municipal inspections directly.",
   },
   {
-    question: "Are you licensed and insured?",
+    question: "Can I keep my existing bathroom layout to save on renovation costs?",
     answer:
-      "Yes, Ideal Bath Renovations is fully licensed and insured for all work performed in BC. We maintain comprehensive general liability coverage and WorkSafeBC registration for complete homeowner peace of mind.",
+      "Yes, absolutely. Keeping your vanity, toilet, and shower/tub rough-in locations avoids expensive subfloor alterations and pipe relocations, saving between $1,500 and $4,000. You can invest those savings into luxury porcelain tile, custom quartz countertops, or high-end thermostatic shower fixtures.",
   },
   {
-    question: "What waterproofing system do you use for walk-in showers?",
+    question: "What waterproofing system do you install behind shower tile?",
     answer:
-      "We exclusively install certified Schluter®-KERDI waterproofing systems and Schluter®-DITRA-HEAT uncoupling membranes. Every shower pan is backed by a 24-hour hydrostatic flood test before any tile is laid.",
+      "We exclusively install certified Schluter®-KERDI waterproofing systems and Schluter®-DITRA uncoupling floor membranes. Unlike outdated greenboard or liquid-painted membranes, Schluter provides a continuous, vapor-tight moisture barrier that completely prevents water intrusion, mold growth, and structural rot, backed by manufacturer lifetime warranties.",
   },
   {
-    question: "Can you help design our bathroom layout and pick materials?",
+    question: "How much does a bathroom renovation typically cost in Langley?",
     answer:
-      "Absolutely. Our experienced design specialists guide you through 3D layout renderings, vanity dimensions, tile combinations, plumbing fixtures, and lighting plans to make your renovation seamless and stress-free.",
+      "A powder room refresh typically ranges from $6,500 to $12,000; a tub-to-shower conversion ranges from $9,500 to $18,000; and a full-scale master ensuite overhaul with custom glass, heated floors, and double vanities ranges from $22,000 to $45,000+. We provide complete, transparent, itemized fixed-price quotes so you never encounter surprise extras.",
+  },
+  {
+    question: "Do you handle both the plumbing, electrical, and tile installation?",
+    answer:
+      "Yes. Ideal Bath Renovations is a turnkey contractor. We manage the entire project from initial design consultation and clean demolition to Red Seal licensed plumbing, certified electrical wiring, waterproofing, precision tile setting, and final walkthrough.",
+  },
+  {
+    question: "How do I schedule a free in-home design consultation and estimate?",
+    answer:
+      "Simply call us directly at +1 (672) 273-0434 or submit our online request form. One of our Langley renovation specialists will visit your home, measure your bathroom space, discuss your layout and design ideas, and provide a clear, no-obligation written estimate.",
   },
 ];
 
 const FAQSection: React.FC = () => {
-  const [expanded, setExpanded] = useState<string | false>("panel0");
+  const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange = (panel: string) => (_: React.SyntheticEvent, isExpanded: boolean) => {
     setExpanded(isExpanded ? panel : false);
@@ -72,28 +81,7 @@ const FAQSection: React.FC = () => {
       />
 
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 6 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <HelpCircle size={14} color="#c29b38" />
-            <span>Helpful Answers</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 4, md: 5 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -102,10 +90,10 @@ const FAQSection: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Frequently Asked Questions About Bathroom Renovations
+            Bathroom Remodeling FAQs for Langley Homeowners
           </Typography>
 
           <Typography
@@ -117,7 +105,7 @@ const FAQSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Have questions about planning your bathroom remodel? Here are clear answers to the most common questions from Langley and Fraser Valley homeowners.
+            Straightforward answers to common questions about bathroom remodeling.
           </Typography>
         </Box>
 
@@ -178,19 +166,6 @@ const FAQSection: React.FC = () => {
               </Accordion>
             );
           })}
-        </Box>
-
-        <Box sx={{ mt: 5, textAlign: "center" }}>
-          <Typography sx={{ fontSize: "14.5px", color: "#64748b", mb: 2 }}>
-            Have a question specific to your bathroom's layout or plumbing?
-          </Typography>
-          <PrimaryButton
-            content="Ask Our Renovation Specialists"
-            variant="gold"
-            btnpadding="12px 28px"
-            fontsize={14}
-            to="/contact"
-          />
         </Box>
       </Container>
     </Box>

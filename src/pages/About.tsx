@@ -12,8 +12,8 @@ const About: React.FC = () => {
   return (
     <>
       <SEO
-        title="About Us | Ideal Bath Renovations Langley Twp, BC"
-        description="Learn about Ideal Bath Renovations, Langley's leading bathroom remodeling team. Dedicated to 3D architectural planning, lifetime Schluter waterproofing, and master craftsmanship."
+        title="About Us in Langley, BC - Ideal Bath Renovations"
+        description="Bathroom remodeling in Langley, BC from Ideal Bath Renovations includes waterproofing and custom finishes. - Ideal Bath Renovations"
         canonical="https://idealbathrenovations.ca/about"
         keywords="About Ideal Bath Renovations, Langley Contractor, Master Ensuite Builders, Bathroom Renovators Fraser Valley"
       />

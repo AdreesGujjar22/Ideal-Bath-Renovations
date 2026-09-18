@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import { MapPin, Navigation, ArrowRight, ExternalLink } from "lucide-react";
+import { MapPin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { serviceAreasData } from "../../data/ServiceAreasData";
 import GoogleMapEmbed from "../UI/GoogleMapEmbed";
@@ -10,28 +9,7 @@ const ServiceAreas: React.FC = () => {
   return (
     <Box component="section" sx={{ py: { xs: 7, md: 10 }, backgroundColor: "#f8fafc" }}>
       <Container maxWidth="xl">
-        <Box sx={{ textAlign: "center", mb: { xs: 5, md: 7 } }}>
-          <Box
-            sx={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 0.8,
-              backgroundColor: "rgba(194, 155, 56, 0.12)",
-              color: "#b45309",
-              px: 1.8,
-              py: 0.5,
-              borderRadius: "20px",
-              fontSize: "12.5px",
-              fontWeight: 700,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              mb: 1.5,
-            }}
-          >
-            <MapPin size={14} color="#c29b38" />
-            <span>Local Community Presence</span>
-          </Box>
-
+        <Box sx={{ textAlign: "center", mb: { xs: 4, md: 5 } }}>
           <Typography
             variant="h2"
             sx={{
@@ -40,136 +18,70 @@ const ServiceAreas: React.FC = () => {
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,
-              mb: 2,
+              mb: 1.5,
             }}
           >
-            Areas We Serve in Fraser Valley, BC
+            Bathroom Remodeling Service Areas in Langley Township &amp; Fraser Valley
           </Typography>
 
           <Typography
             sx={{
               fontSize: { xs: "15px", md: "16.5px" },
               color: "#64748b",
-              maxWidth: "740px",
+              maxWidth: "800px",
               mx: "auto",
               lineHeight: 1.7,
+              mb: 3.5,
             }}
           >
-            Ideal Bath Renovations proudly serves homeowners throughout the following communities. Click any service area to explore localized project galleries, client reviews, and local map overviews:
+            Based at 20819 78B Avenue in Langley Township, we serve homeowners across Langley, Surrey, Abbotsford, and the Fraser Valley.
           </Typography>
-        </Box>
 
-        {/* Service Area Cards Grid */}
-        <Grid container spacing={3.5} sx={{ mb: { xs: 6, md: 8 } }}>
-          {serviceAreasData.map((area) => (
-            <Grid size={{ xs: 12, sm: 6, lg: 3 }} key={area.id}>
+          {/* Short list of served area names as links */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 1.5,
+            }}
+          >
+            {serviceAreasData.map((area) => (
               <Box
+                key={area.id}
                 component={Link}
                 to={`/service-areas/${area.slug}`}
                 sx={{
-                  textDecoration: "none",
-                  height: "100%",
-                  p: { xs: 3, md: 3.5 },
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 0.8,
+                  px: 2.2,
+                  py: 1,
+                  borderRadius: "8px",
                   backgroundColor: "#ffffff",
-                  borderRadius: "14px",
                   border: "1px solid #e2e8f0",
-                  display: "flex",
-                  flexDirection: "column",
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.03)",
-                  transition: "all 0.25s ease",
+                  color: "#1e293b",
+                  fontSize: "14px",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  boxShadow: "0 1px 3px rgba(0,0,0,0.03)",
+                  transition: "all 0.2s ease",
                   "&:hover": {
-                    transform: "translateY(-4px)",
                     borderColor: "#c29b38",
-                    boxShadow: "0 12px 28px rgba(15,23,42,0.08)",
+                    color: "#b45309",
+                    backgroundColor: "rgba(194, 155, 56, 0.05)",
                   },
                 }}
               >
-                <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 2 }}>
-                  <Box
-                    sx={{
-                      width: 44,
-                      height: 44,
-                      borderRadius: "10px",
-                      backgroundColor: "rgba(194, 155, 56, 0.12)",
-                      color: "#c29b38",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <Navigation size={20} />
-                  </Box>
-                  <Typography
-                    sx={{
-                      fontSize: "11px",
-                      fontWeight: 700,
-                      color: "#b45309",
-                      backgroundColor: "rgba(194, 155, 56, 0.12)",
-                      px: 1.2,
-                      py: 0.4,
-                      borderRadius: "12px",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    {area.badge}
-                  </Typography>
-                </Box>
-
-                <Typography
-                  variant="h3"
-                  sx={{
-                    fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    fontSize: "20px",
-                    fontWeight: 700,
-                    color: "#0f172a",
-                    lineHeight: 1.3,
-                    mb: 1.5,
-                  }}
-                >
-                  {area.name}
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontSize: "14px",
-                    color: "#64748b",
-                    lineHeight: 1.65,
-                    mb: 2.5,
-                    flex: 1,
-                  }}
-                >
-                  {area.description}
-                </Typography>
-
-                <Box sx={{ pt: 2, borderTop: "1px solid #f1f5f9", mb: 2 }}>
-                  <Typography sx={{ fontSize: "11.5px", fontWeight: 700, color: "#94a3b8", textTransform: "uppercase", mb: 0.8, letterSpacing: "0.05em" }}>
-                    Key Neighborhoods
-                  </Typography>
-                  <Typography sx={{ fontSize: "12.5px", color: "#475569", lineHeight: 1.5 }}>
-                    {area.neighborhoods.slice(0, 5).join(" • ")}
-                  </Typography>
-                </Box>
-
-                <Box
-                  sx={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 0.8,
-                    fontSize: "13px",
-                    fontWeight: 700,
-                    color: "#c29b38",
-                    mt: "auto",
-                  }}
-                >
-                  <span>Explore {area.shortName} Page</span>
-                  <ArrowRight size={14} />
-                </Box>
+                <MapPin size={15} color="#c29b38" />
+                <span>{area.name}</span>
               </Box>
-            </Grid>
-          ))}
-        </Grid>
+            ))}
+          </Box>
+        </Box>
 
-        {/* Embedded Google Map Overview (Matching User Request & Image) */}
+        {/* Embedded Google Map Overview */}
         <Box
           sx={{
             p: { xs: 2.5, md: 4 },
@@ -203,7 +115,7 @@ const ServiceAreas: React.FC = () => {
                 Our Langley Twp HQ & Service Area Map
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b" }}>
-                Centrally located at 20819 78B Ave, Langley Twp with direct daily mobile units serving Surrey, Abbotsford & Fraser Valley.
+                Based at 20819 78B Avenue in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
               </Typography>
             </Box>
 
@@ -240,13 +152,11 @@ const ServiceAreas: React.FC = () => {
           {/* Embedded Google Map Component */}
           <GoogleMapEmbed
             businessName="IDEAL BATH RENOVATIONS"
-            address="20819 78B Ave, Langley Twp, BC V2Y 0A1"
-            rating={5.0}
-            reviewsCount="28+"
+            address="Based at 20819 78B Avenue, Langley Township, BC"
             mapQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1, Canada"
             googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
             directionsQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1"
-            bottomLabel="IDEAL BATH RENOVATIONS HQ • 20819 78B Ave, Langley Twp, BC, Canada"
+            bottomLabel="IDEAL BATH RENOVATIONS HQ • Based at 20819 78B Avenue, Langley Township, BC"
             height={480}
           />
         </Box>
@@ -256,4 +166,3 @@ const ServiceAreas: React.FC = () => {
 };
 
 export default ServiceAreas;
-

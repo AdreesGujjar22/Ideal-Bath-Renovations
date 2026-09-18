@@ -18,6 +18,9 @@ interface PrimaryBannerProps {
   btn?: boolean;
   btncontent?: string;
   secondaryBtnContent?: string;
+  secondaryBtnLink?: string;
+  trustBadges?: string[];
+  hideTrustBadges?: boolean;
   gap?: number;
 }
 
@@ -36,7 +39,10 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
   width = "100%",
   btn = true,
   btncontent = "Book Free In-Home Estimate",
-  secondaryBtnContent = "View Recent Projects",
+  secondaryBtnContent,
+  secondaryBtnLink,
+  trustBadges,
+  hideTrustBadges = false,
   gap = 2,
 }) => {
   return (
@@ -54,6 +60,11 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
         component="img"
         src={img}
         alt={primaryContent}
+        width={1200}
+        height={bannerHeight}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
         sx={{
           position: "absolute",
           top: 0,
@@ -141,7 +152,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
 
           {secondaryContent && (
             <Typography
-              variant="h2"
+              component="p"
               sx={{
                 textTransform: "none",
                 fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -187,7 +198,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
                     btnpadding="13px 26px"
                     fontsize={15}
                     btnwidth="100%"
-                    to="/before-after"
+                    to={secondaryBtnLink || "/before-after"}
                     onClick={() => {}}
                   />
                 </Box>
@@ -196,7 +207,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
           )}
 
           {/* Quick Trust Credentials for Home and Landing Hero */}
-          <Box
+          {!hideTrustBadges && trustBadges && trustBadges.length > 0 && <Box
             sx={{
               display: "flex",
               flexWrap: "wrap",
@@ -212,19 +223,15 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
               width: "100%",
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-              <span style={{ color: "#dfba5a" }}>★ 5.0</span>
-              <span><strong>Google Rating</strong></span>
-            </Box>
-            <span style={{ opacity: 0.4 }}>•</span>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-              <span>🛡️ <strong>Licensed &amp; Insured</strong></span>
-            </Box>
-            <span style={{ opacity: 0.4 }}>•</span>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
-              <span>📍 <strong>Langley Twp &amp; Fraser Valley</strong></span>
-            </Box>
-          </Box>
+            {trustBadges.map((badgeText, idx) => (
+                <React.Fragment key={idx}>
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.6 }}>
+                    <span><strong>{badgeText}</strong></span>
+                  </Box>
+                  {idx < trustBadges.length - 1 && <span style={{ opacity: 0.4 }}>•</span>}
+                </React.Fragment>
+              ))}
+          </Box>}
         </Box>
       </Container>
     </Box>

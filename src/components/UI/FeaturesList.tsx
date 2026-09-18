@@ -10,7 +10,7 @@ interface FeaturesProps {
 const FeaturesList: React.FC<FeaturesProps> = ({ title, features, bold }) => {
     return (
         <Box>
-            <Typography variant="h6" sx={{
+            <Typography component="h3" sx={{
                 fontSize: {
                     xs: "24px",
                     sm: "28px",

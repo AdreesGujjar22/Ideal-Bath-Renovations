@@ -48,6 +48,10 @@ const SEO: React.FC<SEOProps> = ({
       "robots",
       "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     );
+    setMetaTag("googlebot", "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1");
+    setMetaTag("revised", "2026-09-17");
+    setMetaTag("article:published_time", "2026-01-15T08:00:00Z", true);
+    setMetaTag("article:modified_time", "2026-09-17T08:00:00Z", true);
 
     // Open Graph
     setMetaTag("og:title", title, true);

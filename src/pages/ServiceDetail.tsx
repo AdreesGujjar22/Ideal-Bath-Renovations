@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -19,8 +19,6 @@ import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import {
-  ShieldCheck,
-  Clock,
   CheckCircle2,
   ChevronDown,
   Sparkles,
@@ -37,6 +35,81 @@ interface ServiceDetailProps {
   forcedSlug?: string;
 }
 
+const serviceSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
+  "bathroom-remodeling": {
+    title: "Bathroom Remodeling in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom remodeling in Langley, BC with 3D planning, custom layouts, waterproofing, and expert project coordination. Request a quote. - Ideal Bath Renovations",
+    h1: "Complete Bathroom Remodeling in Langley",
+  },
+  "bathroom-renovation": {
+    title: "Bathroom Renovation in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom renovation in Langley, BC modernizes outdated spaces with new tile, vanities, fixtures, and efficient layouts. Get started. - Ideal Bath Renovations",
+    h1: "Modern Bathroom Renovations Built Around You",
+  },
+  "bathroom-repair": {
+    title: "Bathroom Repair in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom repair in Langley, BC fixes leaks, grout, tile, and plumbing fixtures with reliable service. Request help. - Ideal Bath Renovations",
+    h1: "Reliable Bathroom Repairs by Local Pros",
+  },
+  "bathroom-replacement": {
+    title: "Tub Replacement in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Tub replacement in Langley, BC offers freestanding tubs, alcove tubs, and efficient installation. Plan your upgrade today. - Ideal Bath Renovations",
+    h1: "Bathroom Fixture Replacement Done Right",
+  },
+  "bathroom-installation": {
+    title: "Bath Installation in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bath installation in Langley, BC covers new fixtures, plumbing, tile, and complete build-outs. Free estimates available. - Ideal Bath Renovations",
+    h1: "New Bathroom Installation, From Plans to Finish",
+  },
+  "bathroom-design": {
+    title: "Bathroom Design in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom design in Langley, BC brings 3D planning, finish guidance, and practical storage ideas. Book a consultation. - Ideal Bath Renovations",
+    h1: "Thoughtful Bathroom Design for Everyday Living",
+  },
+  "bathroom-upgrades": {
+    title: "Bathroom Upgrades in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom upgrades in Langley, BC add fixtures, LED mirrors, quiet fans, and stylish hardware with minimal disruption. Get a quote. - Ideal Bath Renovations",
+    h1: "Small Bathroom Upgrades, Big Results",
+  },
+  "bathroom-restoration": {
+    title: "Bath Restoration in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bath restoration in Langley, BC repairs water damage, mold, subfloors, and waterproofing. Request an assessment. - Ideal Bath Renovations",
+    h1: "Bathroom Restoration After Water Damage",
+  },
+  "shower-remodeling": {
+    title: "Shower Remodeling in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Shower remodeling in Langley, BC creates walk-in showers, tub conversions, niches, and frameless glass enclosures. Get a quote. - Ideal Bath Renovations",
+    h1: "Walk-In Showers and Tub Conversions",
+  },
+  "bathtub-replacement": {
+    title: "Bathtub Replacement in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathtub replacement in Langley, BC offers freestanding tubs, alcove tubs, and efficient installation. Plan your upgrade today. - Ideal Bath Renovations",
+    h1: "Bathtub Replacements for Modern Comfort",
+  },
+  "bathroom-tile-installation": {
+    title: "Bathroom Tile in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom tile in Langley, BC includes porcelain, waterproofing, heated floors, and precise installation. View our tile portfolio. - Ideal Bath Renovations",
+    h1: "Precision Bathroom Tile and Waterproofing",
+  },
+  "bathroom-vanity-installation": {
+    title: "Bathroom Vanity in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom vanity in Langley, BC features custom cabinetry, quartz counters, LED mirrors, and smart storage. Explore your options. - Ideal Bath Renovations",
+    h1: "Custom Bathroom Vanities and Smart Storage",
+  },
+};
+
 const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
@@ -52,7 +125,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
             Service Not Found
           </Typography>
           <Typography sx={{ color: "#64748b", mb: 4 }}>
-            The requested bathroom renovation service could not be located. Please choose from our premier services below.
+            The requested service could not be located. Please choose from the services below.
           </Typography>
           <PrimaryButton content="View All 12 Renovation Services" to="/services" variant="gold" />
         </Container>
@@ -60,6 +133,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
     );
   }
 
+  const metadata = serviceSeoMetadata[activeSlug];
   const relatedServices = service.relatedServiceSlugs
     .map((sSlug) => getServiceBySlug(sSlug))
     .filter((item): item is ServiceDetailItem => item !== undefined);
@@ -67,8 +141,8 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
   return (
     <>
       <SEO
-        title={`${service.title} Langley & Fraser Valley | Ideal Bath Renovations`}
-        description={`${service.overview.substring(0, 155)}... Contact Ideal Bath Renovations at 20819 78B Ave, Langley for free 3D CAD design & fixed-price quote.`}
+        title={metadata.title}
+        description={metadata.description}
         canonical={`https://idealbathrenovations.ca/services/${service.slug}`}
       />
 
@@ -143,7 +217,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 mb: 2,
               }}
             >
-              {service.title}
+              {metadata.h1}
             </Typography>
 
             <Typography
@@ -158,61 +232,10 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
               {service.tagline}
             </Typography>
 
-            {/* Quick Metrics Bar */}
-            <Box
-              sx={{
-                display: "grid",
-                gridTemplateColumns: { xs: "1fr", sm: "repeat(3, 1fr)" },
-                gap: 2,
-                p: 2.5,
-                backgroundColor: "rgba(30, 41, 59, 0.8)",
-                borderRadius: "14px",
-                border: "1px solid rgba(255,255,255,0.1)",
-                backdropFilter: "blur(8px)",
-                mb: 4,
-              }}
-            >
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <Sparkles size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    In-Home Estimate
-                  </Typography>
-                  <Typography sx={{ fontSize: "14px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.priceRange || "Complimentary In-Home"}
-                  </Typography>
-                </Box>
-              </Box>
-
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <Clock size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    Typical Timeline
-                  </Typography>
-                  <Typography sx={{ fontSize: "14px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.typicalTimeline}
-                  </Typography>
-                </Box>
-              </Box>
-
-              <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <ShieldCheck size={20} color="#dfba5a" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <Box>
-                  <Typography sx={{ fontSize: "11px", color: "#94a3b8", textTransform: "uppercase", fontWeight: 700 }}>
-                    Warranty & Guarantee
-                  </Typography>
-                  <Typography sx={{ fontSize: "13px", fontWeight: 700, color: "#ffffff" }}>
-                    {service.warranty}
-                  </Typography>
-                </Box>
-              </Box>
-            </Box>
-
             {/* CTA Action Buttons */}
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>
               <PrimaryButton
-                content="Book In-Home Consultation & Quote"
+                content="Request In-Home Quote"
                 variant="gold"
                 btnpadding="14px 30px"
                 fontsize={15}
@@ -283,7 +306,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <CheckCircle2 size={18} color="#15803d" />
               <Typography sx={{ fontSize: "13px", fontWeight: 600, color: "#334155" }}>
-                Serving Langley, Surrey & Abbotsford
+                Serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley
               </Typography>
             </Box>
           </Box>
@@ -301,7 +324,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
                   <Hammer size={18} color="#c29b38" />
                   <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#c29b38", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                    Service Overview & Engineering
+                    Service Overview
                   </Typography>
                 </Box>
 
@@ -399,11 +422,11 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                         color: "#0f172a",
                       }}
                     >
-                      Comprehensive Scope of Work & Inclusions
+                      Scope of Work & Inclusions
                     </Typography>
                   </Box>
                   <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
-                    Every {service.title} project includes itemized materials, labor, permits, and lifetime waterproofing support:
+                    Your {service.title} quote outlines the materials, labor, permits, and waterproofing work included:
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
@@ -431,7 +454,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     mb: 3,
                   }}
                 >
-                  Our 5-Stage Seamless Execution Process
+                  Our Renovation Process
                 </Typography>
 
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -487,172 +510,6 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 </Box>
               </Box>
 
-              {/* Before & After Transformation Spotlight */}
-              <Box sx={{ mb: 7 }}>
-                <Paper
-                  elevation={0}
-                  sx={{
-                    p: { xs: 3, sm: 4 },
-                    borderRadius: "16px",
-                    border: "1px solid #e2e8f0",
-                    backgroundColor: "#ffffff",
-                  }}
-                >
-                  <Typography
-                    variant="h3"
-                    sx={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      fontSize: { xs: "20px", sm: "24px" },
-                      fontWeight: 800,
-                      color: "#0f172a",
-                      mb: 1,
-                    }}
-                  >
-                    Featured Transformation: {service.beforeAfterTitle}
-                  </Typography>
-                  <Typography sx={{ fontSize: "13.5px", color: "#64748b", mb: 3 }}>
-                    {service.beforeAfterDesc}
-                  </Typography>
-
-                  <Grid container spacing={2} sx={{ mb: 2 }}>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <Box sx={{ position: "relative", borderRadius: "10px", overflow: "hidden", height: "240px" }}>
-                        <Box
-                          component="img"
-                          src={service.beforeImage}
-                          alt="Before Renovation"
-                          sx={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        <Box
-                          sx={{
-                            position: "absolute",
-                            top: 10,
-                            left: 10,
-                            backgroundColor: "rgba(15, 23, 42, 0.85)",
-                            color: "#ffffff",
-                            fontSize: "11px",
-                            fontWeight: 700,
-                            px: 1.5,
-                            py: 0.4,
-                            borderRadius: "4px",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                          }}
-                        >
-                          Before
-                        </Box>
-                      </Box>
-                    </Grid>
-                    <Grid size={{ xs: 12, sm: 6 }}>
-                      <Box sx={{ position: "relative", borderRadius: "10px", overflow: "hidden", height: "240px" }}>
-                        <Box
-                          component="img"
-                          src={service.afterImage}
-                          alt="After Renovation"
-                          sx={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        />
-                        <Box
-                          sx={{
-                            position: "absolute",
-                            top: 10,
-                            left: 10,
-                            backgroundColor: "#c29b38",
-                            color: "#ffffff",
-                            fontSize: "11px",
-                            fontWeight: 700,
-                            px: 1.5,
-                            py: 0.4,
-                            borderRadius: "4px",
-                            textTransform: "uppercase",
-                            letterSpacing: "0.05em",
-                          }}
-                        >
-                          After: Ideal Bath
-                        </Box>
-                      </Box>
-                    </Grid>
-                  </Grid>
-
-                  <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-                    <Link
-                      to="/before-after"
-                      style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        gap: "6px",
-                        color: "#c29b38",
-                        fontWeight: 700,
-                        fontSize: "13.5px",
-                        textDecoration: "none",
-                      }}
-                    >
-                      <span>Explore More Before & After Case Studies</span>
-                      <ArrowRight size={15} />
-                    </Link>
-                  </Box>
-                </Paper>
-              </Box>
-
-              {/* Material Options */}
-              {service.materialOptions && service.materialOptions.length > 0 && (
-                <Box sx={{ mb: 7 }}>
-                  <Typography
-                    variant="h3"
-                    sx={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                      fontSize: { xs: "20px", sm: "24px" },
-                      fontWeight: 800,
-                      color: "#0f172a",
-                      mb: 3,
-                    }}
-                  >
-                    Premium Materials & Fixture Selections
-                  </Typography>
-
-                  <Grid container spacing={2}>
-                    {service.materialOptions.map((mat, idx) => (
-                      <Grid size={{ xs: 12, sm: 4 }} key={idx}>
-                        <Paper
-                          elevation={0}
-                          sx={{
-                            p: 2.5,
-                            borderRadius: "10px",
-                            border: "1px solid #e2e8f0",
-                            backgroundColor: "#ffffff",
-                            height: "100%",
-                          }}
-                        >
-                          {mat.badge && (
-                            <Typography
-                              sx={{
-                                fontSize: "11px",
-                                fontWeight: 700,
-                                color: "#b45309",
-                                backgroundColor: "rgba(194,155,56,0.12)",
-                                px: 1,
-                                py: 0.2,
-                                borderRadius: "4px",
-                                width: "fit-content",
-                                mb: 1,
-                                textTransform: "uppercase",
-                              }}
-                            >
-                              {mat.badge}
-                            </Typography>
-                          )}
-                          <Typography sx={{ fontWeight: 700, fontSize: "15px", color: "#0f172a", mb: 0.8 }}>
-                            {mat.title}
-                          </Typography>
-                          <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.5 }}>
-                            {mat.description}
-                          </Typography>
-                        </Paper>
-                      </Grid>
-                    ))}
-                  </Grid>
-                </Box>
-              )}
-
               {/* Service Specific FAQs */}
               <Box sx={{ mb: 6 }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
@@ -680,7 +537,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     <Accordion
                       key={idx}
                       elevation={0}
-                      defaultExpanded={idx === 0}
+                      defaultExpanded={false}
                       sx={{
                         border: "1px solid #e2e8f0",
                         borderRadius: "10px !important",
@@ -743,7 +600,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   </Typography>
 
                   <Typography sx={{ fontSize: "13px", color: "#64748b", lineHeight: 1.6, mb: 3 }}>
-                    Schedule your free in-home consultation with our design team. Transparent itemized proposals with zero pressure.
+                    Schedule a free in-home consultation and receive an itemized proposal.
                   </Typography>
 
                   <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, mb: 3 }}>
@@ -762,7 +619,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
                       <CheckCircle2 size={15} color="#15803d" />
                       <Typography sx={{ fontSize: "12.5px", color: "#334155", fontWeight: 600 }}>
-                        Schluter® Lifetime Leak Protection
+                        Schluter® Waterproofing System
                       </Typography>
                     </Box>
                   </Box>
@@ -777,7 +634,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
 
                   <Box sx={{ textAlign: "center", mt: 2 }}>
                     <Typography sx={{ fontSize: "12px", color: "#94a3b8" }}>
-                      Or call our 24/7 hotline directly:
+                      Prefer to talk?
                     </Typography>
                     <Box
                       component="a"

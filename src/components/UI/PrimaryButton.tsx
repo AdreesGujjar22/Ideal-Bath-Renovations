@@ -26,6 +26,8 @@ const PrimaryButton: React.FC<ButtonProps> = ({
   const handleClick = () => {
     if (onClick) {
       onClick();
+    } else if (to?.startsWith("tel:") || to?.startsWith("http")) {
+      window.location.href = to;
     } else if (to) {
       navigate(to);
     } else {
@@ -46,10 +48,10 @@ const PrimaryButton: React.FC<ButtonProps> = ({
 
   if (isGold) {
     bgColor = "#c29b38";
-    textColor = "#ffffff";
+    textColor = "#0f172a";
     borderColor = "1.5px solid #c29b38";
     hoverBg = "#a8832a";
-    hoverText = "#ffffff";
+    hoverText = "#0f172a";
     hoverBorder = "1.5px solid #a8832a";
   } else if (isOutlinedWhite) {
     bgColor = "rgba(255, 255, 255, 0.08)";
