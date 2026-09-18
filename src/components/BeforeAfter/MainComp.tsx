@@ -58,7 +58,7 @@ const MainComp: React.FC = () => {
               mb: 2,
             }}
           >
-            Before & After Bathroom Remodeling Gallery
+            Bathroom Transformations: Before and After
           </Typography>
 
           <Typography

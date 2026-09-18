@@ -35,6 +35,81 @@ interface ServiceDetailProps {
   forcedSlug?: string;
 }
 
+const serviceSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
+  "bathroom-remodeling": {
+    title: "Bathroom Remodeling in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom remodeling in Langley, BC with 3D planning, custom layouts, waterproofing, and expert project coordination. Request a quote. - Ideal Bath Renovations",
+    h1: "Complete Bathroom Remodeling in Langley",
+  },
+  "bathroom-renovation": {
+    title: "Bathroom Renovation in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom renovation in Langley, BC modernizes outdated spaces with new tile, vanities, fixtures, and efficient layouts. Get started. - Ideal Bath Renovations",
+    h1: "Modern Bathroom Renovations Built Around You",
+  },
+  "bathroom-repair": {
+    title: "Bathroom Repair in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom repair in Langley, BC fixes leaks, grout, tile, and plumbing fixtures with reliable service. Request help. - Ideal Bath Renovations",
+    h1: "Reliable Bathroom Repairs by Local Pros",
+  },
+  "bathroom-replacement": {
+    title: "Tub Replacement in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Tub replacement in Langley, BC offers freestanding tubs, alcove tubs, and efficient installation. Plan your upgrade today. - Ideal Bath Renovations",
+    h1: "Bathroom Fixture Replacement Done Right",
+  },
+  "bathroom-installation": {
+    title: "Bath Installation in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bath installation in Langley, BC covers new fixtures, plumbing, tile, and complete build-outs. Free estimates available. - Ideal Bath Renovations",
+    h1: "New Bathroom Installation, From Plans to Finish",
+  },
+  "bathroom-design": {
+    title: "Bathroom Design in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom design in Langley, BC brings 3D planning, finish guidance, and practical storage ideas. Book a consultation. - Ideal Bath Renovations",
+    h1: "Thoughtful Bathroom Design for Everyday Living",
+  },
+  "bathroom-upgrades": {
+    title: "Bathroom Upgrades in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom upgrades in Langley, BC add fixtures, LED mirrors, quiet fans, and stylish hardware with minimal disruption. Get a quote. - Ideal Bath Renovations",
+    h1: "Small Bathroom Upgrades, Big Results",
+  },
+  "bathroom-restoration": {
+    title: "Bath Restoration in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bath restoration in Langley, BC repairs water damage, mold, subfloors, and waterproofing. Request an assessment. - Ideal Bath Renovations",
+    h1: "Bathroom Restoration After Water Damage",
+  },
+  "shower-remodeling": {
+    title: "Shower Remodeling in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Shower remodeling in Langley, BC creates walk-in showers, tub conversions, niches, and frameless glass enclosures. Get a quote. - Ideal Bath Renovations",
+    h1: "Walk-In Showers and Tub Conversions",
+  },
+  "bathtub-replacement": {
+    title: "Bathtub Replacement in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathtub replacement in Langley, BC offers freestanding tubs, alcove tubs, and efficient installation. Plan your upgrade today. - Ideal Bath Renovations",
+    h1: "Bathtub Replacements for Modern Comfort",
+  },
+  "bathroom-tile-installation": {
+    title: "Bathroom Tile in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom tile in Langley, BC includes porcelain, waterproofing, heated floors, and precise installation. View our tile portfolio. - Ideal Bath Renovations",
+    h1: "Precision Bathroom Tile and Waterproofing",
+  },
+  "bathroom-vanity-installation": {
+    title: "Bathroom Vanity in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Bathroom vanity in Langley, BC features custom cabinetry, quartz counters, LED mirrors, and smart storage. Explore your options. - Ideal Bath Renovations",
+    h1: "Custom Bathroom Vanities and Smart Storage",
+  },
+};
+
 const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
@@ -58,6 +133,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
     );
   }
 
+  const metadata = serviceSeoMetadata[activeSlug];
   const relatedServices = service.relatedServiceSlugs
     .map((sSlug) => getServiceBySlug(sSlug))
     .filter((item): item is ServiceDetailItem => item !== undefined);
@@ -65,8 +141,8 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
   return (
     <>
       <SEO
-        title={`${service.title} Langley & Fraser Valley | Ideal Bath Renovations`}
-        description={`${service.overview.substring(0, 140)}... Contact Ideal Bath Renovations, based at 20819 78B Avenue, Langley Township, BC, for a free quote.`}
+        title={metadata.title}
+        description={metadata.description}
         canonical={`https://idealbathrenovations.ca/services/${service.slug}`}
       />
 
@@ -141,7 +217,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 mb: 2,
               }}
             >
-              {service.title}
+              {metadata.h1}
             </Typography>
 
             <Typography

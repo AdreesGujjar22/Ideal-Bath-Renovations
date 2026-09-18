@@ -48,8 +48,8 @@ const ServicesHub: React.FC = () => {
   return (
     <>
       <SEO
-        title="12 Luxury Bathroom Remodeling & Renovation Services | Ideal Bath Langley"
-        description="Explore all 12 specialized bathroom remodeling and renovation services in Langley & Fraser Valley. From tub-to-shower conversions to custom quartz vanities and 3D CAD design."
+        title="Bathroom Services in Langley, BC - Ideal Bath Renovations"
+        description="Bathroom services in Langley, BC include remodeling, shower conversions, tile installation, and custom vanities. Free estimate. - Ideal Bath Renovations"
         canonical="https://idealbathrenovations.ca/services"
       />
 
@@ -117,7 +117,7 @@ const ServicesHub: React.FC = () => {
               color: "#ffffff",
             }}
           >
-            Comprehensive Bathroom Remodeling & Renovation Services
+            Bathroom Renovation Services for Langley Homes
           </Typography>
 
           <Typography

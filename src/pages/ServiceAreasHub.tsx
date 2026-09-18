@@ -17,8 +17,8 @@ const ServiceAreasHub: React.FC = () => {
   return (
     <>
       <SEO
-        title="Service Areas | Bathroom Remodeler Langley, Surrey & Fraser Valley, BC"
-        description="Explore Ideal Bath Renovations service areas across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley. Free in-home estimates and licensed contractors."
+        title="Service Areas in Langley, BC - Ideal Bath Renovations"
+        description="Bathroom remodeling across Langley, Surrey, Abbotsford, and Fraser Valley. See local projects and shower upgrades. - Ideal Bath Renovations"
         canonical="https://idealbathrenovations.ca/service-areas"
         keywords="bathroom renovations service areas, bathroom remodeling Langley, bathroom remodeler Surrey BC, bathroom renovation Abbotsford, Fraser Valley bathroom contractors"
       />
@@ -67,7 +67,7 @@ const ServiceAreasHub: React.FC = () => {
               mb: 2.5,
             }}
           >
-            Areas We Serve Throughout Fraser Valley, BC
+            Serving Langley and the Fraser Valley
           </Typography>
 
           <Typography

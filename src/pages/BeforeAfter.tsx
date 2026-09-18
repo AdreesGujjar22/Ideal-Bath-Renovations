@@ -8,8 +8,8 @@ const BeforeAfter: React.FC = () => {
   return (
     <>
       <SEO
-        title="Before & After Bathroom Remodeling Gallery | Langley, BC"
-        description="Browse real bathroom remodeling before and after photos in Langley Twp, Surrey, and Fraser Valley. Master ensuites, tub-to-shower conversions, and custom tile showers."
+        title="Bathroom Gallery in Langley, BC - Ideal Bath Renovations"
+        description="Bathroom gallery in Langley, BC showcases completed remodels, shower conversions, tile work, and custom vanities. View the results. - Ideal Bath Renovations"
         canonical="https://idealbathrenovations.ca/before-after"
         keywords="Bathroom Before and After, Bathroom Remodel Photos Langley, Ensuite Transformations Fraser Valley BC"
       />

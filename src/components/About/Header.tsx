@@ -35,7 +35,7 @@ const Header: React.FC = () => {
                   lineHeight: 1.15,
                 }}
               >
-                Langley's Dedicated Bathroom Remodeling Specialists
+                Meet the Team Behind Ideal Bath Renovations
               </Typography>
 
               <Typography sx={{ fontSize: "15.5px", color: "#475569", lineHeight: 1.7 }}>

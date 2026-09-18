@@ -31,6 +31,33 @@ import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import EstimateForm from "../components/Home/EstimateForm";
 
+const serviceAreaSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
+  "langley-twp": {
+    title: "Langley Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Langley bathroom remodeling from our local team includes shower conversions, custom vanities, and tile work. - Ideal Bath Renovations",
+    h1: "Bathroom Remodeling Experts Serving Langley Township",
+  },
+  surrey: {
+    title: "Surrey Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Surrey bathroom remodeling includes shower conversions, custom vanities, and tile work from a local team. - Ideal Bath Renovations",
+    h1: "Bathroom Renovations for Surrey Homes",
+  },
+  abbotsford: {
+    title: "Abbotsford Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Abbotsford bathroom remodeling includes layouts, shower upgrades, custom vanities, and durable tile installation. Request a quote. - Ideal Bath Renovations",
+    h1: "Bathroom Remodeling for Abbotsford Homes",
+  },
+  "fraser-valley": {
+    title: "Fraser Valley Baths in Langley, BC - Ideal Bath Renovations",
+    description:
+      "Fraser Valley bathroom remodeling covers renovations, shower conversions, tile, and custom vanities. Free estimate. - Ideal Bath Renovations",
+    h1: "Bathroom Renovations Across the Fraser Valley",
+  },
+};
+
 const ServiceAreaDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const area = slug ? getServiceAreaBySlug(slug) : undefined;
@@ -43,6 +70,7 @@ const ServiceAreaDetail: React.FC = () => {
     return <Navigate to="/service-areas" replace />;
   }
 
+  const metadata = serviceAreaSeoMetadata[area.slug];
   const otherAreas = serviceAreasData.filter((a) => a.id !== area.id);
 
   // Schema for LocalBusiness and BreadcrumbList
@@ -132,8 +160,8 @@ const ServiceAreaDetail: React.FC = () => {
   return (
     <>
       <SEO
-        title={area.metaTitle}
-        description={area.metaDescription}
+        title={metadata.title}
+        description={metadata.description}
         canonical={`https://idealbathrenovations.ca/service-areas/${area.slug}`}
         keywords={area.keywords}
       />
@@ -221,7 +249,7 @@ const ServiceAreaDetail: React.FC = () => {
                   letterSpacing: "-0.02em",
                 }}
               >
-                {area.headline}
+                {metadata.h1}
               </Typography>
 
               <Typography

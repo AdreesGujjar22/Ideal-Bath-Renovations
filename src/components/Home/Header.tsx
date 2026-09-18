@@ -6,7 +6,7 @@ const Header: React.FC = () => {
     <PrimaryBanner
       img="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80"
       badge="Langley Township's Trusted Bathroom Remodeler"
-      primaryContent="Bathroom Remodeler & Renovation Contractor in Langley, BC"
+      primaryContent="Modern Bathroom Remodeler in Langley, BC"
       secondaryContent="Ideal Bath Renovations handles full bathroom renovations, tub-to-shower conversions, and walk-in shower remodels in Langley Township, Surrey, Abbotsford, and the Fraser Valley."
       bannerHeight={540}
       fontsize={46}
