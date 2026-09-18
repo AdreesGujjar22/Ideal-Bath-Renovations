@@ -82,7 +82,7 @@ const ServiceAreaDetail: React.FC = () => {
         "@id": `https://idealbathrenovations.ca/service-areas/${area.slug}#business`,
         name: `Ideal Bath Renovations - ${area.name}`,
         url: `https://idealbathrenovations.ca/service-areas/${area.slug}`,
-        logo: "https://idealbathrenovations.ca/vite.svg",
+        logo: "https://idealbathrenovations.ca/logo.png",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
         description: area.metaDescription,
         telephone: "+1-672-273-0434",

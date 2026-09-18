@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock, ExternalLink, Bath, Star } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ExternalLink, Star } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -22,48 +22,17 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <Grid size={{ xs: 12, md: 5 }}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
-                <Box
-                  sx={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: "10px",
-                    background: "linear-gradient(135deg, #1e293b 0%, #334155 100%)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#dfba5a",
-                    border: "1px solid rgba(194, 155, 56, 0.3)",
-                  }}
-                >
-                  <Bath size={24} color="#dfba5a" />
-                </Box>
-                <Box>
-                  <Typography
-                    component="div"
-                    sx={{
-                      fontWeight: 800,
-                      fontSize: "20px",
-                      color: "#ffffff",
-                      letterSpacing: "-0.01em",
-                      lineHeight: 1.1,
-                    }}
-                  >
-                    IDEAL BATH
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: "11px",
-                      fontWeight: 700,
-                      letterSpacing: "0.15em",
-                      color: "#dfba5a",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Renovations • Langley
-                  </Typography>
-                </Box>
-              </Box>
+              <Box
+                component="img"
+                src="/logo.png"
+                alt="Ideal Bath Renovations"
+                sx={{
+                  width: 220,
+                  height: 54,
+                  objectFit: "contain",
+                  objectPosition: "left center",
+                }}
+              />
 
               <Typography sx={{ fontSize: "14px", lineHeight: 1.7, color: "#cbd5e1" }}>
                 Ideal Bath Renovations is a bathroom renovation contractor based in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley. We handle full remodels, tub-to-shower conversions, and walk-in showers.

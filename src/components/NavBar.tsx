@@ -14,7 +14,6 @@ import {
   Home,
   Info,
   Wrench,
-  Bath,
   Image as ImageIcon,
   Mail,
   ChevronRight,
@@ -225,66 +224,19 @@ const NavBar: React.FC = () => {
           >
             {/* Brand Logo & Name */}
             <Box
+              component="img"
+              src="/logo.png"
+              alt="Ideal Bath Renovations"
               onClick={() => navigate("/")}
               sx={{
                 cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                gap: { xs: 1.2, sm: 1.5 },
+                width: { xs: 150, sm: 190 },
+                height: { xs: 42, sm: 48 },
+                objectFit: "contain",
+                objectPosition: "left center",
                 maxWidth: { xs: "calc(100% - 56px)", lg: "350px" },
-                overflow: "hidden",
               }}
-            >
-              <Box
-                sx={{
-                  width: { xs: 38, sm: 44 },
-                  height: { xs: 38, sm: 44 },
-                  borderRadius: "10px",
-                  background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#dfba5a",
-                  boxShadow: "0 4px 12px rgba(15,23,42,0.15)",
-                  flexShrink: 0,
-                }}
-              >
-                <Bath size={22} color="#dfba5a" />
-              </Box>
-
-              <Box sx={{ display: "flex", flexDirection: "column", overflow: "hidden", minWidth: 0 }}>
-                <Typography
-                  component="span"
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: { xs: "15px", sm: "18px", md: "20px" },
-                    color: "#0f172a",
-                    lineHeight: 1.15,
-                    letterSpacing: "-0.02em",
-                    fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  IDEAL BATH
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: { xs: "9px", sm: "10px" },
-                    fontWeight: 700,
-                    letterSpacing: { xs: "0.12em", sm: "0.18em" },
-                    color: "#c29b38",
-                    textTransform: "uppercase",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  Renovations • Langley
-                </Typography>
-              </Box>
-            </Box>
+            />
 
             {/* Mobile Hamburger Button */}
             <Box sx={{ display: { xs: "flex", lg: "none" } }}>
@@ -667,51 +619,17 @@ const NavBar: React.FC = () => {
               zIndex: 10,
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, overflow: "hidden" }}>
-              <Box
-                sx={{
-                  width: 36,
-                  height: 36,
-                  borderRadius: "8px",
-                  backgroundColor: "rgba(223, 186, 90, 0.15)",
-                  border: "1px solid rgba(223, 186, 90, 0.3)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "#dfba5a",
-                  flexShrink: 0,
-                }}
-              >
-                <Bath size={18} color="#dfba5a" />
-              </Box>
-              <Box sx={{ overflow: "hidden" }}>
-                <Typography
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: "16px",
-                    color: "#ffffff",
-                    letterSpacing: "-0.01em",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                >
-                  IDEAL BATH
-                </Typography>
-                <Typography
-                  sx={{
-                    fontSize: "9.5px",
-                    fontWeight: 700,
-                    letterSpacing: "0.15em",
-                    color: "#dfba5a",
-                    textTransform: "uppercase",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  Renovations • Langley
-                </Typography>
-              </Box>
-            </Box>
+            <Box
+              component="img"
+              src="/logo.png"
+              alt="Ideal Bath Renovations"
+              sx={{
+                width: 175,
+                height: 38,
+                objectFit: "contain",
+                objectPosition: "left center",
+              }}
+            />
 
             {/* Cross Button to close drawer */}
             <IconButton
