@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@/lib/router-compat";
 
 interface ButtonProps {
   content: string;

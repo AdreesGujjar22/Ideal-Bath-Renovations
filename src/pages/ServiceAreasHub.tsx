@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { Box, Typography, Container } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { MapPin, Navigation, ArrowRight, Phone, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { serviceAreasData } from "../data/ServiceAreasData";
-import SEO from "../components/SEO";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import EstimateForm from "../components/Home/EstimateForm";
@@ -16,13 +15,6 @@ const ServiceAreasHub: React.FC = () => {
 
   return (
     <>
-      <SEO
-        title="Service Areas in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom remodeling across Langley, Surrey, Abbotsford, and Fraser Valley. See local projects and shower upgrades. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/service-areas"
-        keywords="bathroom renovations service areas, bathroom remodeling Langley, bathroom remodeler Surrey BC, bathroom renovation Abbotsford, Fraser Valley bathroom contractors"
-      />
-
       {/* Hero */}
       <Box
         component="section"

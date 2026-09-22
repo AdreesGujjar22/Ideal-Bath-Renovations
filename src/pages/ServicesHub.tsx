@@ -9,9 +9,8 @@ import {
   TextField,
   InputAdornment,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { servicesDetailList, ServiceDetailItem } from "../data/ServicesDetailData";
-import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import {
@@ -47,12 +46,6 @@ const ServicesHub: React.FC = () => {
 
   return (
     <>
-      <SEO
-        title="Bathroom Services in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom services in Langley, BC include remodeling, shower conversions, tile installation, and custom vanities. Free estimate. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/services"
-      />
-
       <Breadcrumbs currentLabel="Services" />
 
       {/* Hero Header */}

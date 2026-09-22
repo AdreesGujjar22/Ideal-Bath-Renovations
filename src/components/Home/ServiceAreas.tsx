@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import { MapPin, ExternalLink } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { serviceAreasData } from "../../data/ServiceAreasData";
 import GoogleMapEmbed from "../UI/GoogleMapEmbed";
 

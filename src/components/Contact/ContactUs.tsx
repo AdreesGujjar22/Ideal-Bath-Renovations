@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "@/lib/router-compat";
 import { Box, Typography, Stack, Container, Select, MenuItem, Alert } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import PrimaryInputField from "../UI/PrimaryInputField";
 import emailService from "../../utils/emailService";
 import { MapPin, Phone, Mail, Clock, ExternalLink, CheckCircle2, Send, Sparkles } from "lucide-react";

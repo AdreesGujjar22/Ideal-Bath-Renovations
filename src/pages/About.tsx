@@ -5,18 +5,11 @@ import ImgBanner from "../components/About/ImgBanner";
 import Banner from "../components/About/Banner";
 import Footer from "../components/About/Footer";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
-import SEO from "../components/SEO";
 import { Info } from "lucide-react";
 
 const About: React.FC = () => {
   return (
     <>
-      <SEO
-        title="About Us in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom remodeling in Langley, BC from Ideal Bath Renovations includes waterproofing and custom finishes. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/about"
-        keywords="About Ideal Bath Renovations, Langley Contractor, Master Ensuite Builders, Bathroom Renovators Fraser Valley"
-      />
       <Breadcrumbs
         items={[
           { label: "About Us", path: "/about", icon: <Info size={14} color="#c29b38" /> },

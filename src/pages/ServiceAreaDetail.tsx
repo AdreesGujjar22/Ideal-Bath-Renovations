@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate, Link } from "@/lib/router-compat";
 import {
   Box,
   Typography,
@@ -9,7 +9,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import {
   MapPin,
   Phone,
@@ -26,37 +26,9 @@ import {
   Navigation,
 } from "lucide-react";
 import { getServiceAreaBySlug, serviceAreasData } from "../data/ServiceAreasData";
-import SEO from "../components/SEO";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import EstimateForm from "../components/Home/EstimateForm";
-
-const serviceAreaSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
-  "langley-twp": {
-    title: "Langley Baths in Langley, BC - Ideal Bath Renovations",
-    description:
-      "Langley bathroom remodeling from our local team includes shower conversions, custom vanities, and tile work. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling Experts Serving Langley Township",
-  },
-  surrey: {
-    title: "Surrey Baths in Langley, BC - Ideal Bath Renovations",
-    description:
-      "Surrey bathroom remodeling includes shower conversions, custom vanities, and tile work from a local team. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations for Surrey Homes",
-  },
-  abbotsford: {
-    title: "Abbotsford Baths in Langley, BC - Ideal Bath Renovations",
-    description:
-      "Abbotsford bathroom remodeling includes layouts, shower upgrades, custom vanities, and durable tile installation. Request a quote. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling for Abbotsford Homes",
-  },
-  "fraser-valley": {
-    title: "Fraser Valley Baths in Langley, BC - Ideal Bath Renovations",
-    description:
-      "Fraser Valley bathroom remodeling covers renovations, shower conversions, tile, and custom vanities. Free estimate. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations Across the Fraser Valley",
-  },
-};
 
 const ServiceAreaDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -70,7 +42,6 @@ const ServiceAreaDetail: React.FC = () => {
     return <Navigate to="/service-areas" replace />;
   }
 
-  const metadata = serviceAreaSeoMetadata[area.slug];
   const otherAreas = serviceAreasData.filter((a) => a.id !== area.id);
 
   // Schema for LocalBusiness and BreadcrumbList
@@ -159,13 +130,6 @@ const ServiceAreaDetail: React.FC = () => {
 
   return (
     <>
-      <SEO
-        title={metadata.title}
-        description={metadata.description}
-        canonical={`https://idealbathrenovations.ca/service-areas/${area.slug}`}
-        keywords={area.keywords}
-      />
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
@@ -249,7 +213,7 @@ const ServiceAreaDetail: React.FC = () => {
                   letterSpacing: "-0.02em",
                 }}
               >
-                {metadata.h1}
+                Bathroom Renovations in {area.name}
               </Typography>
 
               <Typography

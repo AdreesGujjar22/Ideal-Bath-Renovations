@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { ShieldCheck, MapPin, FileCheck2, Award } from "lucide-react";
 
 interface BenefitItem {

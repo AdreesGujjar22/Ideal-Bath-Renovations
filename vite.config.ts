@@ -1,46 +1,15 @@
-import { defineConfig, Plugin } from 'vite'
-import type { Connect } from 'vite'
-import type { ServerResponse } from 'http'
-import react from '@vitejs/plugin-react'
-import fs from 'fs'
-import path from 'path'
+// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
+// or the app will break with duplicate plugins:
+//   - TanStack devtools (dev-only, first), tanstackStart, viteReact, tailwindcss, tsConfigPaths,
+//     nitro (build-only using cloudflare as a default target), VITE_* env injection, @ path alias,
+//     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
+// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const serveXmlSitemapPlugin = (): Plugin => ({
-  name: 'serve-xml-sitemap',
-  configureServer(server) {
-    server.middlewares.use((req: Connect.IncomingMessage, res: ServerResponse, next: Connect.NextFunction) => {
-      const rawUrl = req.url || ''
-      const pathname = rawUrl.split('?')[0]
-
-      if (pathname === '/sitemap.xml') {
-        const xmlPath = path.resolve(process.cwd(), 'public', 'sitemap.xml')
-        if (fs.existsSync(xmlPath)) {
-          const xml = fs.readFileSync(xmlPath, 'utf8')
-          res.setHeader('Content-Type', 'text/xml; charset=utf-8')
-          res.end(xml)
-          return
-        }
-      }
-
-      if (pathname === '/sitemap.xsl') {
-        const xslPath = path.resolve(process.cwd(), 'public', 'sitemap.xsl')
-        if (fs.existsSync(xslPath)) {
-          const xsl = fs.readFileSync(xslPath, 'utf8')
-          res.setHeader('Content-Type', 'text/xml; charset=utf-8')
-          res.end(xsl)
-          return
-        }
-      }
-      next()
-    })
-  }
-})
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), serveXmlSitemapPlugin()],
-  server: {
-    host: '0.0.0.0',
-    port: 3000,
+  tanstackStart: {
+    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
+    // nitro/vite builds from this
+    server: { entry: "server" },
   },
-})
+});

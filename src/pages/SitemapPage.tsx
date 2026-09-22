@@ -12,9 +12,8 @@ import {
   Tab,
   Paper,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Search, ExternalLink, Download, Copy, Check, FileText, MapPin, Wrench, Globe, CheckCircle2 } from "lucide-react";
-import SEO from "../components/SEO";
 
 interface SitemapEntry {
   url: string;
@@ -304,12 +303,6 @@ const SitemapPage: React.FC = () => {
 
   return (
     <>
-      <SEO
-        title="HTML & XML Sitemap | Ideal Bath Renovations"
-        description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 22 verified pages including remodeling services and Fraser Valley service areas."
-        canonical="https://idealbathrenovations.ca/sitemap.xml"
-      />
-
       <Box sx={{ backgroundColor: "#0f172a", color: "#ffffff", pt: { xs: 8, md: 10 }, pb: { xs: 6, md: 8 } }}>
         <Container maxWidth="lg">
           <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, px: 1.8, py: 0.6, borderRadius: "20px", backgroundColor: "rgba(194, 155, 56, 0.15)", border: "1px solid rgba(194, 155, 56, 0.4)", mb: 2 }}>
@@ -403,7 +396,7 @@ const SitemapPage: React.FC = () => {
               <Box sx={{ p: { xs: 2.5, md: 4 }, backgroundColor: "#ffffff" }}>
                 {/* Search & Filter Bar */}
                 <Grid container spacing={2} sx={{ mb: 4 }} alignItems="center">
-                  <Grid item xs={12} md={6}>
+                  <Grid size={{ xs: 12, md: 6 }}>
                     <TextField
                       fullWidth
                       size="small"
@@ -425,7 +418,7 @@ const SitemapPage: React.FC = () => {
                       }}
                     />
                   </Grid>
-                  <Grid item xs={12} md={6}>
+                  <Grid size={{ xs: 12, md: 6 }}>
                     <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", justifyContent: { xs: "flex-start", md: "flex-end" } }}>
                       {(["all", "Core Pages", "Bathroom Services", "Service Areas"] as const).map((cat) => (
                         <Chip

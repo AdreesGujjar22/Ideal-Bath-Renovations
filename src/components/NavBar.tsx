@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 import Drawer from "@mui/material/Drawer";
-import { NavLink, useNavigate, useLocation, Link } from "react-router-dom";
+import { NavLink, useNavigate, useLocation, Link } from "@/lib/router-compat";
 import PrimaryButton from "./UI/PrimaryButton";
 import { Typography, Stack, Divider, Chip } from "@mui/material";
 import {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Typography, Container, Tabs, Tab } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import { beforeAfterData } from "../../data/ImagesData";
 import PrimaryButton from "../UI/PrimaryButton";
 import { Sparkles, CheckCircle2, MapPin, Clock } from "lucide-react";

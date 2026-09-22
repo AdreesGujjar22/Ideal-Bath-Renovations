@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import { Link } from "react-router-dom";
+import Grid from "@mui/material/Grid";
+import { Link } from "@/lib/router-compat";
 import { MapPin, Phone, Mail, Clock, ExternalLink, Star } from "lucide-react";
 
 const Footer: React.FC = () => {
@@ -182,8 +182,8 @@ const Footer: React.FC = () => {
                     gap: "6px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#dfba5a")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#cbd5e1")}
+                  onMouseEnter={(e: any) => (e.currentTarget.style.color = "#dfba5a")}
+                  onMouseLeave={(e: any) => (e.currentTarget.style.color = "#cbd5e1")}
                 >
                   <span style={{ color: "#c29b38", fontSize: "10px" }}>▸</span>
                   {link.label}
@@ -226,8 +226,8 @@ const Footer: React.FC = () => {
                     gap: "6px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#dfba5a")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#cbd5e1")}
+                  onMouseEnter={(e: any) => (e.currentTarget.style.color = "#dfba5a")}
+                  onMouseLeave={(e: any) => (e.currentTarget.style.color = "#cbd5e1")}
                 >
                   <span style={{ color: "#c29b38", fontSize: "10px" }}>▸</span>
                   {area.name}

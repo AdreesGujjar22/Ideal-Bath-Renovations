@@ -60,9 +60,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     headline: "Premier Bathroom Remodeling in Langley Twp, BC",
     subheadline:
       "Your Trusted Local Contractor for Tub-to-Shower Conversions, Curbless Walk-In Showers, Custom Vanities & Full Master Ensuites",
-    metaTitle: "Bathroom Remodeler in Langley Twp, BC | Ideal Bath",
+    metaTitle: "Langley Bathroom Renovations | Ideal Bath Renovations",
     metaDescription:
-      "Langley's trusted bathroom remodeler. Tub-to-shower conversions, curbless walk-in showers, custom vanities & tile. Free quotes — call today!",
+      "Bathroom renovations in Langley Township, including walk-in showers, tub conversions, tile and vanities. Get a clear in-home quote from our local team today.",
     keywords:
       "bathroom remodeling Langley, bathroom renovation Langley Twp, tub-to-shower conversion BC, curbless walk-in shower, bathroom contractor Fraser Valley, Willoughby Heights bathroom remodel",
     mapQuery: "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
@@ -173,9 +173,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     headline: "Expert Bathroom Renovation Services in Surrey, BC",
     subheadline:
       "Transforming Homes Across South Surrey, Fleetwood, Clayton Heights, Cloverdale & Morgan Creek",
-    metaTitle: "Bathroom Remodeling in Surrey, BC | Ideal Bath Renovations",
+    metaTitle: "Surrey Bathroom Renovations | Ideal Bath Renovations",
     metaDescription:
-      "Top-rated bathroom remodeling in Surrey, BC. Full renovations, tub-to-shower conversions, heated floors, and custom vanities. Get your free estimate today!",
+      "Bathroom remodeling in Surrey includes shower conversions, custom vanities, heated floors and tile. Get a clear quote from our Langley-based renovation crew.",
     keywords:
       "bathroom remodeling Surrey BC, bathroom renovation South Surrey, tub-to-shower conversion Surrey, walk-in shower Clayton Heights, bathroom contractor Cloverdale",
     mapQuery: "Surrey,+BC,+Canada",
@@ -281,9 +281,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     headline: "Quality Bathroom Remodeling in Abbotsford, BC",
     subheadline:
       "Reliable, Licensed Contractors for Modern Bathrooms, Walk-In Showers & Tile Waterproofing",
-    metaTitle: "Bathroom Remodeler in Abbotsford, BC | Ideal Bath Renovations",
+    metaTitle: "Abbotsford Bathroom Renovations | Ideal Bath Renovations",
     metaDescription:
-      "Looking for trusted bathroom remodelers in Abbotsford, BC? Ideal Bath specializes in full renovations, walk-in showers, custom tile & heated floors. Free quote!",
+      "Bathroom renovations in Abbotsford include walk-in showers, custom tile, heated floors and durable vanities. Request a clear written quote from our local team.",
     keywords:
       "bathroom remodeling Abbotsford BC, bathroom renovation Abbotsford, walk in shower Abbotsford, bathroom contractor East Fraser Valley, tile installation Abbotsford",
     mapQuery: "Abbotsford,+BC,+Canada",
@@ -363,9 +363,9 @@ export const serviceAreasData: ServiceAreaItem[] = [
     headline: "Full-Service Bathroom Renovations Across the Fraser Valley",
     subheadline:
       "Serving Langley Twp, Surrey, Abbotsford, and the Wider Fraser Valley",
-    metaTitle: "Bathroom Remodeling Contractor Fraser Valley, BC | Ideal Bath",
+    metaTitle: "Fraser Valley Bathroom Renovations | Ideal Bath Renovations",
     metaDescription:
-      "Complete bathroom renovation services throughout the Fraser Valley. Serving White Rock, Maple Ridge, Mission, Chilliwack & Langley. Free in-home estimates!",
+      "Bathroom renovations across the Fraser Valley, including Langley, Surrey, Abbotsford and Mission. Get a clear in-home estimate from our experienced local crew.",
     keywords:
       "bathroom remodeling Fraser Valley BC, bathroom renovation White Rock, walk in shower Maple Ridge, bathroom contractor Mission BC, Chilliwack bathroom remodeler",
     mapQuery: "Fraser+Valley,+BC,+Canada",

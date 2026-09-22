@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "@/lib/router-compat";
 import { Home, ChevronRight, Sparkles } from "lucide-react";
 
 export interface BreadcrumbItem {
