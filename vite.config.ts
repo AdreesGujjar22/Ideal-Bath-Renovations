@@ -16,7 +16,7 @@ const serveXmlSitemapPlugin = (): Plugin => ({
         const xmlPath = path.resolve(process.cwd(), 'public', 'sitemap.xml')
         if (fs.existsSync(xmlPath)) {
           const xml = fs.readFileSync(xmlPath, 'utf8')
-          res.setHeader('Content-Type', 'text/xml; charset=utf-8')
+          res.setHeader('Content-Type', 'application/xml; charset=utf-8')
           res.end(xml)
           return
         }
@@ -26,7 +26,7 @@ const serveXmlSitemapPlugin = (): Plugin => ({
         const xslPath = path.resolve(process.cwd(), 'public', 'sitemap.xsl')
         if (fs.existsSync(xslPath)) {
           const xsl = fs.readFileSync(xslPath, 'utf8')
-          res.setHeader('Content-Type', 'text/xml; charset=utf-8')
+          res.setHeader('Content-Type', 'application/xml; charset=utf-8')
           res.end(xsl)
           return
         }
