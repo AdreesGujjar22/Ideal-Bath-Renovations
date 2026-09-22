@@ -33,28 +33,28 @@ import EstimateForm from "../components/Home/EstimateForm";
 
 const serviceAreaSeoMetadata: Record<string, { title: string; description: string; h1: string }> = {
   "langley-twp": {
-    title: "Langley Baths in Langley, BC - Ideal Bath Renovations",
+    title: "Bathroom Renovations Langley Twp, BC | Ideal Bath",
     description:
-      "Langley bathroom remodeling from our local team includes shower conversions, custom vanities, and tile work. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling Experts Serving Langley Township",
+      "Local bathroom renovation contractor serving Langley Township, BC. Remodels, repairs, and installations from a trusted neighbourhood team.",
+    h1: "Bathroom Renovations in Langley Township, BC",
   },
   surrey: {
-    title: "Surrey Baths in Langley, BC - Ideal Bath Renovations",
+    title: "Bathroom Renovations in Surrey, BC | Ideal Bath",
     description:
-      "Surrey bathroom remodeling includes shower conversions, custom vanities, and tile work from a local team. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations for Surrey Homes",
+      "Ideal Bath Renovations serves Surrey, BC with expert bathroom remodels, repairs, and installations. Request your free quote today.",
+    h1: "Bathroom Renovations in Surrey, BC — Serving Langley and Beyond",
   },
   abbotsford: {
-    title: "Abbotsford Baths in Langley, BC - Ideal Bath Renovations",
+    title: "Bathroom Renovations in Abbotsford, BC | Ideal Bath",
     description:
-      "Abbotsford bathroom remodeling includes layouts, shower upgrades, custom vanities, and durable tile installation. Request a quote. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling for Abbotsford Homes",
+      "Professional bathroom renovation services in Abbotsford, BC from Ideal Bath Renovations, based nearby in Langley. Free quotes available.",
+    h1: "Bathroom Renovations in Abbotsford, BC — Serving Langley and Beyond",
   },
   "fraser-valley": {
-    title: "Fraser Valley Baths in Langley, BC - Ideal Bath Renovations",
+    title: "Bathroom Renovations in Fraser Valley | Ideal Bath",
     description:
-      "Fraser Valley bathroom remodeling covers renovations, shower conversions, tile, and custom vanities. Free estimate. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations Across the Fraser Valley",
+      "Ideal Bath Renovations serves homeowners across the Fraser Valley from our base in Langley, BC. Quality remodels, repairs & installations.",
+    h1: "Bathroom Renovations Across the Fraser Valley — Based in Langley, BC",
   },
 };
 
@@ -414,7 +414,7 @@ const ServiceAreaDetail: React.FC = () => {
                   mb: 2.5,
                 }}
               >
-                Why {area.shortName} Homeowners Trust Ideal Bath
+                Local Experience You Can Count On
               </Typography>
 
               <Typography sx={{ fontSize: "16px", color: "#475569", lineHeight: 1.8, mb: 3 }}>
@@ -501,7 +501,7 @@ const ServiceAreaDetail: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Bathroom Remodeling Services Offered in {area.shortName}
+              Services Available in {area.shortName}
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
               Every service is carried out by licensed tradespeople using premium Schluter waterproofing membranes, custom glass, and designer fixtures.
@@ -633,7 +633,7 @@ const ServiceAreaDetail: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Recent Transformations in {area.shortName}
+              Full-Service Bathroom Renovations
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
               Take a look at completed bathroom remodels, tub-to-shower conversions, and master ensuites throughout {area.name}.
@@ -760,7 +760,7 @@ const ServiceAreaDetail: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Frequently Asked Questions for {area.shortName} Homeowners
+              Don't See Your Area Listed?
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b" }}>
               Get quick answers about renovation permits, scheduling, and project timelines in {area.name}.
@@ -870,7 +870,7 @@ const ServiceAreaDetail: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Get Your Free In-Home Estimate in {area.shortName}
+              Get a Free Quote in {area.shortName}
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
               Fill out the form below or call (672) 273-0434 to schedule a consultation.

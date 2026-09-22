@@ -57,7 +57,7 @@ const AboutBanner: React.FC = () => {
                   lineHeight: 1.2,
                 }}
               >
-                Visit Our Langley Headquarters
+                Ready to Work With a Local Team?
               </Typography>
 
               <Typography sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.7 }}>

@@ -48,7 +48,7 @@ const SubHeader: React.FC = () => {
               mb: 2,
             }}
           >
-            Built on Integrity, Engineered for Decades
+            Our Approach to Every Project
           </Typography>
           <Typography
             sx={{

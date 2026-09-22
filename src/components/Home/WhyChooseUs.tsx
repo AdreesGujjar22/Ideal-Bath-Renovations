@@ -52,7 +52,7 @@ const WhyChooseUs: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Why Langley Homeowners Choose Ideal Bath Renovations
+            Why Homeowners in Langley Choose Us
           </Typography>
 
           <Typography

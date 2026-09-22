@@ -21,7 +21,7 @@ const ServiceAreas: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Bathroom Remodeling Service Areas in Langley Township &amp; Fraser Valley
+            Serving Langley and the Surrounding Fraser Valley
           </Typography>
 
           <Typography

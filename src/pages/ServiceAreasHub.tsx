@@ -17,8 +17,8 @@ const ServiceAreasHub: React.FC = () => {
   return (
     <>
       <SEO
-        title="Service Areas in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom remodeling across Langley, Surrey, Abbotsford, and Fraser Valley. See local projects and shower upgrades. - Ideal Bath Renovations"
+        title="Service Areas | Bathroom Renos Langley, BC | Ideal Bath"
+        description="Ideal Bath Renovations proudly serves Langley, BC, Surrey, Abbotsford, and the Fraser Valley. Find your area and request a free quote today."
         canonical="https://idealbathrenovations.ca/service-areas"
         keywords="bathroom renovations service areas, bathroom remodeling Langley, bathroom remodeler Surrey BC, bathroom renovation Abbotsford, Fraser Valley bathroom contractors"
       />
@@ -67,7 +67,7 @@ const ServiceAreasHub: React.FC = () => {
               mb: 2.5,
             }}
           >
-            Serving Langley and the Fraser Valley
+            Bathroom Renovation Service Areas Near Langley, BC
           </Typography>
 
           <Typography
@@ -301,7 +301,7 @@ const ServiceAreasHub: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Ideal Bath Renovations Headquarters & Service Dispatch
+              Where We Work
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "720px", mx: "auto" }}>
               We dispatch certified renovation teams across Langley Township, Surrey, Abbotsford, and the wider Fraser Valley.
@@ -336,7 +336,7 @@ const ServiceAreasHub: React.FC = () => {
                 mb: 1.5,
               }}
             >
-              Request Your Free Bathroom Renovation Quote
+              Don't See Your Area Listed?
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "700px", mx: "auto" }}>
               Serving Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley with upfront written pricing.

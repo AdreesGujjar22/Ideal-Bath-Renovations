@@ -58,7 +58,7 @@ const MainComp: React.FC = () => {
               mb: 2,
             }}
           >
-            Bathroom Transformations: Before and After
+            Bathroom Before & After Photos — Langley, BC Projects
           </Typography>
 
           <Typography
@@ -320,7 +320,7 @@ const MainComp: React.FC = () => {
               fontWeight: 800,
             }}
           >
-            Ready to plan your bathroom project?
+            Imagine Your Own Transformation
           </Typography>
           <Typography sx={{ fontSize: "15px", color: "#cbd5e1", maxWidth: "650px" }}>
             Book an in-home consultation to review materials, discuss your layout, and receive a clear quote.

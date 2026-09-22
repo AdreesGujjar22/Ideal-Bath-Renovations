@@ -118,7 +118,7 @@ const Services: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Bathroom Remodeling Services in Langley & Fraser Valley
+            What We Offer
           </Typography>
 
           <Typography

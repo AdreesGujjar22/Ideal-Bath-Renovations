@@ -122,7 +122,7 @@ const ContactUs: React.FC = () => {
                   mb: 1.5,
                 }}
               >
-                Let's Discuss Your Bathroom Vision
+                Request Your Free Quote
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
                 Fill out the project form below. Our lead estimator based at our Langley Township headquarters will get in touch within 24 hours to schedule your free 3D design consultation.

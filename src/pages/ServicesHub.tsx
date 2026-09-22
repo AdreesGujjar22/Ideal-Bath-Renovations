@@ -48,8 +48,8 @@ const ServicesHub: React.FC = () => {
   return (
     <>
       <SEO
-        title="Bathroom Services in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom services in Langley, BC include remodeling, shower conversions, tile installation, and custom vanities. Free estimate. - Ideal Bath Renovations"
+        title="Bathroom Renovation Services in Langley, BC | Ideal Bath"
+        description="Explore our full range of bathroom renovation services in Langley, BC — remodeling, tile, vanities, repairs, and more. Get your free quote now."
         canonical="https://idealbathrenovations.ca/services"
       />
 
@@ -117,7 +117,7 @@ const ServicesHub: React.FC = () => {
               color: "#ffffff",
             }}
           >
-            Bathroom Renovation Services for Langley Homes
+            Bathroom Renovation Services in Langley, BC
           </Typography>
 
           <Typography

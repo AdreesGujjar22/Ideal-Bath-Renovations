@@ -35,7 +35,7 @@ const Header: React.FC = () => {
                   lineHeight: 1.15,
                 }}
               >
-                Meet the Team Behind Ideal Bath Renovations
+                About Ideal Bath Renovations — Langley, BC's Local Renovation Team
               </Typography>
 
               <Typography sx={{ fontSize: "15.5px", color: "#475569", lineHeight: 1.7 }}>
