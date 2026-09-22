@@ -77,7 +77,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "140,000+ residents across Langley Township & City",
     description:
-      "Based at 20819 78B Avenue in Langley Township, we handle bathroom remodels, shower conversions, tile, and vanities across Langley Twp, Surrey, Abbotsford, and the Fraser Valley.",
+      "Our Langley team handles bathroom remodels, shower conversions, tile, and vanities across Langley Township, Surrey, Abbotsford, and the Fraser Valley.",
     overviewText:
       "Our Langley team can replace an old tub, plan a curbless shower, or install a double vanity. We coordinate the renovation from permits and plumbing through waterproofing and finishes.",
     neighborhoods: [
@@ -380,7 +380,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
     populationServed: "Over 350,000 homeowners across the Fraser Valley region",
     description:
-      "Based at 20819 78B Avenue in Langley Township, we provide bathroom renovations across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.",
+      "We provide bathroom renovations across Langley Township, Surrey, Abbotsford, and the wider Fraser Valley.",
     overviewText:
       "We coordinate design, demolition, rough-ins, waterproofing, tile, and fixtures as one renovation project.",
     neighborhoods: [

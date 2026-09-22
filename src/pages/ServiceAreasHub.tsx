@@ -304,7 +304,7 @@ const ServiceAreasHub: React.FC = () => {
               Ideal Bath Renovations Headquarters & Service Dispatch
             </Typography>
             <Typography sx={{ fontSize: "15px", color: "#64748b", maxWidth: "720px", mx: "auto" }}>
-              Based at 20819 78B Avenue, Langley Township, BC. We dispatch certified renovation teams across Langley Twp, Surrey, Abbotsford, and the wider Fraser Valley.
+              We dispatch certified renovation teams across Langley Township, Surrey, Abbotsford, and the wider Fraser Valley.
             </Typography>
           </Box>
 

@@ -86,7 +86,10 @@ const StandardImageList: React.FC = () => {
                   src={item.img}
                   alt={item.alt}
                   title={item.alt}
+                  width={800}
+                  height={600}
                   referrerPolicy="no-referrer"
+                  decoding="async"
                   sx={{
                     width: "100%",
                     height: "100%",
@@ -172,4 +175,3 @@ const StandardImageList: React.FC = () => {
 };
 
 export default StandardImageList;
-

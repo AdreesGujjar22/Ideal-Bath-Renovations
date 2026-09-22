@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react'
 import fs from 'fs'
 import path from 'path'
 
+
+
 const serveXmlSitemapPlugin = (): Plugin => ({
   name: 'serve-xml-sitemap',
   configureServer(server) {
@@ -38,7 +40,10 @@ const serveXmlSitemapPlugin = (): Plugin => ({
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), serveXmlSitemapPlugin()],
+  plugins: [
+    react(),
+    serveXmlSitemapPlugin(),
+  ],
   server: {
     host: '0.0.0.0',
     port: 3000,

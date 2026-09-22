@@ -227,6 +227,9 @@ const NavBar: React.FC = () => {
               component="img"
               src="/logo.png"
               alt="Ideal Bath Renovations"
+              width={190}
+              height={48}
+              decoding="async"
               onClick={() => navigate("/")}
               sx={{
                 cursor: "pointer",
@@ -623,6 +626,9 @@ const NavBar: React.FC = () => {
               component="img"
               src="/logo.png"
               alt="Ideal Bath Renovations"
+              width={175}
+              height={38}
+              decoding="async"
               sx={{
                 width: 175,
                 height: 38,
