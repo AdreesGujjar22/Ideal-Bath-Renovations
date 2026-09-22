@@ -103,6 +103,9 @@ export const PageLoader: React.FC<PageLoaderProps> = ({ message = "Loading exper
             component="img"
             src="/logo.png"
             alt="Ideal Bath Renovations"
+            width={64}
+            height={64}
+            decoding="async"
             sx={{ width: 64, height: 64, objectFit: "contain" }}
           />
           <Box

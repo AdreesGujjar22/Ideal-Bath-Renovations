@@ -50,7 +50,7 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
       sx={{
         position: "relative",
         width: "100%",
-        minHeight: { xs: "auto", sm: "500px", md: `${bannerHeight}px` },
+        minHeight: { xs: `${Math.min(bannerHeight, 560)}px`, sm: "500px", md: `${bannerHeight}px` },
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
