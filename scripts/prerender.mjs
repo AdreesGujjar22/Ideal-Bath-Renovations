@@ -2,7 +2,8 @@ import { createServer } from 'node:http'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { extname, join, normalize, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import puppeteer from 'puppeteer'
+import chromium from '@sparticuz/chromium'
+import puppeteer from 'puppeteer-core'
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const dist = join(root, 'dist')
@@ -47,6 +48,11 @@ const contentTypes = {
   '.woff2': 'font/woff2',
 }
 
+if (process.platform !== 'linux' && !process.env.CHROME_PATH) {
+  console.warn('Skipping prerender: set CHROME_PATH to run it on non-Linux systems.')
+  process.exit(0)
+}
+
 const server = createServer((request, response) => {
   const requestPath = decodeURIComponent((request.url || '/').split('?')[0])
   const relativePath = normalize(requestPath).replace(/^([.][.][/\\])+/, '')
@@ -67,8 +73,10 @@ const port = 4174
 server.listen(port, '127.0.0.1')
 
 const browser = await puppeteer.launch({
+  args: process.platform === 'linux' ? chromium.args : ['--no-sandbox'],
+  defaultViewport: chromium.defaultViewport,
+  executablePath: process.env.CHROME_PATH || (await chromium.executablePath()),
   headless: true,
-  args: ['--no-sandbox', '--disable-setuid-sandbox'],
 })
 
 try {
