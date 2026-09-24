@@ -15,13 +15,13 @@ const ResurfacingTreatment: React.FC = () => {
       <SEO
         title="Walk-In Showers & Custom Steam Suites Langley | Ideal Bath Renovations"
         description="Luxury curbless walk-in showers, custom tile benches, frameless glass, and residential ThermaSol steam generator suites in Langley, BC."
-        canonical="https://www.idealbathrenovations.ca/resurfacingTreatment"
+        canonical="https://www.idealbathrenovations.ca/services/shower-remodeling"
         keywords="Walk In Shower Langley, Steam Shower Installation, Curbless Tile Shower, Luxury Ensuite Steam Suite BC"
       />
       <Breadcrumbs
         items={[
-          { label: "Services", path: "/treatments" },
-          { label: "Walk-In Showers & Steam", path: "/resurfacingTreatment", icon: <Bath size={14} color="#c29b38" /> },
+          { label: "Services", path: "/services" },
+          { label: "Walk-In Showers & Steam", path: "/services/shower-remodeling", icon: <Bath size={14} color="#c29b38" /> },
         ]}
         badge="Luxury Spa Grade"
       />

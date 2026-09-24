@@ -42,6 +42,7 @@
 - **Services Catalog:** https://www.idealbathrenovations.ca/services
 - **Service Areas Directory:** https://www.idealbathrenovations.ca/service-areas
 - **Before & After Project Showcase:** https://www.idealbathrenovations.ca/before-after
+- **Client Reviews:** https://www.idealbathrenovations.ca/reviews
 - **About Us & Company Credentials:** https://www.idealbathrenovations.ca/about
 - **Request Free In-Home Estimate:** https://www.idealbathrenovations.ca/contact
 - **XML Sitemap:** https://www.idealbathrenovations.ca/sitemap.xml

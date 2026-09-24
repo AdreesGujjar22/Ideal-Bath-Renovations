@@ -12,12 +12,12 @@ const Treatments: React.FC = () => {
       <SEO
         title="Bathroom Remodeling Services & Packages | Langley, BC"
         description="Comprehensive bathroom renovation services in Langley: full master ensuites, tub replacements, walk-in tile showers, vanity installs, and heated floors."
-        canonical="https://www.idealbathrenovations.ca/treatments"
+        canonical="https://www.idealbathrenovations.ca/services"
         keywords="Bathroom Remodeling Services, Bathroom Renovation Packages, Langley BC, Shower Remodel, Vanity Installation, Tile Waterproofing"
       />
       <Breadcrumbs
         items={[
-          { label: "Services Catalog", path: "/treatments", icon: <Wrench size={14} color="#c29b38" /> },
+          { label: "Services Catalog", path: "/services", icon: <Wrench size={14} color="#c29b38" /> },
         ]}
         badge="19 Specialized Services"
       />

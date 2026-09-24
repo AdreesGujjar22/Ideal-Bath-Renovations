@@ -89,6 +89,16 @@ const sitemapData: SitemapEntry[] = [
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
+  {
+    url: "https://www.idealbathrenovations.ca/reviews",
+    path: "/reviews",
+    title: "Client Reviews",
+    description: "Read reviews from homeowners about bathroom remodeling projects in Langley and the Fraser Valley.",
+    category: "Core Pages",
+    priority: "0.85",
+    changefreq: "monthly",
+    lastmod: "2026-09-05",
+  },
 
   // 12 Services
   {
@@ -142,70 +152,70 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/custom-lighting-fixtures",
-    path: "/services/custom-lighting-fixtures",
-    title: "Bathroom Lighting & Electrical",
-    description: "LED vanity bars, recessed shower pot lights, dimmer controls, and quiet humidity-sensing exhaust fans.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-design",
+    path: "/services/bathroom-design",
+    title: "Bathroom Design",
+    description: "3D planning, finish guidance, and practical storage ideas for a well-designed bathroom.",
     category: "Bathroom Services",
     priority: "0.75",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/accessible-bathrooms",
-    path: "/services/accessible-bathrooms",
-    title: "Accessible & Curbless Barrier-Free Bathrooms",
-    description: "Zero-threshold curbless showers, grab bars, comfort-height toilets, and ADA-compliant safety layouts.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-upgrades",
+    path: "/services/bathroom-upgrades",
+    title: "Bathroom Upgrades",
+    description: "Add fixtures, LED mirrors, quiet fans, and stylish hardware with minimal disruption.",
     category: "Bathroom Services",
     priority: "0.85",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/powder-room-renovations",
-    path: "/services/powder-room-renovations",
-    title: "Powder Room & Small Bath Renovations",
-    description: "High-impact half-bath remodels maximizing small footprints with designer fixtures and bold tile.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-repair",
+    path: "/services/bathroom-repair",
+    title: "Bathroom Repair",
+    description: "Reliable service for leaks, grout, tile, and plumbing fixture repairs.",
     category: "Bathroom Services",
     priority: "0.75",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/flooring-solutions",
-    path: "/services/flooring-solutions",
-    title: "Bathroom Flooring & Waterproof Tile",
-    description: "Slip-resistant porcelain floor tiles, marble mosaics, and Schluter waterproofing.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-replacement",
+    path: "/services/bathroom-replacement",
+    title: "Bathroom Replacement",
+    description: "Replace outdated bathroom fixtures with modern, efficient options.",
     category: "Bathroom Services",
     priority: "0.75",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/eco-friendly-upgrades",
-    path: "/services/eco-friendly-upgrades",
-    title: "Eco-Friendly & Water-Saving Upgrades",
-    description: "WaterSense certified low-flow showerheads, dual-flush toilets, and sustainable building materials.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-installation",
+    path: "/services/bathroom-installation",
+    title: "Bathroom Installation",
+    description: "New bathroom fixtures, plumbing, tile, and complete build-outs.",
     category: "Bathroom Services",
     priority: "0.70",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/smart-bathroom-tech",
-    path: "/services/smart-bathroom-tech",
-    title: "Smart Bathroom Technology Integration",
-    description: "Digital thermostatic valves, smart bidet toilets, anti-fog LED mirrors, and smart ventilation systems.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-restoration",
+    path: "/services/bathroom-restoration",
+    title: "Bathroom Restoration",
+    description: "Repair water damage, mold, subfloors, and waterproofing after bathroom damage.",
     category: "Bathroom Services",
     priority: "0.75",
     changefreq: "monthly",
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/services/luxury-ensuite-transformations",
-    path: "/services/luxury-ensuite-transformations",
-    title: "Luxury Master Ensuite Transformations",
-    description: "Spa-grade master suites featuring double vanities, freestanding soaking tubs, and custom steam showers.",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-renovation",
+    path: "/services/bathroom-renovation",
+    title: "Bathroom Renovation",
+    description: "Modernize outdated bathrooms with new tile, vanities, fixtures, and efficient layouts.",
     category: "Bathroom Services",
     priority: "0.85",
     changefreq: "monthly",
@@ -223,16 +233,7 @@ const sitemapData: SitemapEntry[] = [
     changefreq: "weekly",
     lastmod: "2026-09-05",
   },
-  {
-    url: "https://www.idealbathrenovations.ca/service-areas/langley-city",
-    path: "/service-areas/langley-city",
-    title: "Langley City Bathroom Renovations",
-    description: "Condo, townhouse, and detached home bathroom renovations in central Langley City neighborhoods.",
-    category: "Service Areas",
-    priority: "0.85",
-    changefreq: "weekly",
-    lastmod: "2026-09-05",
-  },
+
   {
     url: "https://www.idealbathrenovations.ca/service-areas/surrey",
     path: "/service-areas/surrey",
@@ -306,8 +307,8 @@ const SitemapPage: React.FC = () => {
     <>
       <SEO
         title="HTML & XML Sitemap | Ideal Bath Renovations"
-        description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 22 verified pages including remodeling services and Fraser Valley service areas."
-        canonical="https://www.idealbathrenovations.ca/sitemap.xml"
+        description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 23 verified pages including remodeling services, client reviews, and Fraser Valley service areas."
+        canonical="https://www.idealbathrenovations.ca/sitemap"
       />
 
       <Box sx={{ backgroundColor: "#0f172a", color: "#ffffff", pt: { xs: 8, md: 10 }, pb: { xs: 6, md: 8 } }}>
@@ -315,7 +316,7 @@ const SitemapPage: React.FC = () => {
           <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, px: 1.8, py: 0.6, borderRadius: "20px", backgroundColor: "rgba(194, 155, 56, 0.15)", border: "1px solid rgba(194, 155, 56, 0.4)", mb: 2 }}>
             <Globe size={15} color="#dfba5a" />
             <Typography sx={{ fontSize: "13px", fontWeight: 700, color: "#dfba5a", letterSpacing: "0.04em", textTransform: "uppercase" }}>
-              Live Indexed Directory &bull; 22 Verified URLs
+              Live Indexed Directory &bull; 23 Verified URLs
             </Typography>
           </Box>
           <Typography variant="h1" sx={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: { xs: "28px", sm: "38px", md: "46px" }, fontWeight: 800, mb: 2 }}>

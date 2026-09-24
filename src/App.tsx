@@ -134,7 +134,7 @@ const App: React.FC = () => {
               {/* Legacy skin-care routes redirected to modern renovation equivalents */}
               <Route path="/treatments" element={<Navigate to="/services" replace />} />
               <Route path="/rfMicroNeedling" element={<Navigate to="/services/shower-remodeling" replace />} />
-              <Route path="/resurfacingTreatment" element={<Navigate to="/services/bathtub-replacement" replace />} />
+              <Route path="/resurfacingTreatment" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/nanoneedling" element={<Navigate to="/services/bathroom-upgrades" replace />} />
 
               {/* Catch-all fallback */}
