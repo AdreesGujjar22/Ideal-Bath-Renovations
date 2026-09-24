@@ -65,16 +65,16 @@ export const serviceAreasData: ServiceAreaItem[] = [
       "Langley's trusted bathroom remodeler. Tub-to-shower conversions, curbless walk-in showers, custom vanities & tile. Free quotes — call today!",
     keywords:
       "bathroom remodeling Langley, bathroom renovation Langley Twp, tub-to-shower conversion BC, curbless walk-in shower, bathroom contractor Fraser Valley, Willoughby Heights bathroom remodel",
-    mapQuery: "20819+78B+Avenue,+Langley+Twp,+BC+V2Y+0A1",
+    mapQuery: "Langley+Township,+BC",
     mapEmbedUrl:
-      "https://maps.google.com/maps?q=20819%2078B%20Ave,%20Langley%20Twp,%20BC%20V2Y%200A1,%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed",
+      "https://maps.google.com/maps?q=Langley%20Township,%20BC&t=&z=12&ie=UTF8&iwloc=&output=embed",
     googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
     coordinates: {
       lat: 49.1458,
       lng: -122.6586,
     },
-    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC",
-    hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
+    addressDisplay: "Serving Langley Township, BC",
+    hqNote: "Serving Langley Township, BC",
     populationServed: "140,000+ residents across Langley Township & City",
     description:
       "Our Langley team handles bathroom remodels, shower conversions, tile, and vanities across Langley Township, Surrey, Abbotsford, and the Fraser Valley.",
@@ -376,8 +376,8 @@ export const serviceAreasData: ServiceAreaItem[] = [
       lat: 49.1666,
       lng: -122.3,
     },
-    addressDisplay: "Based at 20819 78B Avenue, Langley Township, BC — Serving Fraser Valley",
-    hqNote: "Based at 20819 78B Avenue, Langley Township, BC",
+    addressDisplay: "Serving Langley Township and the Fraser Valley",
+    hqNote: "Serving Langley Township, BC",
     populationServed: "Over 350,000 homeowners across the Fraser Valley region",
     description:
       "We provide bathroom renovations across Langley Township, Surrey, Abbotsford, and the wider Fraser Valley.",

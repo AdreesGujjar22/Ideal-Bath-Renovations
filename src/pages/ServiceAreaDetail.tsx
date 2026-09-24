@@ -90,10 +90,10 @@ const ServiceAreaDetail: React.FC = () => {
         priceRange: "$$$",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "20819 78B Avenue",
+
           addressLocality: "Langley Township",
           addressRegion: "BC",
-          postalCode: "V2Y 0A1",
+
           addressCountry: "CA",
         },
         geo: {

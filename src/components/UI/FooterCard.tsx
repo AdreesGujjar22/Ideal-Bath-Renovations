@@ -37,10 +37,8 @@ const FooterCard: React.FC = () => {
             lineHeight: 1.5,
           }}
         >
-          <span itemProp="streetAddress">20819 78B Avenue</span>,{" "}
           <span itemProp="addressLocality">Langley Township</span>,{" "}
-          <span itemProp="addressRegion">BC</span>{" "}
-          <span itemProp="postalCode">V2Y 0A1</span>,{" "}
+          <span itemProp="addressRegion">BC</span>,{" "}
           <span itemProp="addressCountry">Canada</span>
         </Typography>
       </Box>

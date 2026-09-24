@@ -247,7 +247,7 @@ const EstimateForm: React.FC = () => {
                   value={formData.address}
                   setValue={setFormData}
                   field="address"
-                  placeholder="e.g., 20819 78B Avenue, Langley Township, BC"
+                  placeholder="e.g., Langley Township, BC"
                   required
                 />
 
@@ -382,7 +382,7 @@ const EstimateForm: React.FC = () => {
                     disabled={loading}
                     style={{
                       backgroundColor: "#c29b38",
-                      color: "#0f172a",
+                      color: "#ffffff",
                       border: "none",
                       padding: "14px 36px",
                       borderRadius: "8px",

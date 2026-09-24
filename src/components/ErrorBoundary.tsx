@@ -123,7 +123,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 startIcon={<RefreshCw size={16} />}
                 sx={{
                   backgroundColor: "#c29b38",
-                  color: "#0f172a",
+                  color: "#ffffff",
                   fontWeight: 700,
                   fontSize: "14px",
                   px: 3,

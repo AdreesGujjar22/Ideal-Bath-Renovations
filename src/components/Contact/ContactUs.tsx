@@ -249,7 +249,7 @@ const ContactUs: React.FC = () => {
                         disabled={loading}
                         style={{
                           backgroundColor: "#c29b38",
-                          color: "#0f172a",
+                          color: "#ffffff",
                           border: "none",
                           padding: "14px 32px",
                           borderRadius: "8px",

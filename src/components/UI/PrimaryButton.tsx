@@ -48,10 +48,10 @@ const PrimaryButton: React.FC<ButtonProps> = ({
 
   if (isGold) {
     bgColor = "#c29b38";
-    textColor = "#0f172a";
+    textColor = "#ffffff";
     borderColor = "1.5px solid #c29b38";
     hoverBg = "#a8832a";
-    hoverText = "#0f172a";
+    hoverText = "#ffffff";
     hoverBorder = "1.5px solid #a8832a";
   } else if (isOutlinedWhite) {
     bgColor = "rgba(255, 255, 255, 0.08)";

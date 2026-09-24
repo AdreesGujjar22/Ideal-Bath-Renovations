@@ -333,7 +333,7 @@ const SitemapPage: React.FC = () => {
               startIcon={<Download size={16} />}
               sx={{
                 backgroundColor: "#c29b38",
-                color: "#0f172a",
+                color: "#ffffff",
                 fontWeight: 700,
                 textTransform: "none",
                 px: 2.5,

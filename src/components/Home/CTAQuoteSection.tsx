@@ -187,7 +187,7 @@ const CTAQuoteSection: React.FC = () => {
                   Langley Township HQ
                 </Typography>
                 <Typography sx={{ fontSize: "13.5px", fontWeight: 700, color: "#0f172a" }}>
-                  Based at 20819 78B Avenue, Langley Township, BC
+                  Serving Langley Township, BC
                 </Typography>
               </Box>
             </Box>

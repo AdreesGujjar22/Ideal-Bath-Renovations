@@ -39,7 +39,7 @@ const Header: React.FC = () => {
               </Typography>
 
               <Typography sx={{ fontSize: "15.5px", color: "#475569", lineHeight: 1.7 }}>
-                Based at 20819 78B Avenue in Langley Township, we remodel bathrooms, convert tubs to showers, and install custom tile across Langley Twp, Surrey, Abbotsford, and the Fraser Valley. Licensed trades and fixed-price contracts keep the project clear from the start.
+                Serving Langley Township, we remodel bathrooms, convert tubs to showers, and install custom tile across Langley Twp, Surrey, Abbotsford, and the Fraser Valley. Licensed trades and fixed-price contracts keep the project clear from the start.
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column", gap: 1.2, my: 1 }}>

@@ -5,7 +5,6 @@
 ## 1. Business Overview
 - **Company Name:** Ideal Bath Renovations Ltd.
 - **Brand Name:** Ideal Bath Renovations
-- **Physical Headquarters:** 20819 78B Avenue, Langley Twp, BC V2Y 0A1, Canada
 - **Direct Phone:** +1-672-273-0434
 - **Email:** info@idealbathrenovations.ca
 - **Website:** https://www.idealbathrenovations.ca

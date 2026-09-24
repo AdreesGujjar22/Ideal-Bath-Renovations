@@ -152,11 +152,13 @@ const ServiceAreas: React.FC = () => {
           {/* Embedded Google Map Component */}
           <GoogleMapEmbed
             businessName="IDEAL BATH RENOVATIONS"
-            address="Based at 20819 78B Avenue, Langley Township, BC"
-            mapQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1, Canada"
+            address="Serving Langley Township, BC"
+            rating={5.0}
+            reviewsCount="28+"
+            mapQuery="Langley Township, BC"
             googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
-            directionsQuery="20819 78B Ave, Langley Twp, BC V2Y 0A1"
-            bottomLabel="IDEAL BATH RENOVATIONS HQ • Based at 20819 78B Avenue, Langley Township, BC"
+            directionsQuery="Langley Township, BC"
+            bottomLabel="IDEAL BATH RENOVATIONS • Serving Langley Township, BC"
             height={480}
           />
         </Box>

@@ -794,7 +794,7 @@ const NavBar: React.FC = () => {
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <MapPin size={14} color="#c29b38" style={{ marginTop: "2px", flexShrink: 0 }} />
-                  <span>Based at 20819 78B Avenue, Langley Township, BC</span>
+                  <span>Serving Langley Township, BC</span>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#64748b", fontSize: "12px" }}>
                   <Clock size={14} color="#c29b38" />
