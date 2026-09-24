@@ -143,7 +143,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
       <SEO
         title={metadata.title}
         description={metadata.description}
-        canonical={`https://idealbathrenovations.ca/services/${service.slug}`}
+        canonical={`https://www.idealbathrenovations.ca/services/${service.slug}`}
       />
 
       {/* Visual Breadcrumbs */}

@@ -10,7 +10,7 @@ const BeforeAfter: React.FC = () => {
       <SEO
         title="Bathroom Gallery in Langley, BC - Ideal Bath Renovations"
         description="Bathroom gallery in Langley, BC showcases completed remodels, shower conversions, tile work, and custom vanities. View the results. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/before-after"
+        canonical="https://www.idealbathrenovations.ca/before-after"
         keywords="Bathroom Before and After, Bathroom Remodel Photos Langley, Ensuite Transformations Fraser Valley BC"
       />
       <Breadcrumbs

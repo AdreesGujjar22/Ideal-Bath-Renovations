@@ -13,7 +13,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   title,
   description,
-  canonical = "https://idealbathrenovations.ca/",
+  canonical = "https://www.idealbathrenovations.ca/",
   ogImage = "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&h=630&q=80",
   ogType = "website",
   keywords = "Bathroom Remodeling, Bathroom Renovation, Tub to Shower Conversion, Langley Twp, BC",

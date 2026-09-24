@@ -79,10 +79,10 @@ const ServiceAreaDetail: React.FC = () => {
     "@graph": [
       {
         "@type": "HomeAndConstructionBusiness",
-        "@id": `https://idealbathrenovations.ca/service-areas/${area.slug}#business`,
+        "@id": `https://www.idealbathrenovations.ca/service-areas/${area.slug}#business`,
         name: `Ideal Bath Renovations - ${area.name}`,
-        url: `https://idealbathrenovations.ca/service-areas/${area.slug}`,
-        logo: "https://idealbathrenovations.ca/logo.png",
+        url: `https://www.idealbathrenovations.ca/service-areas/${area.slug}`,
+        logo: "https://www.idealbathrenovations.ca/logo.png",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
         description: area.metaDescription,
         telephone: "+1-672-273-0434",
@@ -127,19 +127,19 @@ const ServiceAreaDetail: React.FC = () => {
             "@type": "ListItem",
             position: 1,
             name: "Home",
-            item: "https://idealbathrenovations.ca/",
+            item: "https://www.idealbathrenovations.ca/",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Service Areas",
-            item: "https://idealbathrenovations.ca/service-areas",
+            item: "https://www.idealbathrenovations.ca/service-areas",
           },
           {
             "@type": "ListItem",
             position: 3,
             name: area.name,
-            item: `https://idealbathrenovations.ca/service-areas/${area.slug}`,
+            item: `https://www.idealbathrenovations.ca/service-areas/${area.slug}`,
           },
         ],
       },
@@ -162,7 +162,7 @@ const ServiceAreaDetail: React.FC = () => {
       <SEO
         title={metadata.title}
         description={metadata.description}
-        canonical={`https://idealbathrenovations.ca/service-areas/${area.slug}`}
+        canonical={`https://www.idealbathrenovations.ca/service-areas/${area.slug}`}
         keywords={area.keywords}
       />
 

@@ -14,7 +14,7 @@ const About: React.FC = () => {
       <SEO
         title="About Us in Langley, BC - Ideal Bath Renovations"
         description="Bathroom remodeling in Langley, BC from Ideal Bath Renovations includes waterproofing and custom finishes. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/about"
+        canonical="https://www.idealbathrenovations.ca/about"
         keywords="About Ideal Bath Renovations, Langley Contractor, Master Ensuite Builders, Bathroom Renovators Fraser Valley"
       />
       <Breadcrumbs

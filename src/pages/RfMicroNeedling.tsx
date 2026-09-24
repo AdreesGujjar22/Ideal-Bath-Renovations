@@ -16,7 +16,7 @@ const RfMicroNeedling: React.FC = () => {
       <SEO
         title="Tub-to-Shower Conversions Langley | Ideal Bath Renovations"
         description="Convert your old bathtub into a modern walk-in tile shower. Fast turnaround, 100% Schluter waterproofing, heavy frameless glass, and lifetime protection in Langley, BC."
-        canonical="https://idealbathrenovations.ca/rfMicroNeedling"
+        canonical="https://www.idealbathrenovations.ca/rfMicroNeedling"
         keywords="Tub to Shower Conversion, Bathtub Replacement, Walk In Tile Shower, Schluter Waterproofing Langley BC"
       />
       <Breadcrumbs

@@ -48,15 +48,15 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://idealbathrenovations.ca/",
+          "item": "https://www.idealbathrenovations.ca/",
         },
         ...resolvedItems.map((item, idx) => ({
           "@type": "ListItem",
           "position": idx + 2,
           "name": item.label,
           "item": item.path
-            ? `https://idealbathrenovations.ca${item.path}`
-            : `https://idealbathrenovations.ca${location.pathname}`,
+            ? `https://www.idealbathrenovations.ca${item.path}`
+            : `https://www.idealbathrenovations.ca${location.pathname}`,
         })),
       ],
     };

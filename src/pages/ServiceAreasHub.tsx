@@ -19,7 +19,7 @@ const ServiceAreasHub: React.FC = () => {
       <SEO
         title="Service Areas in Langley, BC - Ideal Bath Renovations"
         description="Bathroom remodeling across Langley, Surrey, Abbotsford, and Fraser Valley. See local projects and shower upgrades. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/service-areas"
+        canonical="https://www.idealbathrenovations.ca/service-areas"
         keywords="bathroom renovations service areas, bathroom remodeling Langley, bathroom remodeler Surrey BC, bathroom renovation Abbotsford, Fraser Valley bathroom contractors"
       />
 

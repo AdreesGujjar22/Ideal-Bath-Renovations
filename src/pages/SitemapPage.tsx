@@ -30,7 +30,7 @@ interface SitemapEntry {
 const sitemapData: SitemapEntry[] = [
   // Core Pages
   {
-    url: "https://idealbathrenovations.ca/",
+    url: "https://www.idealbathrenovations.ca/",
     path: "/",
     title: "Homepage - Modern Bathroom Remodeler & Contractor",
     description: "Full-service bathroom renovations, tub-to-shower conversions, and walk-in showers in Langley, BC.",
@@ -40,7 +40,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/about",
+    url: "https://www.idealbathrenovations.ca/about",
     path: "/about",
     title: "About Our Company",
     description: "Learn about Ideal Bath Renovations, our licensed Red Seal craftsmen, and lifetime waterproofing guarantee.",
@@ -50,7 +50,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services",
+    url: "https://www.idealbathrenovations.ca/services",
     path: "/services",
     title: "Bathroom Remodeling Services Catalog",
     description: "Explore all 12 specialized bathroom remodeling solutions for Langley and Fraser Valley homeowners.",
@@ -60,7 +60,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/service-areas",
+    url: "https://www.idealbathrenovations.ca/service-areas",
     path: "/service-areas",
     title: "Service Areas & Regional Coverage",
     description: "View all communities we serve across Langley Township, Langley City, Surrey, and Abbotsford.",
@@ -70,7 +70,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/before-after",
+    url: "https://www.idealbathrenovations.ca/before-after",
     path: "/before-after",
     title: "Before & After Transformation Gallery",
     description: "Real photo galleries and case studies of completed bathroom transformations in Langley and Fraser Valley.",
@@ -80,7 +80,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/contact",
+    url: "https://www.idealbathrenovations.ca/contact",
     path: "/contact",
     title: "Contact & Free In-Home Estimate",
     description: "Schedule a free consultation, 3D laser scan, and fixed-price quote with our renovation team.",
@@ -92,7 +92,7 @@ const sitemapData: SitemapEntry[] = [
 
   // 12 Services
   {
-    url: "https://idealbathrenovations.ca/services/bathroom-remodeling",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-remodeling",
     path: "/services/bathroom-remodeling",
     title: "Full-Service Bathroom Remodeling",
     description: "Turnkey bathroom renovations managing layout design, plumbing, electrical, tile, and premium finishes.",
@@ -102,7 +102,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/shower-remodeling",
+    url: "https://www.idealbathrenovations.ca/services/shower-remodeling",
     path: "/services/shower-remodeling",
     title: "Tub-to-Shower & Walk-In Showers",
     description: "Convert old bathtubs into modern walk-in showers with frameless glass and Schluter waterproofing.",
@@ -112,7 +112,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/bathtub-replacement",
+    url: "https://www.idealbathrenovations.ca/services/bathtub-replacement",
     path: "/services/bathtub-replacement",
     title: "Bathtub Replacement & Freestanding Tubs",
     description: "Soaker tub installations, freestanding acrylic tubs, and modern drop-in alcove replacements.",
@@ -122,7 +122,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/bathroom-vanity-installation",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-vanity-installation",
     path: "/services/bathroom-vanity-installation",
     title: "Custom Vanities & Storage Cabinetry",
     description: "Floating and freestanding vanities with quartz countertops, soft-close hardware, and undermount sinks.",
@@ -132,7 +132,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/bathroom-tile-installation",
+    url: "https://www.idealbathrenovations.ca/services/bathroom-tile-installation",
     path: "/services/bathroom-tile-installation",
     title: "Custom Tile & Schluter Waterproofing",
     description: "Porcelain, marble, mosaic, and subway tile installation with 100% waterproof Schluter-KERDI membranes.",
@@ -142,7 +142,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/custom-lighting-fixtures",
+    url: "https://www.idealbathrenovations.ca/services/custom-lighting-fixtures",
     path: "/services/custom-lighting-fixtures",
     title: "Bathroom Lighting & Electrical",
     description: "LED vanity bars, recessed shower pot lights, dimmer controls, and quiet humidity-sensing exhaust fans.",
@@ -152,7 +152,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/accessible-bathrooms",
+    url: "https://www.idealbathrenovations.ca/services/accessible-bathrooms",
     path: "/services/accessible-bathrooms",
     title: "Accessible & Curbless Barrier-Free Bathrooms",
     description: "Zero-threshold curbless showers, grab bars, comfort-height toilets, and ADA-compliant safety layouts.",
@@ -162,7 +162,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/powder-room-renovations",
+    url: "https://www.idealbathrenovations.ca/services/powder-room-renovations",
     path: "/services/powder-room-renovations",
     title: "Powder Room & Small Bath Renovations",
     description: "High-impact half-bath remodels maximizing small footprints with designer fixtures and bold tile.",
@@ -172,7 +172,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/flooring-solutions",
+    url: "https://www.idealbathrenovations.ca/services/flooring-solutions",
     path: "/services/flooring-solutions",
     title: "Bathroom Flooring & Waterproof Tile",
     description: "Slip-resistant porcelain floor tiles, marble mosaics, and Schluter waterproofing.",
@@ -182,7 +182,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/eco-friendly-upgrades",
+    url: "https://www.idealbathrenovations.ca/services/eco-friendly-upgrades",
     path: "/services/eco-friendly-upgrades",
     title: "Eco-Friendly & Water-Saving Upgrades",
     description: "WaterSense certified low-flow showerheads, dual-flush toilets, and sustainable building materials.",
@@ -192,7 +192,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/smart-bathroom-tech",
+    url: "https://www.idealbathrenovations.ca/services/smart-bathroom-tech",
     path: "/services/smart-bathroom-tech",
     title: "Smart Bathroom Technology Integration",
     description: "Digital thermostatic valves, smart bidet toilets, anti-fog LED mirrors, and smart ventilation systems.",
@@ -202,7 +202,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/services/luxury-ensuite-transformations",
+    url: "https://www.idealbathrenovations.ca/services/luxury-ensuite-transformations",
     path: "/services/luxury-ensuite-transformations",
     title: "Luxury Master Ensuite Transformations",
     description: "Spa-grade master suites featuring double vanities, freestanding soaking tubs, and custom steam showers.",
@@ -214,7 +214,7 @@ const sitemapData: SitemapEntry[] = [
 
   // 4 Service Areas
   {
-    url: "https://idealbathrenovations.ca/service-areas/langley-twp",
+    url: "https://www.idealbathrenovations.ca/service-areas/langley-twp",
     path: "/service-areas/langley-twp",
     title: "Langley Township Bathroom Renovations",
     description: "Serving Walnut Grove, Willoughby, Fort Langley, Brookswood, and Murrayville homeowners.",
@@ -224,7 +224,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/service-areas/langley-city",
+    url: "https://www.idealbathrenovations.ca/service-areas/langley-city",
     path: "/service-areas/langley-city",
     title: "Langley City Bathroom Renovations",
     description: "Condo, townhouse, and detached home bathroom renovations in central Langley City neighborhoods.",
@@ -234,7 +234,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/service-areas/surrey",
+    url: "https://www.idealbathrenovations.ca/service-areas/surrey",
     path: "/service-areas/surrey",
     title: "Surrey & South Surrey Bathroom Remodeling",
     description: "Premium bathroom remodeling for Cloverdale, Fleetwood, South Surrey, and Morgan Creek residents.",
@@ -244,7 +244,7 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://idealbathrenovations.ca/service-areas/abbotsford",
+    url: "https://www.idealbathrenovations.ca/service-areas/abbotsford",
     path: "/service-areas/abbotsford",
     title: "Abbotsford Bathroom Renovations",
     description: "Master ensuite overhauls, tub conversions, and accessible bathroom designs throughout Abbotsford.",
@@ -307,7 +307,7 @@ const SitemapPage: React.FC = () => {
       <SEO
         title="HTML & XML Sitemap | Ideal Bath Renovations"
         description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 22 verified pages including remodeling services and Fraser Valley service areas."
-        canonical="https://idealbathrenovations.ca/sitemap.xml"
+        canonical="https://www.idealbathrenovations.ca/sitemap.xml"
       />
 
       <Box sx={{ backgroundColor: "#0f172a", color: "#ffffff", pt: { xs: 8, md: 10 }, pb: { xs: 6, md: 8 } }}>

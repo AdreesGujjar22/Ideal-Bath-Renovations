@@ -50,7 +50,7 @@ const ServicesHub: React.FC = () => {
       <SEO
         title="Bathroom Services in Langley, BC - Ideal Bath Renovations"
         description="Bathroom services in Langley, BC include remodeling, shower conversions, tile installation, and custom vanities. Free estimate. - Ideal Bath Renovations"
-        canonical="https://idealbathrenovations.ca/services"
+        canonical="https://www.idealbathrenovations.ca/services"
       />
 
       <Breadcrumbs currentLabel="Services" />

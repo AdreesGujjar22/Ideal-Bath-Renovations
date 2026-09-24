@@ -14,7 +14,7 @@ const NanoNeedling: React.FC = () => {
       <SEO
         title="ADA Accessible & Barrier-Free Bathrooms Langley | Ideal Bath Renovations"
         description="Certified aging-in-place and ADA barrier-free bathroom remodeling in Langley, BC. Zero-threshold curbless showers, grab bar reinforcement, and comfort-height fixtures."
-        canonical="https://idealbathrenovations.ca/nanoneedling"
+        canonical="https://www.idealbathrenovations.ca/nanoneedling"
         keywords="ADA Accessible Bathroom, Barrier Free Shower, Wheelchair Accessible Bathroom Langley, Aging in Place Renovations BC"
       />
       <Breadcrumbs
