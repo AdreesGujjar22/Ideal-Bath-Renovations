@@ -14,6 +14,7 @@ import {
   tileSchluterImg,
   bathtubReplaceImg,
 } from "../../assets/images";
+import { homeSeo } from "../../data/SeoContent";
 
 interface CoreServiceItem {
   id: string;
@@ -118,7 +119,7 @@ const Services: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Bathroom Remodeling Services in Langley & Fraser Valley
+            {homeSeo.servicesHeading}
           </Typography>
 
           <Typography
@@ -130,7 +131,7 @@ const Services: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Ideal Bath Renovations is a local bathroom remodeler serving Langley Township, Surrey, Abbotsford, and the wider Fraser Valley. We handle full bathroom renovations, walk-in showers, tub-to-shower conversions, bathtub replacements, custom vanities, and waterproof tile installation.
+            {homeSeo.servicesIntro}
           </Typography>
         </Box>
 

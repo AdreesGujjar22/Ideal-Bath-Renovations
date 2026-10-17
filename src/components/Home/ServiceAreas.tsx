@@ -4,6 +4,7 @@ import { MapPin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { getServiceAreaPath, serviceAreasData } from "../../data/ServiceAreasData";
 import GoogleMapEmbed from "../UI/GoogleMapEmbed";
+import { homeSeo } from "../../data/SeoContent";
 
 const ServiceAreas: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const ServiceAreas: React.FC = () => {
               mb: 1.5,
             }}
           >
-            Bathroom Remodeling Service Areas in Langley Township &amp; Fraser Valley
+            {homeSeo.areasHeading}
           </Typography>
 
           <Typography
@@ -34,7 +35,7 @@ const ServiceAreas: React.FC = () => {
               mb: 3.5,
             }}
           >
-            Based at 20819 78B Avenue in Langley Township, we serve homeowners across Langley, Surrey, Abbotsford, and the Fraser Valley.
+            {homeSeo.areasIntro}
           </Typography>
 
           {/* Short list of served area names as links */}
@@ -112,7 +113,7 @@ const ServiceAreas: React.FC = () => {
                   mb: 0.5,
                 }}
               >
-                Our Langley Twp HQ & Service Area Map
+                Bathroom Remodeler Service Area Map
               </Typography>
               <Typography sx={{ fontSize: "14px", color: "#64748b" }}>
                 Based at 20819 78B Avenue in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
