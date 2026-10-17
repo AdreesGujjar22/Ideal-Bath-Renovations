@@ -26,7 +26,6 @@ import {
   X,
   ArrowRight,
 } from "lucide-react";
-import "../main.css";
 
 const navItems = [
   { name: "Home", route: "/", icon: Home },

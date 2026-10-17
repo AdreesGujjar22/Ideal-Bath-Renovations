@@ -2,6 +2,16 @@ import React from "react";
 import { Box, Typography, Container, Stack } from "@mui/material";
 import PrimaryButton from "../UI/PrimaryButton";
 
+const responsiveImageSrcSet = (src: string) =>
+  [640, 960, 1440]
+    .map((width) => {
+      const url = new URL(src);
+      url.searchParams.set("w", String(width));
+      url.searchParams.set("q", "75");
+      return `${url.toString()} ${width}w`;
+    })
+    .join(", ");
+
 interface PrimaryBannerProps {
   img: string;
   primaryContent: string;
@@ -59,6 +69,8 @@ const PrimaryBanner: React.FC<PrimaryBannerProps> = ({
       <Box
         component="img"
         src={img}
+        srcSet={responsiveImageSrcSet(img)}
+        sizes="100vw"
         alt={primaryContent}
         width={1200}
         height={bannerHeight}
