@@ -636,4 +636,284 @@ export const areaSeo: Record<string, AreaSeo> = {
       },
     ],
   },
+  "chilliwack": {
+    titleKeyword: "Bathroom Remodeler Chilliwack, BC",
+    metaDescription: "Bathroom remodeler in Chilliwack, BC. Ideal Bath Renovations installs walk-in showers, tile, and custom vanities for Sardis and Vedder homes. Get a free quote.",
+    h1: "Bathroom Remodeler in Chilliwack, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Chilliwack, BC, working with homeowners in Sardis, Vedder, Promontory, Garrison Crossing, and Yarrow.",
+    overviewHeading: "Bathroom Renovation in Chilliwack, BC: Showers, Tile & Vanities",
+    paragraphs: [
+      "Chilliwack has a wide mix of homes, from newer builds at Garrison Crossing and Promontory to established family houses in Sardis and Vedder. That variety means bathroom projects range from a simple vanity replacement to a complete ensuite remodel.",
+      "As a Chilliwack bathroom remodeler, we handle tub-to-shower conversions, bathroom tile installation, shower remodeling, and full renovations. Larger jobs make sense for the drive from Langley, so we schedule site visits and deliveries in one run and confirm timing before you commit.",
+      "Where a permit is needed, we work with the City of Chilliwack and arrange the inspections, so the finished bathroom is documented."
+],
+    neighborhoodsHeading: "Chilliwack Neighborhoods We Serve",
+    faqHeading: "Chilliwack Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Do you take on bathroom projects in Chilliwack from Langley?",
+            "answer": "Yes. Chilliwack is part of our Fraser Valley service range, and we plan visits so travel does not slow your project."
+      },
+      {
+            "question": "Is Chilliwack's older housing stock a problem for remodeling?",
+            "answer": "Not usually. We check drains and framing at the estimate visit so any surprise repair is in the written quote."
+      },
+      {
+            "question": "Which Chilliwack permits apply to bathroom work?",
+            "answer": "The City of Chilliwack requires permits for plumbing and electrical changes. We advise you on what your project needs."
+      }
+],
+  },
+  "mission": {
+    titleKeyword: "Bathroom Remodeler in Mission, BC",
+    metaDescription: "Bathroom remodeler in Mission, BC. Ideal Bath Renovations offers bathroom renovation, shower conversions, and vanity installs in Hatzic and Silverdale.",
+    h1: "Bathroom Remodeler in Mission, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Mission, BC, serving Hatzic, Silverdale, Cedar Valley, Stave Falls, and Mission Downtown.",
+    overviewHeading: "Bathroom Remodeling in Mission, BC: Renovation, Showers & Repairs",
+    paragraphs: [
+      "Mission homes often sit on larger lots with space for spacious bathrooms, which suits walk-in showers, double vanities, and soaker tubs. Many properties also use well water or septic, which affects how we plan plumbing changes.",
+      "Our Mission bathroom remodeling work includes bathroom renovation, shower remodeling, bathtub replacement, tile installation, and repair. Before we design a new layout, we confirm the plumbing setup so the plan works on your property.",
+      "We handle permits with the District of Mission where required and keep you informed from the estimate to the final walkthrough."
+],
+    neighborhoodsHeading: "Mission Neighborhoods We Serve",
+    faqHeading: "Mission Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Can you work on a Mission home that uses well water or septic?",
+            "answer": "Yes. We check the system during the visit before planning any layout changes that add fixtures."
+      },
+      {
+            "question": "Is Mission within your regular service range?",
+            "answer": "It is. We combine Mission visits with other Fraser Valley projects to keep scheduling efficient."
+      },
+      {
+            "question": "Do you handle small repairs in Mission, or only large renovations?",
+            "answer": "Both. Grout, leaks, and fixture swaps are scheduled alongside larger jobs in the area."
+      }
+],
+  },
+  "hope": {
+    titleKeyword: "Bathroom Remodeler in Hope, BC",
+    metaDescription: "Bathroom remodeler in Hope, BC. Ideal Bath Renovations handles bathroom renovations, shower upgrades, and tile for Hope homes. Call to book your free estimate.",
+    h1: "Bathroom Remodeler in Hope, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Hope, BC, taking on larger renovation projects for homeowners in the upper Fraser Valley.",
+    overviewHeading: "Bathroom Renovation in Hope, BC for Homes in the Upper Fraser Valley",
+    paragraphs: [
+      "Hope is at the eastern edge of our service range, so we focus on projects that benefit from careful planning: full bathroom renovations, ensuite remodels, tub-to-shower conversions, and tile installation.",
+      "As a bathroom remodeler for Hope, BC homes, we coordinate material deliveries, schedule trades together, and plan multi-day work so the crew is on site efficiently. The written quote shows the full scope and timeline.",
+      "Contact us first so we can confirm availability for your address and book a visit."
+],
+    neighborhoodsHeading: "Hope Neighborhoods We Serve",
+    faqHeading: "Hope Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "How far from Langley can you take on bathroom work, and does it include Hope?",
+            "answer": "Hope is at the edge of our range. We take on larger projects here and confirm scheduling after a call."
+      },
+      {
+            "question": "Are small repairs available in Hope?",
+            "answer": "We prioritise larger renovations in Hope. For small repairs, call so we can see whether a local visit makes sense."
+      },
+      {
+            "question": "What should I prepare before a remodeling estimate in Hope?",
+            "answer": "Photos of the bathroom, rough measurements, and the finishes you like help us give a more accurate first range."
+      }
+],
+  },
+  "cloverdale": {
+    titleKeyword: "Bathroom Remodeler Cloverdale, BC",
+    metaDescription: "Bathroom remodeler in Cloverdale, BC. Ideal Bath Renovations builds showers, tile, and vanities in Clayton and Cloverdale homes. Request a free estimate today.",
+    h1: "Bathroom Remodeler in Cloverdale, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Cloverdale, BC, serving homes in Clayton, Clayton Heights, Hazelmere, and the Cloverdale Town Centre area.",
+    overviewHeading: "Bathroom Remodeling in Cloverdale, BC: Updates for Clayton & Town Centre Homes",
+    paragraphs: [
+      "Cloverdale includes established homes near the Town Centre and newer family houses and townhomes in Clayton and Clayton Heights. Bathrooms in newer builds tend to be compact and builder-grade, which makes them good candidates for tile, vanity, and shower upgrades.",
+      "Our Cloverdale bathroom remodeling services include bathroom renovation, vanity replacement, tub-to-shower conversions, and bathroom tile installation. We work within the City of Surrey's permit rules and plan around strata requirements for townhomes.",
+      "Because Cloverdale is close to our Langley shop, estimates and site visits are usually easy to arrange."
+],
+    neighborhoodsHeading: "Cloverdale Neighborhoods We Serve",
+    faqHeading: "Cloverdale Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Which permit office handles bathroom work in Cloverdale?",
+            "answer": "Cloverdale is part of the City of Surrey, so permits come from Surrey. We handle the application when one is needed."
+      },
+      {
+            "question": "Can you upgrade a small Clayton townhome bathroom?",
+            "answer": "Yes. Small bathrooms benefit from compact vanities, clear glass, and large tile. We design around strata rules."
+      },
+      {
+            "question": "How quickly can you visit Cloverdale for an estimate?",
+            "answer": "Cloverdale is close to our Langley base, so visits can often be booked within a few days."
+      }
+],
+  },
+  "white-rock": {
+    titleKeyword: "Bathroom Remodeler White Rock, BC",
+    metaDescription: "Bathroom remodeler in White Rock, BC. Ideal Bath Renovations offers bathroom renovation, walk-in showers, and tile for coastal homes. Book your free estimate.",
+    h1: "Bathroom Remodeler in White Rock, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in White Rock, BC, serving Uptown, West Beach, East Beach, Marine Drive, and Hillside homes.",
+    overviewHeading: "Bathroom Renovation in White Rock, BC: Coastal Homes, Showers & Tile",
+    paragraphs: [
+      "White Rock's coastal climate puts extra demand on bathrooms. Salt air, humidity, and older homes with limited ventilation mean moisture control matters as much as appearance.",
+      "As a White Rock bathroom remodeler, we pair waterproofing and a properly sized exhaust fan with every renovation, then add tile, glass, and vanity upgrades. Condo owners can count on us to follow building rules and working hours.",
+      "We also handle bathroom repair and restoration when moisture has caused damage to the floor, walls, or ceiling below."
+],
+    neighborhoodsHeading: "White Rock Neighborhoods We Serve",
+    faqHeading: "White Rock Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Do coastal conditions change how a White Rock bathroom is remodeled?",
+            "answer": "Ventilation and waterproofing get extra attention because of the humidity. We recommend a properly sized fan on every project."
+      },
+      {
+            "question": "Can you work in a White Rock condo?",
+            "answer": "Yes. We coordinate with building management on notice, elevator booking, and permitted working hours."
+      },
+      {
+            "question": "Does White Rock have its own permit process?",
+            "answer": "Yes, the City of White Rock issues its own permits. We handle the paperwork when your project needs one."
+      }
+],
+  },
+  "maple-ridge": {
+    titleKeyword: "Bathroom Remodeler Maple Ridge, BC",
+    metaDescription: "Bathroom remodeler in Maple Ridge, BC. Ideal Bath Renovations provides bathroom renovation, shower conversions, and custom vanities. Request a free estimate.",
+    h1: "Bathroom Remodeler in Maple Ridge, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Maple Ridge, BC, helping homeowners in Albion, Haney, Silver Valley, Thornhill, and Whonnock.",
+    overviewHeading: "Bathroom Remodeling in Maple Ridge, BC: Ensuites, Showers & Vanities",
+    paragraphs: [
+      "Maple Ridge homes include newer family houses in Albion and Silver Valley as well as older properties in Haney and Hammond. Larger floor plans often mean room for a proper ensuite with a walk-in shower and double vanity.",
+      "We provide bathroom renovation, tub-to-shower conversion, bathroom tile installation, and vanity installation in Maple Ridge. Older homes may also need repair or replacement of failing plumbing and subfloor before finishing work.",
+      "We deal with the City of Maple Ridge when permits are required, and keep a single project lead for the whole job."
+],
+    neighborhoodsHeading: "Maple Ridge Neighborhoods We Serve",
+    faqHeading: "Maple Ridge Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Do you remodel ensuites in Maple Ridge's newer homes?",
+            "answer": "Yes. Ensuites in newer builds are often the first rooms homeowners upgrade, with better tile, glass, and storage."
+      },
+      {
+            "question": "What about older Haney bathrooms?",
+            "answer": "They sometimes hide aged pipes or a weakened subfloor. We inspect and quote any hidden repair in writing."
+      },
+      {
+            "question": "How do you handle permits in Maple Ridge?",
+            "answer": "We apply through the City of Maple Ridge when your work involves plumbing or electrical changes."
+      }
+],
+  },
+  "walnut-grove": {
+    titleKeyword: "Bathroom Remodeler Walnut Grove, BC",
+    metaDescription: "Bathroom remodeler in Walnut Grove, Langley, BC. Ideal Bath Renovations offers bathroom renovation, tub conversions, and vanities. Get a free local estimate.",
+    h1: "Bathroom Remodeler in Walnut Grove, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Walnut Grove, Langley, BC, working close to home in Walnut Grove Village, Eagle Ridge, and Carvolth.",
+    overviewHeading: "Bathroom Renovation in Walnut Grove, Langley: Update Your Family Bathroom",
+    paragraphs: [
+      "Walnut Grove is one of Langley's most established family communities, and many homes here are ready for a bathroom update. Typical projects include replacing a tub with a walk-in shower, installing a larger vanity, and retiling floors and walls.",
+      "Our Walnut Grove bathroom remodeling services cover renovation, repair, replacement, and full ensuite remodels. Because we are based in Langley Township, estimates are quick to schedule and crews are close if something comes up.",
+      "Permits, when required, come from the Township of Langley, and we manage the application and inspections."
+],
+    neighborhoodsHeading: "Walnut Grove Neighborhoods We Serve",
+    faqHeading: "Walnut Grove Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Why choose a local Walnut Grove bathroom remodeler?",
+            "answer": "Being nearby means faster estimates, shorter travel, and quick follow-up after your project."
+      },
+      {
+            "question": "What is the most common bathroom project in Walnut Grove?",
+            "answer": "Tub-to-shower conversions and vanity replacements are the most requested."
+      },
+      {
+            "question": "Do you handle permits for Walnut Grove homes?",
+            "answer": "Yes. They come from the Township of Langley and we apply on your behalf."
+      }
+],
+  },
+  "willoughby": {
+    titleKeyword: "Bathroom Remodeler Willoughby, BC",
+    metaDescription: "Bathroom remodeler in Willoughby, Langley, BC. Ideal Bath Renovations upgrades builder-grade bathrooms with new showers, tile, and vanities. Free estimates.",
+    h1: "Bathroom Remodeler in Willoughby, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Willoughby, Langley, BC, upgrading bathrooms in Willoughby Heights, Yorkson, and Latimer Heights.",
+    overviewHeading: "Bathroom Remodeling in Willoughby, Langley: Upgrade Builder-Grade Bathrooms",
+    paragraphs: [
+      "Willoughby is one of Langley's fastest-growing neighbourhoods, with many newer homes and townhouses. Their bathrooms are usually clean and functional, but finishes are often basic, which makes them well suited to targeted upgrades.",
+      "We help Willoughby homeowners replace standard vanities, add frameless glass, swap tubs for walk-in showers, and install better tile and lighting. For townhomes, we plan around strata rules and noise hours.",
+      "The Township of Langley handles permits here, and we coordinate them where the work requires."
+],
+    neighborhoodsHeading: "Willoughby Neighborhoods We Serve",
+    faqHeading: "Willoughby Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Can I upgrade a newer Willoughby bathroom without a full remodel?",
+            "answer": "Yes. A new vanity, lighting, tile, and glass can transform the room without a layout change."
+      },
+      {
+            "question": "Do you work in Willoughby townhomes?",
+            "answer": "Yes. We check strata requirements first and schedule noisy work within allowed hours."
+      },
+      {
+            "question": "How fast can you start a project in Willoughby?",
+            "answer": "Start dates depend on how quickly materials arrive. Estimates are usually quick to book because we are based nearby."
+      }
+],
+  },
+  "coquitlam": {
+    titleKeyword: "Bathroom Remodeler in Coquitlam, BC",
+    metaDescription: "Bathroom remodeler in Coquitlam, BC. Ideal Bath Renovations offers bathroom renovation, walk-in showers, and tile for Burke Mountain and Westwood homes.",
+    h1: "Bathroom Remodeler in Coquitlam, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Coquitlam, BC, serving Burke Mountain, Westwood Plateau, Maillardville, and Austin Heights.",
+    overviewHeading: "Bathroom Renovation in Coquitlam, BC: Ensuites, Showers & Tile",
+    paragraphs: [
+      "Coquitlam has a wide mix of housing, from newer homes on Burke Mountain and Westwood Plateau to established houses in Maillardville and Ranch Park. Larger newer homes often have ensuites that suit a walk-in shower and double vanity.",
+      "We provide bathroom renovation, shower remodeling, bathroom tile installation, and vanity installation in Coquitlam. Older houses may need repair or replacement of worn plumbing during the renovation.",
+      "We work with the City of Coquitlam on permits where needed and plan the schedule to limit disruption."
+],
+    neighborhoodsHeading: "Coquitlam Neighborhoods We Serve",
+    faqHeading: "Coquitlam Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Do you take on bathroom renovations in Coquitlam from Langley?",
+            "answer": "Yes. Coquitlam is within our regular service range for renovation and remodeling jobs."
+      },
+      {
+            "question": "Can you renovate a Burke Mountain ensuite?",
+            "answer": "Yes. Ensuites in newer homes are a common project, usually with new tile, glass, vanity, and lighting."
+      },
+      {
+            "question": "Does Coquitlam have special permit requirements?",
+            "answer": "The City of Coquitlam issues permits for plumbing and electrical changes. We confirm what applies after reviewing your plan."
+      }
+],
+  },
+  "delta": {
+    titleKeyword: "Bathroom Remodeler in Delta, BC",
+    metaDescription: "Bathroom remodeler in Delta, BC. Ideal Bath Renovations serves Ladner, Tsawwassen, and North Delta with renovations, showers, and tile. Request a free quote.",
+    h1: "Bathroom Remodeler in Delta, BC",
+    intro: "Ideal Bath Renovations is a bathroom remodeler in Delta, BC, serving Ladner, Tsawwassen, North Delta, Sunshine Hills, and Boundary Bay.",
+    overviewHeading: "Bathroom Remodeling in Delta, BC: Ladner, Tsawwassen & North Delta Homes",
+    paragraphs: [
+      "Delta covers very different communities, from established North Delta neighbourhoods to the family homes of Ladner and Tsawwassen. Many homes here have bathrooms with long-standing fixtures that are ready for replacement.",
+      "As a bathroom remodeler in Delta, we handle renovation, tub-to-shower conversion, tile installation, bathroom repair, and vanity replacement. Houses near the water can have higher humidity, so ventilation and waterproofing are part of every plan.",
+      "We coordinate permits with the Corporation of Delta when your work calls for them."
+],
+    neighborhoodsHeading: "Delta Neighborhoods We Serve",
+    faqHeading: "Delta Bathroom Remodeling FAQs",
+    faqs: [
+      {
+            "question": "Do you serve Ladner and Tsawwassen as well as North Delta?",
+            "answer": "Yes. All of Delta is part of our service range for renovations and larger bathroom projects."
+      },
+      {
+            "question": "Does humidity near Boundary Bay affect bathroom remodeling?",
+            "answer": "It can. We pay extra attention to ventilation and waterproofing so the new bathroom stays dry."
+      },
+      {
+            "question": "Who issues permits for Delta bathroom renovations?",
+            "answer": "The Corporation of Delta does. We submit the application when your plumbing or electrical work requires one."
+      }
+],
+  },
 };

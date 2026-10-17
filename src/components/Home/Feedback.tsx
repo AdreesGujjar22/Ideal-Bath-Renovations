@@ -4,36 +4,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 import { Star, Quote, CheckCircle, MapPin } from "lucide-react";
+import { reviews } from "../../data/ReviewsData";
 
-const reviews = [
-  {
-    name: "David & Karen M.",
-    location: "Willoughby Heights, Langley Twp",
-    project: "Full Master Ensuite Remodel & Steam Shower",
-    stars: 5,
-    date: "Verified Google Review",
-    comment:
-      "Ideal Bath Renovations transformed our outdated 1990s ensuite into a five-star spa sanctuary! The 3D CAD design helped us visualize the curbless shower and heated tile floors before work started. The crew arrived promptly on schedule every morning, kept the dust completely contained with HEPA filters, and finished on the exact day promised. Zero leaks, exquisite craftsmanship, and honest pricing!",
-  },
-  {
-    name: "Robert S.",
-    location: "Walnut Grove, Langley",
-    project: "Tub-to-Shower Conversion",
-    stars: 5,
-    date: "Verified Google Review",
-    comment:
-      "Converted a slippery acrylic tub into a gorgeous modern walk-in shower with 10mm frameless glass and matte black fixtures. The Schluter waterproofing system gave us total peace of mind. Completed in just 4 days from demo to sparkling clean walkthrough. Highly recommend their team!",
-  },
-  {
-    name: "Eileen & Thomas B.",
-    location: "Brookswood, Langley Twp",
-    project: "Aging-in-Place ADA Accessible Shower",
-    stars: 5,
-    date: "Verified Google Review",
-    comment:
-      "We needed a zero-barrier roll-in shower and secure designer grab bars for my mother. The Ideal Bath team treated our home with immense respect and helped us navigate the BC Home Renovation accessibility tax credit. The bathroom is safe, functional, and looks stunning!",
-  },
-];
 
 const Feedback: React.FC = () => {
   return (

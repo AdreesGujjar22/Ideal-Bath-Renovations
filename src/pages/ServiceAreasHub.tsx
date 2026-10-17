@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../data/ReviewsData";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { MapPin, Navigation, ArrowRight, Phone, Sparkles } from "lucide-react";
@@ -311,8 +312,8 @@ const ServiceAreasHub: React.FC = () => {
           <GoogleMapEmbed
             businessName="IDEAL BATH RENOVATIONS"
             address="Serving Langley Township, BC"
-            rating={5.0}
-            reviewsCount="28+"
+            rating={GOOGLE_RATING}
+            reviewsCount={GOOGLE_REVIEW_COUNT}
             mapQuery="Langley Township, BC"
             googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
             directionsQuery="Langley Township, BC"

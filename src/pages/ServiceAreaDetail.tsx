@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../data/ReviewsData";
 import { Navigate, Link } from "react-router-dom";
 import {
   Box,
@@ -275,8 +276,8 @@ const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
                 <GoogleMapEmbed
                   businessName={`IDEAL BATH - ${area.shortName.toUpperCase()}`}
                   address={area.addressDisplay}
-                  rating={5.0}
-                  reviewsCount="28+"
+                  rating={GOOGLE_RATING}
+                  reviewsCount={GOOGLE_REVIEW_COUNT}
                   mapQuery={area.mapQuery}
                   googleMapsLink={area.googleMapsLink}
                   directionsQuery={area.mapQuery}
