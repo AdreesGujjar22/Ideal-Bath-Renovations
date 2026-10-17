@@ -13,6 +13,8 @@ import { serviceSeo, buildMetaTitle, SITE_URL } from "../data/SeoContent";
 import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
+import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
+import Grid from "@mui/material/Grid2";
 import { ChevronDown, Phone, HelpCircle } from "lucide-react";
 
 interface ServiceDetailProps {
@@ -145,27 +147,59 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
         </Container>
       </Box>
 
-      {/* Description */}
+      {/* Description + map */}
       <Box component="section" sx={{ py: { xs: 7, md: 9 }, backgroundColor: "#ffffff" }}>
-        <Container maxWidth="md">
-          <Typography
-            variant="h2"
-            sx={{
-              fontFamily: headingFont,
-              fontSize: { xs: "26px", md: "34px" },
-              fontWeight: 800,
-              color: "#0f172a",
-              lineHeight: 1.2,
-              mb: 3,
-            }}
-          >
-            {content.overviewHeading}
-          </Typography>
-          {content.paragraphs.map((paragraph, idx) => (
-            <Typography key={idx} sx={{ fontSize: "16px", color: "#334155", lineHeight: 1.8, mb: 2.5 }}>
-              {paragraph}
-            </Typography>
-          ))}
+        <Container maxWidth="xl">
+          <Grid container spacing={{ xs: 5, md: 7 }} alignItems="flex-start">
+            <Grid size={{ xs: 12, lg: 7 }}>
+              <Typography
+                variant="h2"
+                sx={{
+                  fontFamily: headingFont,
+                  fontSize: { xs: "26px", md: "34px" },
+                  fontWeight: 800,
+                  color: "#0f172a",
+                  lineHeight: 1.2,
+                  mb: 3,
+                }}
+              >
+                {content.overviewHeading}
+              </Typography>
+              {content.paragraphs.map((paragraph, idx) => (
+                <Typography key={idx} sx={{ fontSize: "16px", color: "#334155", lineHeight: 1.8, mb: 2.5 }}>
+                  {paragraph}
+                </Typography>
+              ))}
+            </Grid>
+            <Grid size={{ xs: 12, lg: 5 }}>
+              <Box
+                sx={{
+                  p: { xs: 2, md: 2.5 },
+                  backgroundColor: "#f8fafc",
+                  borderRadius: "18px",
+                  border: "1px solid #e2e8f0",
+                }}
+              >
+                <Typography
+                  variant="h3"
+                  sx={{ fontFamily: headingFont, fontSize: "17px", fontWeight: 800, color: "#0f172a", mb: 1.5 }}
+                >
+                  {service.title} Service Area in Langley, BC
+                </Typography>
+                <GoogleMapEmbed
+                  businessName="IDEAL BATH RENOVATIONS"
+                  address="Serving Langley Township, BC"
+                  rating={5.0}
+                  reviewsCount="28+"
+                  mapQuery="Langley+Township,+BC"
+                  googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                  directionsQuery="Langley+Township,+BC"
+                  bottomLabel={`IDEAL BATH • ${service.title} in Langley, BC`}
+                  height={380}
+                />
+              </Box>
+            </Grid>
+          </Grid>
         </Container>
       </Box>
 

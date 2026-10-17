@@ -291,12 +291,12 @@ const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
 
       {/* Area description */}
       <Box component="section" sx={{ py: { xs: 7, md: 9 }, backgroundColor: "#ffffff" }}>
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Typography
             variant="h2"
             sx={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontSize: { xs: "26px", md: "34px" },
+              fontSize: { xs: "26px", md: "36px" },
               fontWeight: 800,
               color: "#0f172a",
               lineHeight: 1.2,

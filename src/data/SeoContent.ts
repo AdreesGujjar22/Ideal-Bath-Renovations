@@ -94,11 +94,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Remodeling in Langley, BC",
     intro:
       "Full bathroom remodeling in Langley, BC, from the first layout sketch to the last coat of caulk, handled by a single local crew.",
-    overviewHeading: "Full Bathroom Remodel for Langley Homes",
+    overviewHeading: "Bathroom Remodeling in Langley, BC: Renovation, Repair & Replacement",
     paragraphs: [
-      "A bathroom remodel is more than new tile. It is a chance to fix what has bothered you for years: a cramped shower, a vanity with no storage, a fan that never clears the steam. We start by measuring the room, learning how your household uses it, and drawing a layout that fits.",
-      "Once the plan is approved we demolish cleanly, rework plumbing and wiring, waterproof the wet areas, and set tile and fixtures. Our Langley bathroom contractors keep one project lead on the job so decisions do not get lost between trades.",
-      "Master ensuites, family bathrooms, and basement baths are all common projects for us. Each one gets a written scope and a firm schedule before work begins.",
+      "Ideal Bath Renovations provides bathroom remodeling in Langley, BC for homeowners who want more than a cosmetic refresh. A full remodel brings together layout changes, bathroom renovation work, fixture replacement, and new installation under one plan, so the shower, vanity, tile, and lighting all work as a set.",
+      "Many projects begin as a single problem, such as a leaking tub, damaged flooring, or a vanity that no longer fits. Once we open the walls, bathroom repair and replacement often become part of a larger remodel, and we price that scope clearly before demolition starts.",
+      "Our Langley bathroom contractors handle master ensuites, family bathrooms, and basement baths. We plan the layout, install plumbing and electrical, waterproof the wet areas, and finish with tile and fixtures, with one project lead keeping the schedule on track.",
     ],
     faqHeading: "Bathroom Remodeling Questions in Langley",
     faqs: [
@@ -127,11 +127,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Renovation in Langley, BC",
     intro:
       "Bathroom renovation in Langley, BC for homes with worn finishes, awkward layouts, or fixtures that have simply reached the end of their life.",
-    overviewHeading: "Bathroom Renovation That Refreshes Dated Spaces",
+    overviewHeading: "Bathroom Renovation in Langley, BC: Update Tile, Tubs & Vanities",
     paragraphs: [
-      "Many Langley houses still have bathrooms from the 1990s and early 2000s: almond fixtures, small tubs, builder-grade vanities. A renovation keeps the footprint you have and replaces what is tired, which is often the most sensible way to get a new-feeling room.",
-      "We focus on the things you touch daily. That means a vanity with real drawers, a shower that is easy to clean, flooring that stays warm and slip-resistant, and lighting you can actually see to shave or apply makeup by.",
-      "Because we are not moving walls in most renovations, the schedule is shorter and the cost is easier to predict. Where a layout tweak does help, we will show you the option and what it adds.",
+      "If your bathroom still has worn tile, a chipped tub, or an outdated vanity, bathroom renovation in Langley, BC is a practical way to bring it up to date without moving walls. We renovate within your existing footprint, then add bathroom upgrades where they matter most.",
+      "A typical renovation includes new tile and flooring, a replacement vanity and sink, a new toilet, updated lighting and ventilation, and a refreshed shower or bathtub installation. Where a layout change would improve the room, we show it as an option so you can compare remodel and renovation costs.",
+      "Ideal Bath Renovations coordinates every trade for you, from demolition to final cleanup. You get a written scope, a realistic timeline, and a finished bathroom that suits how your household uses the space.",
     ],
     faqHeading: "Bathroom Renovation Questions in Langley",
     faqs: [
@@ -160,11 +160,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Repair in Langley, BC",
     intro:
       "Fast, tidy bathroom repair in Langley, BC for leaks, cracked tile, failing grout, and fixtures that no longer work the way they should.",
-    overviewHeading: "Bathroom Repairs That Stop Small Problems Growing",
+    overviewHeading: "Bathroom Repair in Langley, BC: Leaks, Tile, Grout & Fixtures",
     paragraphs: [
-      "A slow drip or a soft spot near the tub rarely stays small. Water works into the subfloor and wall cavity, and what could have been an afternoon repair turns into a larger job. We look for the source first instead of patching the surface.",
-      "Typical repairs include replacing cracked or loose tile, regrouting and recaulking shower walls, fixing leaking valves and drains, resetting a wobbly toilet, and repairing a damaged vanity top.",
-      "If the repair uncovers a bigger problem, we explain it plainly and give you the choice between a short-term fix and a proper rebuild. No pressure to renovate when a repair will do.",
+      "Ideal Bath Renovations offers bathroom repair in Langley, BC for the problems that tend to get worse when ignored: dripping valves, leaking drains, cracked tile, failed grout, and loose toilets. Fixing the real source early often avoids bathroom restoration later.",
+      "We start by finding where the water is going, then repair the tile, caulking, valve, or drain that is responsible. If a fixture is too far gone, we can handle bathroom replacement and installation of a new one in the same visit.",
+      "For damage that has spread behind the wall or under the floor, we explain whether a repair is enough or whether a renovation is the better long-term choice. You decide with clear information, not pressure.",
     ],
     faqHeading: "Bathroom Repair Questions in Langley",
     faqs: [
@@ -193,11 +193,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Replacement in Langley, BC",
     intro:
       "Bathroom replacement in Langley, BC for tubs, toilets, vanities, and fixtures that are worn out, leaking, or simply out of style.",
-    overviewHeading: "Replace Worn Bathroom Fixtures the Right Way",
+    overviewHeading: "Bathroom Replacement in Langley, BC: Toilets, Tubs, Vanities & Faucets",
     paragraphs: [
-      "Replacing a fixture sounds simple until the old one will not come out cleanly or the new one does not line up with the existing plumbing. We confirm sizes and rough-in dimensions before ordering, so the new piece fits on installation day.",
-      "Common replacements include toilets, vanities and sinks, faucets and shower valves, bathtubs, and exhaust fans. Each one is removed carefully, the surrounding wall or floor is repaired, and the new fixture is sealed and tested.",
-      "If you are replacing several items at once, we sequence the work so you are not without a working bathroom longer than necessary.",
+      "Bathroom replacement in Langley, BC covers the fixtures that wear out first: toilets, vanities, sinks, faucets, shower valves, and bathtubs. Ideal Bath Renovations removes the old piece, repairs the surrounding surface, and completes the new installation so everything seals and drains properly.",
+      "Replacing an item is often cheaper than a full bathroom remodel, and it fixes recurring issues that a bathroom repair cannot, such as a cracked tub or a corroded shower valve. If you decide to go further, the work can lead straight into a renovation or upgrade.",
+      "We confirm sizes, rough-in measurements, and finishes before ordering, so the new fixture fits the first time and matches the rest of the room.",
     ],
     faqHeading: "Bathroom Replacement Questions in Langley",
     faqs: [
@@ -226,11 +226,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Installation in Langley, BC",
     intro:
       "Bathroom installation in Langley, BC for new builds, basement bathrooms, additions, and finished rooms that need fixtures set correctly.",
-    overviewHeading: "Bathroom Installation From Rough-In to Finish",
+    overviewHeading: "Bathroom Installation in Langley, BC: New Baths, Showers & Fixtures",
     paragraphs: [
-      "Adding a bathroom in a basement, a new addition, or a rebuilt home needs more than fixtures. Drains need the right slope, venting has to meet code, and the walls behind the shower must be waterproofed before any tile goes up.",
-      "We install showers, tubs, vanities, toilets, flooring, and lighting, and we coordinate the rough-in plumbing and electrical so each trade works in the right order. That order matters; a missed step is expensive to fix once drywall is closed.",
-      "Our crew follows the BC Building Code and arranges inspections with the Township of Langley or the City of Langley where permits apply.",
+      "Ideal Bath Renovations handles bathroom installation in Langley, BC for basement bathrooms, additions, and rooms that need new fixtures set to code. We coordinate rough-in plumbing, venting, wiring, waterproofing, and the final fixture installation in the right order.",
+      "Installation work often overlaps with other services. A new shower installation may follow tile work, a vanity installation may come with bathroom replacement of the old cabinet, and a full new bathroom is effectively a custom remodel built from scratch.",
+      "We follow the BC Building Code and arrange permits and inspections with the Township of Langley or the City of Langley when required, so the finished bathroom is safe and documented.",
     ],
     faqHeading: "Bathroom Installation Questions in Langley",
     faqs: [
@@ -259,11 +259,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Design in Langley, BC",
     intro:
       "Bathroom design in Langley, BC that gives you a clear layout, finish selections, and a fixed scope before demolition begins.",
-    overviewHeading: "Bathroom Design and Planning Before You Build",
+    overviewHeading: "Bathroom Design in Langley, BC: Layout, 3D Plans & Finish Selection",
     paragraphs: [
-      "The best bathrooms are decided on paper first. We measure your room, note where plumbing and windows sit, and sketch layouts that make the most of the space, whether that is a narrow 5-by-8 bath or a spacious ensuite.",
-      "From there we build a 3D view so you can see how the vanity, shower, and storage work together. Seeing it before it is built makes it easier to decide on glass versus a curtain, a niche versus a shelf, or one sink versus two.",
-      "You leave the design stage with selected finishes, a fixture list, and a written scope that feeds directly into the quote.",
+      "Bathroom design in Langley, BC from Ideal Bath Renovations gives you a clear plan before any demolition begins. We measure the space, discuss how you use it, and draw layouts that make sense for bathroom remodeling or a smaller bathroom renovation.",
+      "Our 3D visuals show how the vanity, shower, tub, and storage fit together, which makes decisions about glass, tile, lighting, and installation easier. You can compare options such as a walk-in shower versus a tub, or a single versus a double vanity.",
+      "The result is a finish schedule, fixture list, and written scope that feed directly into your quote. That means fewer changes mid-project and a more accurate price.",
     ],
     faqHeading: "Bathroom Design Questions in Langley",
     faqs: [
@@ -292,11 +292,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Upgrades in Langley, BC",
     intro:
       "Bathroom upgrades in Langley, BC that improve comfort and style without the cost or disruption of a complete remodel.",
-    overviewHeading: "Smart Bathroom Upgrades With Quick Turnaround",
+    overviewHeading: "Bathroom Upgrades in Langley, BC: Fixtures, Lighting & Ventilation",
     paragraphs: [
-      "You do not always need to start over. A few well-chosen upgrades can change how a bathroom looks and feels, often within one to three days.",
-      "Popular choices include a quiet exhaust fan that actually clears moisture, an anti-fog LED mirror, a thermostatic shower valve, a comfort-height or bidet-ready toilet, dimmable wet-rated lighting, and new faucets and hardware in matte black or brushed gold.",
-      "We tell you which upgrades add the most value for the money and which ones are better saved for a future renovation, so you only pay for what makes a difference.",
+      "Bathroom upgrades in Langley, BC are a smart option when your layout works but the room feels dated. Ideal Bath Renovations installs LED mirrors, quiet exhaust fans, new faucets, thermostatic shower valves, wet-rated lighting, and modern hardware, usually within one to three days.",
+      "Many upgrades are really small bathroom replacement and installation jobs, so they cost far less than a full bathroom remodeling project while still changing how the room looks and feels.",
+      "We will tell you which upgrades give the best return and which ones are better saved for a future renovation, so you spend on what you will notice every day.",
     ],
     faqHeading: "Bathroom Upgrades Questions in Langley",
     faqs: [
@@ -325,11 +325,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Restoration in Langley, BC",
     intro:
       "Bathroom restoration in Langley, BC for rooms damaged by leaks, moisture, mold, or failed waterproofing.",
-    overviewHeading: "Bathroom Restoration After Water Damage",
+    overviewHeading: "Bathroom Restoration in Langley, BC: Water Damage, Mold & Subfloor Repair",
     paragraphs: [
-      "Langley's wet climate is hard on bathrooms, especially ones with poor ventilation or old shower pans. When moisture gets behind tile or under flooring, it can soften the subfloor and lead to mold growth that returns unless the cause is fixed.",
-      "Our restoration work starts with finding where the water came from. We then remove damaged drywall, backing, and subfloor, treat affected areas, and rebuild with proper waterproofing so the same problem does not return.",
-      "Once the structure is sound, we finish with new tile, fixtures, and paint so the bathroom looks as good as it works.",
+      "Bathroom restoration in Langley, BC addresses damage that bathroom repair alone cannot fix: soft subfloors, moldy drywall, failed shower pans, and moisture trapped behind tile. Ideal Bath Renovations finds the cause first so the problem does not come back.",
+      "We remove damaged material, treat the area, and rebuild with proper waterproofing. Once the structure is sound, we move into renovation, replacement, and installation of tile, fixtures, and finishes.",
+      "If you are dealing with an insurance claim, we provide a written description of the damage and the work required, so your provider has the detail it needs.",
     ],
     faqHeading: "Bathroom Restoration Questions in Langley",
     faqs: [
@@ -358,11 +358,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Shower Remodeling in Langley, BC",
     intro:
       "Shower remodeling in Langley, BC, including walk-in showers, tub-to-shower conversions, and curbless entries with frameless glass.",
-    overviewHeading: "Walk-In Showers and Tub-to-Shower Conversions",
+    overviewHeading: "Shower Remodeling in Langley, BC: Walk-In Showers & Tub Conversions",
     paragraphs: [
-      "A tired fiberglass tub-shower is one of the most common reasons homeowners call us. Replacing it with a tiled walk-in shower gives you easier access, a brighter space, and a surface that is far easier to keep clean.",
-      "We build the shower from the base up: sloped, waterproof pan, membrane on the walls, then tile, niche, bench if you want one, and glass. Most conversions take three to five working days.",
-      "For households planning ahead, a curbless entry with a linear drain removes the step entirely. It looks modern and works well for anyone with limited mobility.",
+      "Ideal Bath Renovations provides shower remodeling in Langley, BC, including walk-in showers, tub-to-shower conversions, and curbless entries. If your fiberglass unit leaks, stains, or is hard to step into, shower replacement is often the best upgrade in the house.",
+      "Each shower installation is built from the base up with a sloped waterproof pan, wall membrane, tile, niche, and glass. Most conversions take three to five working days and can be part of a larger bathroom remodeling or renovation project.",
+      "We also handle shower repair, regrouting, and valve replacement when a full rebuild is not needed, so you get the right level of work for your budget.",
     ],
     faqHeading: "Shower Remodeling Questions in Langley",
     faqs: [
@@ -391,11 +391,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathtub Replacement in Langley, BC",
     intro:
       "Bathtub replacement in Langley, BC for cracked, stained, or outdated tubs, with alcove, drop-in, and freestanding options.",
-    overviewHeading: "Bathtub Replacement With Clean, Leak-Free Installation",
+    overviewHeading: "Bathtub Replacement in Langley, BC: Tub Installation & Tub-to-Shower Options",
     paragraphs: [
-      "A tub that has yellowed, cracked, or started to leak is not worth another refinish. Replacing it gives you better comfort and removes a likely source of water damage.",
-      "We remove the old tub, check the drain and subfloor, and set the new one on a solid, level base. Alcove tubs fit existing recesses, while freestanding tubs need a floor-mounted or wall-mounted filler and more clearance around the tub.",
-      "Most tub replacements are finished in one to three days. If the surround tile needs to be removed, we rebuild it so the new tub and wall meet cleanly and stay sealed.",
+      "Bathtub replacement in Langley, BC from Ideal Bath Renovations removes cracked, stained, or leaking tubs and installs a new alcove, drop-in, or freestanding bathtub with updated plumbing. Most tub installation jobs take one to three days.",
+      "If the tub surround is damaged, we include tile repair or replacement, and if you rarely use the tub, we can discuss a tub-to-shower conversion as part of your bathroom renovation.",
+      "Every tub is installed on a level, supported base with sealed joints and tested drains, which helps prevent the leaks that lead to bathroom restoration later.",
     ],
     faqHeading: "Bathtub Replacement Questions in Langley",
     faqs: [
@@ -424,11 +424,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Tile Installation in Langley, BC",
     intro:
       "Bathroom tile installation in Langley, BC for floors, shower walls, and feature walls, set over proper waterproofing for a long-lasting finish.",
-    overviewHeading: "Bathroom Tile Installation and Waterproofing",
+    overviewHeading: "Bathroom Tile Installation in Langley, BC: Floors, Showers & Waterproofing",
     paragraphs: [
-      "Good tile work depends on what is under it. We flatten the floor, install an uncoupling membrane where appropriate, and waterproof shower walls and pans before the first tile is set.",
-      "We install porcelain, ceramic, large-format tile, mosaics, and natural stone in straight, offset, herringbone, and other patterns. Edges are finished with trim or mitered corners so the shower looks clean.",
-      "Heated floors can be added at the same time. The cable goes in before the tile, so it is a simple addition during a floor retile.",
+      "Bathroom tile installation in Langley, BC from Ideal Bath Renovations covers floor tile, shower walls, niches, and feature walls. We prepare the surface, apply waterproofing, and set porcelain, ceramic, or natural stone in the pattern you choose.",
+      "Tile work is part of nearly every bathroom renovation and remodel, but we also handle standalone jobs such as shower tile replacement, floor retiling, and tile repair after a leak. Heated floors can be added during installation.",
+      "Careful prep and clean trim details are what make a tiled bathroom last. We level floors, protect corners, and finish with grout and sealant matched to the tile.",
     ],
     faqHeading: "Bathroom Tile Questions in Langley",
     faqs: [
@@ -457,11 +457,11 @@ export const serviceSeo: Record<string, ServiceSeo> = {
     h1: "Bathroom Vanity Installation in Langley, BC",
     intro:
       "Bathroom vanity installation in Langley, BC with custom cabinetry, quartz countertops, undermount sinks, and mirrors that suit your space.",
-    overviewHeading: "Custom Bathroom Vanities and Storage",
+    overviewHeading: "Bathroom Vanity Installation in Langley, BC: Cabinets, Countertops & Sinks",
     paragraphs: [
-      "The vanity is usually the first thing people notice and the piece they use most. We help you choose a size, depth, and storage layout that suits your room and your routine.",
-      "Options include freestanding and wall-hung vanities, single or double sinks, quartz or granite tops, soft-close doors and drawers, and LED mirrors with anti-fog heating. We handle the plumbing connections and make sure the fit against the wall is tight and clean.",
-      "In older Langley homes, walls are often not perfectly square. We scribe and shim the cabinet so it sits level and the backsplash meets the wall without gaps.",
+      "Bathroom vanity installation in Langley, BC from Ideal Bath Renovations covers single and double vanities, wall-hung cabinets, quartz and granite countertops, undermount sinks, faucets, and mirrors. We help you choose a size and storage layout that fits your room.",
+      "A vanity replacement is one of the fastest ways to refresh a bathroom, and it can be done alone or as part of a bathroom remodel or renovation. We handle plumbing connections and make sure the cabinet sits level against the wall.",
+      "In older Langley homes, walls and floors are rarely perfectly straight. We scribe and shim the cabinet so the countertop, backsplash, and sink look clean and function well.",
     ],
     faqHeading: "Bathroom Vanity Questions in Langley",
     faqs: [
@@ -508,10 +508,11 @@ export const areaSeo: Record<string, AreaSeo> = {
     h1: "Bathroom Remodeler in Langley Twp, BC",
     intro:
       "Ideal Bath Renovations is a bathroom remodeler in Langley Twp, BC, working on bathrooms from Willoughby to Fort Langley and Aldergrove.",
-    overviewHeading: "Bathroom Renovation in Langley Twp, BC",
+    overviewHeading: "Bathroom Remodeler in Langley Twp, BC: Renovation, Showers & Vanities",
     paragraphs: [
-      "Our workshop is in Langley Township, so this is where we do most of our work. We know the housing here: newer Willoughby and Yorkson builds with standard builder-grade bathrooms, mid-era Walnut Grove and Murrayville homes, and the older character houses in Fort Langley.",
-      "As a bathroom remodeler in Langley Twp, we handle the full scope: tub-to-shower conversions, custom vanities, tile and waterproofing, and complete ensuite renovations. We also pull permits from the Township of Langley when the work requires them.",
+      "Ideal Bath Renovations is a bathroom remodeler in Langley Twp, BC, working in Willoughby, Walnut Grove, Fort Langley, Murrayville, Brookswood, and Aldergrove. Because our shop is in the township, estimates and site visits are quick to arrange.",
+      "We handle bathroom renovation, shower remodeling, tub-to-shower conversions, bathroom tile installation, vanity installation, and complete ensuite remodels. Newer homes often need better storage and finishes, while older homes may need bathroom repair or restoration along the way.",
+      "When your project requires a permit, we apply through the Township of Langley and book the inspections, so you get a finished bathroom that is built to code.",
     ],
     neighborhoodsHeading: "Langley Twp Neighborhoods We Serve",
     faqHeading: "Langley Twp Bathroom Remodeling FAQs",
@@ -541,10 +542,11 @@ export const areaSeo: Record<string, AreaSeo> = {
     h1: "Bathroom Remodeler in Surrey, BC",
     intro:
       "Ideal Bath Renovations is a bathroom remodeler in Surrey, BC, serving Clayton Heights, Fleetwood, Cloverdale, South Surrey, and nearby communities.",
-    overviewHeading: "Bathroom Renovation in Surrey, BC",
+    overviewHeading: "Bathroom Remodeler in Surrey, BC: Renovation, Showers & Tile",
     paragraphs: [
-      "Surrey has a mix of newer builds in Clayton Heights and Grandview Heights, established family homes in Fleetwood and Guildford, and townhomes and condos across the city. Each has different constraints, from tight strata rules to compact floor plans.",
-      "As a bathroom remodeler in Surrey, we plan around those differences. We update builder-grade bathrooms with better tile and storage, convert tubs to walk-in showers, and install new vanities. For strata units we can help you with notice requirements and working hours.",
+      "Ideal Bath Renovations is a bathroom remodeler in Surrey, BC, serving Clayton Heights, Fleetwood, Cloverdale, South Surrey, Guildford, and Newton. From our Langley base, Surrey projects are within regular driving distance.",
+      "Surrey homes range from townhomes and condos to large family houses. We update builder-grade bathrooms with bathroom renovation, replacement of tubs and vanities, shower remodeling, and tile installation, and we plan around strata rules when needed.",
+      "Each project begins with a free in-home estimate. You receive a written scope, a clear schedule, and a single contact for the whole job.",
     ],
     neighborhoodsHeading: "Surrey Neighborhoods We Serve",
     faqHeading: "Surrey Bathroom Remodeling FAQs",
@@ -574,10 +576,11 @@ export const areaSeo: Record<string, AreaSeo> = {
     h1: "Bathroom Remodeler in Abbotsford, BC",
     intro:
       "Ideal Bath Renovations is a bathroom remodeler in Abbotsford, BC, helping homeowners in Auguston, Clearbrook, Matsqui, and Mill Lake.",
-    overviewHeading: "Bathroom Renovation in Abbotsford, BC",
+    overviewHeading: "Bathroom Remodeler in Abbotsford, BC: Renovation, Showers & Vanities",
     paragraphs: [
-      "Abbotsford homes range from new Auguston builds to established houses near Mill Lake and acreage properties on Sumas Mountain and Bradner. Larger family homes often mean larger bathrooms, which give us room for walk-in showers and double vanities.",
-      "As a bathroom remodeler in Abbotsford, we plan the work so there is minimal disruption for your household. We handle demolition, plumbing, waterproofing, tile, and finishing, and we coordinate permits with the City of Abbotsford where they apply.",
+      "Ideal Bath Renovations is a bathroom remodeler in Abbotsford, BC, helping homeowners in Auguston, Clearbrook, Matsqui, Mill Lake, and Sumas Mountain. We offer bathroom remodeling, renovation, and repair, plus shower and vanity installation.",
+      "Many Abbotsford homes have space for a larger walk-in shower or a double vanity, and we design around that. For rural properties, we confirm the plumbing setup before planning any change.",
+      "We coordinate permits with the City of Abbotsford where required and keep the project organized from the first visit to the final walkthrough.",
     ],
     neighborhoodsHeading: "Abbotsford Neighborhoods We Serve",
     faqHeading: "Abbotsford Bathroom Remodeling FAQs",
@@ -607,10 +610,11 @@ export const areaSeo: Record<string, AreaSeo> = {
     h1: "Bathroom Remodeler in Fraser Valley, BC",
     intro:
       "Ideal Bath Renovations is a bathroom remodeler in Fraser Valley, BC, serving Maple Ridge, Mission, Chilliwack, White Rock, and surrounding towns.",
-    overviewHeading: "Bathroom Renovation Across the Fraser Valley",
+    overviewHeading: "Bathroom Remodeler in Fraser Valley, BC: Renovation, Showers & Tile",
     paragraphs: [
-      "Beyond Langley, we take on bathroom projects in Maple Ridge, Pitt Meadows, Mission, Chilliwack, Sardis, and White Rock. Larger projects such as full ensuite renovations are a good fit for the extra travel, and we plan site visits and deliveries to keep schedules efficient.",
-      "As a Fraser Valley bathroom remodeler, we bring the same process everywhere: a written scope, waterproofed showers, and one project lead. Call us and we will confirm your address is within our service range.",
+      "Ideal Bath Renovations is a bathroom remodeler in Fraser Valley, BC, taking on projects in Maple Ridge, Pitt Meadows, Mission, Chilliwack, Sardis, and White Rock. We offer bathroom renovation, shower remodeling, tile, and vanity installation.",
+      "Larger projects such as ensuite remodels and tub-to-shower conversions suit our Fraser Valley schedule well, because deliveries and site visits can be planned efficiently.",
+      "Call us to confirm your address is in our service range and to book a free in-home estimate.",
     ],
     neighborhoodsHeading: "Fraser Valley Communities We Serve",
     faqHeading: "Fraser Valley Bathroom Remodeling FAQs",
