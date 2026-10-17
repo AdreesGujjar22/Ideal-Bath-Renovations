@@ -4,7 +4,6 @@ import { Star, ExternalLink } from "lucide-react";
 import Feedback from "../components/Home/Feedback";
 import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
-import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import {
   reviews,
@@ -112,12 +111,28 @@ const Reviews: React.FC = () => {
           >
             Find Ideal Bath Renovations on Google Maps
           </Typography>
-          <GoogleMapEmbed
-            rating={GOOGLE_RATING}
-            reviewsCount={GOOGLE_REVIEW_COUNT}
-            googleMapsLink={GOOGLE_REVIEWS_URL}
-            height={380}
-          />
+          <Box
+            sx={{
+              width: "100%",
+              height: { xs: 320, md: 450 },
+              overflow: "hidden",
+              borderRadius: "16px",
+              border: "1px solid #cbd5e1",
+              boxShadow: "0 10px 30px rgba(15, 23, 42, 0.08)",
+            }}
+          >
+            <Box
+              component="iframe"
+              title="Ideal Bath Renovations on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2609.862816766048!2d-122.645019!3d49.146229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d100095e3151%3A0x30d85aa12ead439e!2sIdeal%20bath%20renovations!5e0!3m2!1sen!2s!4v1792277695358!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              sx={{ display: "block", border: 0 }}
+            />
+          </Box>
           <Box sx={{ textAlign: "center", mt: 4 }}>
             <PrimaryButton content="Get a Free Quote" variant="gold" btnpadding="14px 30px" fontsize={15} to="/contact" />
           </Box>

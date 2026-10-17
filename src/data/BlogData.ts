@@ -3,238 +3,219 @@ export interface BlogSection {
   paragraphs: string[];
 }
 
+export interface BlogInternalLink {
+  text: string;
+  to: string;
+}
+
 export interface BlogPostItem {
   slug: string;
   title: string;
-  metaTitle: string; // <= 60 chars incl. brand
-  metaDescription: string; // <= 159 chars
+  metaTitle: string;
+  metaDescription: string;
   excerpt: string;
   category: string;
-  date: string; // ISO
+  date?: string;
   readTime: string;
   image: string;
-  intro: string;
+  intro: string[];
   sections: BlogSection[];
+  internalLinks?: BlogInternalLink[];
 }
 
 const img = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=80`;
-
 export const blogPosts: BlogPostItem[] = [
   {
-    slug: "how-long-does-a-bathroom-remodel-take-in-langley-bc",
-    title: "How Long Does a Bathroom Remodel Take in Langley, BC?",
-    metaTitle: "Remodel Timeline in Langley, BC | Ideal Bath Renovations",
+    slug: "bathroom-renovation-langley-homeowner-guide",
+    title: "Why Langley Homeowners Are Finally Giving Their Bathrooms the Attention They Deserve",
+    metaTitle: "Bathroom Renovation Langley: Homeowner Guide | Ideal Bath",
     metaDescription:
-      "How long does a bathroom remodel take in Langley, BC? Typical timelines for showers, tub conversions, and full renovations, plus what can cause delays.",
-    excerpt: "Typical timelines for a shower conversion, a vanity swap, and a full renovation, and what affects the schedule.",
-    category: "Planning",
-    date: "2026-10-05",
-    readTime: "4 min read",
+      "Discover why Langley homeowners are renovating bathrooms, with advice on layouts, waterproofing, materials, lighting, timelines and value for local homes.",
+    excerpt:
+      "Learn how a thoughtful bathroom renovation can improve comfort, solve hidden moisture problems, and add lasting value to your Langley home.",
+    category: "Bathroom Renovation",
+
+    readTime: "8 min read",
     image: img("photo-1552321554-5fefe8c9ef14"),
-    intro:
-      "Most homeowners want to know one thing before they say yes to a bathroom remodel: how long will I be without my bathroom? The answer depends on the scope, the materials, and what is behind the walls.",
+    intro: [
+      "Think about how your day starts and ends. Most likely it begins with a shower and finishes with brushing your teeth at the same sink. The bathroom is one of the busiest rooms in any house, yet it is often the last one people think about when they plan improvements. Tired tile, a cramped tub, and poor lighting get ignored for years until they become impossible to live with.",
+      "That is changing across the Fraser Valley. A growing number of families are realizing that Bathroom Renovation in Langley is one of the smartest ways to make a home more comfortable and more valuable at the same time. Whether you live in an older home near the town centre or a newer build in a growing neighbourhood, a fresh bathroom changes how the whole house feels. It also gives you a chance to fix problems that have been hiding behind the walls.",
+    ],
     sections: [
       {
-        heading: "Typical timelines by project type",
+        heading: "A Room That Works Harder Than Any Other",
         paragraphs: [
-          "A vanity, toilet, and faucet swap can usually be done in one to two days. A tub-to-shower conversion normally takes three to five working days. A full bathroom renovation with new tile, vanity, shower, and lighting generally runs two to three weeks. A remodel that moves plumbing or changes the layout takes longer.",
-          "These are working-day estimates. Curing time for waterproofing and grout is built into the schedule, so rushing those steps is not a way to save time.",
+          "Kitchens get the glory, but bathrooms take the most abuse. Steam, splashing water, temperature swings, and constant cleaning wear down finishes faster than almost anywhere else in the house. In a region known for rain, moisture is a year round challenge, and poorly sealed surfaces can lead to mould, soft drywall, and damaged subfloors.",
+          "This is why bathroom remodeling in Langley, BC deserves more thought than a quick coat of paint and a new faucet. A proper update looks at ventilation, waterproofing, plumbing, and layout together. When those pieces are handled correctly, the room stays beautiful for decades instead of looking worn after a few seasons.",
         ],
       },
       {
-        heading: "What most often causes delays",
+        heading: "Signs It Is Time to Make a Change",
         paragraphs: [
-          "Material lead times cause most delays. Custom glass is typically measured after the shower is tiled, which can add days before it is installed. Special-order tile and vanities can also take weeks to arrive.",
-          "Hidden problems are the other common cause. In older Langley homes we sometimes find rot around a tub, outdated drains, or an uneven subfloor. These are fixed before finishing, and they can extend the schedule.",
+          "Some homeowners wait for a leak before they act, but there are quieter warnings worth noticing. Grout that keeps darkening no matter how much you scrub is one. Floors that feel slightly spongy near the tub are another, and they often mean water has been getting where it should not. A fan that barely moves air, mirrors that fog for an hour, and doors that stick because of humidity all point to a room that is struggling.",
+          "Style matters too. If you dread guests using your bathroom or you avoid spending time in it, that is reason enough. A bathroom should feel like a small retreat, not a chore. Many people who invest in bathroom upgrades in Langley, BC say the biggest surprise is how much calmer their mornings become.",
         ],
       },
       {
-        heading: "How to keep your remodel on schedule",
+        heading: "Layout Choices That Change Everything",
         paragraphs: [
-          "Choose tile, fixtures, and the vanity early so they can be ordered before demolition. Decide on glass type and hardware in advance as well. Plan to use another bathroom during the work, and keep the path to the bathroom clear for the crew.",
-          "A written scope and schedule from your bathroom remodeler gives you something to measure against. If anything changes, you should see the revised date in writing.",
+          "The footprint of a bathroom rarely changes, but how you use that space can change completely. Swapping a bulky tub and shower combination for a walk in shower can open up the room and make it feel twice as large. Replacing a heavy vanity with a floating design lets light reach the floor, which makes even a narrow room feel airy.",
+          "Families with young children often want to keep a tub, and that is a sensible choice. Others, especially those planning to stay in their home for many years, prefer a curbless shower with a gentle entry that works at any age. Thinking about how your needs may shift over the next decade helps you build something that stays useful rather than just fashionable.",
+          "Double sinks are worth considering in a shared bathroom, but only if the space allows enough elbow room. A single wide basin with generous counter space often works better than two small ones squeezed together. A good designer will walk through your daily routine and suggest what truly fits instead of what simply looks good in a photo.",
+        ],
+      },
+      {
+        heading: "Materials That Handle Wet Weather Living",
+        paragraphs: [
+          "Choosing finishes is the fun part, and it is also where practical thinking pays off. Porcelain tile remains a favourite because it resists moisture, cleans easily, and comes in styles that mimic natural stone or warm wood. Large format tiles mean fewer grout lines, which cuts down on maintenance and gives walls a smooth, modern look.",
+          "For shower walls, solid surface panels and quality tile systems both perform well when installed with the right membrane behind them. The membrane is invisible once the job is finished, but it is the most important layer in the entire room. Cutting corners there is the quickest route to costly repairs later.",
+          "Flooring deserves the same care. Heated floors have become popular because the Fraser Valley can be chilly and damp for months at a time, and stepping onto a warm surface on a winter morning is a small luxury you will notice every day. Pair that with a strong exhaust fan that vents outside, and you protect both comfort and the structure of your home.",
+        ],
+      },
+      {
+        heading: "Storage and Lighting Details People Forget",
+        paragraphs: [
+          "Many people focus on tile and fixtures, then discover the room has nowhere to put towels or spare toiletries. Recessed wall niches in the shower, tall slim cabinets beside the vanity, and drawers with built in organizers keep clutter off the counters. Small choices like these make a bathroom feel finished and calm.",
+          "Lighting is just as important. A single ceiling fixture casts shadows across your face, which makes shaving or applying makeup frustrating. Layering light works far better. Place soft sconces on either side of the mirror, add a bright overhead source, and consider a dimmable option for relaxing evenings. A quality mirror with gentle backlighting can transform the whole mood of the room.",
+          "Do not overlook small safety touches either. Slip resistant flooring, solid grab bar backing hidden inside the walls, and good task lighting cost very little to plan in at the start and are very hard to add later.",
+        ],
+      },
+      {
+        heading: "What a Smooth Project Looks Like",
+        paragraphs: [
+          "A well run renovation starts with a conversation, not a demolition. A good contractor visits your home, listens to what bothers you about the current room, measures carefully, and explains what is possible within your space. You should leave that meeting with a clear understanding of the scope, the materials, and the timeline.",
+          "From there, the work follows a sensible order. The old finishes come out, hidden problems are checked, plumbing and electrical are updated, waterproofing goes in, and only then do tile, fixtures, and paint bring the room to life. Clear communication throughout keeps surprises to a minimum. When something unexpected does appear, which happens in older homes, a trustworthy team explains the issue and offers options instead of leaving you guessing.",
+          "Homeowners who want less disruption can also ask about scheduling. Many people keep a second bathroom available during the work, while others plan the project around a trip. Either approach is fine as long as everyone knows what to expect.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        paragraphs: [
+          "How long does a typical bathroom project take? Most standard updates take a few weeks, depending on the size of the room, the materials chosen, and whether the layout changes. Custom tile work or special order items can add time, so ordering early helps.",
+          "Do I need a permit for bathroom work? Cosmetic changes usually do not, but moving plumbing, altering walls, or changing electrical often does. A reliable contractor knows local requirements and handles the paperwork for you.",
+          "Can I stay in my home during the work? Yes, in most cases. If you have another bathroom, life continues fairly normally. Dust and noise are part of the process, but a tidy crew will protect floors and keep the work area contained.",
+          "Will a new bathroom add value to my home? Buyers consistently respond to clean, modern bathrooms, and a well done update is one of the more dependable improvements for resale. It also improves daily life for as long as you stay.",
+          "Should I choose a walk in shower or keep the tub? It depends on who uses the room. Families with small children often want at least one tub in the house, while others prefer the open feel and easy access of a walk in shower.",
+          "What is the best way to avoid mould after the project? Proper waterproofing and a strong exhaust fan are the two big defences. Using the fan during and after showers and wiping down wet surfaces keeps the room fresh for years.",
+        ],
+      },
+      {
+        heading: "Before You Pick Up the Phone",
+        paragraphs: [
+          "Spend a little time gathering ideas first. Save photos of rooms you love, note what annoys you about your current space, and think about how many people use the room each day. Having that clarity makes your first consultation far more productive. When you are ready to move forward, remember that Bathroom Renovation in Langley goes best when planning, design, and craftsmanship are handled by people who treat your home like their own. A little preparation now saves a lot of stress later.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: [
+          "A bathroom should be a place that makes your day easier, not harder. With thoughtful design, durable materials, and careful installation, you can turn a worn out room into a space you are proud of. If you are ready to start, the team at Ideal Bath Renovations is here to guide you through every step, from the first idea to the final finishing touch. Reach out today and take the first step toward a bathroom you will love using every single day.",
         ],
       },
     ],
+    internalLinks: [
+      { text: "Bathroom Renovation in Langley", to: "/services" },
+      { text: "bathroom remodeling in Langley, BC", to: "/services" },
+      { text: "bathroom upgrades in Langley, BC", to: "/services" },
+      { text: "walk in shower", to: "/services/shower-remodeling" },
+      { text: "curbless shower", to: "/services/shower-remodeling" },
+      { text: "Ideal Bath Renovations", to: "/contact" },
+    ],
   },
   {
-    slug: "tub-to-shower-conversion-guide",
-    title: "Tub-to-Shower Conversion: What Langley Homeowners Should Know",
-    metaTitle: "Tub-to-Shower Conversion Langley | Ideal Bath Renovations",
+    slug: "bathroom-renovation-surrey-makeover-guide",
+    title: "The Surrey Bathroom Makeover Guide That Turns a Dull Routine Into Your Favourite Part of the Day",
+    metaTitle: "Bathroom Renovation Surrey: Makeover Guide | Ideal Bath",
     metaDescription:
-      "Thinking about a tub-to-shower conversion in Langley, BC? Learn how it works, how long it takes, what it includes, and when it is the right choice for you.",
-    excerpt: "How a tub-to-shower conversion works, what it includes, and when it is a smart move.",
-    category: "Showers",
-    date: "2026-09-28",
-    readTime: "5 min read",
+      "Plan a bathroom renovation in Surrey, BC: layouts, waterproofing, storage, lighting, safety, timelines, permits and materials for comfort and lasting value.",
+    excerpt:
+      "A practical Surrey bathroom makeover guide covering layout, durable finishes, storage, lighting, safety, and what to expect during the project.",
+    category: "Bathroom Renovation",
+
+    readTime: "8 min read",
     image: img("photo-1584622650111-993a426fbf0a"),
-    intro:
-      "Replacing an old bathtub with a walk-in shower is one of the most popular bathroom projects in Langley. It improves safety, makes the room feel larger, and removes a surface that is difficult to keep clean.",
+    intro: [
+      "Walk into any home in Surrey and ask people which room they wish they could fix first. Many will point down the hall to the bathroom. It is where mornings begin and evenings wind down, yet it often ends up with the oldest tile, the dimmest light, and the most stubborn stains in the house.",
+      "The good news is that a fresh start is more reachable than most people think. Choosing Bathroom Renovation in Surrey gives you a chance to fix what annoys you every day while improving how your whole home looks and works. Whether you own a townhouse near Surrey Central or a family house in a quiet cul de sac, the right plan can make a small room feel generous and calm.",
+    ],
     sections: [
       {
-        heading: "What a conversion includes",
+        heading: "Why This Room Deserves Your Attention First",
         paragraphs: [
-          "We remove the tub and surround, check the drain and subfloor, and build a sloped waterproof base. Walls are covered in a waterproof membrane before tile is set. The project then adds a valve, shower head, niche, glass, and trim.",
-          "Most conversions take three to five working days, depending on the size of the shower and how quickly custom glass can be fitted.",
+          "Bathrooms live a harder life than any other space in your home. Hot showers fill the air with moisture, wet towels hang for hours, and cleaning products wear on finishes week after week. Surrey sees plenty of rain through the cooler months, so humidity never fully leaves the house.",
+          "That is why bathroom remodeling in Surrey, BC is about more than appearance. Hidden water damage can sit behind tile for years before anyone notices. When a room is opened up properly, you get the chance to check the walls, replace tired plumbing, and rebuild with materials meant to handle moisture.",
         ],
       },
       {
-        heading: "Walk-in shower or a tub: how to decide",
+        heading: "Little Clues Your Bathroom Is Asking for Help",
         paragraphs: [
-          "If you rarely use the tub, a walk-in shower is usually the better use of space. It is easier to enter and clean, and a clear glass panel makes small bathrooms feel more open.",
-          "If you have young children, or you enjoy soaking, keep the tub. In a home with only one bathroom, many homeowners keep it for resale or family needs.",
+          "Rooms rarely fail overnight. They send small signals first. Caulk that peels again right after you replace it, a faint musty smell that returns after cleaning, and a fan that barely stirs the air are common signs. If the floor near your tub feels soft or bouncy, moisture may already be at work below the surface.",
+          "Comfort matters just as much as repairs. If you rush through your shower because the room feels cold or cramped, or you avoid showing it to guests, that is a perfectly good reason to act. Many people who explore bathroom upgrades in Surrey, BC say they simply wanted a space that felt good to walk into.",
         ],
       },
       {
-        heading: "Options to consider",
+        heading: "Rethinking the Floor Plan",
         paragraphs: [
-          "A curbless entry removes the step and works well for ageing in place, although it requires a floor that can be recessed. Benches, niches, and linear drains are other popular choices.",
-          "Frameless glass looks open and is simple to wipe down. A shower curtain is cheaper and still works if you are on a tight budget.",
+          "Most bathrooms keep the same footprint, but smart changes can transform how the room feels. Removing a bulky tub surround and installing a frameless glass shower lets light travel across the whole space. A wall mounted vanity frees up floor area and makes cleaning far easier.",
+          "Think about who uses the room and how that may change. A busy family might want a deep tub for bath time, while a couple planning to stay long term may prefer a shower with a level entry that stays comfortable for years. A thoughtful bathroom design in Surrey, BC balances what you need now with what you may want later.",
+          "Do not forget the doorway and swing of the door. Sometimes switching to a pocket door or a sliding barn style door gives you a surprising amount of breathing room without touching a single wall.",
+        ],
+      },
+      {
+        heading: "Surfaces That Stand Up to Daily Life",
+        paragraphs: [
+          "Material choices shape both the look and the upkeep of your bathroom. Porcelain tile is a dependable favourite because it shrugs off water and wipes clean easily. Larger tiles mean fewer grout lines, and fewer grout lines mean less scrubbing.",
+          "For shower walls, quality tile systems and solid surface panels both work well when installed over a proper waterproof membrane. You will never see that layer once the job is done, but it is the quiet hero protecting your home. A careful shower renovation in Surrey, BC always starts with getting that hidden layer right.",
+          "Underfoot, consider radiant heated flooring. On a damp winter morning, a warm floor feels like a small gift. Pair it with a quiet, powerful exhaust fan that vents outdoors and you protect your comfort and your walls at the same time.",
+        ],
+      },
+      {
+        heading: "Storage and Lighting Make the Difference",
+        paragraphs: [
+          "A beautiful bathroom still frustrates if there is nowhere to put things. Built in shower niches, a tall linen cabinet, and drawers with dividers keep daily items tidy and out of sight. Even a shallow recessed cabinet behind the mirror can hold a surprising amount.",
+          "Lighting works best in layers. A single ceiling light throws shadows across your face, which is no help at the mirror. Add sconces beside the mirror, a main overhead light, and a dimmer for slow evenings. The result feels like a boutique hotel rather than a utility room.",
+          "Finally, plan for safety early. Hidden blocking inside the walls for future grab bars, slip resistant flooring, and bright task lighting are easy to include at the start and awkward to add afterward.",
+        ],
+      },
+      {
+        heading: "How a Well Organized Project Unfolds",
+        paragraphs: [
+          "A good renovation begins with listening. Your contractor should visit your home, measure carefully, ask how you use the room, and explain the options in plain language. You should leave that first meeting knowing the scope of work, the materials being considered, and a realistic timeline.",
+          "After approval, the work moves in a logical order. Old finishes come out, the structure is inspected, plumbing and electrical are updated, waterproofing is installed, and then tile, fixtures, and paint bring everything together. Older Surrey homes sometimes reveal surprises behind the walls. A trustworthy crew explains what they found and offers clear choices instead of leaving you guessing.",
+          "If you worry about disruption, talk about scheduling. Some families use a second bathroom during the work, and others plan the project around time away. Either approach works when expectations are shared.",
+        ],
+      },
+      {
+        heading: "Frequently Asked Questions",
+        paragraphs: [
+          "How long does a bathroom renovation usually take? Most projects take a few weeks. Room size, custom tile work, and special order fixtures can stretch that timeline, so ordering materials early helps.",
+          "Will I need a permit for the work? Surface updates often do not require one, but moving plumbing, changing electrical, or altering walls usually does. An experienced contractor handles the paperwork for you.",
+          "Can I live at home while the work is happening? In most cases yes, especially if you have another bathroom. A tidy crew protects floors and keeps dust contained to the work area.",
+          "Does a new bathroom help with resale? Buyers notice clean, modern bathrooms right away. A well done update is one of the more dependable ways to strengthen a home’s appeal.",
+          "Should I keep my tub or switch to a walk in shower? It depends on your household. Families with young children often want a tub somewhere in the home, while others enjoy the open feel and easy access of a walk in shower.",
+          "How can I prevent mould after the project? Good waterproofing and a strong exhaust fan are the best defences. Run the fan during and after showers and wipe down wet surfaces now and then.",
+        ],
+      },
+      {
+        heading: "Before You Make the First Call",
+        paragraphs: [
+          "Take a little time to gather ideas. Save photos of rooms you admire, write down what bothers you most about your current space, and think about how many people use it each day. That clarity makes your first conversation far more productive. When you are ready, remember that Bathroom Renovation in Surrey works best when planning, design, and craftsmanship come from a team that treats your home with real respect. A bit of preparation now saves plenty of stress later.",
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: [
+          "Your bathroom should make life easier, not harder. With thoughtful design, durable materials, and careful installation, a worn out room can become a space you enjoy every day. If you are ready to begin, the team at Ideal Bath Renovations is ready to guide you from the first idea to the final finishing touch. Reach out today and start planning a bathroom you will love.",
         ],
       },
     ],
-  },
-  {
-    slug: "do-you-need-a-permit-for-a-bathroom-renovation-in-langley",
-    title: "Do You Need a Permit for a Bathroom Renovation in Langley?",
-    metaTitle: "Bathroom Permits in Langley, BC | Ideal Bath Renovations",
-    metaDescription:
-      "Do you need a permit for a bathroom renovation in Langley, BC? Learn when plumbing and electrical work needs one, and who to contact in the City or Township.",
-    excerpt: "When a bathroom renovation needs a permit, and the difference between the City and Township of Langley.",
-    category: "Permits",
-    date: "2026-09-20",
-    readTime: "4 min read",
-    image: img("photo-1620626011761-996317b8d101"),
-    intro:
-      "Permit rules confuse many homeowners, partly because Langley has two municipalities: the City of Langley and the Township of Langley. Which one issues your permit depends on your address.",
-    sections: [
-      {
-        heading: "When a permit is usually not needed",
-        paragraphs: [
-          "Replacing finishes in the same location typically does not require a permit. That includes tile, paint, a vanity swap, or a new toilet on the existing drain.",
-        ],
-      },
-      {
-        heading: "When a permit is usually needed",
-        paragraphs: [
-          "Moving drains or supply lines, adding a new bathroom, adding electrical circuits, or altering structural walls generally require one. Your municipality can confirm the rules for your project.",
-          "Permits help make sure the work meets the BC Building Code. They also leave a record that is useful when you sell the home.",
-        ],
-      },
-      {
-        heading: "How we handle it",
-        paragraphs: [
-          "When a project needs a permit, we prepare the application, schedule the inspections, and keep the paperwork on file for you. Always check with the City of Langley or the Township of Langley for the most current requirements.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "bathroom-waterproofing-in-bc",
-    title: "Why Bathroom Waterproofing Matters in BC's Wet Climate",
-    metaTitle: "Bathroom Waterproofing in BC Homes | Ideal Bath Renovations",
-    metaDescription:
-      "Why bathroom waterproofing matters in BC. Learn how shower membranes, sloped pans, and good ventilation protect your home from leaks, mold, and damage.",
-    excerpt: "How proper waterproofing and ventilation prevent leaks, mold, and rot in West Coast bathrooms.",
-    category: "Waterproofing",
-    date: "2026-09-12",
-    readTime: "4 min read",
-    image: img("photo-1507652313519-d4e9174996dd"),
-    intro:
-      "Tile and grout are not waterproof. In a wet climate like ours, what is behind the tile decides whether a shower lasts five years or twenty-five.",
-    sections: [
-      {
-        heading: "What proper waterproofing includes",
-        paragraphs: [
-          "A good shower has a sloped base so water flows toward the drain, a continuous waterproof membrane over the floor and walls, and sealed corners and penetrations. Tile and grout are the surface, not the barrier.",
-        ],
-      },
-      {
-        heading: "Signs of a waterproofing failure",
-        paragraphs: [
-          "A musty smell, soft flooring, stained ceilings below the bathroom, tiles that move, or grout that keeps cracking can indicate that moisture is getting through. If you notice any of these, have it inspected early.",
-        ],
-      },
-      {
-        heading: "Ventilation matters too",
-        paragraphs: [
-          "Even a well-built shower needs an exhaust fan that clears humidity. Choose one sized for the room and vent it outside, not into the attic. We install and test fans as part of renovations.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "walk-in-shower-vs-bathtub",
-    title: "Walk-In Shower vs Bathtub: How to Choose for Your Bathroom",
-    metaTitle: "Walk-In Shower vs Bathtub Guide | Ideal Bath Renovations",
-    metaDescription:
-      "Walk-in shower or bathtub? Compare space, safety, cleaning, and resale to decide the right choice for your Langley, BC bathroom renovation.",
-    excerpt: "Compare space, safety, cleaning, and resale to decide between a walk-in shower and a tub.",
-    category: "Design",
-    date: "2026-09-03",
-    readTime: "4 min read",
-    image: img("photo-1584622781564-1d987f7333c1"),
-    intro:
-      "If your bathroom has room for only one, the choice between a walk-in shower and a bathtub comes down to how you actually use the space.",
-    sections: [
-      {
-        heading: "Space and layout",
-        paragraphs: [
-          "A walk-in shower uses less floor area and can feel more open with clear glass. A standard tub takes up about 5 feet of wall and is a better fit when you need a bath for children.",
-        ],
-      },
-      {
-        heading: "Safety and accessibility",
-        paragraphs: [
-          "Stepping over a tub wall is harder for older adults. A low-threshold or curbless shower with a bench and grab bars supports ageing in place.",
-        ],
-      },
-      {
-        heading: "Cleaning and resale",
-        paragraphs: [
-          "Tiled showers with fewer seams are easy to maintain. For resale, some buyers like to see at least one tub in the house, so consider keeping one in a second bathroom.",
-        ],
-      },
-    ],
-  },
-  {
-    slug: "how-to-plan-a-bathroom-remodel-budget",
-    title: "How to Plan a Bathroom Remodel Budget Without Surprises",
-    metaTitle: "Plan a Bathroom Remodel Budget | Ideal Bath Renovations",
-    metaDescription:
-      "How to plan a bathroom remodel budget in BC: decide priorities, keep your layout, set aside a contingency, and get a written quote that avoids surprises.",
-    excerpt: "Practical ways to set priorities, keep costs in check, and prepare for hidden issues.",
-    category: "Budgeting",
-    date: "2026-08-25",
-    readTime: "5 min read",
-    image: img("photo-1507089947368-19c1da9775ae"),
-    intro:
-      "Bathroom budgets go off track when scope is vague. A little planning up front makes the final number much more predictable.",
-    sections: [
-      {
-        heading: "Decide what matters most",
-        paragraphs: [
-          "List the three things you most want, such as a walk-in shower, better storage, or new tile. Put money there first, and choose simpler finishes in places you will notice less.",
-        ],
-      },
-      {
-        heading: "Keep the layout where possible",
-        paragraphs: [
-          "Moving the toilet, shower, or vanity means new drain runs and often subfloor work. Keeping fixtures in place keeps more of the budget for visible finishes.",
-        ],
-      },
-      {
-        heading: "Set aside a contingency",
-        paragraphs: [
-          "Older homes can hide rot, aged pipes, or uneven floors. A contingency fund gives you room to deal with surprises without stopping the job.",
-        ],
-      },
-      {
-        heading: "Get a written scope",
-        paragraphs: [
-          "Ask every contractor for a written quote that lists the work, materials, and allowances. It makes it easier to compare quotes and reduces disagreements later.",
-        ],
-      },
+    internalLinks: [
+      { text: "Bathroom Renovation in Surrey", to: "/services" },
+      { text: "bathroom remodeling in Surrey, BC", to: "/services" },
+      { text: "bathroom upgrades in Surrey, BC", to: "/services" },
+      { text: "bathroom design in Surrey, BC", to: "/services" },
+      { text: "shower renovation in Surrey, BC", to: "/services/shower-remodeling" },
+      { text: "walk in shower", to: "/services/shower-remodeling" },
+      { text: "Ideal Bath Renovations", to: "/contact" },
     ],
   },
 ];

@@ -1,5 +1,7 @@
 import { customVanityImg, tileSchluterImg, bathtubReplaceImg } from "../assets/images";
 
+import { GOOGLE_BUSINESS_URL } from "./ReviewsData";
+
 export interface LocalProject {
   title: string;
   neighborhood: string;
@@ -68,7 +70,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     mapQuery: "Langley+Township,+BC",
     mapEmbedUrl:
       "https://maps.google.com/maps?q=Langley%20Township,%20BC&t=&z=12&ie=UTF8&iwloc=&output=embed",
-    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    googleMapsLink: GOOGLE_BUSINESS_URL,
     coordinates: {
       lat: 49.1458,
       lng: -122.6586,
@@ -181,7 +183,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     mapQuery: "Surrey,+BC,+Canada",
     mapEmbedUrl:
       "https://maps.google.com/maps?q=Surrey,%20BC,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
-    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    googleMapsLink: GOOGLE_BUSINESS_URL,
     coordinates: {
       lat: 49.1913,
       lng: -122.849,
@@ -289,7 +291,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     mapQuery: "Abbotsford,+BC,+Canada",
     mapEmbedUrl:
       "https://maps.google.com/maps?q=Abbotsford,%20BC,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed",
-    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    googleMapsLink: GOOGLE_BUSINESS_URL,
     coordinates: {
       lat: 49.0504,
       lng: -122.3045,
@@ -371,7 +373,7 @@ export const serviceAreasData: ServiceAreaItem[] = [
     mapQuery: "Fraser+Valley,+BC,+Canada",
     mapEmbedUrl:
       "https://maps.google.com/maps?q=Fraser%20Valley,%20BC,%20Canada&t=&z=11&ie=UTF8&iwloc=&output=embed",
-    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    googleMapsLink: GOOGLE_BUSINESS_URL,
     coordinates: {
       lat: 49.1666,
       lng: -122.3,
@@ -474,7 +476,7 @@ extraAreas.forEach((a) => {
     keywords: `bathroom remodeler ${a.name} BC, bathroom renovation ${a.name}`,
     mapQuery: q,
     mapEmbedUrl: `https://maps.google.com/maps?q=${q}&t=&z=13&ie=UTF8&iwloc=&output=embed`,
-    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    googleMapsLink: GOOGLE_BUSINESS_URL,
     coordinates: { lat: a.lat, lng: a.lng },
     addressDisplay: `Serving ${a.name}, BC from Langley Township`,
     populationServed: `Bathroom remodeling in ${a.name}`,

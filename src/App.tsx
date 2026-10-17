@@ -1,7 +1,8 @@
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from "react-router-dom";
 import React, { Suspense } from "react";
-import { ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
+import { GOOGLE_REVIEWS_URL } from "./data/ReviewsData";
 import theme from "./styles/theme";
 import PageLoader from "./components/PageLoader";
 import PageWrapper from "./components/PageWrapper";
@@ -23,6 +24,51 @@ const Blog = React.lazy(() => import("./pages/Blog"));
 const BlogPost = React.lazy(() => import("./pages/BlogPost"));
 const SitemapPage = React.lazy(() => import("./pages/SitemapPage"));
 
+const FloatingReviewsLink: React.FC = () => (
+  <Box
+    component="a"
+    href={GOOGLE_REVIEWS_URL}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Read Ideal Bath Renovations reviews on Google"
+    sx={{
+      position: "fixed",
+      left: { xs: 12, sm: 16 },
+      bottom: { xs: 12, sm: 16 },
+      zIndex: 1200,
+      display: "inline-flex",
+      alignItems: "center",
+      gap: 1.2,
+      px: { xs: 1.8, sm: 2 },
+      py: 1.35,
+      borderRadius: "12px",
+      backgroundColor: "#fff",
+      color: "#202124",
+      boxShadow: "0 4px 18px rgba(0,0,0,0.24)",
+      fontSize: { xs: "13px", sm: "14px" },
+      fontWeight: 600,
+      textDecoration: "none",
+      whiteSpace: "nowrap",
+      transition: "transform 0.2s, box-shadow 0.2s",
+      "&:hover": {
+        transform: "translateY(-2px)",
+        boxShadow: "0 7px 22px rgba(0,0,0,0.28)",
+      },
+      "&:focus-visible": { outline: "3px solid #4285f4", outlineOffset: 3 },
+    }}
+  >
+    <span>Read reviews on</span>
+    <span aria-hidden="true" style={{ fontSize: "20px", fontWeight: 600, letterSpacing: "-1px" }}>
+      <span style={{ color: "#4285f4" }}>G</span>
+      <span style={{ color: "#ea4335" }}>o</span>
+      <span style={{ color: "#fbbc05" }}>o</span>
+      <span style={{ color: "#4285f4" }}>g</span>
+      <span style={{ color: "#34a853" }}>l</span>
+      <span style={{ color: "#ea4335" }}>e</span>
+    </span>
+  </Box>
+);
+
 const LegacyServiceAreaRedirect: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const area = slug ? getServiceAreaBySlug(slug) : undefined;
@@ -35,6 +81,7 @@ const App: React.FC = () => {
       <Router>
         <ScrollToTop />
         <NavBar />
+        <FloatingReviewsLink />
         <main>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader message="Loading page..." />}>

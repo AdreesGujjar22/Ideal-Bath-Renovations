@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { Star, Quote, CheckCircle, MapPin } from "lucide-react";
+import { Star } from "lucide-react";
 import { reviews } from "../../data/ReviewsData";
 
 
@@ -33,7 +33,7 @@ const Feedback: React.FC = () => {
               color: "#0f172a",
             }}
           >
-            What Langley Homeowners Say
+            What Our Customers Say
           </Typography>
         </Box>
 
@@ -60,12 +60,17 @@ const Feedback: React.FC = () => {
               >
                 <Box>
                   <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2 }}>
-                    <Box sx={{ display: "flex", color: "#f59e0b" }}>
+                    <Box sx={{ display: "flex", alignItems: "center", color: "#f59e0b" }}>
                       {[...Array(rev.stars)].map((_, i) => (
                         <Star key={i} size={17} fill="#f59e0b" stroke="none" />
                       ))}
                     </Box>
-                    <Quote size={20} color="#cbd5e1" />
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
+                      <Typography sx={{ fontSize: "12px", color: "#64748b" }}>{rev.date}</Typography>
+                      <Typography sx={{ fontSize: "10px", fontWeight: 700, color: "#334155", border: "1px solid #cbd5e1", borderRadius: "3px", px: 0.6, py: 0.1 }}>
+                        NEW
+                      </Typography>
+                    </Box>
                   </Box>
 
                   <Typography
@@ -73,11 +78,11 @@ const Feedback: React.FC = () => {
                       fontSize: "13.5px",
                       color: "#475569",
                       lineHeight: 1.7,
-                      fontStyle: "italic",
+
                       mb: 3,
                     }}
                   >
-                    "{rev.comment}"
+                    {rev.comment}
                   </Typography>
                 </Box>
 
@@ -85,18 +90,19 @@ const Feedback: React.FC = () => {
                   <Typography sx={{ fontWeight: 700, fontSize: "15px", color: "#0f172a" }}>
                     {rev.name}
                   </Typography>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, mt: 0.2 }}>
-                    <MapPin size={13} color="#64748b" />
-                    <Typography sx={{ fontSize: "12.5px", color: "#64748b" }}>
-                      {rev.location}
-                    </Typography>
-                  </Box>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 0.8, mt: 0.5 }}>
-                    <CheckCircle size={13} color="#c29b38" />
-                    <Typography sx={{ fontSize: "11.5px", color: "#c29b38", fontWeight: 600 }}>
-                      {rev.project}
-                    </Typography>
-                  </Box>
+                  <Typography sx={{ fontSize: "12.5px", color: "#64748b", mt: 0.2 }}>
+                    {rev.profileDetails}
+                  </Typography>
+                  {rev.context && (
+                    <Box sx={{ mt: 1.5, pt: 1.2, borderTop: "1px solid #e2e8f0" }}>
+                      <Typography sx={{ fontSize: "12px", fontWeight: 700, color: "#0f172a" }}>
+                        {rev.context.label}
+                      </Typography>
+                      <Typography sx={{ fontSize: "12px", color: "#475569" }}>
+                        {rev.context.value}
+                      </Typography>
+                    </Box>
+                  )}
                 </Box>
               </Box>
             </Grid>

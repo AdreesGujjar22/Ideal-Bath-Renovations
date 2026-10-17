@@ -1,5 +1,5 @@
 import React from "react";
-import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../data/ReviewsData";
+import { GOOGLE_BUSINESS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../data/ReviewsData";
 import { useParams } from "react-router-dom";
 import {
   Box,
@@ -193,7 +193,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                   rating={GOOGLE_RATING}
                   reviewsCount={GOOGLE_REVIEW_COUNT}
                   mapQuery="Langley+Township,+BC"
-                  googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                  googleMapsLink={GOOGLE_BUSINESS_URL}
                   directionsQuery="Langley+Township,+BC"
                   bottomLabel={`IDEAL BATH • ${service.title} in Langley, BC`}
                   height={380}

@@ -70,13 +70,17 @@ const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
           })),
         ],
         hasMap: area.googleMapsLink,
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5.0",
-          reviewCount: "28",
-          bestRating: "5",
-          worstRating: "1",
-        },
+        ...(GOOGLE_RATING !== null && GOOGLE_REVIEW_COUNT !== null
+          ? {
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: GOOGLE_RATING,
+                reviewCount: GOOGLE_REVIEW_COUNT,
+                bestRating: 5,
+                worstRating: 1,
+              },
+            }
+          : {}),
       },
       {
         "@type": "BreadcrumbList",

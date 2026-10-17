@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
 import { serviceAreasData, getServiceAreaPath } from "../data/ServiceAreasData";
 import { MapPin, Phone, Mail, Clock, ExternalLink, Star } from "lucide-react";
+import { GOOGLE_BUSINESS_URL } from "../data/ReviewsData";
 
 const Footer: React.FC = () => {
   return (
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
               >
                 <Box
                   component="a"
-                  href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                  href={GOOGLE_BUSINESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -96,7 +97,7 @@ const Footer: React.FC = () => {
 
                 <Box
                   component="a"
-                  href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                  href={GOOGLE_BUSINESS_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -235,7 +236,7 @@ const Footer: React.FC = () => {
             <Box sx={{ pt: 2, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
               <Box
                 component="a"
-                href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                href={GOOGLE_BUSINESS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -276,6 +277,31 @@ const Footer: React.FC = () => {
             <Typography sx={{ fontSize: "12px", color: "#64748b" }}>
               © 2026 Ideal Bath Renovations. All rights reserved.
             </Typography>
+          </Box>
+          <Box
+            component="a"
+            href="https://www.metrovalleydigital.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 0.8,
+              color: "#94a3b8",
+              textDecoration: "none",
+              fontSize: "12px",
+              whiteSpace: "nowrap",
+              "&:hover": { color: "#fff" },
+            }}
+          >
+            <span>Powered by</span>
+            <Box
+              component="img"
+              src="/developer_site_logo.png"
+              alt=""
+              sx={{ width: 20, height: 26, objectFit: "contain" }}
+            />
+            <span>Metro Valley Digital</span>
           </Box>
           <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
             <Link to="/about" style={{ color: "#64748b", textDecoration: "none" }}>About</Link>

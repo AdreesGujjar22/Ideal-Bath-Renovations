@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Typography, IconButton, Tooltip } from "@mui/material";
+import { GOOGLE_BUSINESS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../../data/ReviewsData";
 import {
   ExternalLink,
   Navigation,
@@ -27,10 +28,10 @@ interface GoogleMapEmbedProps {
 const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
   businessName = "IDEAL BATH RENOVATIONS",
   address = "Serving Langley Township, BC",
-  rating = null,
-  reviewsCount = null,
+  rating = GOOGLE_RATING,
+  reviewsCount = GOOGLE_REVIEW_COUNT,
   mapQuery = "Langley+Township,+BC",
-  googleMapsLink = "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+  googleMapsLink = GOOGLE_BUSINESS_URL,
   directionsQuery = "Langley+Township,+BC",
   bottomLabel = "IDEAL BATH RENOVATIONS • Serving Langley Township, BC",
   height = 460,
@@ -144,7 +145,7 @@ const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
                         fontWeight: 500,
                       }}
                     >
-                      ({reviewsCount})
+                      ({reviewsCount} reviews)
                     </Typography>
                   )}
                 </>

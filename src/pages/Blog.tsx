@@ -11,8 +11,8 @@ import { buildMetaTitle, SITE_URL } from "../data/SeoContent";
 const Blog: React.FC = () => (
   <>
     <SEO
-      title={buildMetaTitle("Bathroom Remodeling Blog Langley")}
-      description="Bathroom remodeling tips from Ideal Bath Renovations in Langley, BC: timelines, permits, waterproofing, shower conversions, and budgeting advice."
+      title={buildMetaTitle("Bathroom Renovation Blog")}
+      description="Bathroom renovation guidance for homeowners in Langley and Surrey, BC, with practical advice on layouts, waterproofing, materials, lighting, and planning."
       canonical={`${SITE_URL}/blog`}
     />
     <Breadcrumbs currentLabel="Blog" />
@@ -23,10 +23,10 @@ const Blog: React.FC = () => (
           variant="h1"
           sx={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: { xs: "32px", md: "46px" }, fontWeight: 800, lineHeight: 1.15, mb: 2 }}
         >
-          Bathroom Remodeling Blog for Langley, BC
+          Bathroom Renovation Guides for Langley &amp; Surrey
         </Typography>
         <Typography sx={{ color: "#cbd5e1", fontSize: { xs: "16px", md: "18px" }, maxWidth: 720, mx: "auto" }}>
-          Practical advice from a Langley bathroom remodeler on planning, permits, showers, waterproofing, and budgets.
+          Helpful bathroom renovation advice for homeowners in Langley and Surrey, from layout planning and waterproofing to materials, lighting, and project timelines.
         </Typography>
       </Container>
     </Box>

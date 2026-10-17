@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
+import { GOOGLE_BUSINESS_URL } from "../../data/ReviewsData";
 import { Box, Typography, Stack, Container, Select, MenuItem, Alert } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import PrimaryInputField from "../UI/PrimaryInputField";
@@ -294,7 +295,7 @@ const ContactUs: React.FC = () => {
                       </Typography>
                       <Box
                         component="a"
-                        href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                        href={GOOGLE_BUSINESS_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         sx={{

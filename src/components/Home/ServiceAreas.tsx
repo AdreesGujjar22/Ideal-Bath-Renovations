@@ -1,5 +1,5 @@
 import React from "react";
-import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../../data/ReviewsData";
+import { GOOGLE_BUSINESS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../../data/ReviewsData";
 import { Box, Typography, Container } from "@mui/material";
 import { MapPin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -124,7 +124,7 @@ const ServiceAreas: React.FC = () => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexShrink: 0 }}>
               <Box
                 component="a"
-                href="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+                href={GOOGLE_BUSINESS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -158,7 +158,7 @@ const ServiceAreas: React.FC = () => {
             rating={GOOGLE_RATING}
             reviewsCount={GOOGLE_REVIEW_COUNT}
             mapQuery="Langley Township, BC"
-            googleMapsLink="https://maps.app.goo.gl/AyGKysqniA1hfoGJA"
+            googleMapsLink={GOOGLE_BUSINESS_URL}
             directionsQuery="Langley Township, BC"
             bottomLabel="IDEAL BATH RENOVATIONS • Serving Langley Township, BC"
             height={480}
