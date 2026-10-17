@@ -19,6 +19,8 @@ const ServiceAreaDetail = React.lazy(() => import("./pages/ServiceAreaDetail"));
 const BeforeAfter = React.lazy(() => import("./pages/BeforeAfter"));
 const Reviews = React.lazy(() => import("./pages/Reviews"));
 const Contact = React.lazy(() => import("./pages/Contact"));
+const Blog = React.lazy(() => import("./pages/Blog"));
+const BlogPost = React.lazy(() => import("./pages/BlogPost"));
 const SitemapPage = React.lazy(() => import("./pages/SitemapPage"));
 
 const LegacyServiceAreaRedirect: React.FC = () => {
@@ -106,6 +108,8 @@ const App: React.FC = () => {
                   </PageWrapper>
                 }
               />
+              <Route path="/blog" element={<PageWrapper title="Blog"><Blog /></PageWrapper>} />
+              <Route path="/blog/:slug" element={<PageWrapper title="Blog Article"><BlogPost /></PageWrapper>} />
               <Route path="/testimonials" element={<Navigate to="/reviews" replace />} />
               <Route
                 path="/contact"

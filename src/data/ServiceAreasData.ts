@@ -456,6 +456,38 @@ export const serviceAreasData: ServiceAreaItem[] = [
   },
 ];
 
+
+const extraAreas: { slug: string; name: string; lat: number; lng: number; neighborhoods: string[] }[] = [{"slug": "chilliwack", "name": "Chilliwack", "lat": 49.1579, "lng": -121.9514, "neighborhoods": ["Sardis", "Vedder", "Promontory", "Garrison Crossing", "Rosedale", "Yarrow", "Greendale"]}, {"slug": "mission", "name": "Mission", "lat": 49.1337, "lng": -122.3026, "neighborhoods": ["Hatzic", "Silverdale", "Cedar Valley", "Stave Falls", "Dewdney", "Durieu", "Mission Downtown"]}, {"slug": "hope", "name": "Hope", "lat": 49.3858, "lng": -121.4419, "neighborhoods": ["Downtown Hope", "Silver Creek", "Flood", "Laidlaw", "Yale", "Othello"]}, {"slug": "cloverdale", "name": "Cloverdale", "lat": 49.105, "lng": -122.735, "neighborhoods": ["Cloverdale Town Centre", "Clayton", "Clayton Heights", "Hazelmere", "Kensington Prairie"]}, {"slug": "white-rock", "name": "White Rock", "lat": 49.0253, "lng": -122.8026, "neighborhoods": ["Uptown White Rock", "West Beach", "East Beach", "Marine Drive", "Hillside"]}, {"slug": "maple-ridge", "name": "Maple Ridge", "lat": 49.2194, "lng": -122.5984, "neighborhoods": ["Albion", "Haney", "Thornhill", "Websters Corners", "Whonnock", "Silver Valley", "Hammond"]}, {"slug": "walnut-grove", "name": "Walnut Grove", "lat": 49.1717, "lng": -122.6366, "neighborhoods": ["Walnut Grove Village", "Eagle Ridge", "Carvolth", "Fernridge"]}, {"slug": "willoughby", "name": "Willoughby", "lat": 49.1189, "lng": -122.6736, "neighborhoods": ["Willoughby Heights", "Yorkson", "Latimer Heights", "Willoughby Town Centre"]}, {"slug": "coquitlam", "name": "Coquitlam", "lat": 49.2838, "lng": -122.7932, "neighborhoods": ["Burke Mountain", "Maillardville", "Westwood Plateau", "Austin Heights", "Coquitlam Town Centre", "Ranch Park"]}, {"slug": "delta", "name": "Delta", "lat": 49.0847, "lng": -123.0587, "neighborhoods": ["Ladner", "Tsawwassen", "North Delta", "Sunshine Hills", "Boundary Bay", "Annieville"]}];
+
+extraAreas.forEach((a) => {
+  const q = encodeURIComponent(`${a.name}, BC, Canada`);
+  serviceAreasData.push({
+    id: a.slug,
+    slug: a.slug,
+    name: `${a.name}, BC`,
+    shortName: a.name,
+    badge: "Bathroom Remodeler",
+    headline: `Bathroom Remodeler in ${a.name}, BC`,
+    subheadline: "",
+    metaTitle: "",
+    metaDescription: "",
+    keywords: `bathroom remodeler ${a.name} BC, bathroom renovation ${a.name}`,
+    mapQuery: q,
+    mapEmbedUrl: `https://maps.google.com/maps?q=${q}&t=&z=13&ie=UTF8&iwloc=&output=embed`,
+    googleMapsLink: "https://maps.app.goo.gl/AyGKysqniA1hfoGJA",
+    coordinates: { lat: a.lat, lng: a.lng },
+    addressDisplay: `Serving ${a.name}, BC from Langley Township`,
+    populationServed: `Bathroom remodeling in ${a.name}`,
+    description: `Bathroom renovation, shower remodeling, tile, and vanity installation in ${a.name}, BC.`,
+    overviewText: "",
+    neighborhoods: a.neighborhoods,
+    localHighlights: [],
+    localProjects: [],
+    localFaqs: [],
+    testimonial: { quote: "", author: "", neighborhood: "", rating: 5, projectType: "" },
+  });
+});
+
 export const getServiceAreaPath = (area: ServiceAreaItem): string =>
   `/bathroom-remodeling-${area.slug.replace(/-twp$/, "")}`;
 

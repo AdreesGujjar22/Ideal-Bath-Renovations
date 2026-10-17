@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Container, Stack, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Link } from "react-router-dom";
+import { serviceAreasData, getServiceAreaPath } from "../data/ServiceAreasData";
 import { MapPin, Phone, Mail, Clock, ExternalLink, Star } from "lucide-react";
 
 const Footer: React.FC = () => {
@@ -167,6 +168,7 @@ const Footer: React.FC = () => {
                 { label: "Renovation Services", path: "/services" },
                 { label: "Before & After Gallery", path: "/before-after" },
                 { label: "Client Reviews", path: "/reviews" },
+                { label: "Blog", path: "/blog" },
                 { label: "About Us", path: "/about" },
                 { label: "Contact & Free Quote", path: "/contact" },
               ].map((link, idx) => (
@@ -208,12 +210,7 @@ const Footer: React.FC = () => {
               Service Areas
             </Typography>
             <Stack spacing={1.3} sx={{ mb: 3 }}>
-              {[
-                { name: "Langley Twp HQ", path: "/bathroom-remodeling-langley" },
-                { name: "Surrey, BC", path: "/bathroom-remodeling-surrey" },
-                { name: "Abbotsford, BC", path: "/bathroom-remodeling-abbotsford" },
-                { name: "Fraser Valley", path: "/bathroom-remodeling-fraser-valley" },
-              ].map((area, idx) => (
+              {[...serviceAreasData.map((a) => ({ name: a.shortName === "Langley Twp" ? "Langley Twp HQ" : a.shortName, path: getServiceAreaPath(a) }))].map((area, idx) => (
                 <Link
                   key={idx}
                   to={area.path}
