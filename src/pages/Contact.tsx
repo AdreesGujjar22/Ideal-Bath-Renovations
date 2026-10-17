@@ -10,8 +10,8 @@ const Contact: React.FC = () => {
   return (
     <>
       <SEO
-        title="Contact Us in Langley, BC - Ideal Bath Renovations"
-        description="Contact Ideal Bath Renovations for bathroom remodeling in Langley, BC, shower conversions, and a free estimate. - Ideal Bath Renovations"
+        title="Contact Bathroom Remodeler Langley | Ideal Bath Renovations"
+        description="Contact Ideal Bath Renovations, your Langley, BC bathroom remodeler. Call (672) 273-0434 or send a request for a free in-home bathroom renovation quote."
         canonical="https://www.idealbathrenovations.ca/contact"
         keywords="Contact Ideal Bath Renovations, Bathroom Remodel Quote Langley, Bathroom Estimate Fraser Valley BC"
       />

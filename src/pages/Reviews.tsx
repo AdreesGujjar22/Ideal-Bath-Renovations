@@ -7,8 +7,8 @@ const Reviews: React.FC = () => {
   return (
     <>
       <SEO
-        title="Bathroom Reviews in Langley, BC - Ideal Bath Renovations"
-        description="Bathroom remodeling reviews in Langley, BC show careful workmanship, clear quotes, and quality finishes. - Ideal Bath Renovations"
+        title="Bathroom Remodeler Reviews Langley | Ideal Bath Renovations"
+        description="Read reviews of Ideal Bath Renovations, a bathroom remodeler in Langley, BC. See what homeowners say about our renovations, showers, and tile work."
         canonical="https://www.idealbathrenovations.ca/reviews"
       />
       <PrimaryBanner

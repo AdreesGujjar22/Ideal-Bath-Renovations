@@ -3,6 +3,7 @@ import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Phone, Mail, MapPin, Sparkles } from "lucide-react";
 import EstimateForm from "./EstimateForm";
+import { homeSeo } from "../../data/SeoContent";
 
 const CTAQuoteSection: React.FC = () => {
   return (
@@ -41,7 +42,7 @@ const CTAQuoteSection: React.FC = () => {
               mb: 2,
             }}
           >
-            Request a Bathroom Renovation Quote in Langley
+            {homeSeo.ctaHeading}
           </Typography>
 
           <Typography
@@ -53,7 +54,7 @@ const CTAQuoteSection: React.FC = () => {
               lineHeight: 1.7,
             }}
           >
-            Schedule a free in-home consultation and receive a written quote.
+            {homeSeo.ctaIntro}
           </Typography>
         </Box>
 
