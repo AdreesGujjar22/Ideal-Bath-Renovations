@@ -209,10 +209,10 @@ const Footer: React.FC = () => {
             </Typography>
             <Stack spacing={1.3} sx={{ mb: 3 }}>
               {[
-                { name: "Langley Twp HQ", path: "/service-areas/langley-twp" },
-                { name: "Surrey, BC", path: "/service-areas/surrey" },
-                { name: "Abbotsford, BC", path: "/service-areas/abbotsford" },
-                { name: "Fraser Valley", path: "/service-areas/fraser-valley" },
+                { name: "Langley Twp HQ", path: "/bathroom-remodeling-langley" },
+                { name: "Surrey, BC", path: "/bathroom-remodeling-surrey" },
+                { name: "Abbotsford, BC", path: "/bathroom-remodeling-abbotsford" },
+                { name: "Fraser Valley", path: "/bathroom-remodeling-fraser-valley" },
               ].map((area, idx) => (
                 <Link
                   key={idx}

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams, Navigate, Link } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -25,7 +25,7 @@ import {
   Home,
   Navigation,
 } from "lucide-react";
-import { getServiceAreaBySlug, serviceAreasData } from "../data/ServiceAreasData";
+import { getServiceAreaBySlug, getServiceAreaPath, serviceAreasData } from "../data/ServiceAreasData";
 import SEO from "../components/SEO";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
@@ -36,31 +36,30 @@ const serviceAreaSeoMetadata: Record<string, { title: string; description: strin
     title: "Langley Baths in Langley, BC - Ideal Bath Renovations",
     description:
       "Langley bathroom remodeling from our local team includes shower conversions, custom vanities, and tile work. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling Experts Serving Langley Township",
+    h1: "Langley Township to Langley BC",
   },
   surrey: {
     title: "Surrey Baths in Langley, BC - Ideal Bath Renovations",
     description:
       "Surrey bathroom remodeling includes shower conversions, custom vanities, and tile work from a local team. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations for Surrey Homes",
+    h1: "Langley Township to Langley BC",
   },
   abbotsford: {
     title: "Abbotsford Baths in Langley, BC - Ideal Bath Renovations",
     description:
       "Abbotsford bathroom remodeling includes layouts, shower upgrades, custom vanities, and durable tile installation. Request a quote. - Ideal Bath Renovations",
-    h1: "Bathroom Remodeling for Abbotsford Homes",
+    h1: "Langley Township to Langley BC",
   },
   "fraser-valley": {
     title: "Fraser Valley Baths in Langley, BC - Ideal Bath Renovations",
     description:
       "Fraser Valley bathroom remodeling covers renovations, shower conversions, tile, and custom vanities. Free estimate. - Ideal Bath Renovations",
-    h1: "Bathroom Renovations Across the Fraser Valley",
+    h1: "Langley Township to Langley BC",
   },
 };
 
-const ServiceAreaDetail: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const area = slug ? getServiceAreaBySlug(slug) : undefined;
+const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
+  const area = getServiceAreaBySlug(slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -79,9 +78,9 @@ const ServiceAreaDetail: React.FC = () => {
     "@graph": [
       {
         "@type": "HomeAndConstructionBusiness",
-        "@id": `https://www.idealbathrenovations.ca/service-areas/${area.slug}#business`,
+        "@id": `https://www.idealbathrenovations.ca${getServiceAreaPath(area)}#business`,
         name: `Ideal Bath Renovations - ${area.name}`,
-        url: `https://www.idealbathrenovations.ca/service-areas/${area.slug}`,
+        url: `https://www.idealbathrenovations.ca${getServiceAreaPath(area)}`,
         logo: "https://www.idealbathrenovations.ca/logo.png",
         image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
         description: area.metaDescription,
@@ -139,7 +138,7 @@ const ServiceAreaDetail: React.FC = () => {
             "@type": "ListItem",
             position: 3,
             name: area.name,
-            item: `https://www.idealbathrenovations.ca/service-areas/${area.slug}`,
+            item: `https://www.idealbathrenovations.ca${getServiceAreaPath(area)}`,
           },
         ],
       },
@@ -162,7 +161,7 @@ const ServiceAreaDetail: React.FC = () => {
       <SEO
         title={metadata.title}
         description={metadata.description}
-        canonical={`https://www.idealbathrenovations.ca/service-areas/${area.slug}`}
+        canonical={`https://www.idealbathrenovations.ca${getServiceAreaPath(area)}`}
         keywords={area.keywords}
       />
 
@@ -818,7 +817,7 @@ const ServiceAreaDetail: React.FC = () => {
               <Grid size={{ xs: 12, sm: 4 }} key={other.id}>
                 <Box
                   component={Link}
-                  to={`/service-areas/${other.slug}`}
+                  to={getServiceAreaPath(other)}
                   sx={{
                     p: 2.5,
                     backgroundColor: "#ffffff",

@@ -38,7 +38,6 @@ export interface ServiceDetailItem {
   warranty: string;
   badge: string;
   overview: string;
-  detailedParagraphs: string[];
   keyBenefits: { title: string; desc: string }[];
   inclusions: string[];
   processSteps: ProcessStep[];
@@ -64,11 +63,7 @@ export const servicesDetailList: ServiceDetailItem[] = [
     warranty: "Lifetime Schluter® Waterproofing + 5-Yr Workmanship Guarantee",
     badge: "Most Comprehensive Solution",
     overview:
-      "We manage the full bathroom remodel, from in-home design and demolition to plumbing, tile, vanities, and glass installation.",
-    detailedParagraphs: [
-      "We can update an outdated layout, replace worn fixtures, and improve storage or ventilation.",
-      "A dedicated project manager coordinates the work, and Schluter® waterproof membranes are installed behind wet areas.",
-    ],
+      "Ideal Bath Renovations delivers complete bathroom remodeling in Langley, from design to finish. Whether you need bathroom repair, fixture installation, or tub and shower replacement, our local team handles every detail with care, so your updated space looks great, works well, and lasts for years.",
     keyBenefits: [
       {
         title: "Strong Resale Value in Langley",
@@ -175,10 +170,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Complete Renovation",
     overview:
       "We update family bathrooms, ensuites, and basement baths with durable materials, practical storage, and a layout that fits your home.",
-    detailedParagraphs: [
-      "We coordinate material selection, layout planning, and the trades needed for the renovation.",
-      "Licensed trades handle plumbing and electrical updates, with Schluter® waterproofing behind wet walls.",
-    ],
     keyBenefits: [
       {
         title: "Licensed Local Trades",
@@ -285,10 +276,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Fast & Reliable",
     overview:
       "We diagnose and repair moisture problems, plumbing leaks, and damaged bathroom surfaces before they grow.",
-    detailedParagraphs: [
-      "Leaks can start behind tile, under tub drains, or around cracked grout. We look for the source before repairing the visible damage.",
-      "Repairs may include subflooring, moisture barriers, replacement tile, and fixtures.",
-    ],
     keyBenefits: [
       {
         title: "Accurate Problem Diagnosis",
@@ -390,10 +377,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Modern Upgrade",
     overview:
       "We replace worn, damaged, or leaking tubs, showers, vanities, and toilets with durable modern fixtures.",
-    detailedParagraphs: [
-      "A focused replacement can refresh a bathroom without the timeline of a full structural remodel.",
-      "We check the subfloor, update plumbing where needed, and install water-efficient fixtures.",
-    ],
     keyBenefits: [
       {
         title: "Thorough Stud-Level Inspection",
@@ -500,10 +483,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "New Construction",
     overview:
       "We build new bathrooms in ensuites, unused rooms, basement suites, and home additions—from framing through fixtures.",
-    detailedParagraphs: [
-      "We coordinate basement drainage, venting, electrical circuits, framing, and finishes as one project.",
-      "We work within local bylaws and coordinate required inspections for the new bathroom.",
-    ],
     keyBenefits: [
       {
         title: "Complete New Construction",
@@ -610,10 +589,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Layout & Planning",
     overview:
       "We create practical bathroom layouts around your routine, storage needs, and preferred finishes.",
-    detailedParagraphs: [
-      "We help plan vanity sizes, shower niches, storage, and lighting for the way you use the room.",
-      "Our plans account for plumbing, structure, budget, and the work required to build them.",
-    ],
     keyBenefits: [
       {
         title: "Practical Everyday Functionality",
@@ -715,10 +690,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Quick Turnaround",
     overview:
       "Update a bathroom without a full gut remodel with options such as a new vanity, frameless glass, lighting, or ventilation.",
-    detailedParagraphs: [
-      "Replacing an old vanity, exhaust fan, or shower enclosure can improve the room without a full rebuild.",
-      "Targeted upgrades usually mean less disruption and a shorter on-site schedule.",
-    ],
     keyBenefits: [
       {
         title: "High Impact with Low Disruption",
@@ -820,10 +791,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Structural Restoration",
     overview:
       "We repair water-damaged framing, remove compromised materials, and rebuild bathrooms with certified waterproofing.",
-    detailedParagraphs: [
-      "We open affected areas to find the leak, dry the space, and replace damaged structural materials.",
-      "Once the framing is sound and dry, we rebuild with Schluter® KERDI waterproofing and new finishes.",
-    ],
     keyBenefits: [
       {
         title: "Safe Moisture Remediation",
@@ -925,10 +892,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Most Requested Service",
     overview:
       "We replace outdated tubs and shower stalls with walk-in showers, curbless entries, and certified waterproofing systems.",
-    detailedParagraphs: [
-      "A walk-in shower can improve daily access and comfort. Options include tile niches, benches, and frameless glass.",
-      "Schluter® waterproofing is installed behind the tile to help keep the shower assembly dry.",
-    ],
     keyBenefits: [
       {
         title: "Schluter® Certified Waterproofing",
@@ -1035,10 +998,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Popular Tub Upgrade",
     overview:
       "We replace chipped, stained, or hard-to-clean tubs with freestanding soakers or deep acrylic alcove bathtubs.",
-    detailedParagraphs: [
-      "We handle plumbing connections, leveling, and surrounding tile work for alcove and freestanding tubs.",
-      "We inspect the subfloor and install the waste and overflow assembly before testing the finished tub.",
-    ],
     keyBenefits: [
       {
         title: "Proper Subfloor Support",
@@ -1140,10 +1099,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Master Craftsmanship",
     overview:
       "We install porcelain, ceramic, natural stone, and mosaic tile with careful layout and certified waterproofing in wet areas.",
-    detailedParagraphs: [
-      "We plan layout lines, balance corner cuts, and use leveling systems for an even finish.",
-      "Uncoupling membranes and waterproof substrates help protect tile and wet walls.",
-    ],
     keyBenefits: [
       {
         title: "Master Tile Craftsmanship",
@@ -1245,10 +1200,6 @@ export const servicesDetailList: ServiceDetailItem[] = [
     badge: "Storage & Style",
     overview:
       "We install freestanding and floating vanities with quartz countertops, undermount sinks, and modern faucets.",
-    detailedParagraphs: [
-      "We level and anchor the cabinet, then adapt plumbing to fit the new drawer layout.",
-      "Choose a single, double, or floating vanity based on your space and storage needs.",
-    ],
     keyBenefits: [
       {
         title: "Solid Anchoring & Leveling",

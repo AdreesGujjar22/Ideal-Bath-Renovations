@@ -27,7 +27,7 @@ import {
   Calculator,
   Hammer,
   HelpCircle,
-  Layers,
+
   Wrench,
 } from "lucide-react";
 
@@ -40,7 +40,7 @@ const serviceSeoMetadata: Record<string, { title: string; description: string; h
     title: "Bathroom Remodeling in Langley, BC - Ideal Bath Renovations",
     description:
       "Bathroom remodeling in Langley, BC with 3D planning, custom layouts, waterproofing, and expert project coordination. Request a quote. - Ideal Bath Renovations",
-    h1: "Complete Bathroom Remodeling in Langley",
+    h1: "Complete Bathroom Remodeling in Langley, BC",
   },
   "bathroom-renovation": {
     title: "Bathroom Renovation in Langley, BC - Ideal Bath Renovations",
@@ -344,12 +344,6 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 <Typography sx={{ fontSize: "16px", color: "#334155", lineHeight: 1.8, mb: 2.5, fontWeight: 500 }}>
                   {service.overview}
                 </Typography>
-
-                {service.detailedParagraphs.map((para, idx) => (
-                  <Typography key={idx} sx={{ fontSize: "15px", color: "#475569", lineHeight: 1.8, mb: 2 }}>
-                    {para}
-                  </Typography>
-                ))}
               </Box>
 
               {/* Key Benefits Grid */}
@@ -398,48 +392,6 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                     </Grid>
                   ))}
                 </Grid>
-              </Box>
-
-              {/* Scope of Work & What's Included */}
-              <Box sx={{ mb: 7 }}>
-                <Paper
-                  elevation={0}
-                  sx={{
-                    p: { xs: 3.5, sm: 5 },
-                    borderRadius: "16px",
-                    backgroundColor: "#ffffff",
-                    border: "1px solid #e2e8f0",
-                  }}
-                >
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mb: 2 }}>
-                    <Layers size={20} color="#c29b38" />
-                    <Typography
-                      variant="h3"
-                      sx={{
-                        fontFamily: "'Plus Jakarta Sans', sans-serif",
-                        fontSize: { xs: "20px", sm: "24px" },
-                        fontWeight: 800,
-                        color: "#0f172a",
-                      }}
-                    >
-                      Scope of Work & Inclusions
-                    </Typography>
-                  </Box>
-                  <Typography sx={{ fontSize: "14px", color: "#64748b", mb: 3 }}>
-                    Your {service.title} quote outlines the materials, labor, permits, and waterproofing work included:
-                  </Typography>
-
-                  <Box sx={{ display: "flex", flexDirection: "column", gap: 1.8 }}>
-                    {service.inclusions.map((inc, idx) => (
-                      <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                        <CheckCircle2 size={18} color="#15803d" style={{ flexShrink: 0, marginTop: "2px" }} />
-                        <Typography sx={{ fontSize: "14px", color: "#334155", lineHeight: 1.5, fontWeight: 500 }}>
-                          {inc}
-                        </Typography>
-                      </Box>
-                    ))}
-                  </Box>
-                </Paper>
               </Box>
 
               {/* Step-by-Step Renovation Process */}

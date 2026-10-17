@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import { MapPin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-import { serviceAreasData } from "../../data/ServiceAreasData";
+import { getServiceAreaPath, serviceAreasData } from "../../data/ServiceAreasData";
 import GoogleMapEmbed from "../UI/GoogleMapEmbed";
 
 const ServiceAreas: React.FC = () => {
@@ -51,7 +51,7 @@ const ServiceAreas: React.FC = () => {
               <Box
                 key={area.id}
                 component={Link}
-                to={`/service-areas/${area.slug}`}
+                to={getServiceAreaPath(area)}
                 sx={{
                   display: "inline-flex",
                   alignItems: "center",

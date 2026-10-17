@@ -456,10 +456,17 @@ export const serviceAreasData: ServiceAreaItem[] = [
   },
 ];
 
+export const getServiceAreaPath = (area: ServiceAreaItem): string =>
+  `/bathroom-remodeling-${area.slug.replace(/-twp$/, "")}`;
+
 export const getServiceAreaBySlug = (slug: string): ServiceAreaItem | undefined => {
   const normalized = slug.toLowerCase().trim();
-  if (normalized === "langley" || normalized === "langley-township" || normalized === "langley-twp") {
-    return serviceAreasData.find((a) => a.slug === "langley-twp");
-  }
-  return serviceAreasData.find((a) => a.slug === normalized);
+  const aliases: Record<string, string> = {
+    langley: "langley-twp",
+    "langley-township": "langley-twp",
+    "surrey-bc": "surrey",
+    "abbotsford-bc": "abbotsford",
+  };
+  const canonicalSlug = aliases[normalized] ?? normalized;
+  return serviceAreasData.find((area) => area.slug === canonicalSlug);
 };

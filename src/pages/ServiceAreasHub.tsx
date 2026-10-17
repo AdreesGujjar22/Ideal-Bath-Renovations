@@ -3,7 +3,7 @@ import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { MapPin, Navigation, ArrowRight, Phone, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import { serviceAreasData } from "../data/ServiceAreasData";
+import { getServiceAreaPath, serviceAreasData } from "../data/ServiceAreasData";
 import SEO from "../components/SEO";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
@@ -227,7 +227,7 @@ const ServiceAreasHub: React.FC = () => {
                   <Box sx={{ mt: "auto", display: "flex", alignItems: "center", justifyContent: "space-between", pt: 2, borderTop: "1px solid #f1f5f9" }}>
                     <Box
                       component={Link}
-                      to={`/service-areas/${area.slug}`}
+                      to={getServiceAreaPath(area)}
                       sx={{
                         display: "inline-flex",
                         alignItems: "center",

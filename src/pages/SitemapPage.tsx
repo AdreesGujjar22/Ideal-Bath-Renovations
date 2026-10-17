@@ -224,8 +224,8 @@ const sitemapData: SitemapEntry[] = [
 
   // 4 Service Areas
   {
-    url: "https://www.idealbathrenovations.ca/service-areas/langley-twp",
-    path: "/service-areas/langley-twp",
+    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-langley",
+    path: "/bathroom-remodeling-langley",
     title: "Langley Township Bathroom Renovations",
     description: "Serving Walnut Grove, Willoughby, Fort Langley, Brookswood, and Murrayville homeowners.",
     category: "Service Areas",
@@ -235,8 +235,8 @@ const sitemapData: SitemapEntry[] = [
   },
 
   {
-    url: "https://www.idealbathrenovations.ca/service-areas/surrey",
-    path: "/service-areas/surrey",
+    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-surrey",
+    path: "/bathroom-remodeling-surrey",
     title: "Surrey & South Surrey Bathroom Remodeling",
     description: "Premium bathroom remodeling for Cloverdale, Fleetwood, South Surrey, and Morgan Creek residents.",
     category: "Service Areas",
@@ -245,10 +245,20 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/service-areas/abbotsford",
-    path: "/service-areas/abbotsford",
+    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-abbotsford",
+    path: "/bathroom-remodeling-abbotsford",
     title: "Abbotsford Bathroom Renovations",
     description: "Master ensuite overhauls, tub conversions, and accessible bathroom designs throughout Abbotsford.",
+    category: "Service Areas",
+    priority: "0.80",
+    changefreq: "weekly",
+    lastmod: "2026-09-05",
+  },
+  {
+    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-fraser-valley",
+    path: "/bathroom-remodeling-fraser-valley",
+    title: "Fraser Valley Bathroom Renovations",
+    description: "Bathroom renovations, shower conversions, tile, and custom vanities across the Fraser Valley.",
     category: "Service Areas",
     priority: "0.80",
     changefreq: "weekly",

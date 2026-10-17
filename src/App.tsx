@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from "react-router-dom";
 import React, { Suspense } from "react";
 import { ThemeProvider } from "@mui/material";
 import theme from "./styles/theme";
@@ -7,6 +7,7 @@ import PageLoader from "./components/PageLoader";
 import PageWrapper from "./components/PageWrapper";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { getServiceAreaBySlug, getServiceAreaPath, serviceAreasData } from "./data/ServiceAreasData";
 
 const Footer = React.lazy(() => import("./components/Footer"));
 const Home = React.lazy(() => import("./pages/Home"));
@@ -19,6 +20,12 @@ const BeforeAfter = React.lazy(() => import("./pages/BeforeAfter"));
 const Reviews = React.lazy(() => import("./pages/Reviews"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const SitemapPage = React.lazy(() => import("./pages/SitemapPage"));
+
+const LegacyServiceAreaRedirect: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const area = slug ? getServiceAreaBySlug(slug) : undefined;
+  return <Navigate to={area ? getServiceAreaPath(area) : "/service-areas"} replace />;
+};
 
 const App: React.FC = () => {
   return (
@@ -70,14 +77,18 @@ const App: React.FC = () => {
                   </PageWrapper>
                 }
               />
-              <Route
-                path="/service-areas/:slug"
-                element={
-                  <PageWrapper title="Regional Coverage">
-                    <ServiceAreaDetail />
-                  </PageWrapper>
-                }
-              />
+              {serviceAreasData.map((area) => (
+                <Route
+                  key={area.id}
+                  path={getServiceAreaPath(area)}
+                  element={
+                    <PageWrapper title="Regional Coverage">
+                      <ServiceAreaDetail slug={area.slug} />
+                    </PageWrapper>
+                  }
+                />
+              ))}
+              <Route path="/service-areas/:slug" element={<LegacyServiceAreaRedirect />} />
               <Route
                 path="/before-after"
                 element={
@@ -122,11 +133,7 @@ const App: React.FC = () => {
               />
 
               {/* SEO Landing Page Slug Aliases */}
-              <Route path="/bathroom-renovations-langley" element={<Navigate to="/service-areas/langley-twp" replace />} />
-              <Route path="/service-areas/langley-township" element={<Navigate to="/service-areas/langley-twp" replace />} />
-              <Route path="/service-areas/langley" element={<Navigate to="/service-areas/langley-twp" replace />} />
-              <Route path="/service-areas/surrey-bc" element={<Navigate to="/service-areas/surrey" replace />} />
-              <Route path="/service-areas/abbotsford-bc" element={<Navigate to="/service-areas/abbotsford" replace />} />
+              <Route path="/bathroom-renovations-langley" element={<Navigate to="/bathroom-remodeling-langley" replace />} />
               <Route path="/tub-to-shower-conversion" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/walk-in-showers" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/custom-vanities" element={<Navigate to="/services/bathroom-vanity-installation" replace />} />
