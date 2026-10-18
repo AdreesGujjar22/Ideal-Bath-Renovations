@@ -110,9 +110,10 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
           }}
         >
           {/* Home Link */}
-          <Link
+          <Box
+            component={Link}
             to="/"
-            style={{
+            sx={{
               display: "flex",
               alignItems: "center",
               gap: "6px",
@@ -120,12 +121,12 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
               textDecoration: "none",
               fontWeight: 600,
               transition: "color 0.2s",
+              "&:hover": { color: "#c29b38" },
             }}
-            className="hover:text-[#c29b38]"
           >
             <Home size={15} color="#c29b38" style={{ flexShrink: 0 }} />
             <span>Home</span>
-          </Link>
+          </Box>
 
           {/* Child Breadcrumb Items */}
           {resolvedItems.map((item, index) => {
@@ -136,9 +137,10 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
                 <ChevronRight size={14} color="#94a3b8" style={{ flexShrink: 0 }} />
 
                 {item.path && !isLast ? (
-                  <Link
+                  <Box
+                    component={Link}
                     to={item.path}
-                    style={{
+                    sx={{
                       display: "flex",
                       alignItems: "center",
                       gap: "5px",
@@ -146,12 +148,12 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
                       textDecoration: "none",
                       fontWeight: 600,
                       transition: "color 0.2s",
+                      "&:hover": { color: "#c29b38" },
                     }}
-                    className="hover:text-[#c29b38]"
                   >
                     {item.icon}
                     <span>{item.label}</span>
-                  </Link>
+                  </Box>
                 ) : (
                   <Typography
                     component="span"

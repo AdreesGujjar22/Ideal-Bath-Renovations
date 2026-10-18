@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App.tsx";
-import "./main.css";
+import "./index.css";
+
+if (window.location.pathname === "/") void import("./pages/Home");
 
 const rootElement = document.getElementById("root")!;
 const app = (

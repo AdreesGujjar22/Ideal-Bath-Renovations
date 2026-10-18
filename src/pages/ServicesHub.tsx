@@ -10,6 +10,7 @@ import {
   InputAdornment,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../utils/optimizedImage";
 import { servicesDetailList, ServiceDetailItem } from "../data/ServicesDetailData";
 import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
@@ -67,7 +68,7 @@ const ServicesHub: React.FC = () => {
       >
         <Box
           component="img"
-          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=70"
           alt="Bathroom Remodeling Services"
           sx={{
             position: "absolute",
@@ -218,7 +219,9 @@ const ServicesHub: React.FC = () => {
                     <Box sx={{ position: "relative", height: "220px", overflow: "hidden" }}>
                       <Box
                         component="img"
-                        src={service.heroImage}
+                        src={optimizedImageUrl(service.heroImage, 768)}
+                        srcSet={optimizedImageSrcSet(service.heroImage, [320, 480, 768])}
+                        sizes="(min-width: 1200px) 33vw, (min-width: 600px) 50vw, 100vw"
                         alt={service.title}
                         sx={{
                           width: "100%",

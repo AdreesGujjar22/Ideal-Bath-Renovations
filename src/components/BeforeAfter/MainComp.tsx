@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid2";
 import { beforeAfterData } from "../../data/ImagesData";
 import PrimaryButton from "../UI/PrimaryButton";
 import { Sparkles, CheckCircle2, MapPin, Clock } from "lucide-react";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../../utils/optimizedImage";
 
 const categories = ["All Projects", "Tub-to-Shower", "Master Ensuite", "Walk-In Shower", "Custom Vanity", "Powder Room"];
 
@@ -121,11 +122,9 @@ const MainComp: React.FC = () => {
                 <Box sx={{ position: "relative", height: "260px", overflow: "hidden" }}>
                   <Box
                     component="img"
-                    src={
-                      activeViews[idx] === "before"
-                        ? itm.beforeImg || itm.img
-                        : itm.afterImg || itm.img
-                    }
+                    src={optimizedImageUrl(activeViews[idx] === "before" ? itm.beforeImg || itm.img : itm.afterImg || itm.img, 768)}
+                    srcSet={optimizedImageSrcSet(activeViews[idx] === "before" ? itm.beforeImg || itm.img : itm.afterImg || itm.img, [320, 480, 768])}
+                    sizes="(min-width: 1200px) 33vw, (min-width: 600px) 50vw, 100vw"
                     alt={`${itm.content} - ${activeViews[idx] === "before" ? "Before" : "After"}`}
                     sx={{
                       width: "100%",

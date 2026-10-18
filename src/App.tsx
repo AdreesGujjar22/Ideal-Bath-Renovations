@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 import { Box, ThemeProvider } from "@mui/material";
 import { GOOGLE_REVIEWS_URL } from "./data/ReviewsData";
 import theme from "./styles/theme";
-import PageLoader from "./components/PageLoader";
+
 import PageWrapper from "./components/PageWrapper";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -84,7 +84,7 @@ const App: React.FC = () => {
         <FloatingReviewsLink />
         <main>
           <ErrorBoundary>
-            <Suspense fallback={<PageLoader message="Loading page..." />}>
+            <Suspense fallback={<Box aria-busy="true" sx={{ minHeight: "80vh" }} />}>
               <Routes>
               <Route
                 path="/"

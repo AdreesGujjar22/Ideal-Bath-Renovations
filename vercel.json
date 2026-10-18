@@ -2,6 +2,39 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": false,
   "trailingSlash": false,
+  "images": {
+    "sizes": [320, 480, 640, 768, 828, 1080, 1200],
+    "minimumCacheTTL": 31536000,
+    "formats": ["image/avif", "image/webp"],
+    "qualities": [50, 75],
+    "localPatterns": [
+      {
+        "pathname": "^/assets/.*$",
+        "search": ""
+      },
+      {
+        "pathname": "/logo.png",
+        "search": ""
+      },
+      {
+        "pathname": "/developer_site_logo.png",
+        "search": ""
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "idealbathrenovations.ca"
+        }
+      ],
+      "destination": "https://www.idealbathrenovations.ca/:path*",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

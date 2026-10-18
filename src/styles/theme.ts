@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "'Plus Jakarta Sans', 'Abel', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     h1: {
       fontWeight: 700,
       letterSpacing: "-0.02em",
@@ -52,4 +52,3 @@ const theme = createTheme({
 });
 
 export default theme;
-

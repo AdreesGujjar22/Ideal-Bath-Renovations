@@ -3,11 +3,11 @@ import { Box, Typography, Container, Stack } from "@mui/material";
 import PrimaryButton from "../UI/PrimaryButton";
 
 const responsiveImageSrcSet = (src: string) =>
-  [640, 960, 1440]
+  [320, 480, 768, 828, 1080, 1200]
     .map((width) => {
       const url = new URL(src);
       url.searchParams.set("w", String(width));
-      url.searchParams.set("q", "75");
+      url.searchParams.set("q", "68");
       return `${url.toString()} ${width}w`;
     })
     .join(", ");

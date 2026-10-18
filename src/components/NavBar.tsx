@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 import Drawer from "@mui/material/Drawer";
 import { NavLink, useNavigate, useLocation, Link } from "react-router-dom";
+import { optimizedImageUrl } from "../utils/optimizedImage";
 import PrimaryButton from "./UI/PrimaryButton";
 import { Typography, Stack, Divider, Chip } from "@mui/material";
 import {
@@ -226,22 +227,14 @@ const NavBar: React.FC = () => {
             }}
           >
             {/* Brand Logo & Name */}
-            <Box
-              component="img"
-              src="/logo.png"
+            <img
+              src={optimizedImageUrl("/logo.png", 320)}
               alt="Ideal Bath Renovations"
               width={190}
               height={48}
               decoding="async"
               onClick={() => navigate("/")}
-              sx={{
-                cursor: "pointer",
-                width: { xs: 150, sm: 190 },
-                height: { xs: 42, sm: 48 },
-                objectFit: "contain",
-                objectPosition: "left center",
-                maxWidth: { xs: "calc(100% - 56px)", lg: "350px" },
-              }}
+              className="site-logo site-logo-header"
             />
 
             {/* Mobile Hamburger Button */}
@@ -625,19 +618,13 @@ const NavBar: React.FC = () => {
               zIndex: 10,
             }}
           >
-            <Box
-              component="img"
-              src="/logo.png"
+            <img
+              src={optimizedImageUrl("/logo.png", 320)}
               alt="Ideal Bath Renovations"
               width={175}
               height={38}
               decoding="async"
-              sx={{
-                width: 175,
-                height: 38,
-                objectFit: "contain",
-                objectPosition: "left center",
-              }}
+              className="site-logo site-logo-drawer"
             />
 
             {/* Cross Button to close drawer */}

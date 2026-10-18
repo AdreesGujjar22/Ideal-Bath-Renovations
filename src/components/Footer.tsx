@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { serviceAreasData, getServiceAreaPath } from "../data/ServiceAreasData";
 import { MapPin, Phone, Mail, Clock, ExternalLink, Star } from "lucide-react";
 import { GOOGLE_BUSINESS_URL } from "../data/ReviewsData";
+import { optimizedImageUrl } from "../utils/optimizedImage";
 
 const Footer: React.FC = () => {
   return (
@@ -24,17 +25,15 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <Grid size={{ xs: 12, md: 5 }}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2.5 }}>
-              <Box
-                component="img"
-                src="/logo.png"
-                alt="Ideal Bath Renovations"
-                sx={{
-                  width: 220,
-                  height: 54,
-                  objectFit: "contain",
-                  objectPosition: "left center",
-                }}
-              />
+              <img
+              src={optimizedImageUrl("/logo.png", 320)}
+              alt="Ideal Bath Renovations"
+              width={220}
+              height={54}
+              loading="lazy"
+              decoding="async"
+              className="site-logo site-logo-footer"
+            />
 
               <Typography sx={{ fontSize: "14px", lineHeight: 1.7, color: "#cbd5e1" }}>
                 Ideal Bath Renovations is a bathroom renovation contractor based in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley. We handle full remodels, tub-to-shower conversions, and walk-in showers.
@@ -295,11 +294,14 @@ const Footer: React.FC = () => {
             }}
           >
             <span>Powered by</span>
-            <Box
-              component="img"
-              src="/developer_site_logo.png"
+            <img
+              src={optimizedImageUrl("/developer_site_logo.png", 320)}
               alt=""
-              sx={{ width: 20, height: 26, objectFit: "contain" }}
+              width={20}
+              height={26}
+              loading="lazy"
+              decoding="async"
+              style={{ objectFit: "contain" }}
             />
             <span>Metro Valley Digital</span>
           </Box>

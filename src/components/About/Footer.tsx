@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { freestandingTubImg, customVanityImg } from "../../assets/images";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../../utils/optimizedImage";
 
 const bathroomGallery = [
   {
@@ -55,7 +56,9 @@ const ImageBanner: React.FC = () => {
               >
                 <Box
                   component="img"
-                  src={item.img}
+                  src={optimizedImageUrl(item.img, 640)}
+                  srcSet={optimizedImageSrcSet(item.img, [320, 480, 640])}
+                  sizes="(min-width: 900px) 33vw, 100vw"
                   alt={item.title}
                   referrerPolicy="no-referrer"
                   sx={{

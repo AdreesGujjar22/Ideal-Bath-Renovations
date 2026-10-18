@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
 import { Gift, Sparkles, CheckCircle2 } from "lucide-react";
 import { bathroomReferralImg } from "../../assets/images";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../../utils/optimizedImage";
 
 const ReferralCard: React.FC = () => {
   return (
@@ -33,8 +34,12 @@ const ReferralCard: React.FC = () => {
             >
               <Box
                 component="img"
-                src={bathroomReferralImg}
+                src={optimizedImageUrl(bathroomReferralImg, 768)}
+                srcSet={optimizedImageSrcSet(bathroomReferralImg, [320, 480, 768])}
+                sizes="(min-width: 900px) 40vw, 100vw"
                 alt="Luxury Remodeled Bathroom with Freestanding Soaker Tub and Vanity"
+                loading="lazy"
+                decoding="async"
                 referrerPolicy="no-referrer"
                 sx={{
                   width: "100%",

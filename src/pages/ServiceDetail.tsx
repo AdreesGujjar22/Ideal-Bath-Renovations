@@ -15,6 +15,7 @@ import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
 import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../utils/optimizedImage";
 import Grid from "@mui/material/Grid2";
 import { ChevronDown, Phone, HelpCircle } from "lucide-react";
 
@@ -82,7 +83,9 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
       >
         <Box
           component="img"
-          src={service.heroImage}
+          src={optimizedImageUrl(service.heroImage, 1200)}
+          srcSet={optimizedImageSrcSet(service.heroImage, [480, 768, 1080, 1200])}
+          sizes="(min-width: 900px) 55vw, 100vw"
           alt={`${service.title} in Langley, BC`}
           sx={{
             position: "absolute",

@@ -1,1 +1,59 @@
-@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: #c29b38;
+  color: #ffffff;
+}
+
+.site-logo {
+  display: block;
+  object-fit: cover;
+}
+
+.site-logo-header {
+  width: 190px;
+  height: 48px;
+  max-width: calc(100vw - 56px);
+  object-position: center 24%;
+  cursor: pointer;
+}
+
+.site-logo-drawer {
+  width: 175px;
+  height: 38px;
+  object-position: center 24%;
+}
+
+.site-logo-footer {
+  width: 220px;
+  height: 54px;
+  object-position: center 24%;
+}
+
+@media (max-width: 599px) {
+  .site-logo-header {
+    width: 150px;
+    height: 42px;
+  }
+}

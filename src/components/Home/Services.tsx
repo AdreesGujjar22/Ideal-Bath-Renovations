@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../../utils/optimizedImage";
 import { Link } from "react-router-dom";
 import {
   Bath,
@@ -173,7 +174,9 @@ const Services: React.FC = () => {
                     <Box
                       component="img"
                       className="service-img"
-                      src={service.img}
+                      src={optimizedImageUrl(service.img, 768)}
+                      srcSet={optimizedImageSrcSet(service.img, [320, 480, 768, 1080])}
+                      sizes="(min-width: 1200px) 33vw, (min-width: 600px) 50vw, 100vw"
                       alt={service.imgAlt}
                       referrerPolicy="no-referrer"
                       sx={{
@@ -183,6 +186,7 @@ const Services: React.FC = () => {
                         transition: "transform 0.4s ease",
                       }}
                       loading="lazy"
+                      decoding="async"
                     />
                     <Box
                       sx={{

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
+import { optimizedImageSrcSet, optimizedImageUrl } from "../../utils/optimizedImage";
 import Grid from "@mui/material/Grid2";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -83,7 +84,9 @@ const StandardImageList: React.FC = () => {
               >
                 <Box
                   component="img"
-                  src={item.img}
+                  src={optimizedImageUrl(item.img, 768)}
+                  srcSet={optimizedImageSrcSet(item.img, [320, 480, 768, 1080])}
+                  sizes="(min-width: 1200px) 33vw, (min-width: 600px) 50vw, 100vw"
                   alt={item.alt}
                   title={item.alt}
                   width={800}
