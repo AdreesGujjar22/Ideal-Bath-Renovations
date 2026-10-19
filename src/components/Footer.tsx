@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
                 { label: "Renovation Services", path: "/services" },
                 { label: "Before & After Gallery", path: "/before-after" },
                 { label: "Client Reviews", path: "/reviews" },
-                { label: "Blog", path: "/blog" },
+                { label: "Blogs", path: "/blogs" },
                 { label: "About Us", path: "/about" },
                 { label: "Contact & Free Quote", path: "/contact" },
               ].map((link, idx) => (

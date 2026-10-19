@@ -15,13 +15,16 @@ import {
 import { Link } from "react-router-dom";
 import { Search, ExternalLink, Download, Copy, Check, FileText, MapPin, Wrench, Globe, CheckCircle2 } from "lucide-react";
 import SEO from "../components/SEO";
+import { blogPosts } from "../data/BlogData";
+import { getServiceAreaPath, serviceAreasData } from "../data/ServiceAreasData";
+import { SITE_URL } from "../data/SeoContent";
 
 interface SitemapEntry {
   url: string;
   path: string;
   title: string;
   description: string;
-  category: "Core Pages" | "Bathroom Services" | "Service Areas";
+  category: "Core Pages" | "Bathroom Services" | "Service Areas" | "Blog Articles";
   priority: string;
   changefreq: string;
   lastmod: string;
@@ -224,8 +227,8 @@ const sitemapData: SitemapEntry[] = [
 
   // 4 Service Areas
   {
-    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-langley",
-    path: "/bathroom-remodeling-langley",
+    url: "https://www.idealbathrenovations.ca/bathroom-remoder-langley",
+    path: "/bathroom-remoder-langley",
     title: "Langley Township Bathroom Renovations",
     description: "Serving Walnut Grove, Willoughby, Fort Langley, Brookswood, and Murrayville homeowners.",
     category: "Service Areas",
@@ -235,8 +238,8 @@ const sitemapData: SitemapEntry[] = [
   },
 
   {
-    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-surrey",
-    path: "/bathroom-remodeling-surrey",
+    url: "https://www.idealbathrenovations.ca/bathroom-remoder-surrey",
+    path: "/bathroom-remoder-surrey",
     title: "Surrey & South Surrey Bathroom Remodeling",
     description: "Premium bathroom remodeling for Cloverdale, Fleetwood, South Surrey, and Morgan Creek residents.",
     category: "Service Areas",
@@ -245,8 +248,8 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-abbotsford",
-    path: "/bathroom-remodeling-abbotsford",
+    url: "https://www.idealbathrenovations.ca/bathroom-remoder-abbotsford",
+    path: "/bathroom-remoder-abbotsford",
     title: "Abbotsford Bathroom Renovations",
     description: "Master ensuite overhauls, tub conversions, and accessible bathroom designs throughout Abbotsford.",
     category: "Service Areas",
@@ -255,8 +258,8 @@ const sitemapData: SitemapEntry[] = [
     lastmod: "2026-09-05",
   },
   {
-    url: "https://www.idealbathrenovations.ca/bathroom-remodeling-fraser-valley",
-    path: "/bathroom-remodeling-fraser-valley",
+    url: "https://www.idealbathrenovations.ca/bathroom-remoder-fraser-valley",
+    path: "/bathroom-remoder-fraser-valley",
     title: "Fraser Valley Bathroom Renovations",
     description: "Bathroom renovations, shower conversions, tile, and custom vanities across the Fraser Valley.",
     category: "Service Areas",
@@ -264,6 +267,41 @@ const sitemapData: SitemapEntry[] = [
     changefreq: "weekly",
     lastmod: "2026-09-05",
   },
+  ...serviceAreasData
+    .filter((area) => !["langley-twp", "surrey", "abbotsford", "fraser-valley"].includes(area.slug))
+    .map((area) => {
+      const path = getServiceAreaPath(area);
+      return {
+        url: `${SITE_URL}${path}`,
+        path,
+        title: `${area.name} Bathroom Remodeling`,
+        description: area.description,
+        category: "Service Areas" as const,
+        priority: "0.70",
+        changefreq: "monthly",
+        lastmod: "2026-10-18",
+      };
+    }),
+  {
+    url: `${SITE_URL}/blogs`,
+    path: "/blogs",
+    title: "Bathroom Renovation Blogs",
+    description: "Bathroom renovation guides for homeowners in Langley and Surrey.",
+    category: "Blog Articles",
+    priority: "0.70",
+    changefreq: "weekly",
+    lastmod: "2026-10-18",
+  },
+  ...blogPosts.map((post) => ({
+    url: `${SITE_URL}/blogs/${post.slug}`,
+    path: `/blogs/${post.slug}`,
+    title: post.title,
+    description: post.metaDescription,
+    category: "Blog Articles" as const,
+    priority: "0.70",
+    changefreq: "monthly",
+    lastmod: "2026-10-18",
+  })),
 ];
 
 const xmlRawContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -317,7 +355,7 @@ const SitemapPage: React.FC = () => {
     <>
       <SEO
         title="HTML & XML Sitemap | Ideal Bath Renovations"
-        description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 23 verified pages including remodeling services, client reviews, and Fraser Valley service areas."
+        description="Complete URL directory and XML sitemap for Ideal Bath Renovations. View all 36 verified pages including remodeling services, client reviews, and Fraser Valley service areas."
         canonical="https://www.idealbathrenovations.ca/sitemap"
       />
 
@@ -326,7 +364,7 @@ const SitemapPage: React.FC = () => {
           <Box sx={{ display: "inline-flex", alignItems: "center", gap: 1, px: 1.8, py: 0.6, borderRadius: "20px", backgroundColor: "rgba(194, 155, 56, 0.15)", border: "1px solid rgba(194, 155, 56, 0.4)", mb: 2 }}>
             <Globe size={15} color="#dfba5a" />
             <Typography sx={{ fontSize: "13px", fontWeight: 700, color: "#dfba5a", letterSpacing: "0.04em", textTransform: "uppercase" }}>
-              Live Indexed Directory &bull; 23 Verified URLs
+              Live Indexed Directory &bull; 36 Verified URLs
             </Typography>
           </Box>
           <Typography variant="h1" sx={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: { xs: "28px", sm: "38px", md: "46px" }, fontWeight: 800, mb: 2 }}>
@@ -406,7 +444,7 @@ const SitemapPage: React.FC = () => {
                 "& .MuiTabs-indicator": { backgroundColor: "#c29b38", height: 3 },
               }}
             >
-              <Tab label="Interactive Visual Sitemap (22 Pages)" />
+              <Tab label="Interactive Visual Sitemap (36 Pages)" />
               <Tab label="Raw XML Feed (sitemaps.org standard)" />
             </Tabs>
 
@@ -438,10 +476,10 @@ const SitemapPage: React.FC = () => {
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", justifyContent: { xs: "flex-start", md: "flex-end" } }}>
-                      {(["all", "Core Pages", "Bathroom Services", "Service Areas"] as const).map((cat) => (
+                      {(["all", "Core Pages", "Bathroom Services", "Service Areas", "Blog Articles"] as const).map((cat) => (
                         <Chip
                           key={cat}
-                          label={cat === "all" ? "All Pages (22)" : cat}
+                          label={cat === "all" ? "All Pages (36)" : cat}
                           onClick={() => setCategoryFilter(cat)}
                           variant={categoryFilter === cat ? "filled" : "outlined"}
                           sx={{
@@ -489,6 +527,7 @@ const SitemapPage: React.FC = () => {
                           {item.category === "Core Pages" && <Globe size={16} color="#3b82f6" />}
                           {item.category === "Bathroom Services" && <Wrench size={16} color="#c29b38" />}
                           {item.category === "Service Areas" && <MapPin size={16} color="#10b981" />}
+                          {item.category === "Blog Articles" && <FileText size={16} color="#3b82f6" />}
 
                           <Typography
                             component={Link}

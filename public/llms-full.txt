@@ -37,13 +37,13 @@
    - Water damage restoration, subfloor reconstruction, shower pan leak resolution, fixture modernization, and ventilation exhaust fan upgrades.
 
 ## 4. Service Areas & Neighborhood Breakdowns
-- **Langley Township (`/bathroom-remodeling-langley`):**
+- **Langley Township (`/bathroom-remoder-langley`):**
   - Neighborhoods: Willoughby Heights, Walnut Grove, Fort Langley, Murrayville, Brookswood, Aldergrove, Salmon River, Glen Valley.
-- **Surrey, BC (`/bathroom-remodeling-surrey`):**
+- **Surrey, BC (`/bathroom-remoder-surrey`):**
   - Neighborhoods: South Surrey, Morgan Creek, Grandview Heights, Fleetwood, Clayton Heights, Cloverdale, Guildford, Newton.
-- **Abbotsford, BC (`/bathroom-remodeling-abbotsford`):**
+- **Abbotsford, BC (`/bathroom-remoder-abbotsford`):**
   - Neighborhoods: East Abbotsford, Auguston, Matsqui, Clearbrook, Sumas Mountain, Whatcom, Townline Hill.
-- **Fraser Valley (`/bathroom-remodeling-fraser-valley`):**
+- **Fraser Valley (`/bathroom-remoder-fraser-valley`):**
   - Municipalities: White Rock, Maple Ridge, Mission, Chilliwack, Pitt Meadows.
 
 ## 5. Frequently Asked Questions (FAQ)

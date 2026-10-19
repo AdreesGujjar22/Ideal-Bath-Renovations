@@ -35,7 +35,7 @@ const navItems = [
   { name: "Service Areas", route: "/service-areas", icon: MapPin },
   { name: "Before & After", route: "/before-after", icon: ImageIcon },
   { name: "Reviews", route: "/reviews", icon: Star },
-  { name: "Blog", route: "/blog", icon: BookOpen },
+  { name: "Blogs", route: "/blogs", icon: BookOpen },
   { name: "Contact Us", route: "/contact", icon: Mail },
 ];
 

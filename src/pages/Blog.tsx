@@ -13,9 +13,9 @@ const Blog: React.FC = () => (
     <SEO
       title={buildMetaTitle("Bathroom Renovation Blog")}
       description="Bathroom renovation guidance for homeowners in Langley and Surrey, BC, with practical advice on layouts, waterproofing, materials, lighting, and planning."
-      canonical={`${SITE_URL}/blog`}
+      canonical={`${SITE_URL}/blogs`}
     />
-    <Breadcrumbs currentLabel="Blog" />
+    <Breadcrumbs currentLabel="Blogs" />
 
     <Box sx={{ backgroundColor: "#0f172a", color: "#fff", py: { xs: 7, md: 9 } }}>
       <Container maxWidth="lg" sx={{ textAlign: "center" }}>
@@ -38,7 +38,7 @@ const Blog: React.FC = () => (
             <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={post.slug}>
               <Box
                 component={Link}
-                to={`/blog/${post.slug}`}
+                to={`/blogs/${post.slug}`}
                 sx={{
                   display: "flex",
                   flexDirection: "column",

@@ -42,9 +42,9 @@ const renderLinkedText = (text: string, links: { text: string; to: string }[] = 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPost(slug) : undefined;
-  if (!post) return <Navigate to="/blog" replace />;
+  if (!post) return <Navigate to="/blogs" replace />;
 
-  const url = `${SITE_URL}/blog/${post.slug}`;
+  const url = `${SITE_URL}/blogs/${post.slug}`;
   const schema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -62,7 +62,7 @@ const BlogPost: React.FC = () => {
   return (
     <>
       <SEO title={post.metaTitle} description={post.metaDescription} canonical={url} ogImage={post.image} ogType="article" schema={schema} />
-      <Breadcrumbs currentLabel={post.title} parentLabel="Blog" parentPath="/blog" />
+      <Breadcrumbs currentLabel={post.title} parentLabel="Blogs" parentPath="/blogs" />
 
       <Box component="article" sx={{ py: { xs: 6, md: 9 }, backgroundColor: "#fff" }}>
         <Container maxWidth="md">
@@ -111,7 +111,7 @@ const BlogPost: React.FC = () => {
           </Typography>
           {more.map((p) => (
             <Box key={p.slug} sx={{ mb: 1.2 }}>
-              <Link to={`/blog/${p.slug}`} style={{ color: "#b45309", fontWeight: 700, textDecoration: "none" }}>
+              <Link to={`/blogs/${p.slug}`} style={{ color: "#b45309", fontWeight: 700, textDecoration: "none" }}>
                 {p.title}
               </Link>
             </Box>

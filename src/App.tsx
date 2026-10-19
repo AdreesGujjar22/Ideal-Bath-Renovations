@@ -6,6 +6,7 @@ import { GOOGLE_REVIEWS_URL } from "./data/ReviewsData";
 import theme from "./styles/theme";
 
 import PageWrapper from "./components/PageWrapper";
+import PageLoader from "./components/PageLoader";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { getServiceAreaBySlug, getServiceAreaPath, serviceAreasData } from "./data/ServiceAreasData";
@@ -75,6 +76,11 @@ const LegacyServiceAreaRedirect: React.FC = () => {
   return <Navigate to={area ? getServiceAreaPath(area) : "/service-areas"} replace />;
 };
 
+const LegacyBlogRedirect: React.FC = () => {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={slug ? `/blogs/${slug}` : "/blogs"} replace />;
+};
+
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
@@ -84,7 +90,7 @@ const App: React.FC = () => {
         <FloatingReviewsLink />
         <main>
           <ErrorBoundary>
-            <Suspense fallback={<Box aria-busy="true" sx={{ minHeight: "80vh" }} />}>
+            <Suspense fallback={<PageLoader message="Loading page content..." />}>
               <Routes>
               <Route
                 path="/"
@@ -155,8 +161,10 @@ const App: React.FC = () => {
                   </PageWrapper>
                 }
               />
-              <Route path="/blog" element={<PageWrapper title="Blog"><Blog /></PageWrapper>} />
-              <Route path="/blog/:slug" element={<PageWrapper title="Blog Article"><BlogPost /></PageWrapper>} />
+              <Route path="/blogs" element={<PageWrapper title="Blogs"><Blog /></PageWrapper>} />
+              <Route path="/blogs/:slug" element={<PageWrapper title="Blog Article"><BlogPost /></PageWrapper>} />
+              <Route path="/blog" element={<LegacyBlogRedirect />} />
+              <Route path="/blog/:slug" element={<LegacyBlogRedirect />} />
               <Route path="/testimonials" element={<Navigate to="/reviews" replace />} />
               <Route
                 path="/contact"
@@ -183,8 +191,11 @@ const App: React.FC = () => {
                 }
               />
 
+              {/* Legacy service-area URLs */}
+              <Route path="/bathroom-remodeling-:slug" element={<LegacyServiceAreaRedirect />} />
+
               {/* SEO Landing Page Slug Aliases */}
-              <Route path="/bathroom-renovations-langley" element={<Navigate to="/bathroom-remodeling-langley" replace />} />
+              <Route path="/bathroom-renovations-langley" element={<Navigate to="/bathroom-remoder-langley" replace />} />
               <Route path="/tub-to-shower-conversion" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/walk-in-showers" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/custom-vanities" element={<Navigate to="/services/bathroom-vanity-installation" replace />} />
