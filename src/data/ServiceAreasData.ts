@@ -491,7 +491,7 @@ extraAreas.forEach((a) => {
 });
 
 export const getServiceAreaPath = (area: ServiceAreaItem): string =>
-  `/bathroom-remoder-${area.slug.replace(/-twp$/, "")}`;
+  `/bathroom-remodeler-${area.slug.replace(/-twp$/, "")}`;
 
 export const getServiceAreaBySlug = (slug: string): ServiceAreaItem | undefined => {
   const normalized = slug.toLowerCase().trim();

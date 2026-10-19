@@ -193,9 +193,10 @@ const App: React.FC = () => {
 
               {/* Legacy service-area URLs */}
               <Route path="/bathroom-remodeling-:slug" element={<LegacyServiceAreaRedirect />} />
+              <Route path="/bathroom-remoder-:slug" element={<LegacyServiceAreaRedirect />} />
 
               {/* SEO Landing Page Slug Aliases */}
-              <Route path="/bathroom-renovations-langley" element={<Navigate to="/bathroom-remoder-langley" replace />} />
+              <Route path="/bathroom-renovations-langley" element={<Navigate to="/bathroom-remodeler-langley" replace />} />
               <Route path="/tub-to-shower-conversion" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/walk-in-showers" element={<Navigate to="/services/shower-remodeling" replace />} />
               <Route path="/custom-vanities" element={<Navigate to="/services/bathroom-vanity-installation" replace />} />
