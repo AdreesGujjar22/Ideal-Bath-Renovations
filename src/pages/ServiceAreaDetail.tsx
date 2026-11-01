@@ -16,7 +16,6 @@ import { getServiceAreaBySlug, getServiceAreaPath } from "../data/ServiceAreasDa
 import { areaSeo, buildMetaTitle } from "../data/SeoContent";
 import SEO from "../components/SEO";
 import PrimaryButton from "../components/UI/PrimaryButton";
-import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 
 const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
   const area = getServiceAreaBySlug(slug);
@@ -177,7 +176,7 @@ const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
           </Box>
 
           <Grid container spacing={5} alignItems="center">
-            <Grid size={{ xs: 12, lg: 7 }}>
+            <Grid size={{ xs: 12 }}>
               <Box
                 sx={{
                   display: "inline-flex",
@@ -265,31 +264,7 @@ const ServiceAreaDetail: React.FC<{ slug: string }> = ({ slug }) => {
               </Box>
             </Grid>
 
-            {/* Right Column: Local Map Card Embed Preview */}
-            <Grid size={{ xs: 12, lg: 5 }}>
-              <Box
-                sx={{
-                  backgroundColor: "rgba(255, 255, 255, 0.05)",
-                  backdropFilter: "blur(12px)",
-                  borderRadius: "20px",
-                  p: 2,
-                  border: "1px solid rgba(255, 255, 255, 0.15)",
-                  boxShadow: "0 20px 40px rgba(0, 0, 0, 0.4)",
-                }}
-              >
-                <GoogleMapEmbed
-                  businessName={`IDEAL BATH - ${area.shortName.toUpperCase()}`}
-                  address={area.addressDisplay}
-                  rating={GOOGLE_RATING}
-                  reviewsCount={GOOGLE_REVIEW_COUNT}
-                  mapQuery={area.mapQuery}
-                  googleMapsLink={area.googleMapsLink}
-                  directionsQuery={area.mapQuery}
-                  bottomLabel={`IDEAL BATH • Serving ${area.name}`}
-                  height={380}
-                />
-              </Box>
-            </Grid>
+
           </Grid>
         </Container>
       </Box>

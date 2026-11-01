@@ -1,5 +1,5 @@
 import React from "react";
-import { GOOGLE_BUSINESS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../data/ReviewsData";
+
 import { useParams } from "react-router-dom";
 import {
   Box,
@@ -14,7 +14,6 @@ import { serviceSeo, buildMetaTitle, SITE_URL } from "../data/SeoContent";
 import SEO from "../components/SEO";
 import Breadcrumbs from "../components/UI/Breadcrumbs";
 import PrimaryButton from "../components/UI/PrimaryButton";
-import GoogleMapEmbed from "../components/UI/GoogleMapEmbed";
 import { optimizedImageSrcSet, optimizedImageUrl } from "../utils/optimizedImage";
 import Grid from "@mui/material/Grid2";
 import { ChevronDown, Phone, HelpCircle } from "lucide-react";
@@ -151,11 +150,11 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
         </Container>
       </Box>
 
-      {/* Description + map */}
+      {/* Description */}
       <Box component="section" sx={{ py: { xs: 7, md: 9 }, backgroundColor: "#ffffff" }}>
         <Container maxWidth="xl">
           <Grid container spacing={{ xs: 5, md: 7 }} alignItems="flex-start">
-            <Grid size={{ xs: 12, lg: 7 }}>
+            <Grid size={{ xs: 12 }}>
               <Typography
                 variant="h2"
                 sx={{
@@ -175,34 +174,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ forcedSlug }) => {
                 </Typography>
               ))}
             </Grid>
-            <Grid size={{ xs: 12, lg: 5 }}>
-              <Box
-                sx={{
-                  p: { xs: 2, md: 2.5 },
-                  backgroundColor: "#f8fafc",
-                  borderRadius: "18px",
-                  border: "1px solid #e2e8f0",
-                }}
-              >
-                <Typography
-                  variant="h3"
-                  sx={{ fontFamily: headingFont, fontSize: "17px", fontWeight: 800, color: "#0f172a", mb: 1.5 }}
-                >
-                  {service.title} Service Area in Langley, BC
-                </Typography>
-                <GoogleMapEmbed
-                  businessName="IDEAL BATH RENOVATIONS"
-                  address="Serving Langley Township, BC"
-                  rating={GOOGLE_RATING}
-                  reviewsCount={GOOGLE_REVIEW_COUNT}
-                  mapQuery="Langley+Township,+BC"
-                  googleMapsLink={GOOGLE_BUSINESS_URL}
-                  directionsQuery="Langley+Township,+BC"
-                  bottomLabel={`IDEAL BATH • ${service.title} in Langley, BC`}
-                  height={380}
-                />
-              </Box>
-            </Grid>
+
           </Grid>
         </Container>
       </Box>
