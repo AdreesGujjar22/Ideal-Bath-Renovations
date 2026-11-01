@@ -7,6 +7,7 @@ import theme from "./styles/theme";
 
 import PageWrapper from "./components/PageWrapper";
 import PageLoader from "./components/PageLoader";
+import ContactQuickActions from "./components/UI/ContactQuickActions";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { getServiceAreaBySlug, getServiceAreaPath, serviceAreasData } from "./data/ServiceAreasData";
@@ -88,6 +89,7 @@ const App: React.FC = () => {
         <ScrollToTop />
         <NavBar />
         <FloatingReviewsLink />
+        <ContactQuickActions />
         <main>
           <ErrorBoundary>
             <Suspense fallback={<PageLoader message="Loading page content..." />}>

@@ -2,9 +2,11 @@
 export const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/place/Ideal+bath+renovations/@49.146229,-122.6451263,17z/data=!4m8!3m7!1s0x5485d100095e3151:0x30d85aa12ead439e!8m2!3d49.146229!4d-122.6451263!9m1!1b1!16s%2Fg%2F11nt_7sv23";
 export const GOOGLE_BUSINESS_URL = GOOGLE_REVIEWS_URL;
+export const GOOGLE_BUSINESS_EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2609.862816766048!2d-122.645019!3d49.146229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d100095e3151%3A0x30d85aa12ead439e!2sIdeal%20bath%20renovations!5e0!3m2!1sen!2s!4v1792277695358!5m2!1sen!2s";
 
-export const GOOGLE_RATING: number | null = 5;
-export const GOOGLE_REVIEW_COUNT: number | null = 9;
+export const GOOGLE_RATING: number | null = null;
+export const GOOGLE_REVIEW_COUNT: number | null = null;
 
 export interface ReviewItem {
   name: string;

@@ -1,10 +1,9 @@
 import React from "react";
-import { GOOGLE_BUSINESS_URL, GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "../../data/ReviewsData";
 import { Box, Typography, Container } from "@mui/material";
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { getServiceAreaPath, serviceAreasData } from "../../data/ServiceAreasData";
-import GoogleMapEmbed from "../UI/GoogleMapEmbed";
+import GoogleBusinessProfile from "../UI/GoogleBusinessProfile";
 import { homeSeo } from "../../data/SeoContent";
 
 const ServiceAreas: React.FC = () => {
@@ -83,87 +82,7 @@ const ServiceAreas: React.FC = () => {
           </Box>
         </Box>
 
-        {/* Embedded Google Map Overview */}
-        <Box
-          sx={{
-            p: { xs: 2.5, md: 4 },
-            backgroundColor: "#ffffff",
-            borderRadius: "18px",
-            border: "1px solid #e2e8f0",
-            boxShadow: "0 6px 24px rgba(15, 23, 42, 0.04)",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: { xs: "column", md: "row" },
-              alignItems: { xs: "flex-start", md: "center" },
-              justifyContent: "space-between",
-              gap: 2,
-              mb: 3,
-            }}
-          >
-            <Box>
-              <Typography
-                variant="h3"
-                sx={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  fontSize: { xs: "20px", md: "24px" },
-                  fontWeight: 800,
-                  color: "#0f172a",
-                  mb: 0.5,
-                }}
-              >
-                Bathroom Remodeler Service Area Map
-              </Typography>
-              <Typography sx={{ fontSize: "14px", color: "#64748b" }}>
-                Based at 20819 78B Avenue in Langley Township, serving Langley Twp, Surrey, Abbotsford, and the Fraser Valley.
-              </Typography>
-            </Box>
-
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexShrink: 0 }}>
-              <Box
-                component="a"
-                href={GOOGLE_BUSINESS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: 0.8,
-                  backgroundColor: "rgba(194, 155, 56, 0.12)",
-                  color: "#b45309",
-                  px: 2,
-                  py: 1,
-                  borderRadius: "8px",
-                  fontSize: "13px",
-                  fontWeight: 700,
-                  textDecoration: "none",
-                  transition: "all 0.2s ease",
-                  "&:hover": {
-                    backgroundColor: "rgba(194, 155, 56, 0.2)",
-                  },
-                }}
-              >
-                <span>Open in Google Maps</span>
-                <ExternalLink size={14} />
-              </Box>
-            </Box>
-          </Box>
-
-          {/* Embedded Google Map Component */}
-          <GoogleMapEmbed
-            businessName="IDEAL BATH RENOVATIONS"
-            address="Serving Langley Township, BC"
-            rating={GOOGLE_RATING}
-            reviewsCount={GOOGLE_REVIEW_COUNT}
-            mapQuery="Langley Township, BC"
-            googleMapsLink={GOOGLE_BUSINESS_URL}
-            directionsQuery="Langley Township, BC"
-            bottomLabel="IDEAL BATH RENOVATIONS • Serving Langley Township, BC"
-            height={480}
-          />
-        </Box>
+        <GoogleBusinessProfile />
       </Container>
     </Box>
   );

@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from "react";
 import { useLocation } from "react-router-dom";
+import GoogleBusinessProfile from "./UI/GoogleBusinessProfile";
 
 interface PageWrapperProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ export const PageWrapper: FC<PageWrapperProps> = ({ children }) => {
     <>
       <div key={location.pathname} style={{ width: "100%", minHeight: "80vh" }}>
         {children}
+        {location.pathname !== "/" && <GoogleBusinessProfile />}
       </div>
     </>
   );
